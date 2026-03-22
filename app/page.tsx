@@ -1,101 +1,236 @@
-import Image from "next/image";
+import SectionBlock from "@/components/SectionBlock";
+import FAQ from "@/components/FAQ";
+import {
+  seasonSections,
+  dressCodeSections,
+  colorSections,
+  bodyTypeSections,
+  styleSections,
+  venueSections,
+  homepageFaqs,
+} from "@/lib/homepageData";
 
-export default function Home() {
+function FAQSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: homepageFaqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+function WebsiteSchema() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Wedding Guest Style",
+    url: "https://weddinggueststyle.com",
+    description:
+      "Find the perfect wedding guest dress for every season, dress code, and body type.",
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+function CategoryGroup({
+  id,
+  title,
+  description,
+  sections,
+}: {
+  id: string;
+  title: string;
+  description: string;
+  sections: {
+    id: string;
+    title: string;
+    description: string;
+    slug: string;
+    products: {
+      title: string;
+      image: string;
+      url: string;
+      price: string;
+      rating: number;
+      reviewCount: number;
+      sizingNote?: string;
+    }[];
+  }[];
+}) {
+  return (
+    <div id={id} className="scroll-mt-16">
+      <div className="border-b border-gray-200 pb-2 mb-4 mt-12">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+          {title}
+        </h2>
+        <p className="text-gray-600 mt-1 max-w-3xl">{description}</p>
+      </div>
+      {sections.map((section) => (
+        <SectionBlock
+          key={section.id}
+          title={section.title}
+          description={section.description}
+          slug={section.slug}
+          products={section.products}
+        />
+      ))}
     </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <>
+      <FAQSchema />
+      <WebsiteSchema />
+
+      {/* Hero Section */}
+      <section className="bg-gradient-to-b from-rose-50 to-white py-12 sm:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
+            Wedding Guest Dresses
+          </h1>
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Find the perfect dress for every wedding. Browse curated collections
+            by season, dress code, color, body type, and venue — with honest
+            reviews and sizing advice to help you look your best.
+          </p>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* By Season */}
+        <CategoryGroup
+          id="by-season"
+          title="Wedding Guest Dresses by Season"
+          description="Choose the right dress for the time of year. Lightweight fabrics for summer, cozy styles for winter, and everything in between."
+          sections={seasonSections}
+        />
+
+        {/* By Dress Code */}
+        <CategoryGroup
+          id="by-dress-code"
+          title="Wedding Guest Dresses by Dress Code"
+          description="Match your outfit to the occasion. From black-tie galas to casual outdoor celebrations, we have you covered."
+          sections={dressCodeSections}
+        />
+
+        {/* By Color */}
+        <CategoryGroup
+          id="by-color"
+          title="Wedding Guest Dresses by Color"
+          description="Whether you prefer classic neutrals or bold statement colors, find your perfect shade for the big day."
+          sections={colorSections}
+        />
+
+        {/* By Body Type */}
+        <CategoryGroup
+          id="by-body-type"
+          title="Wedding Guest Dresses by Body Type"
+          description="Flattering fits for every figure. Find dresses designed with your body type in mind."
+          sections={bodyTypeSections}
+        />
+
+        {/* By Style */}
+        <CategoryGroup
+          id="by-style"
+          title="Wedding Guest Dresses by Style"
+          description="From flowing maxis to chic midis, elegant florals to modest options — discover your ideal dress style."
+          sections={styleSections}
+        />
+
+        {/* By Venue */}
+        <CategoryGroup
+          id="by-venue"
+          title="Wedding Guest Dresses by Venue"
+          description="Different venues call for different styles. Find the perfect dress for wherever the celebration takes you."
+          sections={venueSections}
+        />
+
+        {/* SEO Content Block */}
+        <section className="py-10 max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            Your Complete Guide to Wedding Guest Dresses
+          </h2>
+          <div className="space-y-4 text-sm sm:text-base leading-relaxed text-gray-700">
+            <p>
+              Finding the right wedding guest dress can feel overwhelming with so
+              many options available. Whether you&apos;re attending a formal
+              black-tie affair, a casual backyard celebration, or a destination
+              beach wedding, the key is matching your outfit to the occasion
+              while expressing your personal style.
+            </p>
+            <p>
+              At Wedding Guest Style, we curate the best wedding guest dresses
+              available on Amazon, organized by every category you might search
+              for — season, dress code, color, body type, style, and venue. Each
+              dress is selected based on customer reviews, quality ratings, and
+              real feedback from thousands of shoppers who have worn these
+              dresses to actual weddings.
+            </p>
+
+            <h3 className="text-lg font-semibold text-gray-900 mt-6">
+              How to Choose the Right Wedding Guest Dress
+            </h3>
+            <p>
+              Start by checking the wedding invitation for any dress code
+              guidance. Consider the venue and time of day — an evening ballroom
+              wedding calls for something different than a morning garden
+              ceremony. Think about the season, as fabric weight and sleeve
+              length matter for comfort. Finally, choose a color that you love
+              and that suits the occasion. Most importantly, pick a dress you
+              feel confident and comfortable wearing.
+            </p>
+
+            <h3 className="text-lg font-semibold text-gray-900 mt-6">
+              Wedding Guest Dress Etiquette
+            </h3>
+            <p>
+              The golden rule of wedding guest attire is simple: don&apos;t
+              outshine the bride. Avoid wearing white, ivory, or cream. Steer
+              clear of overly revealing outfits for religious ceremonies. When
+              the invitation says &ldquo;cocktail attire,&rdquo; stick to
+              knee-length or midi dresses rather than floor-length gowns. And
+              always err on the side of being slightly overdressed rather than
+              underdressed — it shows respect for the couple and their special
+              day.
+            </p>
+
+            <h3 className="text-lg font-semibold text-gray-900 mt-6">
+              Why Shop Wedding Guest Dresses on Amazon?
+            </h3>
+            <p>
+              Amazon offers an unbeatable combination of selection, price, and
+              convenience for wedding guest dresses. With thousands of options
+              under $50, free Prime shipping, easy returns, and millions of
+              verified customer reviews, you can find a stunning dress without
+              the stress. Many Amazon dresses rival boutique quality at a
+              fraction of the price, and the extensive review system helps you
+              gauge fit, fabric quality, and true-to-size accuracy before you
+              buy.
+            </p>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <FAQ faqs={homepageFaqs} />
+      </div>
+    </>
   );
 }

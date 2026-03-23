@@ -74,12 +74,16 @@ function CategoryGroup({
   }[];
 }) {
   return (
-    <div id={id} className="scroll-mt-16">
-      <div className="border-b border-gray-200 pb-2 mb-4 mt-12">
+    <div id={id} className="scroll-mt-20">
+      {/* Category header */}
+      <div className="mt-14 sm:mt-16 mb-2">
+        <div className="section-divider mb-8" />
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
           {title}
         </h2>
-        <p className="text-gray-600 mt-1 max-w-3xl">{description}</p>
+        <p className="text-gray-500 mt-2 max-w-3xl text-sm sm:text-base leading-relaxed">
+          {description}
+        </p>
       </div>
       {sections.map((section) => (
         <SectionBlock
@@ -101,15 +105,52 @@ export default function HomePage() {
       <WebsiteSchema />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-rose-50 to-white py-12 sm:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight">
+      <section className="relative bg-gradient-to-b from-rose-50 via-rose-50/50 to-white py-16 sm:py-24 overflow-hidden">
+        {/* Subtle decorative elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-rose-100/30 blur-3xl" />
+          <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-amber-50/40 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-xs sm:text-sm font-medium tracking-widest uppercase text-rose-500 mb-4">
+            Curated Wedding Guest Fashion
+          </p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
             Wedding Guest Dresses
           </h1>
-          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-5 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Find the perfect dress for every wedding. Browse curated collections
             by season, dress code, color, body type, and venue — with honest
             reviews and sizing advice to help you look your best.
+          </p>
+
+          {/* Quick category pills */}
+          <div className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3">
+            {[
+              { label: "By Season", href: "#by-season" },
+              { label: "By Dress Code", href: "#by-dress-code" },
+              { label: "By Color", href: "#by-color" },
+              { label: "By Body Type", href: "#by-body-type" },
+              { label: "By Style", href: "#by-style" },
+              { label: "By Venue", href: "#by-venue" },
+            ].map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-full hover:border-rose-300 hover:text-rose-600 hover:bg-rose-50 transition-all shadow-sm"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+
+          {/* Trust signal */}
+          <p className="mt-8 text-xs text-gray-400 flex items-center justify-center gap-1.5">
+            <svg className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            All dresses hand-picked from top-rated Amazon selections
           </p>
         </div>
       </section>
@@ -164,11 +205,12 @@ export default function HomePage() {
         />
 
         {/* SEO Content Block */}
-        <section className="py-10 max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+        <section className="py-12 sm:py-16 max-w-3xl">
+          <div className="section-divider mb-12" />
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Your Complete Guide to Wedding Guest Dresses
           </h2>
-          <div className="space-y-4 text-sm sm:text-base leading-relaxed text-gray-700">
+          <div className="space-y-5 text-sm sm:text-base leading-relaxed text-gray-600">
             <p>
               Finding the right wedding guest dress can feel overwhelming with so
               many options available. Whether you&apos;re attending a formal
@@ -185,7 +227,7 @@ export default function HomePage() {
               dresses to actual weddings.
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-900 mt-6">
+            <h3 className="text-lg font-semibold text-gray-900 pt-4">
               How to Choose the Right Wedding Guest Dress
             </h3>
             <p>
@@ -198,7 +240,7 @@ export default function HomePage() {
               feel confident and comfortable wearing.
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-900 mt-6">
+            <h3 className="text-lg font-semibold text-gray-900 pt-4">
               Wedding Guest Dress Etiquette
             </h3>
             <p>
@@ -212,7 +254,7 @@ export default function HomePage() {
               day.
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-900 mt-6">
+            <h3 className="text-lg font-semibold text-gray-900 pt-4">
               Why Shop Wedding Guest Dresses on Amazon?
             </h3>
             <p>

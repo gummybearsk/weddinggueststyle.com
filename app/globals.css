@@ -7,10 +7,8 @@ html {
 }
 
 body {
-  color: #1a1a1a;
+  color: #2d2a26;
   background: #ffffff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
 }
 
 /* Hide scrollbar for carousels */
@@ -20,4 +18,47 @@ body {
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Elegant selection color */
+::selection {
+  background-color: #fecdd3;
+  color: #1a1a1a;
+}
+
+/* Smooth focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #e11d48;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Product card image hover zoom */
+.product-card-img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.product-card:hover .product-card-img {
+  transform: scale(1.06);
+}
+
+/* CTA button pulse on first view */
+@keyframes subtlePulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.3); }
+  50% { box-shadow: 0 0 0 6px rgba(225, 29, 72, 0); }
+}
+
+.cta-pulse {
+  animation: subtlePulse 2s ease-in-out 1;
+}
+
+/* FAQ accordion transition */
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.25s ease-out;
+}
+
+/* Gradient divider between sections */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e5d5d0 20%, #e5d5d0 80%, transparent);
 }

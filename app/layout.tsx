@@ -22,6 +22,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Wedding Guest Style",
+    url: "https://weddinggueststyle.com",
+  },
+  alternates: {
+    canonical: "https://weddinggueststyle.com",
   },
 };
 

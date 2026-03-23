@@ -53,6 +53,42 @@ function FAQSchema({ faqs }: { faqs: { question: string; answer: string }[] }) {
   );
 }
 
+function ItemListSchema({ products, title }: { products: { title: string; url: string; image: string; price: string; rating: number; reviewCount: number }[]; title: string }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: title,
+    numberOfItems: products.length,
+    itemListElement: products.map((product, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "Product",
+        name: product.title,
+        image: product.image,
+        url: product.url,
+        offers: {
+          "@type": "Offer",
+          price: product.price.replace("$", ""),
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+        },
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: product.rating,
+          reviewCount: product.reviewCount,
+        },
+      },
+    })),
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 function BreadcrumbSchema({ title, slug }: { title: string; slug: string }) {
   const schema = {
     "@context": "https://schema.org",
@@ -88,29 +124,84 @@ export default function InnerPage({ params }: PageProps) {
     <>
       <FAQSchema faqs={page.faqs} />
       <BreadcrumbSchema title={page.title} slug={page.slug} />
+      <ItemListSchema products={page.products} title={`Top ${page.title}`} />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Breadcrumb */}
-        <nav className="text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
-          <Link href="/" className="hover:text-rose-600 transition-colors">
-            Home
-          </Link>
-          <span className="mx-2">/</span>
-          <span className="text-gray-900">{page.title}</span>
-        </nav>
+      {/* Page header with subtle background */}
+      <div className="bg-gradient-to-b from-rose-50/60 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8 sm:pt-8 sm:pb-12">
+          {/* Breadcrumb */}
+          <nav
+            className="text-sm text-gray-400 mb-5 flex items-center gap-2"
+            aria-label="Breadcrumb"
+          >
+            <Link
+              href="/"
+              className="hover:text-rose-600 transition-colors flex items-center gap-1"
+            >
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"
+                />
+              </svg>
+              Home
+            </Link>
+            <svg
+              className="w-3.5 h-3.5 text-gray-300"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+            <span className="text-gray-600 font-medium">{page.title}</span>
+          </nav>
 
-        {/* H1 */}
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-          {page.h1}
-        </h1>
+          {/* H1 */}
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+            {page.h1}
+          </h1>
 
-        {/* Intro */}
-        <p className="text-base sm:text-lg text-gray-600 max-w-3xl mb-8 leading-relaxed">
-          {page.intro}
-        </p>
+          {/* Intro */}
+          <p className="mt-3 text-base sm:text-lg text-gray-500 max-w-3xl leading-relaxed">
+            {page.intro}
+          </p>
 
+          {/* Product count badge */}
+          <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-rose-600 bg-rose-50 px-3 py-1.5 rounded-full border border-rose-100">
+            <svg
+              className="w-3.5 h-3.5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            {page.products.length} hand-picked dresses
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         {/* Product Grid */}
-        <section className="mb-12">
+        <section className="mb-14">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
             Top {page.title}
           </h2>
@@ -118,43 +209,82 @@ export default function InnerPage({ params }: PageProps) {
         </section>
 
         {/* Content Sections */}
-        {page.contentSections.map((section, i) => (
-          <section key={i} className="mb-8 max-w-3xl">
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
-              {section.heading}
-            </h2>
-            <div className="text-sm sm:text-base text-gray-700 leading-relaxed whitespace-pre-line">
-              {section.content}
-            </div>
-          </section>
-        ))}
+        {page.contentSections.length > 0 && (
+          <div className="mb-10">
+            <div className="section-divider mb-10" />
+            {page.contentSections.map((section, i) => (
+              <section key={i} className="mb-8 max-w-3xl">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+                  {section.heading}
+                </h2>
+                <div className="text-sm sm:text-base text-gray-600 leading-relaxed whitespace-pre-line">
+                  {section.content}
+                </div>
+              </section>
+            ))}
+          </div>
+        )}
 
         {/* FAQ */}
         {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
 
         {/* Related Pages */}
         {page.relatedPages.length > 0 && (
-          <section className="py-8 border-t border-gray-200">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">
+          <section className="py-10 sm:py-12">
+            <div className="section-divider mb-10" />
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
               Related Collections
             </h2>
+            <p className="text-sm text-gray-500 mb-6">
+              Explore more wedding guest dress styles you might love.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {page.relatedPages.map((related) => (
                 <Link
                   key={related.slug}
                   href={`/${related.slug}`}
-                  className="block p-4 bg-gray-50 rounded-lg hover:bg-rose-50 transition-colors border border-gray-200 hover:border-rose-200"
+                  className="group/related flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-rose-50/50 transition-all border border-gray-100 hover:border-rose-200 hover:shadow-sm"
                 >
-                  <span className="text-sm font-medium text-gray-900">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-rose-50 text-rose-400 flex items-center justify-center group-hover/related:bg-rose-100 group-hover/related:text-rose-600 transition-colors">
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </span>
+                  <span className="text-sm font-medium text-gray-800 group-hover/related:text-rose-700 transition-colors">
                     {related.title}
                   </span>
                 </Link>
               ))}
               <Link
                 href="/"
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-rose-50 transition-colors border border-gray-200 hover:border-rose-200"
+                className="group/related flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-rose-50/50 transition-all border border-gray-100 hover:border-rose-200 hover:shadow-sm"
               >
-                <span className="text-sm font-medium text-gray-900">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-rose-50 text-rose-400 flex items-center justify-center group-hover/related:bg-rose-100 group-hover/related:text-rose-600 transition-colors">
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"
+                    />
+                  </svg>
+                </span>
+                <span className="text-sm font-medium text-gray-800 group-hover/related:text-rose-700 transition-colors">
                   Browse All Wedding Guest Dresses
                 </span>
               </Link>

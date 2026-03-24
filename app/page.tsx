@@ -105,7 +105,7 @@ export default function HomePage() {
       <WebsiteSchema />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-rose-50 via-rose-50/50 to-white py-16 sm:py-24 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-rose-50 via-rose-50/50 to-white py-12 sm:py-16 overflow-hidden">
         {/* Subtle decorative elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
           <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-rose-100/30 blur-3xl" />
@@ -119,10 +119,8 @@ export default function HomePage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
             Wedding Guest Dresses
           </h1>
-          <p className="mt-5 text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Find the perfect dress for every wedding. Browse curated collections
-            by season, dress code, color, body type, and venue — with honest
-            reviews and sizing advice to help you look your best.
+          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
+            Curated picks for every season, dress code, and style.
           </p>
 
           {/* Quick category pills */}
@@ -155,7 +153,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 sm:-mt-6">
         {/* By Season */}
         <CategoryGroup
           id="by-season"

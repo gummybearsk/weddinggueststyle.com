@@ -34,6 +34,7 @@ export interface PageData {
   contentSections: ContentSection[];
   faqs: FAQ[];
   relatedPages: RelatedPage[];
+  publishDate?: string; // ISO date string (YYYY-MM-DD). Pages with future dates are hidden until that date.
 }
 
 export interface HomepageSection {

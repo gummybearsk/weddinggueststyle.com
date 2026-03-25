@@ -4,12 +4,22 @@ import { PageData } from "./types";
 
 const contentDir = path.join(process.cwd(), "content", "pages");
 
+function isPublished(page: PageData): boolean {
+  if (!page.publishDate) return true;
+  const today = new Date().toISOString().split("T")[0];
+  return page.publishDate <= today;
+}
+
 export function getAllSlugs(): string[] {
   if (!fs.existsSync(contentDir)) return [];
   return fs
     .readdirSync(contentDir)
     .filter((file) => file.endsWith(".json"))
-    .map((file) => file.replace(".json", ""));
+    .map((file) => file.replace(".json", ""))
+    .filter((slug) => {
+      const page = getPageData(slug);
+      return page ? isPublished(page) : false;
+    });
 }
 
 export function getPageData(slug: string): PageData | null {
@@ -17,6 +27,12 @@ export function getPageData(slug: string): PageData | null {
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(raw) as PageData;
+}
+
+export function getPublishedPageData(slug: string): PageData | null {
+  const page = getPageData(slug);
+  if (!page || !isPublished(page)) return null;
+  return page;
 }
 
 export function getAllPages(): PageData[] {

@@ -798,6 +798,78 @@ export const dressCodeSections: HomepageSection[] = [
       }
     ],
   },
+  {
+    id: "best-formal-dresses",
+    title: "Best Formal Wedding Guest Dresses",
+    description: "Our top-rated formal picks for black tie and upscale weddings. Elegant gowns, structured maxis, and refined cocktail dresses that command attention.",
+    slug: "best-formal-wedding-guest-dresses",
+    products: [
+      {
+        title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
+        image: "https://m.media-amazon.com/images/I/51JlabQdQXL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0FF94KMQM?tag=values0d4-20",
+        price: "$31.19",
+        rating: 4.9,
+        reviewCount: 51,
+      },
+      {
+        title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
+        image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        price: "$49.99",
+        rating: 4.8,
+        reviewCount: 95,
+      },
+      {
+        title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
+        image: "https://m.media-amazon.com/images/I/61mEMcnOTFL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=values0d4-20",
+        price: "$79.99",
+        rating: 4.9,
+        reviewCount: 35,
+      },
+      {
+        title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
+        image: "https://m.media-amazon.com/images/I/61T8YCSJaUL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=values0d4-20",
+        price: "$84.99",
+        rating: 4.9,
+        reviewCount: 34,
+      },
+      {
+        title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
+        image: "https://m.media-amazon.com/images/I/61L0MJCO+9L._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=values0d4-20",
+        price: "$44.99",
+        rating: 4.9,
+        reviewCount: 32,
+      },
+      {
+        title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
+        image: "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=values0d4-20",
+        price: "$93.99",
+        rating: 4.8,
+        reviewCount: 54,
+      },
+      {
+        title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
+        image: "https://m.media-amazon.com/images/I/61lPiLVnweL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0DP21PPBD?tag=values0d4-20",
+        price: "$26.99",
+        rating: 4.7,
+        reviewCount: 255,
+      },
+      {
+        title: "Mother of The Bride Dresses Long Lace Applique Formal Gown 3/4 Sleeve Chiffon A-Line V-Neck Beaded Dress",
+        image: "https://m.media-amazon.com/images/I/61YB9Vg8zHL._AC_UL500_.jpg",
+        url: "https://www.amazon.com/dp/B0DNC4SKN7?tag=values0d4-20",
+        price: "$85.99",
+        rating: 4.8,
+        reviewCount: 77,
+      }
+    ],
+  },
 ];
 
 // ─── BY COLOR ────────────────────────────────────────────

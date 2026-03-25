@@ -24,6 +24,7 @@ const navGroups = [
       { title: "Cocktail", slug: "cocktail-wedding-guest-dresses" },
       { title: "Casual", slug: "casual-wedding-guest-dresses" },
       { title: "Best Picks", slug: "best-wedding-guest-dresses" },
+      { title: "Best Formal", slug: "best-formal-wedding-guest-dresses" },
       { title: "Elegant", slug: "elegant-wedding-guest-dresses" },
     ],
   },

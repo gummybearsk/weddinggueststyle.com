@@ -27,6 +27,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     alternates: {
       canonical: `https://weddinggueststyle.com/${page.slug}`,
+      languages: {
+        "en-US": `https://weddinggueststyle.com/${page.slug}`,
+        "x-default": `https://weddinggueststyle.com/${page.slug}`,
+      },
     },
   };
 }

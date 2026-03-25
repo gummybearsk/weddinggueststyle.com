@@ -26,6 +26,15 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://weddinggueststyle.com",
+    languages: {
+      "en-US": "https://weddinggueststyle.com",
+      "x-default": "https://weddinggueststyle.com",
+    },
+  },
+  other: {
+    "geo.region": "US",
+    "geo.placename": "United States",
+    "content-language": "en-US",
   },
 };
 

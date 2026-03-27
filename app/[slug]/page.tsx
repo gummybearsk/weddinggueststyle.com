@@ -69,13 +69,54 @@ function ItemListSchema({ products, title }: { products: { title: string; url: s
       item: {
         "@type": "Product",
         name: product.title,
+        description: product.title,
         image: product.image,
         url: product.url,
+        brand: {
+          "@type": "Brand",
+          name: "Amazon Fashion",
+        },
         offers: {
           "@type": "Offer",
           price: product.price.replace("$", ""),
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
+          url: product.url,
+          hasMerchantReturnPolicy: {
+            "@type": "MerchantReturnPolicy",
+            applicableCountry: "US",
+            returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+            merchantReturnDays: 30,
+            returnMethod: "https://schema.org/ReturnByMail",
+            returnFees: "https://schema.org/FreeReturn",
+          },
+          shippingDetails: {
+            "@type": "OfferShippingDetails",
+            shippingDestination: {
+              "@type": "DefinedRegion",
+              addressCountry: "US",
+            },
+            deliveryTime: {
+              "@type": "ShippingDeliveryTime",
+              handlingTime: {
+                "@type": "QuantitativeValue",
+                minValue: 0,
+                maxValue: 1,
+                unitCode: "DAY",
+              },
+              transitTime: {
+                "@type": "QuantitativeValue",
+                minValue: 2,
+                maxValue: 5,
+                unitCode: "DAY",
+              },
+            },
+            shippingRate: {
+              "@type": "MonetaryAmount",
+              value: 0,
+              currency: "USD",
+            },
+          },
         },
         aggregateRating: {
           "@type": "AggregateRating",

@@ -92,7 +92,7 @@ export default function ProductCard({ product }: { product: Product }) {
             rel="noopener noreferrer nofollow"
             className="cta-pulse block w-full text-center text-sm font-semibold text-white bg-rose-600 hover:bg-rose-700 active:bg-rose-800 rounded-lg py-2.5 transition-colors mt-2.5 shadow-sm hover:shadow-md hover:shadow-rose-200/50"
           >
-            Shop on Amazon
+            Check Price on Amazon
           </a>
         </div>
       </div>

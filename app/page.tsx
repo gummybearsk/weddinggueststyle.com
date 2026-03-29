@@ -39,6 +39,11 @@ function WebsiteSchema() {
     url: "https://weddinggueststyle.com",
     description:
       "Find the perfect wedding guest dress for every season, dress code, and body type.",
+    publisher: {
+      "@type": "Organization",
+      name: "Wedding Guest Style",
+      url: "https://weddinggueststyle.com",
+    },
   };
   return (
     <script

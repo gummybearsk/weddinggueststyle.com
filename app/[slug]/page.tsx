@@ -161,13 +161,14 @@ function BreadcrumbSchema({ title, slug }: { title: string; slug: string }) {
   );
 }
 
-function ArticleSchema({ title, description, slug, intro }: { title: string; description: string; slug: string; intro: string }) {
+function ArticleSchema({ title, description, slug, intro, publishDate }: { title: string; description: string; slug: string; intro: string; publishDate?: string }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description: description,
     url: `https://weddinggueststyle.com/${slug}`,
+    ...(publishDate && { datePublished: publishDate, dateModified: publishDate }),
     author: {
       "@type": "Organization",
       name: "Wedding Guest Style",
@@ -200,7 +201,7 @@ export default function InnerPage({ params }: PageProps) {
     <>
       <FAQSchema faqs={page.faqs} />
       <BreadcrumbSchema title={page.title} slug={page.slug} />
-      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} />
+      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} />
       {page.products.length > 0 && <ItemListSchema products={page.products} title={`Top ${page.title}`} />}
 
       {/* Page header with subtle background */}

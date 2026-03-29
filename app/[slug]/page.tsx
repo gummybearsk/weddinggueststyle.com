@@ -161,6 +161,37 @@ function BreadcrumbSchema({ title, slug }: { title: string; slug: string }) {
   );
 }
 
+function ArticleSchema({ title, description, slug, intro }: { title: string; description: string; slug: string; intro: string }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description: description,
+    url: `https://weddinggueststyle.com/${slug}`,
+    author: {
+      "@type": "Organization",
+      name: "Wedding Guest Style",
+      url: "https://weddinggueststyle.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Wedding Guest Style",
+      url: "https://weddinggueststyle.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://weddinggueststyle.com/${slug}`,
+    },
+    articleBody: intro,
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export default function InnerPage({ params }: PageProps) {
   const page = getPageData(params.slug);
   if (!page) notFound();
@@ -169,7 +200,8 @@ export default function InnerPage({ params }: PageProps) {
     <>
       <FAQSchema faqs={page.faqs} />
       <BreadcrumbSchema title={page.title} slug={page.slug} />
-      <ItemListSchema products={page.products} title={`Top ${page.title}`} />
+      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} />
+      {page.products.length > 0 && <ItemListSchema products={page.products} title={`Top ${page.title}`} />}
 
       {/* Page header with subtle background */}
       <div className="bg-gradient-to-b from-rose-50/60 to-white">
@@ -225,33 +257,37 @@ export default function InnerPage({ params }: PageProps) {
           </p>
 
           {/* Product count badge */}
-          <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-rose-600 bg-rose-50 px-3 py-1.5 rounded-full border border-rose-100">
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            {page.products.length} hand-picked dresses
-          </div>
+          {page.products.length > 0 && (
+            <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-rose-600 bg-rose-50 px-3 py-1.5 rounded-full border border-rose-100">
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              {page.products.length} hand-picked dresses
+            </div>
+          )}
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         {/* Product Grid */}
-        <section className="mb-14">
-          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
-            Top {page.title}
-          </h2>
-          <ProductGrid products={page.products} />
-        </section>
+        {page.products.length > 0 && (
+          <section className="mb-14">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+              Top {page.title}
+            </h2>
+            <ProductGrid products={page.products} />
+          </section>
+        )}
 
         {/* Content Sections */}
         {page.contentSections.length > 0 && (

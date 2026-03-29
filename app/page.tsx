@@ -76,8 +76,8 @@ function CategoryGroup({
   return (
     <div id={id} className="scroll-mt-20">
       {/* Category header */}
-      <div className="mt-14 sm:mt-16 mb-2">
-        <div className="section-divider mb-8" />
+      <div className="mt-10 sm:mt-12 mb-2">
+        <div className="section-divider mb-5" />
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
           {title}
         </h2>
@@ -153,7 +153,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-4 sm:-mt-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-2 sm:-mt-4">
         {/* By Season */}
         <CategoryGroup
           id="by-season"
@@ -203,8 +203,8 @@ export default function HomePage() {
         />
 
         {/* SEO Content Block */}
-        <section className="py-12 sm:py-16 max-w-3xl">
-          <div className="section-divider mb-12" />
+        <section className="py-10 sm:py-12 max-w-3xl">
+          <div className="section-divider mb-8" />
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
             Your Complete Guide to Wedding Guest Dresses
           </h2>

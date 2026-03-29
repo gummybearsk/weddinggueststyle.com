@@ -15,7 +15,7 @@ export default function SectionBlock({
   products,
 }: SectionBlockProps) {
   return (
-    <section className="py-8 sm:py-10">
+    <section className="py-5 sm:py-6">
       <div className="mb-5">
         <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-1.5">
           {title}

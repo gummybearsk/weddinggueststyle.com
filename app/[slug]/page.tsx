@@ -291,10 +291,10 @@ export default function InnerPage({ params }: PageProps) {
 
         {/* Content Sections */}
         {page.contentSections.length > 0 && (
-          <div className="mb-10">
-            <div className="section-divider mb-10" />
+          <div className="mb-8">
+            <div className="section-divider mb-8" />
             {page.contentSections.map((section, i) => (
-              <section key={i} className="mb-8 max-w-3xl">
+              <section key={i} className="mb-6 max-w-3xl">
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
                   {section.heading}
                 </h2>
@@ -311,8 +311,8 @@ export default function InnerPage({ params }: PageProps) {
 
         {/* Related Pages */}
         {page.relatedPages.length > 0 && (
-          <section className="py-10 sm:py-12">
-            <div className="section-divider mb-10" />
+          <section className="py-8 sm:py-10">
+            <div className="section-divider mb-8" />
             <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
               Related Collections
             </h2>

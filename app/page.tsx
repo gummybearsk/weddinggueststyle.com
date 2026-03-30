@@ -1,3 +1,6 @@
+// Revalidate every 12 hours so scheduled pages appear in nav/sitemap
+export const revalidate = 43200;
+
 import SectionBlock from "@/components/SectionBlock";
 import FAQ from "@/components/FAQ";
 import {

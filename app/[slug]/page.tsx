@@ -3,18 +3,21 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ProductGrid from "@/components/ProductGrid";
 import FAQ from "@/components/FAQ";
-import { getPageData, getAllSlugs } from "@/lib/getPages";
+import { getAllSlugsIncludingScheduled, getPublishedPageData } from "@/lib/getPages";
+
+// Revalidate every 12 hours so scheduled pages auto-publish on their date
+export const revalidate = 43200;
 
 interface PageProps {
   params: { slug: string };
 }
 
 export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  return getAllSlugsIncludingScheduled().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const page = getPageData(params.slug);
+  const page = getPublishedPageData(params.slug);
   if (!page) return {};
   return {
     title: page.metaTitle,
@@ -194,7 +197,7 @@ function ArticleSchema({ title, description, slug, intro, publishDate }: { title
 }
 
 export default function InnerPage({ params }: PageProps) {
-  const page = getPageData(params.slug);
+  const page = getPublishedPageData(params.slug);
   if (!page) notFound();
 
   return (

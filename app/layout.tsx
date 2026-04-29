@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wedding Guest Dresses — Best Dresses for Every Wedding | Wedding Guest Style",
+    default: "Wedding Guest Dresses 2026: 700+ Hand-Picked Styles for Every Wedding",
     template: "%s | Wedding Guest Style",
   },
   description:
-    "Find the perfect wedding guest dress for every season, dress code, and body type. Curated collections of the best wedding guest dresses on Amazon with honest reviews and sizing advice.",
+    "Find the perfect wedding guest dress for 2026 — 700+ hand-picked styles for every season, dress code, body type, and venue. Black tie, casual, cocktail, formal & more. Honest reviews, sizing advice, real prices.",
   metadataBase: new URL("https://weddinggueststyle.com"),
   openGraph: {
     type: "website",

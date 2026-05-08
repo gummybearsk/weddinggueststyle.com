@@ -21,7 +21,7 @@ function FAQItem({
       >
         <span
           className={`text-sm sm:text-base font-medium pr-4 transition-colors ${
-            isOpen ? "text-rose-700" : "text-gray-800 group-hover/faq:text-rose-600"
+            isOpen ? "text-blush-700" : "text-gray-800 group-hover/faq:text-blush-600"
           }`}
         >
           {faq.question}
@@ -29,8 +29,8 @@ function FAQItem({
         <span
           className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 ${
             isOpen
-              ? "bg-rose-100 text-rose-600 rotate-180"
-              : "bg-gray-100 text-gray-500 group-hover/faq:bg-rose-50 group-hover/faq:text-rose-500"
+              ? "bg-blush-100 text-blush-600 rotate-180"
+              : "bg-gray-100 text-gray-500 group-hover/faq:bg-blush-50 group-hover/faq:text-blush-500"
           }`}
         >
           <svg

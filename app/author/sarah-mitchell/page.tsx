@@ -21,15 +21,15 @@ export default function SarahMitchellPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-gray-400 mb-5" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-rose-600 transition-colors">Home</Link>
+        <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
         <span className="mx-2">→</span>
-        <Link href="/about" className="hover:text-rose-600 transition-colors">About</Link>
+        <Link href="/about" className="hover:text-blush-600 transition-colors">About</Link>
         <span className="mx-2">→</span>
         <span className="text-gray-600">Sarah Mitchell</span>
       </nav>
 
       <h1 className="text-4xl font-bold text-gray-900 mb-2">Sarah Mitchell</h1>
-      <p className="text-lg text-rose-600 font-medium mb-8">Wedding Style Editor</p>
+      <p className="text-lg text-blush-600 font-medium mb-8">Wedding Style Editor</p>
 
       <div className="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed mb-12">
         <section>
@@ -77,7 +77,7 @@ export default function SarahMitchellPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Contact</h2>
           <p>
             For editorial feedback or partnership inquiries, email{" "}
-            <a href="mailto:sarah@weddinggueststyle.com" className="text-rose-600 hover:underline">sarah@weddinggueststyle.com</a>.
+            <a href="mailto:sarah@weddinggueststyle.com" className="text-blush-600 hover:underline">sarah@weddinggueststyle.com</a>.
           </p>
         </section>
       </div>
@@ -89,7 +89,7 @@ export default function SarahMitchellPage() {
             <li key={article.slug}>
               <Link
                 href={`/${article.slug}`}
-                className="text-rose-600 hover:underline text-base"
+                className="text-blush-600 hover:underline text-base"
               >
                 {article.title}
               </Link>

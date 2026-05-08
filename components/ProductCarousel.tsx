@@ -53,7 +53,7 @@ export default function ProductCarousel({
       {/* Left arrow */}
       <button
         onClick={() => scroll("left")}
-        className={`hidden md:flex absolute -left-4 top-[40%] -translate-y-1/2 z-10 w-11 h-11 items-center justify-center bg-white border border-gray-200 rounded-full shadow-lg transition-all duration-200 hover:bg-rose-50 hover:border-rose-200 hover:shadow-rose-100/50 ${
+        className={`hidden md:flex absolute -left-4 top-[40%] -translate-y-1/2 z-10 w-11 h-11 items-center justify-center bg-white border border-gray-200 rounded-full shadow-lg transition-all duration-200 hover:bg-blush-50 hover:border-blush-200 hover:shadow-rose-100/50 ${
           canScrollLeft
             ? "opacity-0 group-hover/carousel:opacity-100"
             : "opacity-0 pointer-events-none"
@@ -93,7 +93,7 @@ export default function ProductCarousel({
       {/* Right arrow */}
       <button
         onClick={() => scroll("right")}
-        className={`hidden md:flex absolute -right-4 top-[40%] -translate-y-1/2 z-10 w-11 h-11 items-center justify-center bg-white border border-gray-200 rounded-full shadow-lg transition-all duration-200 hover:bg-rose-50 hover:border-rose-200 hover:shadow-rose-100/50 ${
+        className={`hidden md:flex absolute -right-4 top-[40%] -translate-y-1/2 z-10 w-11 h-11 items-center justify-center bg-white border border-gray-200 rounded-full shadow-lg transition-all duration-200 hover:bg-blush-50 hover:border-blush-200 hover:shadow-rose-100/50 ${
           canScrollRight
             ? "opacity-0 group-hover/carousel:opacity-100"
             : "opacity-0 pointer-events-none"
@@ -139,11 +139,11 @@ export default function ProductCarousel({
         {seeAllSlug && (
           <Link
             href={`/${seeAllSlug}`}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors group/link px-3 py-1.5 rounded-full hover:bg-rose-50"
+            className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] font-medium text-ink-700 hover:text-blush-600 transition-colors group/link border-b border-ink-300 hover:border-blush-400 pb-1"
           >
             {seeAllLabel}
             <svg
-              className="w-4 h-4 transition-transform group-hover/link:translate-x-0.5"
+              className="w-3 h-3 transition-transform group-hover/link:translate-x-0.5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -151,7 +151,7 @@ export default function ProductCarousel({
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={1.5}
                 d="M9 5l7 7-7 7"
               />
             </svg>

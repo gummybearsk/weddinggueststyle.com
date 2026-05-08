@@ -11,7 +11,7 @@ export default function TermsPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-gray-400 mb-5" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-rose-600 transition-colors">Home</Link>
+        <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
         <span className="mx-2">→</span>
         <span className="text-gray-600">Terms of Service</span>
       </nav>
@@ -23,7 +23,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">1. Acceptance of Terms</h2>
           <p>
-            By accessing or using <Link href="/" className="text-rose-600 hover:underline">https://weddinggueststyle.com</Link>
+            By accessing or using <Link href="/" className="text-blush-600 hover:underline">https://weddinggueststyle.com</Link>
             (&ldquo;the site,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;), you agree to be bound by these Terms of
             Service. If you do not agree to these terms, please do not use the site.
           </p>
@@ -58,7 +58,7 @@ export default function TermsPage() {
             our readers based on real reviews, ratings, and product specifications.
           </p>
           <p>
-            See our <Link href="/editorial" className="text-rose-600 hover:underline">Editorial Guidelines</Link>
+            See our <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>
             for our full review and recommendation process.
           </p>
         </section>
@@ -125,7 +125,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">11. Contact</h2>
           <p>
-            For questions about these Terms of Service, email <a href="mailto:hello@weddinggueststyle.com" className="text-rose-600 hover:underline">hello@weddinggueststyle.com</a>.
+            For questions about these Terms of Service, email <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
           </p>
         </section>
       </div>

@@ -24,7 +24,7 @@ export default function ProductGrid({ products }: { products: Product[] }) {
         <div className="mt-8 text-center">
           <button
             onClick={() => setVisibleCount((prev) => prev + LOAD_MORE_COUNT)}
-            className="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold text-rose-600 bg-white border-2 border-rose-200 rounded-full hover:bg-rose-50 hover:border-rose-300 transition-all shadow-sm hover:shadow-md"
+            className="inline-flex items-center gap-2 px-8 py-3 text-sm font-semibold text-blush-600 bg-white border-2 border-blush-200 rounded-full hover:bg-blush-50 hover:border-blush-300 transition-all shadow-sm hover:shadow-md"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

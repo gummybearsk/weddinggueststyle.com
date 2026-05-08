@@ -245,7 +245,7 @@ export default function Header() {
                       <Link
                         key={item.slug}
                         href={`/${item.slug}`}
-                        className="block py-2 text-sm text-gray-600 hover:text-rose-600"
+                        className="block py-2 text-sm text-gray-600 hover:text-blush-600"
                         onClick={() => setMobileOpen(false)}
                       >
                         {item.title}

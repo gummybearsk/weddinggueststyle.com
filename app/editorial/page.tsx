@@ -11,7 +11,7 @@ export default function EditorialPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-gray-400 mb-5" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-rose-600 transition-colors">Home</Link>
+        <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
         <span className="mx-2">→</span>
         <span className="text-gray-600">Editorial Guidelines</span>
       </nav>
@@ -120,7 +120,7 @@ export default function EditorialPage() {
           <p>
             The &ldquo;Last updated&rdquo; date on each page reflects the most recent substantive review,
             not auto-generated build dates. If you spot an outdated link, broken product, or factual error,
-            email <a href="mailto:hello@weddinggueststyle.com" className="text-rose-600 hover:underline">hello@weddinggueststyle.com</a>
+            email <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>
             and we&apos;ll fix it within a week.
           </p>
         </section>
@@ -140,7 +140,7 @@ export default function EditorialPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Contact</h2>
           <p>
             For editorial feedback, content corrections, or partnership inquiries, email{" "}
-            <a href="mailto:hello@weddinggueststyle.com" className="text-rose-600 hover:underline">hello@weddinggueststyle.com</a>.
+            <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
           </p>
         </section>
       </div>

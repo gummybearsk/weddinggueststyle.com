@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <nav className="text-sm text-gray-400 mb-5" aria-label="Breadcrumb">
-        <Link href="/" className="hover:text-rose-600 transition-colors">Home</Link>
+        <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
         <span className="mx-2">→</span>
         <span className="text-gray-600">About</span>
       </nav>
@@ -70,7 +70,7 @@ export default function AboutPage() {
           </ul>
           <p>
             For more detail on how we research and write content, see our
-            <Link href="/editorial" className="text-rose-600 hover:underline"> Editorial Guidelines</Link>.
+            <Link href="/editorial" className="text-blush-600 hover:underline"> Editorial Guidelines</Link>.
           </p>
         </section>
 
@@ -78,7 +78,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Who&apos;s Behind This Site</h2>
           <p>
             Wedding Guest Style is run by a small editorial team led by{" "}
-            <Link href="/author/sarah-mitchell" className="text-rose-600 hover:underline">Sarah Mitchell</Link>,
+            <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">Sarah Mitchell</Link>,
             our wedding style editor. Sarah has covered wedding fashion for over a decade, has personally
             attended 200+ weddings as a guest, and has worn more dress codes than most professional wedding
             planners.
@@ -107,7 +107,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Get in Touch</h2>
           <p>
             For questions, feedback, content corrections, or partnership inquiries, email{" "}
-            <a href="mailto:hello@weddinggueststyle.com" className="text-rose-600 hover:underline">hello@weddinggueststyle.com</a>.
+            <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
           </p>
         </section>
       </div>

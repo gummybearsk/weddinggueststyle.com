@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local research/data folders (added 2026-05-08)
+GSC/
+backlink-data/
+keyword-data/
+scripts/
+weddinggueststyle.com.code-workspace
+.claude/scheduled_tasks.lock

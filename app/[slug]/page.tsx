@@ -213,83 +213,41 @@ export default function InnerPage({ params }: PageProps) {
       <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} />
       {page.products.length > 0 && <ItemListSchema products={page.products} title={`Top ${page.title}`} />}
 
-      {/* Page header with subtle background */}
-      <div className="bg-gradient-to-b from-rose-50/60 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8 sm:pt-8 sm:pb-12">
+      {/* Page header — editorial */}
+      <div className="bg-ivory border-b border-ink-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 sm:pt-14 sm:pb-16">
           {/* Breadcrumb */}
           <nav
-            className="text-sm text-gray-400 mb-5 flex items-center gap-2"
+            className="text-[11px] uppercase tracking-[0.18em] text-ink-500 mb-8 flex items-center gap-2"
             aria-label="Breadcrumb"
           >
             <Link
               href="/"
-              className="hover:text-rose-600 transition-colors flex items-center gap-1"
+              className="hover:text-blush-600 transition-colors"
             >
-              <svg
-                className="w-3.5 h-3.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"
-                />
-              </svg>
               Home
             </Link>
-            <svg
-              className="w-3.5 h-3.5 text-gray-300"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            <span className="text-gray-600 font-medium">{page.title}</span>
+            <span className="text-ink-300">/</span>
+            <span className="text-ink-700">{page.title}</span>
           </nav>
 
-          {/* H1 */}
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 tracking-tight">
+          {/* Eyebrow */}
+          <p className="eyebrow mb-4">The Edit · {page.products?.length || 0} picks</p>
+
+          {/* H1 — display serif */}
+          <h1 className="display-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">
             {page.h1}
           </h1>
 
           {/* Author byline */}
-          <div className="mt-4">
+          <div className="mt-6">
             <AuthorByline publishDate={page.publishDate} />
           </div>
 
           {/* Intro */}
-          <p className="mt-1 text-base sm:text-lg text-gray-500 max-w-3xl leading-relaxed">
+          <p className="mt-6 text-base sm:text-lg text-ink-700 max-w-3xl leading-[1.75] font-light">
             {page.intro}
           </p>
-
-          {/* Product count badge */}
-          {page.products.length > 0 && (
-            <div className="mt-4 inline-flex items-center gap-1.5 text-xs font-medium text-rose-600 bg-rose-50 px-3 py-1.5 rounded-full border border-rose-100">
-              <svg
-                className="w-3.5 h-3.5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-              {page.products.length} hand-picked dresses
-            </div>
-          )}
         </div>
       </div>
 
@@ -309,11 +267,11 @@ export default function InnerPage({ params }: PageProps) {
           <div className="mb-8">
             <div className="section-divider mb-8" />
             {page.contentSections.map((section, i) => (
-              <section key={i} className="mb-6 max-w-3xl">
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+              <section key={i} className="mb-10 max-w-3xl">
+                <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-4">
                   {section.heading}
                 </h2>
-                <div className="text-sm sm:text-base text-gray-600 leading-relaxed whitespace-pre-line">
+                <div className="text-base text-ink-700 leading-[1.8] whitespace-pre-line font-light">
                   {section.content}
                 </div>
               </section>
@@ -324,65 +282,35 @@ export default function InnerPage({ params }: PageProps) {
         {/* FAQ */}
         {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
 
-        {/* Related Pages */}
+        {/* Related Pages — editorial */}
         {page.relatedPages.length > 0 && (
-          <section className="py-8 sm:py-10">
-            <div className="section-divider mb-8" />
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
-              Related Collections
+          <section className="py-12 sm:py-16">
+            <div className="section-divider mb-12" />
+            <p className="eyebrow mb-3">Continue Reading</p>
+            <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-8">
+              You may also like
             </h2>
-            <p className="text-sm text-gray-500 mb-6">
-              Explore more wedding guest dress styles you might love.
-            </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
               {page.relatedPages.map((related) => (
                 <Link
                   key={related.slug}
                   href={`/${related.slug}`}
-                  className="group/related flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-rose-50/50 transition-all border border-gray-100 hover:border-rose-200 hover:shadow-sm"
+                  className="group/related block py-3 border-b border-ink-200 hover:border-blush-400 transition-colors"
                 >
-                  <span className="flex-shrink-0 w-8 h-8 rounded-full bg-rose-50 text-rose-400 flex items-center justify-center group-hover/related:bg-rose-100 group-hover/related:text-rose-600 transition-colors">
-                    <svg
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </span>
-                  <span className="text-sm font-medium text-gray-800 group-hover/related:text-rose-700 transition-colors">
+                  <span className="block text-base text-ink-800 group-hover/related:text-blush-600 transition-colors font-light leading-snug">
                     {related.title}
                   </span>
+                  <span className="text-[11px] uppercase tracking-[0.18em] text-ink-500 mt-1 inline-block">Read →</span>
                 </Link>
               ))}
               <Link
                 href="/"
-                className="group/related flex items-center gap-3 p-4 bg-white rounded-xl hover:bg-rose-50/50 transition-all border border-gray-100 hover:border-rose-200 hover:shadow-sm"
+                className="group/related block py-3 border-b border-ink-200 hover:border-blush-400 transition-colors"
               >
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-rose-50 text-rose-400 flex items-center justify-center group-hover/related:bg-rose-100 group-hover/related:text-rose-600 transition-colors">
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-4 0h4"
-                    />
-                  </svg>
+                <span className="block text-base text-ink-800 group-hover/related:text-blush-600 transition-colors font-light italic display-italic leading-snug">
+                  Return to The Edit
                 </span>
-                <span className="text-sm font-medium text-gray-800 group-hover/related:text-rose-700 transition-colors">
-                  Browse All Wedding Guest Dresses
-                </span>
+                <span className="text-[11px] uppercase tracking-[0.18em] text-ink-500 mt-1 inline-block">All wedding guest dresses →</span>
               </Link>
             </div>
           </section>

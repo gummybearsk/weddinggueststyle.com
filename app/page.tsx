@@ -81,15 +81,18 @@ function CategoryGroup({
     }[];
   }[];
 }) {
+  // Strip "Wedding Guest Dresses by " prefix for editorial display
+  const editorialTitle = title.replace(/^Wedding Guest Dresses by /, '');
   return (
     <div id={id} className="scroll-mt-20">
-      {/* Category header */}
-      <div className="mt-10 sm:mt-12 mb-2">
-        <div className="section-divider mb-5" />
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-          {title}
+      {/* Category header — editorial */}
+      <div className="mt-16 sm:mt-20 mb-4">
+        <div className="section-divider mb-10" />
+        <p className="eyebrow mb-3">Volume · {id.replace('by-', '')}</p>
+        <h2 className="display-serif text-3xl sm:text-5xl text-ink-900">
+          By <span className="display-italic text-blush-600">{editorialTitle}</span>
         </h2>
-        <p className="text-gray-500 mt-2 max-w-3xl text-sm sm:text-base leading-relaxed">
+        <p className="text-ink-600 mt-4 max-w-2xl text-base leading-relaxed font-light">
           {description}
         </p>
       </div>
@@ -112,51 +115,49 @@ export default function HomePage() {
       <FAQSchema />
       <WebsiteSchema />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-rose-50 via-rose-50/50 to-white py-12 sm:py-16 overflow-hidden">
-        {/* Subtle decorative elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
-          <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-rose-100/30 blur-3xl" />
-          <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-amber-50/40 blur-3xl" />
-        </div>
+      {/* Hero Section — editorial */}
+      <section className="relative bg-ivory pt-16 pb-20 sm:pt-24 sm:pb-28 overflow-hidden">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Editorial eyebrow */}
+          <div className="flex items-center justify-center gap-4 mb-8 text-blush-600">
+            <span className="hidden sm:block w-12 h-px bg-blush-300" />
+            <span className="eyebrow text-blush-600">The Edit · 2026</span>
+            <span className="hidden sm:block w-12 h-px bg-blush-300" />
+          </div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs sm:text-sm font-medium tracking-widest uppercase text-rose-500 mb-4">
-            Curated Wedding Guest Fashion
-          </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
-            Wedding Guest Dresses
+          <h1 className="display-serif text-5xl sm:text-7xl lg:text-8xl text-ink-900">
+            Wedding Guest <span className="display-italic text-blush-600">Style</span>
           </h1>
-          <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-xl mx-auto leading-relaxed">
-            Curated picks for every season, dress code, and style.
+
+          <p className="mt-8 text-base sm:text-lg text-ink-600 max-w-xl mx-auto leading-relaxed font-light">
+            A curated edit of wedding guest dresses for every season,
+            dress code, and venue — chosen for the women who get dressed for
+            the photograph.
           </p>
 
-          {/* Quick category pills */}
-          <div className="mt-8 flex flex-wrap justify-center gap-2 sm:gap-3">
+          {/* Editorial nav links */}
+          <nav className="mt-12 flex flex-wrap justify-center gap-x-6 sm:gap-x-10 gap-y-3 text-[11px] uppercase tracking-[0.18em] text-ink-700 font-medium">
             {[
-              { label: "By Season", href: "#by-season" },
-              { label: "By Dress Code", href: "#by-dress-code" },
-              { label: "By Color", href: "#by-color" },
-              { label: "By Body Type", href: "#by-body-type" },
-              { label: "By Style", href: "#by-style" },
-              { label: "By Venue", href: "#by-venue" },
+              { label: "Season", href: "#by-season" },
+              { label: "Dress Code", href: "#by-dress-code" },
+              { label: "Color", href: "#by-color" },
+              { label: "Body Type", href: "#by-body-type" },
+              { label: "Style", href: "#by-style" },
+              { label: "Venue", href: "#by-venue" },
             ].map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-full hover:border-rose-300 hover:text-rose-600 hover:bg-rose-50 transition-all shadow-sm"
+                className="hover:text-blush-600 transition-colors border-b border-transparent hover:border-blush-400 pb-1"
               >
                 {item.label}
               </a>
             ))}
-          </div>
+          </nav>
 
-          {/* Trust signal */}
-          <p className="mt-8 text-xs text-gray-400 flex items-center justify-center gap-1.5">
-            <svg className="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-            All dresses hand-picked from top-rated Amazon selections
+          {/* Trust signal — refined */}
+          <p className="mt-14 text-xs text-ink-500 font-light italic">
+            Hand-picked. Honestly reviewed. Wearable for the women who buy them.
           </p>
         </div>
       </section>
@@ -210,68 +211,65 @@ export default function HomePage() {
           sections={venueSections}
         />
 
-        {/* SEO Content Block */}
-        <section className="py-10 sm:py-12 max-w-3xl">
-          <div className="section-divider mb-8" />
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8">
-            Your Complete Guide to Wedding Guest Dresses
+        {/* Editorial Content Block */}
+        <section className="py-16 sm:py-20 max-w-3xl mx-auto">
+          <div className="section-divider mb-12" />
+          <p className="eyebrow mb-4">The Guide</p>
+          <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-10">
+            On Dressing for Someone Else&apos;s Wedding
           </h2>
-          <div className="space-y-5 text-sm sm:text-base leading-relaxed text-gray-600">
+          <div className="space-y-6 text-base leading-[1.8] text-ink-700 font-light">
             <p>
-              Finding the right wedding guest dress can feel overwhelming with so
-              many options available. Whether you&apos;re attending a formal
-              black-tie affair, a casual backyard celebration, or a destination
-              beach wedding, the key is matching your outfit to the occasion
-              while expressing your personal style.
+              Finding the right wedding guest dress is rarely about the dress.
+              It&apos;s about the dress code you can&apos;t quite decode, the
+              venue you&apos;ve only seen in three Instagram squares, and the
+              quiet pressure to look photographed-ready without trying so hard
+              that you remember trying. Wedding Guest Style exists for that exact
+              moment.
             </p>
             <p>
-              At Wedding Guest Style, we curate the best wedding guest dresses
-              available on Amazon, organized by every category you might search
-              for — season, dress code, color, body type, style, and venue. Each
-              dress is selected based on customer reviews, quality ratings, and
-              real feedback from thousands of shoppers who have worn these
-              dresses to actual weddings.
-            </p>
-
-            <h3 className="text-lg font-semibold text-gray-900 pt-4">
-              How to Choose the Right Wedding Guest Dress
-            </h3>
-            <p>
-              Start by checking the wedding invitation for any dress code
-              guidance. Consider the venue and time of day — an evening ballroom
-              wedding calls for something different than a morning garden
-              ceremony. Think about the season, as fabric weight and sleeve
-              length matter for comfort. Finally, choose a color that you love
-              and that suits the occasion. Most importantly, pick a dress you
-              feel confident and comfortable wearing.
+              Every dress on the site is hand-picked from top-rated listings,
+              vetted for fabric quality, fit accuracy, and the kind of polished
+              finish that photographs beautifully. We organize by every variable
+              that actually matters — season, dress code, color, body type,
+              style, and venue — so the search ends in minutes instead of hours.
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-900 pt-4">
-              Wedding Guest Dress Etiquette
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              How to Choose the Right Dress
             </h3>
             <p>
-              The golden rule of wedding guest attire is simple: don&apos;t
-              outshine the bride. Avoid wearing white, ivory, or cream. Steer
-              clear of overly revealing outfits for religious ceremonies. When
-              the invitation says &ldquo;cocktail attire,&rdquo; stick to
-              knee-length or midi dresses rather than floor-length gowns. And
-              always err on the side of being slightly overdressed rather than
-              underdressed — it shows respect for the couple and their special
-              day.
+              Start with the invitation. The dress code phrase — even a vague
+              one — is the single most important constraint. After that:
+              consider the venue, the time of day, and the season&apos;s fabric
+              demands. An evening ballroom wedding asks for something different
+              than a morning vineyard ceremony. Most importantly, choose a dress
+              you&apos;ll feel confident in for eight hours straight, including
+              the dancing.
             </p>
 
-            <h3 className="text-lg font-semibold text-gray-900 pt-4">
-              Why Shop Wedding Guest Dresses on Amazon?
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              Wedding Guest Etiquette, Briefly
             </h3>
             <p>
-              Amazon offers an unbeatable combination of selection, price, and
-              convenience for wedding guest dresses. With thousands of options
-              under $50, free Prime shipping, easy returns, and millions of
-              verified customer reviews, you can find a stunning dress without
-              the stress. Many Amazon dresses rival boutique quality at a
-              fraction of the price, and the extensive review system helps you
-              gauge fit, fabric quality, and true-to-size accuracy before you
-              buy.
+              The unwritten rules: don&apos;t wear white or anything close to
+              it. Don&apos;t outshine the bride (you won&apos;t — but the
+              attempt shows). Match the formality of your dress to the dress
+              code more carefully than the formality of your hair. When in
+              doubt, lean slightly more dressed-up rather than down. The
+              photograph lasts longer than the discomfort.
+            </p>
+
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              Our Editorial Standards
+            </h3>
+            <p>
+              We don&apos;t accept paid placements, sponsored reviews, or
+              free-product partnerships. Every dress earned its place by review
+              quality, fit consistency, and dress code appropriateness. When you
+              click an affiliate link and purchase, we earn a commission — at no
+              cost to you. That&apos;s how the work gets funded. The editorial
+              decisions stay our own.
             </p>
           </div>
         </section>

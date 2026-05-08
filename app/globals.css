@@ -7,8 +7,15 @@ html {
 }
 
 body {
-  color: #2d2a26;
-  background: #ffffff;
+  color: #1A1815;
+  background: #FBF9F3;
+  font-feature-settings: "ss01", "kern";
+}
+
+/* Editorial typography defaults */
+h1, h2, h3 {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 /* Hide scrollbar for carousels */
@@ -20,35 +27,73 @@ body {
   scrollbar-width: none;
 }
 
-/* Elegant selection color */
+/* Refined selection color */
 ::selection {
-  background-color: #fecdd3;
-  color: #1a1a1a;
+  background-color: #E8C5B7;
+  color: #1A1815;
 }
 
-/* Smooth focus styles for accessibility */
+/* Refined focus styles */
 *:focus-visible {
-  outline: 2px solid #e11d48;
-  outline-offset: 2px;
-  border-radius: 4px;
+  outline: 1.5px solid #B26856;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
-/* Product card image hover zoom */
+/* Editorial label - small caps style */
+.eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #9B5340;
+}
+
+/* Editorial divider — hairline */
+.editorial-divider {
+  height: 1px;
+  background: #E0DCD5;
+}
+
+.editorial-divider-center::before,
+.editorial-divider-center::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #C4BFB8;
+}
+
+/* Display serif treatment */
+.display-serif {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.display-italic {
+  font-family: var(--font-serif-italic), Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+/* Product card image hover */
 .product-card-img {
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .product-card:hover .product-card-img {
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 
-/* CTA button pulse on first view */
+/* Refined CTA pulse */
 @keyframes subtlePulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.3); }
-  50% { box-shadow: 0 0 0 6px rgba(225, 29, 72, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(155, 83, 64, 0.2); }
+  50% { box-shadow: 0 0 0 6px rgba(155, 83, 64, 0); }
 }
 
 .cta-pulse {
-  animation: subtlePulse 2s ease-in-out 1;
+  animation: subtlePulse 2.5s ease-in-out 1;
 }
 
 /* FAQ accordion transition */
@@ -57,8 +102,15 @@ body {
   transition: max-height 0.3s ease-out, opacity 0.25s ease-out;
 }
 
-/* Gradient divider between sections */
+/* Section divider — hairline editorial */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, #e5d5d0 20%, #e5d5d0 80%, transparent);
+  background: linear-gradient(90deg, transparent, #C4BFB8 20%, #C4BFB8 80%, transparent);
+}
+
+/* Subtle paper texture (optional) */
+.paper-bg {
+  background-color: #FBF9F3;
+  background-image: radial-gradient(rgba(26, 24, 21, 0.015) 1px, transparent 1px);
+  background-size: 24px 24px;
 }

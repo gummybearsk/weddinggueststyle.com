@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -8,6 +8,22 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-sans",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-serif-italic",
+  weight: ["300", "400", "500"],
+  style: ["italic", "normal"],
 });
 
 export const metadata: Metadata = {
@@ -68,7 +84,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${inter.variable} ${playfair.variable} ${cormorant.variable} font-sans antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

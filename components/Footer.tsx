@@ -18,52 +18,57 @@ export default function Footer() {
   const col3 = slugs.slice(third * 2);
 
   return (
-    <footer className="bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-200 mt-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <footer className="bg-cream-50 border-t border-ink-200 mt-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        {/* Masthead */}
+        <div className="text-center mb-14 pb-10 border-b border-ink-200">
+          <h2 className="font-serif text-3xl sm:text-4xl text-ink-900">
+            Wedding Guest <span className="font-serif-italic italic text-blush-600">Style</span>
+          </h2>
+          <p className="eyebrow mt-3 text-ink-500">An editorial guide · Est. 2026</p>
+        </div>
+
         {/* Brand + Disclosure */}
-        <div className="flex flex-col sm:flex-row gap-8 mb-10">
-          <div className="sm:flex-1">
-            <h3 className="text-base font-bold text-gray-900 mb-3">
-              Wedding Guest Style
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed mb-3">
-              Your guide to finding the perfect wedding guest dress. We curate
-              the best dresses so you can look stunning at every wedding
-              celebration.
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-14">
+          <div>
+            <p className="eyebrow mb-3">Editor&apos;s Note</p>
+            <p className="text-base text-ink-700 leading-[1.75] font-light mb-4">
+              A curated edit of wedding guest dresses, hand-picked for the women
+              who get dressed for the photograph. Organized by every variable
+              that matters — season, dress code, color, body type, venue.
             </p>
-            <p className="text-xs text-gray-500 leading-relaxed">
+            <p className="text-sm text-ink-600 italic font-light">
               Edited by{" "}
-              <Link href="/author/sarah-mitchell" className="text-rose-600 hover:underline">Sarah Mitchell</Link>
-              . Articles on this site are researched with AI assistance and edited by a human before publication.
+              <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">
+                Sarah Mitchell
+              </Link>
+              . Articles are researched with AI assistance and edited by a human before publication.
             </p>
           </div>
-          <div className="sm:flex-1">
-            <h3 className="text-xs font-semibold text-gray-900 uppercase tracking-wider mb-3">
-              Disclosure
-            </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
+          <div>
+            <p className="eyebrow mb-3">Disclosure</p>
+            <p className="text-sm text-ink-600 leading-[1.7] font-light">
               Wedding Guest Style is a participant in the Amazon Services LLC
-              Associates Program, an affiliate advertising program designed to
-              provide a means for sites to earn advertising fees by advertising
-              and linking to Amazon.com. See our{" "}
-              <Link href="/editorial" className="text-rose-600 hover:underline">Editorial Guidelines</Link>{" "}
-              for our full review process.
+              Associates Program. When you click an affiliate link and make a
+              purchase, we may earn a commission at no cost to you. See our{" "}
+              <Link href="/editorial" className="text-blush-600 hover:underline">
+                Editorial Guidelines
+              </Link>
+              {" "}for our full review process.
             </p>
           </div>
         </div>
 
         {/* All category links in 3 columns */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-8 gap-y-2 mb-12">
           <div>
-            <h3 className="text-xs font-semibold text-gray-900 uppercase tracking-wider mb-3">
-              Browse Dresses
-            </h3>
-            <ul className="space-y-2">
+            <p className="eyebrow mb-4">The Edit</p>
+            <ul className="space-y-2.5">
               {col1.map((slug) => (
                 <li key={slug}>
                   <Link
                     href={`/${slug}`}
-                    className="text-sm text-gray-600 hover:text-rose-600 transition-colors"
+                    className="text-sm text-ink-600 hover:text-blush-600 transition-colors font-light"
                   >
                     {formatSlug(slug)}
                   </Link>
@@ -72,15 +77,13 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-xs font-semibold text-gray-900 uppercase tracking-wider mb-3">
-              More Styles
-            </h3>
-            <ul className="space-y-2">
+            <p className="eyebrow mb-4">More Styles</p>
+            <ul className="space-y-2.5">
               {col2.map((slug) => (
                 <li key={slug}>
                   <Link
                     href={`/${slug}`}
-                    className="text-sm text-gray-600 hover:text-rose-600 transition-colors"
+                    className="text-sm text-ink-600 hover:text-blush-600 transition-colors font-light"
                   >
                     {formatSlug(slug)}
                   </Link>
@@ -89,15 +92,13 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-span-2 sm:col-span-1 mt-4 sm:mt-0">
-            <h3 className="text-xs font-semibold text-gray-900 uppercase tracking-wider mb-3">
-              More Collections
-            </h3>
-            <ul className="space-y-2">
+            <p className="eyebrow mb-4">Collections</p>
+            <ul className="space-y-2.5">
               {col3.map((slug) => (
                 <li key={slug}>
                   <Link
                     href={`/${slug}`}
-                    className="text-sm text-gray-600 hover:text-rose-600 transition-colors"
+                    className="text-sm text-ink-600 hover:text-blush-600 transition-colors font-light"
                   >
                     {formatSlug(slug)}
                   </Link>
@@ -108,24 +109,23 @@ export default function Footer() {
         </div>
 
         {/* Trust pages */}
-        <div className="mt-10 pt-6 border-t border-gray-200">
-          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-            <li><Link href="/about" className="text-gray-600 hover:text-rose-600 transition-colors">About</Link></li>
-            <li><Link href="/editorial" className="text-gray-600 hover:text-rose-600 transition-colors">Editorial Guidelines</Link></li>
-            <li><Link href="/author/sarah-mitchell" className="text-gray-600 hover:text-rose-600 transition-colors">Editor</Link></li>
-            <li><Link href="/privacy" className="text-gray-600 hover:text-rose-600 transition-colors">Privacy Policy</Link></li>
-            <li><Link href="/terms" className="text-gray-600 hover:text-rose-600 transition-colors">Terms of Service</Link></li>
+        <div className="pt-8 border-t border-ink-200">
+          <ul className="flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
+            <li><Link href="/about" className="text-ink-600 hover:text-blush-600 transition-colors">About</Link></li>
+            <li><Link href="/editorial" className="text-ink-600 hover:text-blush-600 transition-colors">Editorial</Link></li>
+            <li><Link href="/author/sarah-mitchell" className="text-ink-600 hover:text-blush-600 transition-colors">Editor</Link></li>
+            <li><Link href="/privacy" className="text-ink-600 hover:text-blush-600 transition-colors">Privacy</Link></li>
+            <li><Link href="/terms" className="text-ink-600 hover:text-blush-600 transition-colors">Terms</Link></li>
           </ul>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} Wedding Guest Style. All rights
-            reserved.
+        <div className="mt-10 pt-8 border-t border-ink-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-[11px] uppercase tracking-[0.18em] text-ink-500">
+            &copy; {new Date().getFullYear()} Wedding Guest Style
           </p>
-          <p className="text-xs text-gray-400">
-            Prices and availability subject to change.
+          <p className="text-[11px] italic text-ink-500 font-light">
+            Prices and availability subject to change
           </p>
         </div>
       </div>

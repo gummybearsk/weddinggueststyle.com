@@ -8,24 +8,24 @@ function formatDate(dateStr?: string): string {
 
 export default function AuthorByline({ publishDate }: { publishDate?: string }) {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-500 mb-6 pb-6 border-b border-gray-100">
-      <div className="flex items-center gap-2">
-        <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-rose-100 text-rose-700 font-semibold text-sm">
+    <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 text-sm text-ink-600">
+      <div className="flex items-center gap-3">
+        <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-blush-100 text-blush-700 text-xs font-medium tracking-wider">
           SM
         </span>
         <div>
-          <p className="text-gray-700">
+          <p className="text-ink-800 font-light">
             By{" "}
-            <Link href="/author/sarah-mitchell" className="text-rose-600 hover:underline font-medium">
+            <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline italic display-italic">
               Sarah Mitchell
             </Link>
           </p>
-          <p className="text-xs text-gray-400">Wedding Style Editor · 10+ years covering wedding fashion</p>
+          <p className="text-[11px] uppercase tracking-[0.15em] text-ink-500 mt-0.5">Wedding Style Editor</p>
         </div>
       </div>
       {publishDate && (
-        <div className="sm:ml-auto text-xs text-gray-400">
-          Last updated: {formatDate(publishDate)}
+        <div className="sm:ml-auto text-[11px] uppercase tracking-[0.15em] text-ink-500">
+          Updated · {formatDate(publishDate)}
         </div>
       )}
     </div>

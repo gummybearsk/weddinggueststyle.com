@@ -41,10 +41,10 @@ function StarRating({ rating, count }: { rating: number; count: number }) {
           );
         })}
       </div>
-      <span className="text-xs text-gray-500 font-medium">
+      <span className="text-xs text-ink-700 font-medium">
         {rating.toFixed(1)}
       </span>
-      <span className="text-xs text-gray-400">
+      <span className="text-xs text-ink-500">
         ({count.toLocaleString()})
       </span>
     </div>
@@ -53,36 +53,36 @@ function StarRating({ rating, count }: { rating: number; count: number }) {
 
 export default function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="product-card bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg hover:shadow-rose-100/50 hover:border-rose-100 transition-all duration-300 flex flex-col h-full group">
+    <article className="product-card bg-ivory border border-ink-200 hover:border-blush-300 transition-all duration-500 flex flex-col h-full group">
       <a
         href={product.url}
         target="_blank"
         rel="noopener noreferrer nofollow"
-        className="block relative aspect-[3/4] bg-gradient-to-b from-gray-50 to-white overflow-hidden"
+        className="block relative aspect-[3/4] bg-cream-50 overflow-hidden"
       >
         <img
           src={product.image}
           alt={product.title}
-          className="product-card-img w-full h-full object-contain p-2"
+          className="product-card-img w-full h-full object-contain p-3"
           loading="lazy"
         />
       </a>
-      <div className="p-3.5 sm:p-4 flex flex-col flex-1">
+      <div className="p-4 sm:p-5 flex flex-col flex-1">
         <a
           href={product.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="text-sm font-medium text-gray-800 line-clamp-2 hover:text-rose-600 transition-colors mb-2 leading-snug"
+          className="text-[13px] text-ink-800 line-clamp-2 hover:text-blush-600 transition-colors mb-3 leading-snug font-light"
         >
           {product.title}
         </a>
-        <div className="mt-auto space-y-2">
+        <div className="mt-auto space-y-3">
           <StarRating rating={product.rating} count={product.reviewCount} />
-          <p className="text-lg font-bold text-gray-900 tracking-tight">
+          <p className="display-serif text-2xl text-ink-900">
             {product.price}
           </p>
           {product.sizingNote && (
-            <p className="text-xs text-amber-700 bg-amber-50/80 px-2.5 py-1 rounded-md border border-amber-100">
+            <p className="text-xs text-champagne-600 italic">
               {product.sizingNote}
             </p>
           )}
@@ -90,7 +90,7 @@ export default function ProductCard({ product }: { product: Product }) {
             href={product.url}
             target="_blank"
             rel="noopener noreferrer nofollow"
-            className="cta-pulse block w-full text-center text-sm font-semibold text-white bg-rose-600 hover:bg-rose-700 active:bg-rose-800 rounded-lg py-2.5 transition-colors mt-2.5 shadow-sm hover:shadow-md hover:shadow-rose-200/50"
+            className="cta-pulse block w-full text-center text-[11px] tracking-[0.2em] uppercase font-medium text-ivory bg-ink-900 hover:bg-blush-600 active:bg-blush-700 py-3.5 transition-colors mt-3"
           >
             Shop Now
           </a>

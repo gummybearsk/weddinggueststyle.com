@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ProductGrid from "@/components/ProductGrid";
 import FAQ from "@/components/FAQ";
+import AuthorByline from "@/components/AuthorByline";
 import { getAllSlugsIncludingScheduled, getPublishedPageData } from "@/lib/getPages";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
@@ -173,14 +174,19 @@ function ArticleSchema({ title, description, slug, intro, publishDate }: { title
     url: `https://weddinggueststyle.com/${slug}`,
     ...(publishDate && { datePublished: publishDate, dateModified: publishDate }),
     author: {
-      "@type": "Organization",
-      name: "Wedding Guest Style",
-      url: "https://weddinggueststyle.com",
+      "@type": "Person",
+      name: "Sarah Mitchell",
+      url: "https://weddinggueststyle.com/author/sarah-mitchell",
+      jobTitle: "Wedding Style Editor",
     },
     publisher: {
       "@type": "Organization",
       name: "Wedding Guest Style",
       url: "https://weddinggueststyle.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://weddinggueststyle.com/icon.svg",
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -255,8 +261,13 @@ export default function InnerPage({ params }: PageProps) {
             {page.h1}
           </h1>
 
+          {/* Author byline */}
+          <div className="mt-4">
+            <AuthorByline publishDate={page.publishDate} />
+          </div>
+
           {/* Intro */}
-          <p className="mt-3 text-base sm:text-lg text-gray-500 max-w-3xl leading-relaxed">
+          <p className="mt-1 text-base sm:text-lg text-gray-500 max-w-3xl leading-relaxed">
             {page.intro}
           </p>
 

@@ -26,10 +26,15 @@ export default function Footer() {
             <h3 className="text-base font-bold text-gray-900 mb-3">
               Wedding Guest Style
             </h3>
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
               Your guide to finding the perfect wedding guest dress. We curate
-              the best dresses from Amazon so you can look stunning at every
-              wedding celebration.
+              the best dresses so you can look stunning at every wedding
+              celebration.
+            </p>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              Edited by{" "}
+              <Link href="/author/sarah-mitchell" className="text-rose-600 hover:underline">Sarah Mitchell</Link>
+              . Articles on this site are researched with AI assistance and edited by a human before publication.
             </p>
           </div>
           <div className="sm:flex-1">
@@ -40,7 +45,9 @@ export default function Footer() {
               Wedding Guest Style is a participant in the Amazon Services LLC
               Associates Program, an affiliate advertising program designed to
               provide a means for sites to earn advertising fees by advertising
-              and linking to Amazon.com.
+              and linking to Amazon.com. See our{" "}
+              <Link href="/editorial" className="text-rose-600 hover:underline">Editorial Guidelines</Link>{" "}
+              for our full review process.
             </p>
           </div>
         </div>
@@ -100,8 +107,19 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Trust pages */}
+        <div className="mt-10 pt-6 border-t border-gray-200">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <li><Link href="/about" className="text-gray-600 hover:text-rose-600 transition-colors">About</Link></li>
+            <li><Link href="/editorial" className="text-gray-600 hover:text-rose-600 transition-colors">Editorial Guidelines</Link></li>
+            <li><Link href="/author/sarah-mitchell" className="text-gray-600 hover:text-rose-600 transition-colors">Editor</Link></li>
+            <li><Link href="/privacy" className="text-gray-600 hover:text-rose-600 transition-colors">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="text-gray-600 hover:text-rose-600 transition-colors">Terms of Service</Link></li>
+          </ul>
+        </div>
+
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="mt-8 pt-8 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-gray-500">
             &copy; {new Date().getFullYear()} Wedding Guest Style. All rights
             reserved.

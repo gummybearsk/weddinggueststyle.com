@@ -47,6 +47,12 @@ export const metadata: Metadata = {
       "x-default": "https://weddinggueststyle.com",
     },
   },
+  verification: {
+    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
+    other: {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION || "",
+    },
+  },
   other: {
     "geo.region": "US",
     "geo.placename": "United States",

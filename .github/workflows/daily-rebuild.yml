@@ -12,3 +12,12 @@ jobs:
     steps:
       - name: Trigger Vercel Deploy Hook
         run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Wait for Vercel deploy to propagate
+        run: sleep 90
+
+      - name: Notify IndexNow (Bing + Yandex)
+        run: node scripts/notify-indexnow.js

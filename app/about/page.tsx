@@ -109,6 +109,10 @@ export default function AboutPage() {
             For questions, feedback, content corrections, or partnership inquiries, email{" "}
             <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
           </p>
+          <p>
+            Wedding Guest Style is based in the United States. All dress code conventions, sizing, retailer
+            partnerships, and editorial perspectives on this site reflect a United States wedding context.
+          </p>
         </section>
       </div>
     </main>

@@ -11,7 +11,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51C1uM5h5-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF9FCPY2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF9FCPY2?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -19,7 +19,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Maxi Dress 2026 Spring Floral Sexy Spaghetti Straps Sleeveless Bodycon Summer Beach Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/71otDJ4bU2L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.9,
         reviewCount: 48,
@@ -27,7 +27,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -35,7 +35,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -43,7 +43,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -51,7 +51,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61AicenXREL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP2117CT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP2117CT?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -59,7 +59,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Floral Midi Sundress with Pockets Sweetheart Neckline A Line Spring Summer Dresses for Wedding Guest",
         image: "https://m.media-amazon.com/images/I/71l1q++b5lL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCMTJYPM?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCMTJYPM?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.9,
         reviewCount: 27,
@@ -67,7 +67,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Wedding Guest Dresses for Women Beach Fashion Casual Short Sleeve V Neck Solid Spring Summer Boho Maxi Dress",
         image: "https://m.media-amazon.com/images/I/71SB-SHfyVL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCJP9R3Q?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCJP9R3Q?tag=weddinggueststyle-20",
         price: "$43.99",
         rating: 4.9,
         reviewCount: 27,
@@ -83,7 +83,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61obLbqnahL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -91,7 +91,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/71ouKiappbL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBTPPRW?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBTPPRW?tag=weddinggueststyle-20",
         price: "$18.04",
         rating: 4.8,
         reviewCount: 131,
@@ -99,7 +99,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61L0MJCO+9L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -107,7 +107,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
         image: "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=weddinggueststyle-20",
         price: "$93.99",
         rating: 4.8,
         reviewCount: 54,
@@ -115,7 +115,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71hmpq0ULML._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DGQJYZVQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DGQJYZVQ?tag=weddinggueststyle-20",
         price: "$60.99",
         rating: 4.7,
         reviewCount: 138,
@@ -123,7 +123,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
         image: "https://m.media-amazon.com/images/I/71MB5yttQ8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G4VHWH1X?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G4VHWH1X?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.8,
         reviewCount: 44,
@@ -131,7 +131,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/81cfyAPYdeL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FR4DBRND?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FR4DBRND?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.7,
         reviewCount: 127,
@@ -139,7 +139,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Off The Shoulder Long Bridesmaid Dresses for Wedding Chiffon Ruched Formal Evening Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61HSpSYtZxL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B09SPVGD2J?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B09SPVGD2J?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.7,
         reviewCount: 86,
@@ -155,7 +155,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/71lGCZfOk-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DJLRDY8X?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DJLRDY8X?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -163,7 +163,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Maxi Dress 2026 Spring Floral Sexy Spaghetti Straps Sleeveless Bodycon Summer Beach Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/71otDJ4bU2L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.9,
         reviewCount: 48,
@@ -171,7 +171,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/81ATe2DMrRL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBWH5QQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBWH5QQ?tag=weddinggueststyle-20",
         price: "$18.04",
         rating: 4.8,
         reviewCount: 131,
@@ -179,7 +179,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/71pSVzCCXoL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GQH49G6V?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GQH49G6V?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -187,7 +187,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/61TCm+qJIKL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GGHFKF2C?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GGHFKF2C?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.8,
         reviewCount: 64,
@@ -195,7 +195,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61SpS6x0CmL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPQ8DFXX?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPQ8DFXX?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -203,7 +203,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Floral Midi Sundress with Pockets Sweetheart Neckline A Line Spring Summer Dresses for Wedding Guest",
         image: "https://m.media-amazon.com/images/I/71l1q++b5lL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCNNZTNG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCNNZTNG?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.9,
         reviewCount: 27,
@@ -211,7 +211,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Wedding Guest Dresses for Women Beach Fashion Casual Short Sleeve V Neck Solid Spring Summer Boho Maxi Dress",
         image: "https://m.media-amazon.com/images/I/71SB-SHfyVL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCJP9R3Q?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCJP9R3Q?tag=weddinggueststyle-20",
         price: "$43.99",
         rating: 4.9,
         reviewCount: 27,
@@ -227,7 +227,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Black Cocktail Dress Lace Velvet Round Neck Long Sleeve High Low Gothic Elegant Party Winter Wedding Dresses",
         image: "https://m.media-amazon.com/images/I/61TyyONwYwL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FRGBT8R2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FRGBT8R2?tag=weddinggueststyle-20",
         price: "$32.99",
         rating: 5,
         reviewCount: 29,
@@ -235,7 +235,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61L0MJCO+9L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -243,7 +243,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71fghG7fMWL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93PBRBR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93PBRBR?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -251,7 +251,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/61vPHLHDEcL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GLFNFYWX?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GLFNFYWX?tag=weddinggueststyle-20",
         price: "$59.86",
         rating: 5,
         reviewCount: 16,
@@ -259,7 +259,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Plus Size Velvet Dresses for Curvy Women Short Sleeve Cocktail Dresses Winter Party Formal Dress with Pocket XL-5XL",
         image: "https://m.media-amazon.com/images/I/615jKO7pBHL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FVLZL7CB?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FVLZL7CB?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.8,
         reviewCount: 32,
@@ -267,7 +267,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women’s Elegant Floral Bodycon Maxi Dress Formal Long Sleeve Mock Neck Wedding Guest Party Cocktail Dress",
         image: "https://m.media-amazon.com/images/I/7165UzFULoL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FM7M8YC6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FM7M8YC6?tag=weddinggueststyle-20",
         price: "$19.99",
         rating: 4.8,
         reviewCount: 32,
@@ -275,7 +275,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Sexy Crew Neck Lounge Long Dress Elegant Long Sleeve Ribbed Bodycon Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/417tKrDGUoL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CBX4YSJ3?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CBX4YSJ3?tag=weddinggueststyle-20",
         price: "$44.97",
         rating: 4.6,
         reviewCount: 50,
@@ -283,7 +283,7 @@ export const seasonSections: HomepageSection[] = [
       {
         title: "Women's Spring Wedding Guest Dress 2026 Long Sleeve Bodycon Floral Mesh Fall Cocktail Holiday Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/61MnvapCR4L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D818MJL7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D818MJL7?tag=weddinggueststyle-20",
         price: "$46.99",
         rating: 4.6,
         reviewCount: 50,
@@ -303,7 +303,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51C1uM5h5-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF9QSY3J?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF9QSY3J?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -311,7 +311,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/71CadXT0vqL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX38WTSM?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX38WTSM?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -319,7 +319,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Elegant Off Shoulder Split Wedding Bridesmaid Maxi Dress",
         image: "https://m.media-amazon.com/images/I/610HfsWRLfL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FMXY7YRF?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FMXY7YRF?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.8,
         reviewCount: 59,
@@ -327,7 +327,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Elegant Tube High Split Maxi Dress Strapless Bodycon Ruched Long Formal Evening Dress",
         image: "https://m.media-amazon.com/images/I/41r30B6ZkZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FKGLCZML?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FKGLCZML?tag=weddinggueststyle-20",
         price: "$47.99",
         rating: 4.8,
         reviewCount: 41,
@@ -335,7 +335,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Off The Shoulder Long Bridesmaid Dresses for Wedding Chiffon Ruched Formal Evening Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/611Fh3PAp-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B09SPSFRS6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B09SPSFRS6?tag=weddinggueststyle-20",
         price: "$87.99",
         rating: 4.7,
         reviewCount: 86,
@@ -343,7 +343,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Summer Floral Maxi Dresses 2026 Strapless Tube Smocked Tie Boho Beach Wedding Guest Flowy Long Sundress",
         image: "https://m.media-amazon.com/images/I/717kJscLRhL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G3PJWYHK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G3PJWYHK?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.8,
         reviewCount: 35,
@@ -351,7 +351,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Glitter Satin Prom Dresses Long 2026 V-Neck Spaghetti Beaded Belt Formal Evening Ball Gowns",
         image: "https://m.media-amazon.com/images/I/51D5StNsEdL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ6BSLTS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ6BSLTS?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.8,
         reviewCount: 35,
@@ -359,7 +359,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's V Neck Long Sleeves Prom Dresses with Pockets Satin Ball Gowns LZ-011",
         image: "https://m.media-amazon.com/images/I/516LvPoGHAL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GKGDW86W?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GKGDW86W?tag=weddinggueststyle-20",
         price: "$74.99",
         rating: 4.9,
         reviewCount: 22,
@@ -375,7 +375,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51JlabQdQXL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF94KMQM?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF94KMQM?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -383,7 +383,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -391,7 +391,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -399,7 +399,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61mEMcnOTFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -407,7 +407,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61h+Dfx4eCL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ46X69W?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ46X69W?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -415,7 +415,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -423,7 +423,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61L0MJCO+9L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -431,7 +431,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
         image: "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=weddinggueststyle-20",
         price: "$93.99",
         rating: 4.8,
         reviewCount: 54,
@@ -447,7 +447,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51Wp0-hI+ZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF92HPKZ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF92HPKZ?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -455,7 +455,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -463,7 +463,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -471,7 +471,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61Swhng+41L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F4QQ6VV7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F4QQ6VV7?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -479,7 +479,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61T8YCSJaUL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -487,7 +487,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Tea Length Mother of The Bride Dresses for Women High Low Formal Dress with Sleeves Lace Evening Gown",
         image: "https://m.media-amazon.com/images/I/61Q6y6415CL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CFVZVHJ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CFVZVHJ9?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.8,
         reviewCount: 52,
@@ -495,7 +495,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71G4hANBnhL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93NV66Q?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93NV66Q?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -503,7 +503,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Bridesmaid Dresses Long for Women 2025 Satin Mermaid Strapless Pleated Formal Evening Party Gowns with Scarf",
         image: "https://m.media-amazon.com/images/I/51bwEIxgAnL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FH9N6B9S?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FH9N6B9S?tag=weddinggueststyle-20",
         price: "$50.89",
         rating: 4.9,
         reviewCount: 24,
@@ -519,7 +519,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51Wp0-hI+ZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF98SZNK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF98SZNK?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -527,7 +527,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61obLbqnahL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -535,7 +535,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -543,7 +543,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -551,7 +551,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/61QHByJ2ZZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXRCD8R5?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXRCD8R5?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.8,
         reviewCount: 64,
@@ -559,7 +559,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/710hIgET-8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -567,7 +567,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61rAayUfb6L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP21T5Z7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP21T5Z7?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -575,7 +575,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71fghG7fMWL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93N54FX?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93N54FX?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -591,7 +591,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61obLbqnahL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -599,7 +599,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/71lKzgHerbL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBTJKK2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBTJKK2?tag=weddinggueststyle-20",
         price: "$34.99",
         rating: 4.8,
         reviewCount: 131,
@@ -607,7 +607,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Wedding Guest Dresses for Women Beach Fashion Casual Short Sleeve V Neck Solid Spring Summer Boho Maxi Dress",
         image: "https://m.media-amazon.com/images/I/71SB-SHfyVL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCJP9R3Q?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCJP9R3Q?tag=weddinggueststyle-20",
         price: "$43.99",
         rating: 4.9,
         reviewCount: 27,
@@ -615,7 +615,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Maxi Dress Tie Straps Floral Beach Vacation Long Dresses Smocked Boho Sundress with Pockets",
         image: "https://m.media-amazon.com/images/I/71Ejy8GujWL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G29K49DG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G29K49DG?tag=weddinggueststyle-20",
         price: "$39.98",
         rating: 4.9,
         reviewCount: 27,
@@ -623,7 +623,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
         image: "https://m.media-amazon.com/images/I/71+kGw837AL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G4VBCC35?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G4VBCC35?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.8,
         reviewCount: 44,
@@ -631,7 +631,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "2026 Women Summer Dress,Maxi Short Sleeve Floral Dresses,Semi Formal Flowy Wedding Guest Dress with Pocket",
         image: "https://m.media-amazon.com/images/I/71R3o0QimSL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G5P9SZ2W?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G5P9SZ2W?tag=weddinggueststyle-20",
         price: "$55.99",
         rating: 4.8,
         reviewCount: 44,
@@ -639,7 +639,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/817odZUErAL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCG3VQHD?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCG3VQHD?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.7,
         reviewCount: 127,
@@ -647,7 +647,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women’s Summer Floral Wedding Guest Maxi Dress Spring Halter Cowl Neck Flowy Formal Cocktail Long Beach Dresses",
         image: "https://m.media-amazon.com/images/I/71x1t1-OfCL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GDZS64WD?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GDZS64WD?tag=weddinggueststyle-20",
         price: "$62.99",
         rating: 4.9,
         reviewCount: 25,
@@ -663,7 +663,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51Wp0-hI+ZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF98SZNK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF98SZNK?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -671,7 +671,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61855ie5HaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZVQJRQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZVQJRQ?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -679,7 +679,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/71lKzgHerbL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBTJKK2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBTJKK2?tag=weddinggueststyle-20",
         price: "$34.99",
         rating: 4.8,
         reviewCount: 131,
@@ -687,7 +687,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -695,7 +695,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -703,7 +703,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/6136roLXdBL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CYZWLJNC?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CYZWLJNC?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -711,7 +711,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61T8YCSJaUL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -719,7 +719,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GGHD5KZN?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GGHD5KZN?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -735,7 +735,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51Wp0-hI+ZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF98SZNK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF98SZNK?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -743,7 +743,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/71CadXT0vqL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2Q5YDJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2Q5YDJ?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -751,7 +751,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51MJCYXr7GL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2N19RG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2N19RG?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -759,7 +759,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61T8YCSJaUL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -767,7 +767,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61SpS6x0CmL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPQ9NNQF?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPQ9NNQF?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -775,7 +775,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61AicenXREL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP21WB1C?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP21WB1C?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -783,7 +783,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71hmpq0ULML._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DGQLPQK2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DGQLPQK2?tag=weddinggueststyle-20",
         price: "$60.99",
         rating: 4.7,
         reviewCount: 138,
@@ -791,7 +791,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Bridesmaid Dresses Long for Women 2025 Satin Mermaid Strapless Pleated Formal Evening Party Gowns with Scarf",
         image: "https://m.media-amazon.com/images/I/51bwEIxgAnL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FH9N6B9S?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FH9N6B9S?tag=weddinggueststyle-20",
         price: "$50.89",
         rating: 4.9,
         reviewCount: 24,
@@ -807,7 +807,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51JlabQdQXL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF94KMQM?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF94KMQM?tag=weddinggueststyle-20",
         price: "$31.19",
         rating: 4.9,
         reviewCount: 51,
@@ -815,7 +815,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.8,
         reviewCount: 95,
@@ -823,7 +823,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61mEMcnOTFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -831,7 +831,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61T8YCSJaUL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3L8BPG?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -839,7 +839,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61L0MJCO+9L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=weddinggueststyle-20",
         price: "$44.99",
         rating: 4.9,
         reviewCount: 32,
@@ -847,7 +847,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
         image: "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=weddinggueststyle-20",
         price: "$93.99",
         rating: 4.8,
         reviewCount: 54,
@@ -855,7 +855,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61lPiLVnweL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP21PPBD?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP21PPBD?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -863,7 +863,7 @@ export const dressCodeSections: HomepageSection[] = [
       {
         title: "Mother of The Bride Dresses Long Lace Applique Formal Gown 3/4 Sleeve Chiffon A-Line V-Neck Beaded Dress",
         image: "https://m.media-amazon.com/images/I/61YB9Vg8zHL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DNC4SKN7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DNC4SKN7?tag=weddinggueststyle-20",
         price: "$85.99",
         rating: 4.8,
         reviewCount: 77,
@@ -883,7 +883,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/51JyOw5IeEL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F2J6F53T?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F2J6F53T?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -891,7 +891,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61CVgUkCqBL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3N8ZJG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3N8ZJG?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.9,
         reviewCount: 34,
@@ -899,7 +899,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61AicenXREL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP213M62?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP213M62?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -907,7 +907,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71fghG7fMWL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93PBRBR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93PBRBR?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -915,7 +915,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
         image: "https://m.media-amazon.com/images/I/61Mt1MEPr9L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G4TWLQTW?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G4TWLQTW?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 44,
@@ -923,7 +923,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Bodycon Dress Short Sleeve Ruched Mesh Wedding Guest Cocktail Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/61fOf5c4UYL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FYP2177L?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FYP2177L?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 42,
@@ -931,7 +931,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Elegant Halter Neck Formal Bodycon Fitted Wedding Guest Long Cocktail Evening Mermaid Maxi Dress",
         image: "https://m.media-amazon.com/images/I/61cMHFYN1UL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FP5DDLKT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FP5DDLKT?tag=weddinggueststyle-20",
         price: "$48.99",
         rating: 4.8,
         reviewCount: 35,
@@ -939,7 +939,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Glitter Satin Prom Dresses Long 2026 V-Neck Spaghetti Beaded Belt Formal Evening Ball Gowns",
         image: "https://m.media-amazon.com/images/I/51D5StNsEdL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ6BSLTS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ6BSLTS?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.8,
         reviewCount: 35,
@@ -955,7 +955,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51JIi-bpF8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GH71J4VY?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GH71J4VY?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -963,7 +963,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -971,7 +971,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51MJCYXr7GL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2N19RG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2N19RG?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -979,7 +979,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61mEMcnOTFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -987,7 +987,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61kEPqEwDzL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3WQ6Q5?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3WQ6Q5?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.9,
         reviewCount: 34,
@@ -995,7 +995,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -1003,7 +1003,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Tea Length Mother of The Bride Dresses for Women High Low Formal Dress with Sleeves Lace Evening Gown",
         image: "https://m.media-amazon.com/images/I/61vqdcnoIqL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CDLHVJQ6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CDLHVJQ6?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.8,
         reviewCount: 52,
@@ -1011,7 +1011,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Wedding Guest Dresses for Women Beach Fashion Casual Short Sleeve V Neck Solid Spring Summer Boho Maxi Dress",
         image: "https://m.media-amazon.com/images/I/71dbhc8n2vL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCHZFFRM?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCHZFFRM?tag=weddinggueststyle-20",
         price: "$43.99",
         rating: 4.9,
         reviewCount: 27,
@@ -1027,7 +1027,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2V5FWG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2V5FWG?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -1035,7 +1035,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61kEPqEwDzL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3WQ6Q5?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3WQ6Q5?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.9,
         reviewCount: 34,
@@ -1043,7 +1043,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXRDPLHQ?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -1051,7 +1051,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "One Shoulder Bridesmaid Dresses for Women Long Chiffon Formal Evening Dress with Slit A Line Party Gown PE3800",
         image: "https://m.media-amazon.com/images/I/51FIjRNzpUL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPX7NGCB?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPX7NGCB?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.9,
         reviewCount: 25,
@@ -1059,7 +1059,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Sundresses for Women 2025 with Pockets Sleeveless Spaghetti Strap Aline Summer Dresses",
         image: "https://m.media-amazon.com/images/I/619OF3Ckp+L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F1K6TCTT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F1K6TCTT?tag=weddinggueststyle-20",
         price: "$33.95",
         rating: 4.7,
         reviewCount: 93,
@@ -1067,7 +1067,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Casual Summer Dresses 2026 V Neck Short Sleeve Empire Waist Flowy A Line Ruffle Tiered Mini Sundress",
         image: "https://m.media-amazon.com/images/I/81Iog74CdPL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXX8252T?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXX8252T?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.8,
         reviewCount: 31,
@@ -1075,7 +1075,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Floral Boho Long Sleeve Maxi Dress V Neck Empire Waist Swing Flowy Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/81rkl6vd4VL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F7LQN91S?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F7LQN91S?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.6,
         reviewCount: 375,
@@ -1083,7 +1083,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Cowl Neck Bridesmaid Dresses Long for Wedding Ruched Chiffon Wrap Slit Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/71U+bIN4q0L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B099DDKF9T?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B099DDKF9T?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.8,
         reviewCount: 28,
@@ -1099,7 +1099,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51wQe+tXCxL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF98JT9Z?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF98JT9Z?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -1107,7 +1107,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/61lYDicF6xL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2QCFVJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2QCFVJ?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -1115,7 +1115,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61MiG48zQEL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CYZX5QQR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CYZX5QQR?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -1123,7 +1123,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61PpJg1xQqL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3NZTWJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3NZTWJ?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.9,
         reviewCount: 34,
@@ -1131,7 +1131,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/61+DFFbakeL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GGHN5W9D?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GGHN5W9D?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.8,
         reviewCount: 64,
@@ -1139,7 +1139,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/61L0MJCO+9L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPLD3L9M?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -1147,7 +1147,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Tea Length Mother of The Bride Dresses for Women High Low Formal Dress with Sleeves Lace Evening Gown",
         image: "https://m.media-amazon.com/images/I/61Q6y6415CL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CFVZVHJ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CFVZVHJ9?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.8,
         reviewCount: 52,
@@ -1155,7 +1155,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71SjRbVwBOL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93QRHR3?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93QRHR3?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -1171,7 +1171,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51C0PZ2WsML._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF962SVC?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF962SVC?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -1179,7 +1179,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61zv7J-5BfL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CYZWMYBR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CYZWMYBR?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -1187,7 +1187,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61lu7S6xbNL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3WQTYD?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3WQTYD?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.9,
         reviewCount: 34,
@@ -1195,7 +1195,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Tea Length Mother of The Bride Dresses for Women High Low Formal Dress with Sleeves Lace Evening Gown",
         image: "https://m.media-amazon.com/images/I/61KjzDfB7PL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0B24NF2VJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0B24NF2VJ?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.8,
         reviewCount: 52,
@@ -1203,7 +1203,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
         image: "https://m.media-amazon.com/images/I/61h3q+IPnmL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G4VB8SXJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G4VB8SXJ?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.8,
         reviewCount: 44,
@@ -1211,7 +1211,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "One Shoulder Bridesmaid Dresses for Women Long Chiffon Formal Evening Dress with Slit A Line Party Gown PE3800",
         image: "https://m.media-amazon.com/images/I/51r9xuQFD4L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0C3HC67MX?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0C3HC67MX?tag=weddinggueststyle-20",
         price: "$67.99",
         rating: 4.9,
         reviewCount: 25,
@@ -1219,7 +1219,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Long Formal Dresses for Women Chiffon Lace Appliques Evening Party Gowns Cocktail Dress",
         image: "https://m.media-amazon.com/images/I/61edBRn7R4L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0BKWFB2LK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0BKWFB2LK?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.7,
         reviewCount: 67,
@@ -1227,7 +1227,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/617JbfL3d1L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G58T1KG9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G58T1KG9?tag=weddinggueststyle-20",
         price: "$59.86",
         rating: 5,
         reviewCount: 16,
@@ -1243,7 +1243,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "One Shoulder Bridesmaid Dresses for Women Long Chiffon Formal Evening Dress with Slit A Line Party Gown PE3800",
         image: "https://m.media-amazon.com/images/I/511uwqxneuL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0C3HGMBFC?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0C3HGMBFC?tag=weddinggueststyle-20",
         price: "$62.99",
         rating: 4.9,
         reviewCount: 25,
@@ -1251,7 +1251,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Off The Shoulder Long Bridesmaid Dresses for Wedding Chiffon Ruched Formal Evening Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61o1TGL3J2L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F8VBP8SN?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F8VBP8SN?tag=weddinggueststyle-20",
         price: "$77.99",
         rating: 4.7,
         reviewCount: 86,
@@ -1259,7 +1259,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/61aI87p661L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G58TZKPN?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G58TZKPN?tag=weddinggueststyle-20",
         price: "$55.96",
         rating: 5,
         reviewCount: 16,
@@ -1267,7 +1267,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Summer Wedding Guest Dress 2026 Spring Mesh Sleeveless Bodycon Ruched Floral Holiday Maxi Long Dresses",
         image: "https://m.media-amazon.com/images/I/6119wqR2gqL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G31VXL3N?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G31VXL3N?tag=weddinggueststyle-20",
         price: "$40.99",
         rating: 4.6,
         reviewCount: 763,
@@ -1275,7 +1275,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Milkmaid Corset Dress for Women Summer Wedding Guest Dresses Cocktail Floral Sundress with Pockets",
         image: "https://m.media-amazon.com/images/I/716p9iKBi3L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F93KJ4MT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F93KJ4MT?tag=weddinggueststyle-20",
         price: "$46.99",
         rating: 4.6,
         reviewCount: 292,
@@ -1283,7 +1283,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Cowl Neck Bridesmaid Dresses Long for Wedding Ruched Chiffon Wrap Slit Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/71egohmZ1wL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B099DT5MSQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B099DT5MSQ?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.8,
         reviewCount: 28,
@@ -1291,7 +1291,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Off The Shoulder Bridesmaid Dresses with Pockets Ruched Chiffon Long Slit Formal Evening Gown",
         image: "https://m.media-amazon.com/images/I/71joQ3t+vaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0C6M1Q27R?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0C6M1Q27R?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.6,
         reviewCount: 157,
@@ -1299,7 +1299,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "V Neck Tulle Prom Dresses 2026 Long Sparkly Lace Formal Party Dress CLN011",
         image: "https://m.media-amazon.com/images/I/61tr4QcXaML._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B086QN6XMK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B086QN6XMK?tag=weddinggueststyle-20",
         price: "$94.86",
         rating: 5,
         reviewCount: 14,
@@ -1315,7 +1315,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Off the Shoulder Wrap Prom Dresses Tea Length Bridesmaid Dress Satin Short Formal Gowns",
         image: "https://m.media-amazon.com/images/I/51ozz55LDPL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX9GJLK2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX9GJLK2?tag=weddinggueststyle-20",
         price: "$76.99",
         rating: 4.8,
         reviewCount: 39,
@@ -1323,7 +1323,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women Halter Lace Wedding Guest Dress Hi-Lo Cocktail Party Bridesmaid Formal Dresses",
         image: "https://m.media-amazon.com/images/I/71hTzVENzKL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B07KZWWPK5?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B07KZWWPK5?tag=weddinggueststyle-20",
         price: "$38.69",
         rating: 4.6,
         reviewCount: 50,
@@ -1331,7 +1331,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/61gOavFTdDL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G58W28ZF?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G58W28ZF?tag=weddinggueststyle-20",
         price: "$64.86",
         rating: 5,
         reviewCount: 16,
@@ -1339,7 +1339,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women Long Sleeve Sweater Dress 2026 Fall Sexy V Neck Button Down Bodycon Dresses Cocktail Party Knit Mini Dress",
         image: "https://m.media-amazon.com/images/I/61mlbPo49+L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FJDGBRT6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FJDGBRT6?tag=weddinggueststyle-20",
         price: "$28.48",
         rating: 4.7,
         reviewCount: 55,
@@ -1347,7 +1347,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Fall Wedding Guest Dress Long Sleeve Cocktail Date Night Sexy Y2K Bodycon Ruched Mesh Formal Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/61M7m1jFtAL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FVXHRPHJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FVXHRPHJ?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.6,
         reviewCount: 253,
@@ -1355,7 +1355,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Off The Shoulder Bridesmaid Dresses with Pockets Ruched Chiffon Long Slit Formal Evening Gown",
         image: "https://m.media-amazon.com/images/I/71i2pgBdcQL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0C4Y65NBY?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0C4Y65NBY?tag=weddinggueststyle-20",
         price: "$99.99",
         rating: 4.6,
         reviewCount: 157,
@@ -1363,7 +1363,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women’s Lace Appliques Satin Prom Dresses Off The Shoulder Long Formal Dress Pleated Sequin High Slit Evening Gowns",
         image: "https://m.media-amazon.com/images/I/61WgGCM6wPL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQP6D4S6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQP6D4S6?tag=weddinggueststyle-20",
         price: "$109.99",
         rating: 4.8,
         reviewCount: 25,
@@ -1371,7 +1371,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Summer Cowl Neck Ruched Bodycon Midi Dress with Spaghetti Straps and Built-in Bra for Cocktail Party",
         image: "https://m.media-amazon.com/images/I/61EXNx3j5zL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F655N4VG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F655N4VG?tag=weddinggueststyle-20",
         price: "$51.99",
         rating: 4.7,
         reviewCount: 37,
@@ -1387,7 +1387,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/712BJVAq5sL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2R38PH?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2R38PH?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -1395,7 +1395,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61pVknnxsdL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3Y6TGK?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3Y6TGK?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -1403,7 +1403,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71G4hANBnhL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93NV66Q?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93NV66Q?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -1411,7 +1411,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
         image: "https://m.media-amazon.com/images/I/61UuHL2GDFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G4WB3QFH?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G4WB3QFH?tag=weddinggueststyle-20",
         price: "$47.99",
         rating: 4.8,
         reviewCount: 44,
@@ -1419,7 +1419,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Bodycon Dress Short Sleeve Ruched Mesh Wedding Guest Cocktail Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/71HnroxhhaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FYP5FT5D?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FYP5FT5D?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 42,
@@ -1427,7 +1427,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Bridesmaid Dresses Long for Women 2025 Satin Mermaid Strapless Pleated Formal Evening Party Gowns with Scarf",
         image: "https://m.media-amazon.com/images/I/510hlo7ooGL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FH9N6LDQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FH9N6LDQ?tag=weddinggueststyle-20",
         price: "$82.69",
         rating: 4.9,
         reviewCount: 24,
@@ -1435,7 +1435,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/61BWeiENX8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G58RJKM1?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G58RJKM1?tag=weddinggueststyle-20",
         price: "$59.86",
         rating: 5,
         reviewCount: 16,
@@ -1443,7 +1443,7 @@ export const colorSections: HomepageSection[] = [
       {
         title: "Women's Fall Off Shoulder Floral Maxi Dresses Formal Long Sleeve Bodycon Cocktail Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/61NmCmLTO3L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FBQT6BQV?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FBQT6BQV?tag=weddinggueststyle-20",
         price: "$35.99",
         rating: 4.6,
         reviewCount: 304,
@@ -1463,7 +1463,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Tea Length Mother of The Bride Dresses for Women High Low Formal Dress with Sleeves Lace Evening Gown",
         image: "https://m.media-amazon.com/images/I/61YfdG-17FL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CGZKQ3L6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CGZKQ3L6?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.8,
         reviewCount: 52,
@@ -1471,7 +1471,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Velvet Wedding Guest Dress - Fall Formal Holiday V Neck Empire Waist Long Dresses",
         image: "https://m.media-amazon.com/images/I/71fghG7fMWL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D93PBRBR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D93PBRBR?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.7,
         reviewCount: 138,
@@ -1479,7 +1479,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's Off the Shoulder Wrap Prom Dresses Tea Length Bridesmaid Dress Satin Short Formal Gowns",
         image: "https://m.media-amazon.com/images/I/51RFHSrXRnL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DBZN8LG7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DBZN8LG7?tag=weddinggueststyle-20",
         price: "$86.99",
         rating: 4.8,
         reviewCount: 39,
@@ -1487,7 +1487,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's Off The Shoulder Long Bridesmaid Dresses for Wedding Chiffon Ruched Formal Evening Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61Qpi0AO46L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F98ZKKCJ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F98ZKKCJ?tag=weddinggueststyle-20",
         price: "$87.99",
         rating: 4.7,
         reviewCount: 86,
@@ -1495,7 +1495,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Glitter Satin Prom Dresses Long 2026 V-Neck Spaghetti Beaded Belt Formal Evening Ball Gowns",
         image: "https://m.media-amazon.com/images/I/51D5StNsEdL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ6BSLTS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ6BSLTS?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.8,
         reviewCount: 35,
@@ -1503,7 +1503,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Plus Size Floral Chiffon Casual Dress Smocked Square Neck Flowy A-Line for Curvy Women Wedding Guest Party ELG007",
         image: "https://m.media-amazon.com/images/I/71vRRsbpnhL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQV2P4M1?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQV2P4M1?tag=weddinggueststyle-20",
         price: "$31.99",
         rating: 4.7,
         reviewCount: 72,
@@ -1511,7 +1511,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Womens Plus Size Wedding Guest Cocktail Dresses Off The Shoulder Smocked Waist Ruffle Slit Maxi Dress",
         image: "https://m.media-amazon.com/images/I/61eUopDhvvL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FT37FHNY?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FT37FHNY?tag=weddinggueststyle-20",
         price: "$29.99",
         rating: 4.9,
         reviewCount: 22,
@@ -1519,7 +1519,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's V Neck Long Sleeves Prom Dresses with Pockets Satin Ball Gowns LZ-011",
         image: "https://m.media-amazon.com/images/I/51pT9A+HpAL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DPZQ1VJ1?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DPZQ1VJ1?tag=weddinggueststyle-20",
         price: "$80.99",
         rating: 4.9,
         reviewCount: 22,
@@ -1535,7 +1535,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51C1uM5h5-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF9FCPY2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF9FCPY2?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -1543,7 +1543,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Sweetheart Ball Gown Quinceanera Dresses Bead Appliques Flower Long Prom Dress Party Gowns Vestidos De 15 Anos YMX173",
         image: "https://m.media-amazon.com/images/I/61UllwstFVL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D2X6YXFT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D2X6YXFT?tag=weddinggueststyle-20",
         price: "$162.99",
         rating: 4.8,
         reviewCount: 173,
@@ -1551,7 +1551,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/51dr+YMD8fL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D4YNKQTH?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D4YNKQTH?tag=weddinggueststyle-20",
         price: "$89.99",
         rating: 4.9,
         reviewCount: 35,
@@ -1559,7 +1559,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
         image: "https://m.media-amazon.com/images/I/71LylPkhWyL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0B291NQKH?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0B291NQKH?tag=weddinggueststyle-20",
         price: "$82.99",
         rating: 4.8,
         reviewCount: 54,
@@ -1567,7 +1567,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Glitter Lace Quinceanera Dresses Beaded Off Shoulder Sweet 16 Dresses with Train Pearly XV Dresses for Quinceanera",
         image: "https://m.media-amazon.com/images/I/61dHISSnNkL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CRV7D23T?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CRV7D23T?tag=weddinggueststyle-20",
         price: "$145.99",
         rating: 4.7,
         reviewCount: 136,
@@ -1575,7 +1575,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Sundresses for Women 2025 with Pockets Sleeveless Spaghetti Strap Aline Summer Dresses",
         image: "https://m.media-amazon.com/images/I/61z3sYb6uJL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F1K3D9LS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F1K3D9LS?tag=weddinggueststyle-20",
         price: "$33.95",
         rating: 4.7,
         reviewCount: 93,
@@ -1583,7 +1583,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/614h72bcFjL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G58VWC5F?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G58VWC5F?tag=weddinggueststyle-20",
         price: "$59.86",
         rating: 5,
         reviewCount: 16,
@@ -1591,7 +1591,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Lace Appliques Mother of The Bride Dresses for Wedding with Sleeves Tea Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/51bPhI1miyL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D922YN74?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D922YN74?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 5,
         reviewCount: 11,
@@ -1607,7 +1607,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's Maternity Dress Summer Ruffle Sleeve Patchwork Casual Flowy Maxi Dresses with Pockets",
         image: "https://m.media-amazon.com/images/I/81xBB0J2mvL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CLD6TXLW?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CLD6TXLW?tag=weddinggueststyle-20",
         price: "$28.99",
         rating: 4.7,
         reviewCount: 990,
@@ -1615,7 +1615,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Butterluxe Maternity Square Neck Midi Dress - Split Ruched Tanks Womens Pregnancy Bodycon Casual Baby Shower",
         image: "https://m.media-amazon.com/images/I/61ovkssPG0L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0D5413FBP?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0D5413FBP?tag=weddinggueststyle-20",
         price: "$48.00",
         rating: 4.7,
         reviewCount: 434,
@@ -1623,7 +1623,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Maxi Dress Tie Straps Floral Beach Vacation Long Dresses Smocked Boho Sundress with Pockets",
         image: "https://m.media-amazon.com/images/I/81QQg5VQqhL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G29GKZ5D?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G29GKZ5D?tag=weddinggueststyle-20",
         price: "$39.98",
         rating: 4.9,
         reviewCount: 27,
@@ -1631,7 +1631,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's Off the Shoulder Wrap Prom Dresses Tea Length Bridesmaid Dress Satin Short Formal Gowns",
         image: "https://m.media-amazon.com/images/I/51oSiZfc2sL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DD7HL12R?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DD7HL12R?tag=weddinggueststyle-20",
         price: "$76.99",
         rating: 4.8,
         reviewCount: 39,
@@ -1639,7 +1639,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Maternity Dress Strapless Off Shoulder Floral Stretchable Long Dresses Pregnancy Clothes for Photoshoot Baby Shower",
         image: "https://m.media-amazon.com/images/I/712lxaRUByL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCZGSFZL?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCZGSFZL?tag=weddinggueststyle-20",
         price: "$29.99",
         rating: 4.9,
         reviewCount: 23,
@@ -1647,7 +1647,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Women's Summer Floral Maxi Dresses 2026 Strapless Tube Smocked Tie Boho Beach Wedding Guest Flowy Long Sundress",
         image: "https://m.media-amazon.com/images/I/81WkfeSHkUL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G3PMJT8B?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G3PMJT8B?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 35,
@@ -1655,7 +1655,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Maternity Dresses for Baby Shower - Infinity Wrap Elegant Maxi Plus Size for Wedding Guest, Formal Gown, Photoshoots",
         image: "https://m.media-amazon.com/images/I/71CxZey2e8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0BT9H89C4?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0BT9H89C4?tag=weddinggueststyle-20",
         price: "$56.98",
         rating: 4.7,
         reviewCount: 68,
@@ -1663,7 +1663,7 @@ export const bodyTypeSections: HomepageSection[] = [
       {
         title: "Kint Striped Maternity Dress Summer Bodycon Tank Sleeveless Pregnancy Dresses Midi Work Casual",
         image: "https://m.media-amazon.com/images/I/7148CCISy7L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQL6HC7M?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQL6HC7M?tag=weddinggueststyle-20",
         price: "$9.99",
         rating: 4.7,
         reviewCount: 65,
@@ -1683,7 +1683,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/71oD+Z7KmKL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBWGSFN?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBWGSFN?tag=weddinggueststyle-20",
         price: "$18.99",
         rating: 4.8,
         reviewCount: 131,
@@ -1691,7 +1691,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -1699,7 +1699,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2PYSKS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2PYSKS?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -1707,7 +1707,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/61MiG48zQEL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CYZX5QQR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CYZX5QQR?tag=weddinggueststyle-20",
         price: "$79.99",
         rating: 4.9,
         reviewCount: 35,
@@ -1715,7 +1715,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
         image: "https://m.media-amazon.com/images/I/61N-nMZzWDL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DQ3HZ61V?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DQ3HZ61V?tag=weddinggueststyle-20",
         price: "$84.99",
         rating: 4.9,
         reviewCount: 34,
@@ -1723,7 +1723,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/710hIgET-8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -1731,7 +1731,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61AicenXREL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP2117CT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP2117CT?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -1739,7 +1739,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Maxi Dress Tie Straps Floral Beach Vacation Long Dresses Smocked Boho Sundress with Pockets",
         image: "https://m.media-amazon.com/images/I/71c7-LZu1fL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G29GMLZB?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G29GMLZB?tag=weddinggueststyle-20",
         price: "$39.98",
         rating: 4.9,
         reviewCount: 27,
@@ -1755,7 +1755,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51Wp0-hI+ZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF92HPKZ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF92HPKZ?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -1763,7 +1763,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -1771,7 +1771,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Floral Dress for Women 2026 Summer Sleeveless Midi Sun Dresses A-line Beach Elegant Sundresses with Pockets",
         image: "https://m.media-amazon.com/images/I/71yfja7P8bL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G5KZFC1Q?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G5KZFC1Q?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 33,
@@ -1779,7 +1779,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Floral Midi Sundress with Pockets Sweetheart Neckline A Line Spring Summer Dresses for Wedding Guest",
         image: "https://m.media-amazon.com/images/I/71l1q++b5lL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCNNZTNG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCNNZTNG?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.9,
         reviewCount: 27,
@@ -1787,7 +1787,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Bodycon Dress Short Sleeve Ruched Mesh Wedding Guest Cocktail Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/71AJEOFkXbL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FYP6M71B?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FYP6M71B?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 42,
@@ -1795,7 +1795,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Sundresses for Women 2025 with Pockets Sleeveless Spaghetti Strap Aline Summer Dresses",
         image: "https://m.media-amazon.com/images/I/619OF3Ckp+L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F1K6TCTT?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F1K6TCTT?tag=weddinggueststyle-20",
         price: "$33.95",
         rating: 4.7,
         reviewCount: 93,
@@ -1803,7 +1803,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Floral Dress for Women Spaghetti Strap Midi Sundress 2026 Summer Spring Casual Dresses with Pockets",
         image: "https://m.media-amazon.com/images/I/71Ex+35SajL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCW9TKT6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCW9TKT6?tag=weddinggueststyle-20",
         price: "$33.29",
         rating: 4.9,
         reviewCount: 24,
@@ -1811,7 +1811,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Plus Size Dresses for Curvy Women Short Sleeve V-Neck Summer Dress Floral/Solid Midi Sundress with Pockets XL-5XL",
         image: "https://m.media-amazon.com/images/I/61o9nr6iVyL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DT44T5LV?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DT44T5LV?tag=weddinggueststyle-20",
         price: "$19.99",
         rating: 4.8,
         reviewCount: 38,
@@ -1827,7 +1827,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61obLbqnahL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -1835,7 +1835,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Maxi Dress 2026 Spring Floral Sexy Spaghetti Straps Sleeveless Bodycon Summer Beach Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/71otDJ4bU2L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.9,
         reviewCount: 48,
@@ -1843,7 +1843,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/81ATe2DMrRL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBRX8V3?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBRX8V3?tag=weddinggueststyle-20",
         price: "$18.04",
         rating: 4.8,
         reviewCount: 131,
@@ -1851,7 +1851,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -1859,7 +1859,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GGHD5KZN?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GGHD5KZN?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -1867,7 +1867,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/710hIgET-8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -1875,7 +1875,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
         image: "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=weddinggueststyle-20",
         price: "$93.99",
         rating: 4.8,
         reviewCount: 54,
@@ -1883,7 +1883,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61rAayUfb6L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP21T5Z7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP21T5Z7?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -1899,7 +1899,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61obLbqnahL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -1907,7 +1907,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Maxi Dress 2026 Spring Floral Sexy Spaghetti Straps Sleeveless Bodycon Summer Beach Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/71otDJ4bU2L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.9,
         reviewCount: 48,
@@ -1915,7 +1915,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/81ATe2DMrRL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBWH5QQ?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBWH5QQ?tag=weddinggueststyle-20",
         price: "$18.04",
         rating: 4.8,
         reviewCount: 131,
@@ -1923,7 +1923,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -1931,7 +1931,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -1939,7 +1939,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GGHD5KZN?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GGHD5KZN?tag=weddinggueststyle-20",
         price: "$45.99",
         rating: 4.8,
         reviewCount: 64,
@@ -1947,7 +1947,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women Summer Strapless Maxi Dress 2026 Bodycon Floral Long Wedding Guest Dress Formal Tube Mesh Cocktail Dresses",
         image: "https://m.media-amazon.com/images/I/61AicenXREL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DP213M62?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DP213M62?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.7,
         reviewCount: 255,
@@ -1955,7 +1955,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Floral Midi Sundress with Pockets Sweetheart Neckline A Line Spring Summer Dresses for Wedding Guest",
         image: "https://m.media-amazon.com/images/I/71l1q++b5lL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCMTJYPM?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCMTJYPM?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.9,
         reviewCount: 27,
@@ -1971,7 +1971,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
         image: "https://m.media-amazon.com/images/I/51JlabQdQXL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FF9H2MGV?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FF9H2MGV?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.9,
         reviewCount: 50,
@@ -1979,7 +1979,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/71pSVzCCXoL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GQH49G6V?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GQH49G6V?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -1987,7 +1987,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
         image: "https://m.media-amazon.com/images/I/6136roLXdBL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CYZWS81R?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CYZWS81R?tag=weddinggueststyle-20",
         price: "$99.99",
         rating: 4.9,
         reviewCount: 35,
@@ -1995,7 +1995,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/61+DFFbakeL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GGHGDHVD?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GGHGDHVD?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.8,
         reviewCount: 64,
@@ -2003,7 +2003,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Boat Neck Formal Bodycon Maxi Sleeveless Slim Fitted Wedding Guest Long Cocktail Mermaid Dress",
         image: "https://m.media-amazon.com/images/I/710hIgET-8L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FPVMLQD6?tag=weddinggueststyle-20",
         price: "$46.69",
         rating: 4.9,
         reviewCount: 32,
@@ -2011,7 +2011,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/81Od45r0L-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCG1JD37?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCG1JD37?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.7,
         reviewCount: 127,
@@ -2019,7 +2019,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's V Neck Long Sleeves Prom Dresses with Pockets Satin Ball Gowns LZ-011",
         image: "https://m.media-amazon.com/images/I/51nHxQNCRQL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CM3TKFKR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CM3TKFKR?tag=weddinggueststyle-20",
         price: "$64.99",
         rating: 4.9,
         reviewCount: 22,
@@ -2027,7 +2027,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women Halter Lace Wedding Guest Dress Hi-Lo Cocktail Party Bridesmaid Formal Dresses",
         image: "https://m.media-amazon.com/images/I/71uqoLtRoTL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B07FF86JLV?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B07FF86JLV?tag=weddinggueststyle-20",
         price: "$36.89",
         rating: 4.6,
         reviewCount: 50,
@@ -2043,7 +2043,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Long Sleeve Dress for Women Floral Print Ruched Wedding Guest Maxi Dresses Tight Fitted Cocktail Party Bodycon Dress",
         image: "https://m.media-amazon.com/images/I/61obLbqnahL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DHZWLCY6?tag=weddinggueststyle-20",
         price: "$14.99",
         rating: 4.8,
         reviewCount: 159,
@@ -2051,7 +2051,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/81ATe2DMrRL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCBRX8V3?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCBRX8V3?tag=weddinggueststyle-20",
         price: "$18.04",
         rating: 4.8,
         reviewCount: 131,
@@ -2059,7 +2059,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
         image: "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FY33RGZ9?tag=weddinggueststyle-20",
         price: "$93.99",
         rating: 4.8,
         reviewCount: 54,
@@ -2067,7 +2067,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/81Od45r0L-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCG1JD37?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCG1JD37?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.7,
         reviewCount: 127,
@@ -2075,7 +2075,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's V Neck Long Sleeves Prom Dresses with Pockets Satin Ball Gowns LZ-011",
         image: "https://m.media-amazon.com/images/I/51gDOyTl4ZL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F5NMHN48?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F5NMHN48?tag=weddinggueststyle-20",
         price: "$80.99",
         rating: 4.9,
         reviewCount: 22,
@@ -2083,7 +2083,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
         image: "https://m.media-amazon.com/images/I/717C1hS0IhL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G58RZQ2D?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G58RZQ2D?tag=weddinggueststyle-20",
         price: "$59.86",
         rating: 5,
         reviewCount: 16,
@@ -2091,7 +2091,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women’s Elegant Floral Bodycon Maxi Dress Formal Long Sleeve Mock Neck Wedding Guest Party Cocktail Dress",
         image: "https://m.media-amazon.com/images/I/51igHU2IFJL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FM7RXKCP?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FM7RXKCP?tag=weddinggueststyle-20",
         price: "$19.99",
         rating: 4.8,
         reviewCount: 32,
@@ -2099,7 +2099,7 @@ export const styleSections: HomepageSection[] = [
       {
         title: "Women's Sexy Crew Neck Lounge Long Dress Elegant Long Sleeve Ribbed Bodycon Maxi Dresses",
         image: "https://m.media-amazon.com/images/I/417tKrDGUoL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CBX4G4GB?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CBX4G4GB?tag=weddinggueststyle-20",
         price: "$44.97",
         rating: 4.6,
         reviewCount: 50,
@@ -2119,7 +2119,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Maxi Dress 2026 Spring Floral Sexy Spaghetti Straps Sleeveless Bodycon Summer Beach Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/71otDJ4bU2L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FXQ7DF8G?tag=weddinggueststyle-20",
         price: "$26.99",
         rating: 4.9,
         reviewCount: 48,
@@ -2127,7 +2127,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Wedding Guest Dresses for Women Beach Fashion Casual Short Sleeve V Neck Solid Spring Summer Boho Maxi Dress",
         image: "https://m.media-amazon.com/images/I/71w+V0zxQVL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCH8GQMW?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCH8GQMW?tag=weddinggueststyle-20",
         price: "$43.99",
         rating: 4.9,
         reviewCount: 27,
@@ -2135,7 +2135,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/817odZUErAL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FCG1GM1T?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FCG1GM1T?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.7,
         reviewCount: 127,
@@ -2143,7 +2143,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women’s Summer Floral Wedding Guest Maxi Dress Spring Halter Cowl Neck Flowy Formal Cocktail Long Beach Dresses",
         image: "https://m.media-amazon.com/images/I/71cW17JEHxL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GDZK2XN9?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GDZK2XN9?tag=weddinggueststyle-20",
         price: "$62.99",
         rating: 4.9,
         reviewCount: 25,
@@ -2151,7 +2151,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Sundresses for Women 2025 with Pockets Sleeveless Spaghetti Strap Aline Summer Dresses",
         image: "https://m.media-amazon.com/images/I/61z3sYb6uJL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F1K3D9LS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F1K3D9LS?tag=weddinggueststyle-20",
         price: "$33.95",
         rating: 4.7,
         reviewCount: 93,
@@ -2159,7 +2159,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Summer Dresses for Women 2026 Spaghetti Straps Sundress Twist Knot Mesh Mermaid Wedding Guest Dress Beach Vacation",
         image: "https://m.media-amazon.com/images/I/71WrJsIOI+L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FY681MPS?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FY681MPS?tag=weddinggueststyle-20",
         price: "$43.99",
         rating: 4.8,
         reviewCount: 38,
@@ -2167,7 +2167,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Summer Floral Maxi Dresses 2026 Strapless Tube Smocked Tie Boho Beach Wedding Guest Flowy Long Sundress",
         image: "https://m.media-amazon.com/images/I/81n65Llh4tL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G3PMKHV4?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G3PMKHV4?tag=weddinggueststyle-20",
         price: "$42.99",
         rating: 4.8,
         reviewCount: 35,
@@ -2175,7 +2175,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Summer Floral Maxi Dresses 2026 Long Flowy Boho Dress Beach Vacation Sundresses Casual Clothes with Pocket",
         image: "https://m.media-amazon.com/images/I/71dMuH8LGLL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0CNTN4YXF?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0CNTN4YXF?tag=weddinggueststyle-20",
         price: "$36.99",
         rating: 4.6,
         reviewCount: 50,
@@ -2191,7 +2191,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
         image: "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FX2V5FWG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FX2V5FWG?tag=weddinggueststyle-20",
         price: "$57.99",
         rating: 4.8,
         reviewCount: 93,
@@ -2199,7 +2199,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Long Sleeve Floral Maxi Dresses 2026 Fall Bodycon Crewneck Side Slit Ruched Fitted Party Long Dress",
         image: "https://m.media-amazon.com/images/I/61qHlRNhOIL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FGXVK39D?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FGXVK39D?tag=weddinggueststyle-20",
         price: "$29.99",
         rating: 4.8,
         reviewCount: 79,
@@ -2207,7 +2207,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
         image: "https://m.media-amazon.com/images/I/51i7BVkVD-L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DZ2NQ566?tag=weddinggueststyle-20",
         price: "$38.99",
         rating: 4.6,
         reviewCount: 75,
@@ -2215,7 +2215,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Floral Midi Sundress with Pockets Sweetheart Neckline A Line Spring Summer Dresses for Wedding Guest",
         image: "https://m.media-amazon.com/images/I/71l1q++b5lL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0GCNNZTNG?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0GCNNZTNG?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.9,
         reviewCount: 27,
@@ -2223,7 +2223,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's 2026 Summer Maxi Dress Tie Straps Floral Beach Vacation Long Dresses Smocked Boho Sundress with Pockets",
         image: "https://m.media-amazon.com/images/I/71Ejy8GujWL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G29JVD27?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G29JVD27?tag=weddinggueststyle-20",
         price: "$39.98",
         rating: 4.9,
         reviewCount: 27,
@@ -2231,7 +2231,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
         image: "https://m.media-amazon.com/images/I/71+kGw837AL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G4TW6JKR?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G4TW6JKR?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.8,
         reviewCount: 44,
@@ -2239,7 +2239,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "2026 Women Summer Dress,Maxi Short Sleeve Floral Dresses,Semi Formal Flowy Wedding Guest Dress with Pocket",
         image: "https://m.media-amazon.com/images/I/61ocjXtgG+L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G5PHDQN5?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G5PHDQN5?tag=weddinggueststyle-20",
         price: "$59.99",
         rating: 4.8,
         reviewCount: 44,
@@ -2247,7 +2247,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/81ziV7QUeNL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FR4C5QN7?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FR4C5QN7?tag=weddinggueststyle-20",
         price: "$39.99",
         rating: 4.7,
         reviewCount: 127,
@@ -2263,7 +2263,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Elegant Off Shoulder Split Wedding Bridesmaid Maxi Dress",
         image: "https://m.media-amazon.com/images/I/61Y-3OP2m4L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FMXY4DDB?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FMXY4DDB?tag=weddinggueststyle-20",
         price: "$48.90",
         rating: 4.8,
         reviewCount: 59,
@@ -2271,7 +2271,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Summer Wedding Guest Dress 2026 Spring Mesh Sleeveless Bodycon Ruched Floral Holiday Maxi Long Dresses",
         image: "https://m.media-amazon.com/images/I/71iIA3MEf+L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0DRJH47QP?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0DRJH47QP?tag=weddinggueststyle-20",
         price: "$40.99",
         rating: 4.6,
         reviewCount: 763,
@@ -2279,7 +2279,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Floral Boho Long Sleeve Maxi Dress V Neck Empire Waist Swing Flowy Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/81rkl6vd4VL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F7LQN91S?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F7LQN91S?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.6,
         reviewCount: 375,
@@ -2287,7 +2287,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Women's Fall Off Shoulder Floral Maxi Dresses Formal Long Sleeve Bodycon Cocktail Wedding Guest Dress",
         image: "https://m.media-amazon.com/images/I/61NmCmLTO3L._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0FBQTMV6R?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0FBQTMV6R?tag=weddinggueststyle-20",
         price: "$35.99",
         rating: 4.6,
         reviewCount: 304,
@@ -2295,7 +2295,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Fall Velvet Dress Short Sleeve V Neck Floral Maxi Dress Long Formal Winter Wedding Guest Dresses",
         image: "https://m.media-amazon.com/images/I/813QaWDYfgL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0F9FNJB46?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0F9FNJB46?tag=weddinggueststyle-20",
         price: "$24.99",
         rating: 4.6,
         reviewCount: 125,
@@ -2303,7 +2303,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Womens Summer Strapless Maxi Dress 2026 Boho Floral Off Shoulder Wedding Guest Dresses Tiered Beach Long Sundress",
         image: "https://m.media-amazon.com/images/I/714NCntq8OL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0G1T4Q8MP?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0G1T4Q8MP?tag=weddinggueststyle-20",
         price: "$49.99",
         rating: 4.7,
         reviewCount: 37,
@@ -2311,7 +2311,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Long Black Formal Dresses for Women Gowns Evening Party Cocktail Dress,Split Elegant V Neck Wrap Ruffle Wedding Guest Dr",
         image: "https://m.media-amazon.com/images/I/61wbcy3qmkL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0C53FB542?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0C53FB542?tag=weddinggueststyle-20",
         price: "$59.78",
         rating: 4.5,
         reviewCount: 50,
@@ -2319,7 +2319,7 @@ export const venueSections: HomepageSection[] = [
       {
         title: "Simplee Women’s V Neck Velvet Maxi Dress Short Sleeve Empire Waist Long Formal Dress for Wedding Guest",
         image: "https://m.media-amazon.com/images/I/614Yd7IDOIL._AC_UL500_.jpg",
-        url: "https://www.amazon.com/dp/B0C864WJM2?tag=values0d4-20",
+        url: "https://www.amazon.com/dp/B0C864WJM2?tag=weddinggueststyle-20",
         price: "$55.99",
         rating: 4.5,
         reviewCount: 50,

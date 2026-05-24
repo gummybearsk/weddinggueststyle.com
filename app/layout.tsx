@@ -28,11 +28,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wedding Guest Dresses 2026: 700+ Hand-Picked Styles for Every Wedding",
+    default: "Wedding Guest Dresses 2026 — Find by Season, Color, Body Type & Venue",
     template: "%s | Wedding Guest Style",
   },
   description:
-    "Find the perfect wedding guest dress for 2026 — 700+ hand-picked styles for every season, dress code, body type, and venue. Black tie, casual, cocktail, formal & more. Honest reviews, sizing advice, real prices.",
+    "The wedding guest dress finder. Browse 100+ editorial guides by season, dress code, color, body type, and venue — from black-tie to beach. Hand-picked Amazon picks, honest reviews, real sizing notes. 2026 edit.",
   metadataBase: new URL("https://weddinggueststyle.com"),
   openGraph: {
     type: "website",

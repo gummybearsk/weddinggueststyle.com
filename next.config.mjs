@@ -20,6 +20,11 @@ const nextConfig = {
         destination: "https://weddinggueststyle.com/:path*",
         permanent: true,
       },
+      {
+        source: "/author/sarah-mitchell",
+        destination: "/author/sukie-gao",
+        permanent: true,
+      },
     ];
   },
 };

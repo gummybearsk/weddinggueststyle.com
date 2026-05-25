@@ -37,7 +37,7 @@ function getPublishedSlugs() {
 }
 
 function buildUrlList(args) {
-  const trustPages = ["", "about", "editorial", "privacy", "terms", "author/sarah-mitchell"];
+  const trustPages = ["", "about", "editorial", "privacy", "terms", "contact", "author/sukie-gao", "season", "dress-code", "color", "body-type", "style", "venue"];
   if (args.length === 0) {
     const slugs = getPublishedSlugs();
     return [

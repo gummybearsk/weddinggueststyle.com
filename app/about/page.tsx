@@ -77,15 +77,19 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Who&apos;s Behind This Site</h2>
           <p>
-            Wedding Guest Style is run by a small editorial team led by{" "}
-            <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">Sarah Mitchell</Link>,
-            our wedding style editor. Sarah has covered wedding fashion for over a decade, has personally
-            attended 200+ weddings as a guest, and has worn more dress codes than most professional wedding
-            planners.
+            Wedding Guest Style is edited by{" "}
+            <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>
+            {" "}(
+            <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>
+            ). Sukie writes from a guest&apos;s perspective — what actually works in photographs, what holds
+            up across an eight-hour event, and what dress code phrases actually mean in practice.
           </p>
           <p>
             We&apos;re not industry insiders selling you on a brand or designer. We&apos;re wedding guests
             who got tired of the search and built the resource we wish had existed when we started.
+          </p>
+          <p className="text-sm text-gray-500 italic">
+            Articles on this site are researched with AI assistance and edited by Sukie before publication.
           </p>
         </section>
 
@@ -107,7 +111,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Get in Touch</h2>
           <p>
             For questions, feedback, content corrections, or partnership inquiries, email{" "}
-            <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
+            <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
           </p>
           <p>
             Wedding Guest Style is based in the United States. All dress code conventions, sizing, retailer

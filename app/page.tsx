@@ -61,6 +61,7 @@ function CategoryGroup({
   title,
   description,
   sections,
+  pillarHref,
 }: {
   id: string;
   title: string;
@@ -71,6 +72,7 @@ function CategoryGroup({
     description: string;
     slug: string;
   }[];
+  pillarHref: string;
 }) {
   // Strip "Wedding Guest Dresses by " prefix for editorial display
   const editorialTitle = title.replace(/^Wedding Guest Dresses by /, '');
@@ -86,6 +88,12 @@ function CategoryGroup({
         <p className="text-ink-600 mt-4 max-w-2xl text-base leading-relaxed font-light">
           {description}
         </p>
+        <Link
+          href={pillarHref}
+          className="inline-block mt-4 text-[11px] uppercase tracking-[0.18em] text-blush-600 border-b border-blush-600 hover:text-ink-900 hover:border-ink-900 transition-colors pb-1"
+        >
+          Read the full {editorialTitle} pillar guide →
+        </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {sections.map((section) => (
@@ -188,7 +196,7 @@ export default function HomePage() {
               Wedding Guest Style does not accept paid placements, sponsored reviews, free-product partnerships, or pay-to-feature deals. Every dress on the site earned its place by review quality, fit consistency, and dress code appropriateness for the specific category page it appears on. When you click an Amazon affiliate link and complete a purchase, we earn a small commission — at no cost to you. That commission funds the editorial work behind the site. Editorial decisions stay our own. A dress doesn&apos;t get featured because of commission rate; it gets featured because we&apos;d genuinely recommend it to a friend attending the same wedding.
             </p>
             <p>
-              You can read more about our review process in <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>, our author <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">Sarah Mitchell</Link>, or how we make money in our <Link href="/about" className="text-blush-600 hover:underline">About</Link> page. All affiliate disclosures and policies are in <Link href="/privacy" className="text-blush-600 hover:underline">Privacy</Link> and <Link href="/terms" className="text-blush-600 hover:underline">Terms</Link>.
+              You can read more about our review process in <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>, our editor <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link> (<a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>), or how we make money in our <Link href="/about" className="text-blush-600 hover:underline">About</Link> page. All affiliate disclosures and policies are in <Link href="/privacy" className="text-blush-600 hover:underline">Privacy</Link> and <Link href="/terms" className="text-blush-600 hover:underline">Terms</Link>.
             </p>
           </div>
         </div>
@@ -210,14 +218,14 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
-              { href: "#by-season",     label: "By Season",     blurb: "Lightweight summer cottons, fall long-sleeves, cozy winter velvets, and the in-between season pieces that bridge them." },
-              { href: "#by-dress-code", label: "By Dress Code", blurb: "Black-tie, black-tie optional, formal, semi-formal, cocktail, dressy casual, casual — decoded with what each actually allows." },
-              { href: "#by-color",      label: "By Color",      blurb: "Butter yellow, fuchsia, dusty rose, chocolate brown, sage green — the 2026 palette with the shades that photograph best." },
-              { href: "#by-body-type",  label: "By Body Type",  blurb: "Plus size, petite, maternity, over 50, and for-big-tummy — silhouettes built to flatter, not to hide." },
-              { href: "#by-style",      label: "By Style",      blurb: "Maxi, midi, knee-length, A-line, floral, modest, long sleeve — the cuts and details organized for fast browsing." },
-              { href: "#by-venue",      label: "By Venue",      blurb: "Beach, garden party, vineyard, Indian wedding, formal ballroom — picks that match the location and its hidden expectations." },
+              { href: "/season",     label: "By Season",     blurb: "Lightweight summer cottons, fall long-sleeves, cozy winter velvets, and the in-between season pieces that bridge them." },
+              { href: "/dress-code", label: "By Dress Code", blurb: "Black-tie, black-tie optional, formal, semi-formal, cocktail, dressy casual, casual — decoded with what each actually allows." },
+              { href: "/color",      label: "By Color",      blurb: "Butter yellow, fuchsia, dusty rose, chocolate brown, sage green — the 2026 palette with the shades that photograph best." },
+              { href: "/body-type",  label: "By Body Type",  blurb: "Plus size, petite, maternity, over 50, and for-big-tummy — silhouettes built to flatter, not to hide." },
+              { href: "/style",      label: "By Style",      blurb: "Maxi, midi, knee-length, A-line, floral, modest, long sleeve — the cuts and details organized for fast browsing." },
+              { href: "/venue",      label: "By Venue",      blurb: "Beach, garden party, vineyard, Indian wedding, formal ballroom — picks that match the location and its hidden expectations." },
             ].map((cat) => (
-              <a
+              <Link
                 key={cat.href}
                 href={cat.href}
                 className="group block bg-ivory border border-ink-200 hover:border-blush-400 transition-all duration-500 p-6 sm:p-8"
@@ -229,7 +237,7 @@ export default function HomePage() {
                 <span className="text-[11px] uppercase tracking-[0.18em] text-ink-900 group-hover:text-blush-600 transition-colors border-b border-ink-900 group-hover:border-blush-600 pb-1">
                   Explore →
                 </span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -242,6 +250,7 @@ export default function HomePage() {
           title="Wedding Guest Dresses by Season"
           description="Choose the right dress for the time of year. Lightweight fabrics for summer, cozy styles for winter, and everything in between."
           sections={seasonSections}
+          pillarHref="/season"
         />
 
         {/* By Dress Code */}
@@ -250,6 +259,7 @@ export default function HomePage() {
           title="Wedding Guest Dresses by Dress Code"
           description="Match your outfit to the occasion. From black-tie galas to casual outdoor celebrations, we have you covered."
           sections={dressCodeSections}
+          pillarHref="/dress-code"
         />
 
         {/* By Color */}
@@ -258,6 +268,7 @@ export default function HomePage() {
           title="Wedding Guest Dresses by Color"
           description="Whether you prefer classic neutrals or bold statement colors, find your perfect shade for the big day."
           sections={colorSections}
+          pillarHref="/color"
         />
 
         {/* By Body Type */}
@@ -266,6 +277,7 @@ export default function HomePage() {
           title="Wedding Guest Dresses by Body Type"
           description="Flattering fits for every figure. Find dresses designed with your body type in mind."
           sections={bodyTypeSections}
+          pillarHref="/body-type"
         />
 
         {/* By Style */}
@@ -274,6 +286,7 @@ export default function HomePage() {
           title="Wedding Guest Dresses by Style"
           description="From flowing maxis to chic midis, elegant florals to modest options — discover your ideal dress style."
           sections={styleSections}
+          pillarHref="/style"
         />
 
         {/* By Venue */}
@@ -282,6 +295,7 @@ export default function HomePage() {
           title="Wedding Guest Dresses by Venue"
           description="Different venues call for different styles. Find the perfect dress for wherever the celebration takes you."
           sections={venueSections}
+          pillarHref="/venue"
         />
 
         {/* FAQ Section */}

@@ -39,10 +39,14 @@ export default function Footer() {
             </p>
             <p className="text-sm text-ink-600 italic font-light">
               Edited by{" "}
-              <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">
-                Sarah Mitchell
+              <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">
+                Sukie Gao
               </Link>
-              . Articles are researched with AI assistance and edited by a human before publication.
+              {" "}(
+              <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline not-italic">
+                @sukiegao
+              </a>
+              ). Articles are researched with AI assistance and edited by Sukie before publication.
             </p>
           </div>
           <div>
@@ -113,7 +117,8 @@ export default function Footer() {
           <ul className="flex flex-wrap gap-x-8 gap-y-3 text-[11px] uppercase tracking-[0.18em]">
             <li><Link href="/about" className="text-ink-600 hover:text-blush-600 transition-colors">About</Link></li>
             <li><Link href="/editorial" className="text-ink-600 hover:text-blush-600 transition-colors">Editorial</Link></li>
-            <li><Link href="/author/sarah-mitchell" className="text-ink-600 hover:text-blush-600 transition-colors">Editor</Link></li>
+            <li><Link href="/author/sukie-gao" className="text-ink-600 hover:text-blush-600 transition-colors">Editor</Link></li>
+            <li><Link href="/contact" className="text-ink-600 hover:text-blush-600 transition-colors">Contact</Link></li>
             <li><Link href="/privacy" className="text-ink-600 hover:text-blush-600 transition-colors">Privacy</Link></li>
             <li><Link href="/terms" className="text-ink-600 hover:text-blush-600 transition-colors">Terms</Link></li>
           </ul>

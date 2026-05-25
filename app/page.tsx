@@ -2,7 +2,6 @@
 export const revalidate = 43200;
 
 import Link from "next/link";
-import SectionBlock from "@/components/SectionBlock";
 import FAQ from "@/components/FAQ";
 import {
   seasonSections,
@@ -71,15 +70,6 @@ function CategoryGroup({
     title: string;
     description: string;
     slug: string;
-    products: {
-      title: string;
-      image: string;
-      url: string;
-      price: string;
-      rating: number;
-      reviewCount: number;
-      sizingNote?: string;
-    }[];
   }[];
 }) {
   // Strip "Wedding Guest Dresses by " prefix for editorial display
@@ -87,7 +77,7 @@ function CategoryGroup({
   return (
     <div id={id} className="scroll-mt-20">
       {/* Category header — editorial */}
-      <div className="mt-16 sm:mt-20 mb-4">
+      <div className="mt-16 sm:mt-20 mb-8">
         <div className="section-divider mb-10" />
         <p className="eyebrow mb-3">Volume · {id.replace('by-', '')}</p>
         <h2 className="display-serif text-3xl sm:text-5xl text-ink-900">
@@ -97,15 +87,25 @@ function CategoryGroup({
           {description}
         </p>
       </div>
-      {sections.map((section) => (
-        <SectionBlock
-          key={section.id}
-          title={section.title}
-          description={section.description}
-          slug={section.slug}
-          products={section.products}
-        />
-      ))}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        {sections.map((section) => (
+          <Link
+            key={section.id}
+            href={`/${section.slug}`}
+            className="group block bg-ivory border border-ink-200 hover:border-blush-400 transition-all duration-300 p-6 sm:p-8"
+          >
+            <h3 className="display-serif text-xl sm:text-2xl text-ink-900 group-hover:text-blush-600 transition-colors mb-3">
+              {section.title}
+            </h3>
+            <p className="text-sm text-ink-600 leading-relaxed font-light mb-4 line-clamp-3">
+              {section.description}
+            </p>
+            <span className="text-[11px] uppercase tracking-[0.18em] text-ink-900 group-hover:text-blush-600 transition-colors border-b border-ink-900 group-hover:border-blush-600 pb-1">
+              Explore →
+            </span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
@@ -116,11 +116,11 @@ export default function HomePage() {
       <FAQSchema />
       <WebsiteSchema />
 
-      {/* Hero Section — editorial */}
-      <section className="relative bg-ivory pt-16 pb-20 sm:pt-24 sm:pb-28 overflow-hidden">
+      {/* Hero Section — slim editorial */}
+      <section className="relative bg-ivory pt-10 pb-12 sm:pt-14 sm:pb-16 overflow-hidden">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Editorial eyebrow */}
-          <div className="flex items-center justify-center gap-4 mb-8 text-blush-600">
+          <div className="flex items-center justify-center gap-4 mb-6 text-blush-600">
             <span className="hidden sm:block w-12 h-px bg-blush-300" />
             <span className="eyebrow text-blush-600">The Edit · 2026</span>
             <span className="hidden sm:block w-12 h-px bg-blush-300" />
@@ -130,36 +130,68 @@ export default function HomePage() {
             Wedding Guest <span className="display-italic text-blush-600">Style</span>
           </h1>
 
-          <p className="mt-8 text-base sm:text-lg text-ink-600 max-w-xl mx-auto leading-relaxed font-light">
+          <p className="mt-6 text-base sm:text-lg text-ink-600 max-w-xl mx-auto leading-relaxed font-light">
             A curated edit of wedding guest dresses for every season,
             dress code, and venue — chosen for the women who get dressed for
             the photograph.
           </p>
+        </div>
+      </section>
 
-          {/* Editorial nav links */}
-          <nav className="mt-12 flex flex-wrap justify-center gap-x-6 sm:gap-x-10 gap-y-3 text-[11px] uppercase tracking-[0.18em] text-ink-700 font-medium">
-            {[
-              { label: "Season", href: "#by-season" },
-              { label: "Dress Code", href: "#by-dress-code" },
-              { label: "Color", href: "#by-color" },
-              { label: "Body Type", href: "#by-body-type" },
-              { label: "Style", href: "#by-style" },
-              { label: "Venue", href: "#by-venue" },
-            ].map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="hover:text-blush-600 transition-colors border-b border-transparent hover:border-blush-400 pb-1"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
+      {/* Editorial intro content — moved up directly after hero for SEO + authority */}
+      <section className="py-16 sm:py-20 bg-ivory border-t border-ink-100">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="section-divider mb-12" />
+          <p className="eyebrow mb-4">The Guide</p>
+          <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-10">
+            On Dressing for Someone Else&apos;s Wedding
+          </h2>
 
-          {/* Trust signal — refined */}
-          <p className="mt-14 text-xs text-ink-500 font-light italic">
-            Hand-picked. Honestly reviewed. Wearable for the women who buy them.
-          </p>
+          <div className="space-y-6 text-base leading-[1.8] text-ink-700 font-light">
+            <p>
+              Wedding guest dressing in 2026 is harder than it should be. The dress code phrase on the invitation is ambiguous, the venue lives in three Instagram squares, and the quiet pressure to look photographed-ready without trying so hard that you remember trying never quite goes away. Wedding Guest Style exists for that exact moment — the few weeks between RSVP and ceremony when you need a real, useful answer to &ldquo;what do I wear.&rdquo;
+            </p>
+            <p>
+              We index over 100 different wedding-guest scenarios — by season, dress code, color, body type, silhouette, and venue — and curate Amazon-available picks for each one. Every dress on this site was hand-selected from top-rated listings, vetted for fabric quality, fit accuracy in customer reviews, and the kind of finish that photographs well in mixed wedding lighting. We list real prices, real review counts, and honest sizing notes when the listing&apos;s sizing diverges from what reviewers actually report.
+            </p>
+
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              How to choose the right wedding guest dress
+            </h3>
+            <p>
+              Start with the invitation. The dress code phrase — even a vague one — is the single most important constraint. &ldquo;Black tie&rdquo; means floor-length, no exceptions. &ldquo;Black tie optional&rdquo; permits formal cocktail-length in dressy fabric. &ldquo;Cocktail&rdquo; sits between midi and knee-length in evening-appropriate construction. &ldquo;Semi-formal&rdquo; opens the door to fluid midi silhouettes in chiffon or silk-blend. &ldquo;Dressy casual&rdquo; means defined-silhouette in dressier-than-everyday fabric with real shoes — not jeans, never sneakers. &ldquo;Casual&rdquo; at a wedding still excludes the things that read truly casual: jeans, t-shirts, flip-flops, athletic anything.
+            </p>
+            <p>
+              After dress code, the next constraints in order: venue (outdoor grass or sand affects shoe choice; religious ceremonies usually require more modest coverage), time of day (afternoon ceremonies welcome lighter fabrics and softer colors; evening events shift toward formal fabrics and richer palettes), and season (lightweight cotton-voile or silk-cotton blend for summer; wool-blend crepe or velvet for winter). Most importantly: choose a dress you&apos;ll feel confident in for eight hours straight, ceremony through reception. The photograph lasts decades; the discomfort of a dress that looked good in the mirror but pinches by hour three doesn&apos;t.
+            </p>
+
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              The 2026 wedding guest palette
+            </h3>
+            <p>
+              The defining color story of 2026 is the move away from cool-toned pastels (sage, baby blue, dusty lavender — the 2024-2025 palette) toward warmer earth-and-spice tones. Butter yellow is the breakout color of the year — softer than pastel yellow, warmer than cream — and it photographs beautifully in nearly every venue from garden to beach to indoor reception. Chocolate brown has returned from the 2010s to become a sophisticated alternative to black at fall and winter formal events. Fuchsia, dusty rose, and saturated dark pink dominate the pink spectrum. Terracotta, rust, and cognac anchor the warm-earth palette. For modest and religious-ceremony contexts, deep jewel tones (emerald, sapphire, ruby, plum) remain the strongest choice.
+            </p>
+            <p>
+              What to actively avoid: pure white at any wedding (always), neon brights at evening formal (clash with venue lighting), pale ivory in flowing simple silhouettes (drifts toward bridal-adjacent in photos), and pure black at outdoor afternoon ceremonies (reads slightly funereal in bright natural light). If you want a dark dress at a daytime outdoor wedding, choose deep navy, oxblood, chocolate brown, or deep forest green instead of black.
+            </p>
+
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              Wedding guest etiquette, briefly
+            </h3>
+            <p>
+              The unwritten rules: never wear white or anything close to it. Don&apos;t try to outshine the bride — you won&apos;t, but the attempt shows in photographs years later. Match the formality of your dress to the dress code more carefully than the formality of your hair or makeup. When in doubt, lean slightly more dressed-up rather than down. Bring a wrap or pashmina for outdoor weddings — temperatures drop 15-20°F once the sun sets, and you&apos;ll want it before the reception ends. Tip the photographers and the bartenders. RSVP on time. The photograph lasts longer than the discomfort, the conversation, or the cost of the dress.
+            </p>
+
+            <h3 className="display-serif text-2xl text-ink-900 pt-8">
+              Our editorial standards
+            </h3>
+            <p>
+              Wedding Guest Style does not accept paid placements, sponsored reviews, free-product partnerships, or pay-to-feature deals. Every dress on the site earned its place by review quality, fit consistency, and dress code appropriateness for the specific category page it appears on. When you click an Amazon affiliate link and complete a purchase, we earn a small commission — at no cost to you. That commission funds the editorial work behind the site. Editorial decisions stay our own. A dress doesn&apos;t get featured because of commission rate; it gets featured because we&apos;d genuinely recommend it to a friend attending the same wedding.
+            </p>
+            <p>
+              You can read more about our review process in <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>, our author <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">Sarah Mitchell</Link>, or how we make money in our <Link href="/about" className="text-blush-600 hover:underline">About</Link> page. All affiliate disclosures and policies are in <Link href="/privacy" className="text-blush-600 hover:underline">Privacy</Link> and <Link href="/terms" className="text-blush-600 hover:underline">Terms</Link>.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -217,64 +249,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Editorial intro content — moved up from the bottom and expanded for SEO + authority */}
-      <section className="py-16 sm:py-24 bg-ivory">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="section-divider mb-12" />
-          <p className="eyebrow mb-4">The Guide</p>
-          <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-10">
-            On Dressing for Someone Else&apos;s Wedding
-          </h2>
-
-          <div className="space-y-6 text-base leading-[1.8] text-ink-700 font-light">
-            <p>
-              Wedding guest dressing in 2026 is harder than it should be. The dress code phrase on the invitation is ambiguous, the venue lives in three Instagram squares, and the quiet pressure to look photographed-ready without trying so hard that you remember trying never quite goes away. Wedding Guest Style exists for that exact moment — the few weeks between RSVP and ceremony when you need a real, useful answer to &ldquo;what do I wear.&rdquo;
-            </p>
-            <p>
-              We index over 100 different wedding-guest scenarios — by season, dress code, color, body type, silhouette, and venue — and curate Amazon-available picks for each one. Every dress on this site was hand-selected from top-rated listings, vetted for fabric quality, fit accuracy in customer reviews, and the kind of finish that photographs well in mixed wedding lighting. We list real prices, real review counts, and honest sizing notes when the listing&apos;s sizing diverges from what reviewers actually report.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              How to choose the right wedding guest dress
-            </h3>
-            <p>
-              Start with the invitation. The dress code phrase — even a vague one — is the single most important constraint. &ldquo;Black tie&rdquo; means floor-length, no exceptions. &ldquo;Black tie optional&rdquo; permits formal cocktail-length in dressy fabric. &ldquo;Cocktail&rdquo; sits between midi and knee-length in evening-appropriate construction. &ldquo;Semi-formal&rdquo; opens the door to fluid midi silhouettes in chiffon or silk-blend. &ldquo;Dressy casual&rdquo; means defined-silhouette in dressier-than-everyday fabric with real shoes — not jeans, never sneakers. &ldquo;Casual&rdquo; at a wedding still excludes the things that read truly casual: jeans, t-shirts, flip-flops, athletic anything.
-            </p>
-            <p>
-              After dress code, the next constraints in order: venue (outdoor grass or sand affects shoe choice; religious ceremonies usually require more modest coverage), time of day (afternoon ceremonies welcome lighter fabrics and softer colors; evening events shift toward formal fabrics and richer palettes), and season (lightweight cotton-voile or silk-cotton blend for summer; wool-blend crepe or velvet for winter). Most importantly: choose a dress you&apos;ll feel confident in for eight hours straight, ceremony through reception. The photograph lasts decades; the discomfort of a dress that looked good in the mirror but pinches by hour three doesn&apos;t.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              The 2026 wedding guest palette
-            </h3>
-            <p>
-              The defining color story of 2026 is the move away from cool-toned pastels (sage, baby blue, dusty lavender — the 2024-2025 palette) toward warmer earth-and-spice tones. Butter yellow is the breakout color of the year — softer than pastel yellow, warmer than cream — and it photographs beautifully in nearly every venue from garden to beach to indoor reception. Chocolate brown has returned from the 2010s to become a sophisticated alternative to black at fall and winter formal events. Fuchsia, dusty rose, and saturated dark pink dominate the pink spectrum. Terracotta, rust, and cognac anchor the warm-earth palette. For modest and religious-ceremony contexts, deep jewel tones (emerald, sapphire, ruby, plum) remain the strongest choice.
-            </p>
-            <p>
-              What to actively avoid: pure white at any wedding (always), neon brights at evening formal (clash with venue lighting), pale ivory in flowing simple silhouettes (drifts toward bridal-adjacent in photos), and pure black at outdoor afternoon ceremonies (reads slightly funereal in bright natural light). If you want a dark dress at a daytime outdoor wedding, choose deep navy, oxblood, chocolate brown, or deep forest green instead of black.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              Wedding guest etiquette, briefly
-            </h3>
-            <p>
-              The unwritten rules: never wear white or anything close to it. Don&apos;t try to outshine the bride — you won&apos;t, but the attempt shows in photographs years later. Match the formality of your dress to the dress code more carefully than the formality of your hair or makeup. When in doubt, lean slightly more dressed-up rather than down. Bring a wrap or pashmina for outdoor weddings — temperatures drop 15-20°F once the sun sets, and you&apos;ll want it before the reception ends. Tip the photographers and the bartenders. RSVP on time. The photograph lasts longer than the discomfort, the conversation, or the cost of the dress.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              Our editorial standards
-            </h3>
-            <p>
-              Wedding Guest Style does not accept paid placements, sponsored reviews, free-product partnerships, or pay-to-feature deals. Every dress on the site earned its place by review quality, fit consistency, and dress code appropriateness for the specific category page it appears on. When you click an Amazon affiliate link and complete a purchase, we earn a small commission — at no cost to you. That commission funds the editorial work behind the site. Editorial decisions stay our own. A dress doesn&apos;t get featured because of commission rate; it gets featured because we&apos;d genuinely recommend it to a friend attending the same wedding.
-            </p>
-            <p>
-              You can read more about our review process in <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>, our author <Link href="/author/sarah-mitchell" className="text-blush-600 hover:underline">Sarah Mitchell</Link>, or how we make money in our <Link href="/about" className="text-blush-600 hover:underline">About</Link> page. All affiliate disclosures and policies are in <Link href="/privacy" className="text-blush-600 hover:underline">Privacy</Link> and <Link href="/terms" className="text-blush-600 hover:underline">Terms</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-2 sm:-mt-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* By Season */}
         <CategoryGroup
           id="by-season"

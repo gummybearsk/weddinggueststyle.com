@@ -72,7 +72,7 @@ export default function FAQ({ faqs }: { faqs: FAQType[] }) {
       <p className="text-sm text-gray-500 mb-6">
         Quick answers to help you find the perfect wedding guest dress.
       </p>
-      <div className="max-w-3xl bg-white rounded-xl border border-gray-100 shadow-sm px-5 sm:px-6">
+      <div className="bg-white rounded-xl border border-gray-100 shadow-sm px-5 sm:px-6">
         {faqs.map((faq, i) => (
           <FAQItem
             key={i}

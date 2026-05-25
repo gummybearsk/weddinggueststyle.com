@@ -1,6 +1,10 @@
 import { MetadataRoute } from "next";
 import { getAllSlugs, getPageData } from "@/lib/getPages";
 
+// Revalidate every 24h so scheduled-publish pages appear in /sitemap.xml on their publish date
+// without requiring a manual deploy. Required by Rule 17 for any site using publishDate gating.
+export const revalidate = 86400;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://weddinggueststyle.com";
 
@@ -31,16 +35,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p.priority,
   }));
 
+  // Trust-page lastmod reflects when each page was last actually edited (Rule 17 — never `new Date()`)
   const trustPages = [
-    { url: `${baseUrl}/about`, priority: 0.5 },
-    { url: `${baseUrl}/editorial`, priority: 0.5 },
-    { url: `${baseUrl}/privacy`, priority: 0.3 },
-    { url: `${baseUrl}/terms`, priority: 0.3 },
-    { url: `${baseUrl}/contact`, priority: 0.4 },
-    { url: `${baseUrl}/author/sukie-gao`, priority: 0.5 },
+    { url: `${baseUrl}/about`,             priority: 0.5, lastMod: "2026-05-25" }, // edited today (author swap, AI disclosure)
+    { url: `${baseUrl}/editorial`,         priority: 0.5, lastMod: "2026-04-15" },
+    { url: `${baseUrl}/privacy`,           priority: 0.3, lastMod: "2026-04-15" },
+    { url: `${baseUrl}/terms`,             priority: 0.3, lastMod: "2026-04-15" },
+    { url: `${baseUrl}/contact`,           priority: 0.4, lastMod: "2026-05-25" }, // new page
+    { url: `${baseUrl}/author/sukie-gao`,  priority: 0.5, lastMod: "2026-05-25" }, // new page
   ].map((p) => ({
     url: p.url,
-    lastModified: new Date("2026-04-15"),
+    lastModified: new Date(p.lastMod),
     changeFrequency: "monthly" as const,
     priority: p.priority,
   }));
@@ -48,7 +53,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      // Homepage was last edited today (hero refactor, pillar links). Never use `new Date()` here — wastes Google's crawl budget per Rule 17.
+      lastModified: new Date("2026-05-25"),
       changeFrequency: "daily" as const,
       priority: 1,
     },

@@ -117,7 +117,7 @@ export default function HomePage() {
       <WebsiteSchema />
 
       {/* Hero Section — slim editorial */}
-      <section className="relative bg-ivory pt-10 pb-12 sm:pt-14 sm:pb-16 overflow-hidden">
+      <section className="relative bg-ivory pt-10 pb-6 sm:pt-14 sm:pb-8 overflow-hidden">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* Editorial eyebrow */}
           <div className="flex items-center justify-center gap-4 mb-6 text-blush-600">
@@ -139,9 +139,8 @@ export default function HomePage() {
       </section>
 
       {/* Editorial intro content — moved up directly after hero for SEO + authority */}
-      <section className="py-16 sm:py-20 bg-ivory border-t border-ink-100">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="section-divider mb-12" />
+      <section className="pt-4 pb-12 sm:pt-6 sm:pb-16 bg-ivory">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="eyebrow mb-4">The Guide</p>
           <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-10">
             On Dressing for Someone Else&apos;s Wedding
@@ -211,38 +210,25 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
-              { href: "#by-season",     label: "By Season",     blurb: "Lightweight summer cottons, fall long-sleeves, cozy winter velvets, and the in-between season pieces that bridge them.",   image: seasonSections[0]?.products?.[0]?.image },
-              { href: "#by-dress-code", label: "By Dress Code", blurb: "Black-tie, black-tie optional, formal, semi-formal, cocktail, dressy casual, casual — decoded with what each actually allows.", image: dressCodeSections[0]?.products?.[0]?.image },
-              { href: "#by-color",      label: "By Color",      blurb: "Butter yellow, fuchsia, dusty rose, chocolate brown, sage green — the 2026 palette with the shades that photograph best.",   image: colorSections[0]?.products?.[0]?.image },
-              { href: "#by-body-type",  label: "By Body Type",  blurb: "Plus size, petite, maternity, over 50, and for-big-tummy — silhouettes built to flatter, not to hide.",                       image: bodyTypeSections[0]?.products?.[0]?.image },
-              { href: "#by-style",      label: "By Style",      blurb: "Maxi, midi, knee-length, A-line, floral, modest, long sleeve — the cuts and details organized for fast browsing.",          image: styleSections[0]?.products?.[0]?.image },
-              { href: "#by-venue",      label: "By Venue",      blurb: "Beach, garden party, vineyard, Indian wedding, formal ballroom — picks that match the location and its hidden expectations.", image: venueSections[0]?.products?.[0]?.image },
+              { href: "#by-season",     label: "By Season",     blurb: "Lightweight summer cottons, fall long-sleeves, cozy winter velvets, and the in-between season pieces that bridge them." },
+              { href: "#by-dress-code", label: "By Dress Code", blurb: "Black-tie, black-tie optional, formal, semi-formal, cocktail, dressy casual, casual — decoded with what each actually allows." },
+              { href: "#by-color",      label: "By Color",      blurb: "Butter yellow, fuchsia, dusty rose, chocolate brown, sage green — the 2026 palette with the shades that photograph best." },
+              { href: "#by-body-type",  label: "By Body Type",  blurb: "Plus size, petite, maternity, over 50, and for-big-tummy — silhouettes built to flatter, not to hide." },
+              { href: "#by-style",      label: "By Style",      blurb: "Maxi, midi, knee-length, A-line, floral, modest, long sleeve — the cuts and details organized for fast browsing." },
+              { href: "#by-venue",      label: "By Venue",      blurb: "Beach, garden party, vineyard, Indian wedding, formal ballroom — picks that match the location and its hidden expectations." },
             ].map((cat) => (
               <a
                 key={cat.href}
                 href={cat.href}
-                className="group block bg-ivory border border-ink-200 hover:border-blush-400 transition-all duration-500"
+                className="group block bg-ivory border border-ink-200 hover:border-blush-400 transition-all duration-500 p-6 sm:p-8"
               >
-                <div className="relative aspect-[4/5] bg-cream-100 overflow-hidden">
-                  {cat.image && (
-                    /* eslint-disable-next-line @next/next/no-img-element */
-                    <img
-                      src={cat.image}
-                      alt={cat.label}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  )}
-                </div>
-                <div className="p-6 sm:p-8">
-                  <p className="eyebrow mb-2 text-blush-600">{cat.label}</p>
-                  <p className="text-sm sm:text-base text-ink-700 leading-relaxed font-light mb-4">
-                    {cat.blurb}
-                  </p>
-                  <span className="text-[11px] uppercase tracking-[0.18em] text-ink-900 group-hover:text-blush-600 transition-colors border-b border-ink-900 group-hover:border-blush-600 pb-1">
-                    Explore →
-                  </span>
-                </div>
+                <p className="eyebrow mb-3 text-blush-600">{cat.label}</p>
+                <p className="text-sm sm:text-base text-ink-700 leading-relaxed font-light mb-4">
+                  {cat.blurb}
+                </p>
+                <span className="text-[11px] uppercase tracking-[0.18em] text-ink-900 group-hover:text-blush-600 transition-colors border-b border-ink-900 group-hover:border-blush-600 pb-1">
+                  Explore →
+                </span>
               </a>
             ))}
           </div>

@@ -215,7 +215,7 @@ export default function InnerPage({ params }: PageProps) {
 
       {/* Page header — editorial */}
       <div className="bg-ivory border-b border-ink-200">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 sm:pt-14 sm:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-12 sm:pt-14 sm:pb-16">
           {/* Breadcrumb */}
           <nav
             className="text-[11px] uppercase tracking-[0.18em] text-ink-500 mb-8 flex items-center gap-2"
@@ -245,13 +245,13 @@ export default function InnerPage({ params }: PageProps) {
           </div>
 
           {/* Intro */}
-          <p className="mt-6 text-base sm:text-lg text-ink-700 max-w-3xl leading-[1.75] font-light">
+          <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light">
             {page.intro}
           </p>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         {/* Product Grid */}
         {page.products.length > 0 && (
           <section className="mb-14">
@@ -267,7 +267,7 @@ export default function InnerPage({ params }: PageProps) {
           <div className="mb-8">
             <div className="section-divider mb-8" />
             {page.contentSections.map((section, i) => (
-              <section key={i} className="mb-10 max-w-3xl">
+              <section key={i} className="mb-10">
                 <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-4">
                   {section.heading}
                 </h2>

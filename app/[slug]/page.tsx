@@ -10,6 +10,9 @@ import { getFurtherReading } from "@/lib/furtherReading";
 import type { ContentSection, Product } from "@/lib/types";
 import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
 import StickyEditorPick from "@/components/StickyEditorPick";
+import PriceSnapshot from "@/components/PriceSnapshot";
+import HeroPicks from "@/components/HeroPicks";
+import { computeInsights, deriveBestFor, deriveRationale } from "@/lib/priceInsights";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
 export const revalidate = 43200;
@@ -338,8 +341,21 @@ export default function InnerPage({ params }: PageProps) {
 
   // Overlay live Amazon price/image/availability. Out-of-stock and delisted ASINs are
   // dropped here, so `products` below is always buyable — never the raw content JSON.
-  const products = withLiveData(page.products || []);
+  const products = withLiveData(page.products || []).map((p) => ({
+    ...p,
+    bestFor: deriveBestFor(p),
+  }));
   const asOf = priceAsOfLabel();
+  const insights = computeInsights(products);
+
+  // Split the catalogue: a small ranked set the reader can actually choose from, and the
+  // rest as a browsable grid. A flat wall of 90+ dresses is why these pages don't convert.
+  const HERO_COUNT = 6;
+  const heroPicks = products.slice(0, HERO_COUNT).map((p, i) => ({
+    ...p,
+    why: deriveRationale(p, products, i),
+  }));
+  const restProducts = products.slice(HERO_COUNT);
 
   const plan = getLayoutPlan(page.slug, page.contentSections.length);
   const hClass = headingClass(plan.headingStyle);
@@ -400,8 +416,10 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "A" && (
           <>
-            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
+            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
+            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
             <FurtherReading slug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
@@ -411,7 +429,9 @@ export default function InnerPage({ params }: PageProps) {
         {plan.variant === "B" && (
           <>
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
-            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
+            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
+            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -421,19 +441,23 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "C" && (
           <>
-            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
+            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <RelatedPages relatedPages={page.relatedPages} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
+            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
           </>
         )}
 
         {plan.variant === "D" && (
           <>
-            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
+            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
+            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
             <FurtherReading slug={page.slug} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -445,8 +469,10 @@ export default function InnerPage({ params }: PageProps) {
           <>
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
-            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
+            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
             <FurtherReading slug={page.slug} />
+            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
             <RelatedPages relatedPages={page.relatedPages} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
           </>

@@ -22,6 +22,11 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    # GITHUB_TOKEN defaults to read-only on this repo, so the push at the end of this job
+    # 403s without this. The refresh itself succeeds either way, which makes the failure
+    # easy to misread as an API problem.
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 

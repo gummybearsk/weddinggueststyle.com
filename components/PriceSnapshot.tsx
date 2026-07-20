@@ -21,7 +21,7 @@ export default function PriceSnapshot({
   const money = (n: number) => `$${n.toFixed(0)}`;
 
   const rows: { label: string; value: string }[] = [
-    { label: "Dresses tracked on this page", value: String(i.count) },
+    { label: "Pieces tracked on this page", value: String(i.count) },
     { label: "Price range", value: `${money(i.min)} – ${money(i.max)}` },
     { label: "Median price", value: money(i.median) },
     { label: "Under $50", value: `${i.underFifty} of ${i.count}` },

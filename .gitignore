@@ -42,5 +42,8 @@ keyword-data/
 scripts/*
 !scripts/notify-indexnow.js
 !scripts/amazon-creators-api.js
+# Required at build/CI time — must be committed, not treated as local research.
+!scripts/refresh-amazon.js
+!scripts/check-sitemap-pairing.mjs
 weddinggueststyle.com.code-workspace
 .claude/scheduled_tasks.lock

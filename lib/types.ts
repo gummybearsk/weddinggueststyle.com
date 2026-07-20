@@ -3,9 +3,25 @@ export interface Product {
   image: string;
   url: string;
   price: string;
-  rating: number;
-  reviewCount: number;
+  /**
+   * @deprecated Amazon's Creators API does not serve customerReviews — these values can
+   * only have come from scraping. Retained so existing content JSON still parses, but they
+   * are never rendered and never emitted as AggregateRating schema.
+   */
+  rating?: number;
+  /** @deprecated See `rating`. */
+  reviewCount?: number;
   sizingNote?: string;
+
+  // ── Editorial fields (ours, not Amazon's) ──────────────────────────────────
+  /** Who this pick is for, e.g. "Petite frames" / "Best value under $50". Rendered as a badge. */
+  bestFor?: string;
+  /** 2-4 sentences of reasoning for a ranked pick. Present only on hero picks. */
+  why?: string;
+
+  // ── Populated at build/ISR from content/amazon-data.json (never hand-edited) ─
+  inStock?: boolean;
+  savingsPercent?: number;
 }
 
 export interface FAQ {

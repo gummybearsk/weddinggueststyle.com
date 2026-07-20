@@ -7,7 +7,9 @@ import AuthorByline from "@/components/AuthorByline";
 import { getAllSlugsIncludingScheduled, getPublishedPageData } from "@/lib/getPages";
 import { getLayoutPlan, headingClass, eyebrowText } from "@/lib/layoutVariant";
 import { getFurtherReading } from "@/lib/furtherReading";
-import type { ContentSection } from "@/lib/types";
+import type { ContentSection, Product } from "@/lib/types";
+import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
+import StickyEditorPick from "@/components/StickyEditorPick";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
 export const revalidate = 43200;
@@ -64,7 +66,20 @@ function FAQSchema({ faqs }: { faqs: { question: string; answer: string }[] }) {
   );
 }
 
-function ItemListSchema({ products, title }: { products: { title: string; url: string; image: string; price: string; rating: number; reviewCount: number }[]; title: string }) {
+/**
+ * ItemList of the products on this page.
+ *
+ * Deliberately omitted, and they must stay omitted:
+ *  - `aggregateRating` — the Creators API does not serve customerReviews, so any rating
+ *    here would be scraped data asserted to Google as fact.
+ *  - `hasMerchantReturnPolicy` / `shippingDetails` — we previously hardcoded 30-day free
+ *    returns and free 2-5 day shipping for every product. That is per-seller on Amazon and
+ *    we have no feed for it, so it was fabricated.
+ *
+ * `price` comes from the daily API refresh only (lib/amazonData.ts). Publishing a stale
+ * price as structured data is what triggers merchant-listing manual actions.
+ */
+function ItemListSchema({ products, title }: { products: Product[]; title: string }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -82,33 +97,10 @@ function ItemListSchema({ products, title }: { products: { title: string; url: s
         brand: { "@type": "Brand", name: "Amazon Fashion" },
         offers: {
           "@type": "Offer",
-          price: product.price.replace("$", ""),
+          price: product.price.replace(/[^0-9.]/g, ""),
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
           url: product.url,
-          hasMerchantReturnPolicy: {
-            "@type": "MerchantReturnPolicy",
-            applicableCountry: "US",
-            returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
-            merchantReturnDays: 30,
-            returnMethod: "https://schema.org/ReturnByMail",
-            returnFees: "https://schema.org/FreeReturn",
-          },
-          shippingDetails: {
-            "@type": "OfferShippingDetails",
-            shippingDestination: { "@type": "DefinedRegion", addressCountry: "US" },
-            deliveryTime: {
-              "@type": "ShippingDeliveryTime",
-              handlingTime: { "@type": "QuantitativeValue", minValue: 0, maxValue: 1, unitCode: "DAY" },
-              transitTime: { "@type": "QuantitativeValue", minValue: 2, maxValue: 5, unitCode: "DAY" },
-            },
-            shippingRate: { "@type": "MonetaryAmount", value: 0, currency: "USD" },
-          },
-        },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: product.rating,
-          reviewCount: product.reviewCount,
         },
       },
     })),
@@ -198,12 +190,24 @@ function ContentSections({
   );
 }
 
-function ProductBlock({ products, title }: { products: { title: string; image: string; url: string; price: string; rating: number; reviewCount: number; sizingNote?: string }[]; title: string }) {
+function ProductBlock({
+  products,
+  title,
+  asOf,
+}: {
+  products: Product[];
+  title: string;
+  asOf: string | null;
+}) {
   if (!products.length) return null;
   return (
     <section className="mb-14">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">{title}</h2>
       <ProductGrid products={products} />
+      {/* Required by the Associates Operating Agreement — must sit under every product block. */}
+      {asOf && (
+        <p className="mt-6 text-xs text-ink-500 font-light leading-relaxed">{asOf}</p>
+      )}
     </section>
   );
 }
@@ -223,17 +227,19 @@ function FactsBox({
   products,
   category,
 }: {
-  products: { price: string; rating: number; reviewCount: number }[];
+  products: Product[];
   category: string;
 }) {
   if (!products.length) return null;
   const prices = products
     .map((p) => parseFloat(p.price.replace(/[^0-9.]/g, "")))
     .filter((n) => !isNaN(n) && n > 0);
-  const minPrice = prices.length ? Math.min(...prices) : 0;
-  const maxPrice = prices.length ? Math.max(...prices) : 0;
-  const avgRating = products.reduce((a, p) => a + p.rating, 0) / products.length;
-  const totalReviews = products.reduce((a, p) => a + p.reviewCount, 0);
+  if (!prices.length) return null;
+  const minPrice = Math.min(...prices);
+  const maxPrice = Math.max(...prices);
+  const median = [...prices].sort((a, b) => a - b)[Math.floor(prices.length / 2)];
+  const onSale = products.filter((p) => (p.savingsPercent ?? 0) >= 5).length;
+  // Avg rating / total reviews removed — those came from scraped data the API doesn't serve.
   return (
     <aside className="mb-12 bg-cream-50 border border-ink-200 px-6 py-5 sm:px-8 sm:py-6">
       <p className="eyebrow mb-4 text-blush-600">At a glance</p>
@@ -247,16 +253,16 @@ function FactsBox({
           <dd className="text-ink-900 font-medium text-lg mt-1">${minPrice.toFixed(0)}–${maxPrice.toFixed(0)}</dd>
         </div>
         <div>
-          <dt className="text-ink-500 text-[11px] uppercase tracking-[0.15em]">Avg rating</dt>
-          <dd className="text-ink-900 font-medium text-lg mt-1">{avgRating.toFixed(1)} ★</dd>
+          <dt className="text-ink-500 text-[11px] uppercase tracking-[0.15em]">Typical</dt>
+          <dd className="text-ink-900 font-medium text-lg mt-1">${median.toFixed(0)}</dd>
         </div>
         <div>
-          <dt className="text-ink-500 text-[11px] uppercase tracking-[0.15em]">Total reviews</dt>
-          <dd className="text-ink-900 font-medium text-lg mt-1">{totalReviews.toLocaleString()}</dd>
+          <dt className="text-ink-500 text-[11px] uppercase tracking-[0.15em]">On sale now</dt>
+          <dd className="text-ink-900 font-medium text-lg mt-1">{onSale}</dd>
         </div>
       </dl>
       <p className="mt-4 text-xs text-ink-500 italic font-light">
-        Stats computed from the {products.length} {category.toLowerCase()} on this page.
+        Live from Amazon across the {products.length} {category.toLowerCase()} on this page.
       </p>
     </aside>
   );
@@ -330,9 +336,14 @@ export default function InnerPage({ params }: PageProps) {
   const page = getPublishedPageData(params.slug);
   if (!page) notFound();
 
+  // Overlay live Amazon price/image/availability. Out-of-stock and delisted ASINs are
+  // dropped here, so `products` below is always buyable — never the raw content JSON.
+  const products = withLiveData(page.products || []);
+  const asOf = priceAsOfLabel();
+
   const plan = getLayoutPlan(page.slug, page.contentSections.length);
   const hClass = headingClass(plan.headingStyle);
-  const eyebrow = eyebrowText(plan.eyebrowStyle, page.products.length || 0);
+  const eyebrow = eyebrowText(plan.eyebrowStyle, products.length);
 
   const sectionsFirst = page.contentSections.slice(0, plan.splitContentAt);
   const sectionsRest = page.contentSections.slice(plan.splitContentAt);
@@ -350,7 +361,10 @@ export default function InnerPage({ params }: PageProps) {
       <FAQSchema faqs={page.faqs} />
       <BreadcrumbSchema title={page.title} slug={page.slug} />
       <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} />
-      {page.products.length > 0 && <ItemListSchema products={page.products} title={`Top ${page.title}`} />}
+      {products.length > 0 && <ItemListSchema products={products} title={`Top ${page.title}`} />}
+
+      {/* Persistent CTA — pages run 2,000+ words with one product block otherwise. */}
+      <StickyEditorPick product={products[0] ?? null} />
 
       {/* Page header — consistent across all pages (H1, byline, intro for SEO consistency) */}
       <div className="bg-ivory border-b border-ink-200">
@@ -380,13 +394,13 @@ export default function InnerPage({ params }: PageProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         {plan.showFactsBox && (
           <div className="pt-10">
-            <FactsBox products={page.products} category={page.title} />
+            <FactsBox products={products} category={page.title} />
           </div>
         )}
 
         {plan.variant === "A" && (
           <>
-            <ProductBlock products={page.products} title={`Top ${page.title}`} />
+            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
             <FurtherReading slug={page.slug} />
@@ -397,7 +411,7 @@ export default function InnerPage({ params }: PageProps) {
         {plan.variant === "B" && (
           <>
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
-            <ProductBlock products={page.products} title={`Top ${page.title}`} />
+            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -407,7 +421,7 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "C" && (
           <>
-            <ProductBlock products={page.products} title={`Top ${page.title}`} />
+            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
@@ -419,7 +433,7 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "D" && (
           <>
-            <ProductBlock products={page.products} title={`Top ${page.title}`} />
+            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
             <FurtherReading slug={page.slug} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -431,7 +445,7 @@ export default function InnerPage({ params }: PageProps) {
           <>
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
-            <ProductBlock products={page.products} title={`Top ${page.title}`} />
+            <ProductBlock products={products} title={`Top ${page.title}`} asOf={asOf} />
             <FurtherReading slug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}

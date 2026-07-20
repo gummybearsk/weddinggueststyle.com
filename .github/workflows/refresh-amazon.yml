@@ -1,0 +1,58 @@
+name: Refresh Amazon Prices (Daily)
+
+# The Associates Operating Agreement requires displayed prices to come from the API and be
+# refreshed at least every 24h with a visible "as of" timestamp. This regenerates
+# content/amazon-data.json, commits it, and lets the push trigger a Vercel deploy.
+#
+# A full run is ~3,000 ASINs / ~310 API calls at ~1.2s throttle ≈ 7 minutes.
+
+on:
+  schedule:
+    # 05:00 UTC — an hour before the daily-rebuild job, so fresh prices are in place
+    # before scheduled pages publish.
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+
+# Prevent two refreshes racing on the same file.
+concurrency:
+  group: refresh-amazon
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Write credentials
+        run: |
+          cat > .env.local <<EOF
+          AMAZON_CREATORS_CLIENT_ID=${{ secrets.AMAZON_CREATORS_CLIENT_ID }}
+          AMAZON_CREATORS_SECRET=${{ secrets.AMAZON_CREATORS_SECRET }}
+          AMAZON_AFFILIATE_TAG=${{ secrets.AMAZON_AFFILIATE_TAG }}
+          EOF
+
+      - name: Refresh Amazon data
+        run: node scripts/refresh-amazon.js
+
+      - name: Remove credentials
+        if: always()
+        run: rm -f .env.local
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- content/amazon-data.json; then
+            echo "No price changes today."
+            exit 0
+          fi
+          COUNT=$(node -e "const d=require('./content/amazon-data.json');console.log(Object.values(d.items).filter(i=>i.inStock).length)")
+          git add content/amazon-data.json
+          git commit -m "Amazon: daily price refresh (${COUNT} in stock)"
+          git push

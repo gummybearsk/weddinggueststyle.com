@@ -1,99 +1,102 @@
 import { Product } from "@/lib/types";
 
-function StarRating({ rating, count }: { rating: number; count: number }) {
+/**
+ * Affiliate product card.
+ *
+ * Design notes (ported from BuilderGelNails, which converts well on low traffic):
+ *  - The WHOLE card is one stretched anchor. Three separate links (image/title/button)
+ *    leave dead zones between them, and shoppers click the photo far more than the CTA.
+ *  - rel includes `sponsored` — Google's documented signal for affiliate links since 2019.
+ *    `nofollow` alone is stale.
+ *  - Star ratings are deliberately absent. Amazon's Creators API does not serve
+ *    customerReviews, so any rating on screen would be scraped. We differentiate with
+ *    editorial `bestFor` badges instead — which is what actually drives the click.
+ *  - Price always renders: live API price, never a stale baked-in string.
+ */
+
+function Badge({
+  children,
+  tone = "neutral",
+}: {
+  children: React.ReactNode;
+  tone?: "neutral" | "accent";
+}) {
+  const styles =
+    tone === "accent"
+      ? "bg-blush-600 text-ivory"
+      : "bg-ivory/95 text-ink-800 border border-ink-200";
   return (
-    <div className="flex items-center gap-1.5">
-      <div className="flex gap-0.5" aria-label={`${rating} out of 5 stars`}>
-        {[1, 2, 3, 4, 5].map((star) => {
-          const filled = star <= Math.floor(rating);
-          const halfFilled =
-            !filled && star === Math.floor(rating) + 1 && rating % 1 >= 0.3;
-          return (
-            <svg
-              key={star}
-              className={`w-4 h-4 ${
-                filled
-                  ? "text-amber-400"
-                  : halfFilled
-                  ? "text-amber-400"
-                  : "text-gray-200"
-              }`}
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              {halfFilled ? (
-                <>
-                  <defs>
-                    <linearGradient id={`half-${star}`}>
-                      <stop offset="50%" stopColor="currentColor" />
-                      <stop offset="50%" stopColor="#e5e7eb" />
-                    </linearGradient>
-                  </defs>
-                  <path
-                    fill={`url(#half-${star})`}
-                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                  />
-                </>
-              ) : (
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              )}
-            </svg>
-          );
-        })}
-      </div>
-      <span className="text-xs text-ink-700 font-medium">
-        {rating.toFixed(1)}
-      </span>
-      <span className="text-xs text-ink-500">
-        ({count.toLocaleString()})
-      </span>
-    </div>
+    <span
+      className={`${styles} text-[10px] tracking-[0.12em] uppercase font-medium px-2 py-1 backdrop-blur-sm`}
+    >
+      {children}
+    </span>
   );
 }
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({
+  product,
+  rank,
+}: {
+  product: Product;
+  rank?: number;
+}) {
   return (
-    <article className="product-card bg-ivory border border-ink-200 hover:border-blush-300 transition-all duration-500 flex flex-col h-full group">
+    <article className="product-card relative bg-ivory border border-ink-200 hover:border-blush-300 hover:shadow-lg transition-all duration-500 flex flex-col h-full group">
+      {/* Stretched anchor — covers the entire card so no click is wasted. */}
       <a
         href={product.url}
         target="_blank"
-        rel="noopener noreferrer nofollow"
-        className="block relative aspect-[3/4] bg-cream-50 overflow-hidden"
-      >
+        rel="noopener noreferrer nofollow sponsored"
+        className="absolute inset-0 z-20"
+        aria-label={`Shop ${product.title} on Amazon`}
+      />
+
+      <div className="relative aspect-[3/4] bg-cream-50 overflow-hidden">
         <img
           src={product.image}
           alt={product.title}
-          className="product-card-img w-full h-full object-contain p-3"
+          className="product-card-img w-full h-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.04]"
           loading="lazy"
         />
-      </a>
+        {rank ? (
+          <span className="absolute top-2 left-2 z-10 display-serif text-sm bg-ink-900 text-ivory w-7 h-7 flex items-center justify-center">
+            {rank}
+          </span>
+        ) : null}
+        {product.savingsPercent && product.savingsPercent >= 5 ? (
+          <span className="absolute top-2 right-2 z-10">
+            <Badge tone="accent">{product.savingsPercent}% off</Badge>
+          </span>
+        ) : null}
+      </div>
+
       <div className="p-4 sm:p-5 flex flex-col flex-1">
-        <a
-          href={product.url}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className="text-[13px] text-ink-800 line-clamp-2 hover:text-blush-600 transition-colors mb-3 leading-snug font-light"
-        >
-          {product.title}
-        </a>
-        <div className="mt-auto space-y-3">
-          <StarRating rating={product.rating} count={product.reviewCount} />
-          <p className="display-serif text-2xl text-ink-900">
-            {product.price}
+        {product.bestFor ? (
+          <p className="text-[10px] tracking-[0.14em] uppercase text-champagne-600 mb-2">
+            {product.bestFor}
           </p>
+        ) : null}
+
+        <p className="text-[13px] text-ink-800 line-clamp-2 group-hover:text-blush-600 transition-colors mb-3 leading-snug font-light">
+          {product.title}
+        </p>
+
+        <div className="mt-auto space-y-3">
+          <p className="display-serif text-2xl text-ink-900">{product.price}</p>
+
           {product.sizingNote && (
-            <p className="text-xs text-champagne-600 italic">
-              {product.sizingNote}
-            </p>
+            <p className="text-xs text-champagne-600 italic">{product.sizingNote}</p>
           )}
-          <a
-            href={product.url}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="cta-pulse block w-full text-center text-[11px] tracking-[0.2em] uppercase font-medium text-ivory bg-ink-900 hover:bg-blush-600 active:bg-blush-700 py-3.5 transition-colors mt-3"
+
+          {/* Visual affordance only — the stretched anchor above is the real link, so this
+              must not be a second tab stop or a duplicate screen-reader announcement. */}
+          <span
+            aria-hidden="true"
+            className="cta-pulse block w-full text-center text-[11px] tracking-[0.2em] uppercase font-medium text-ivory bg-ink-900 group-hover:bg-blush-600 py-3.5 transition-colors mt-3"
           >
             Shop Now
-          </a>
+          </span>
         </div>
       </div>
     </article>

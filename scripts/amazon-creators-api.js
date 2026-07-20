@@ -196,7 +196,52 @@ async function searchManyKeywords(keywordList, totalCount = 40) {
   return all;
 }
 
-module.exports = { searchProducts, searchManyKeywords, getToken };
+// ── getItems → refresh known ASINs ───────────────────────────────────────────
+/**
+ * Look up specific ASINs (max 10 per call — hard API limit).
+ * Returns a map of asin -> { title, image, url, price }.
+ *
+ * Note: ratings/reviewCount are deliberately NOT returned. The Creators API does not
+ * serve customerReviews (it comes back empty — see normalize()), so the only way to show
+ * stars is scraping. We don't, and we don't publish AggregateRating schema either.
+ */
+async function getItems(asins) {
+  if (!asins.length) return {};
+  if (asins.length > 10) throw new Error("getItems accepts at most 10 ASINs per call");
+  const result = await callApi("getItems", {
+    itemIds: asins,
+    partnerTag: PARTNER_TAG,
+    partnerType: "Associates",
+    marketplace: "www.amazon.com",
+    resources: ["images.primary.large", "itemInfo.title", "offersV2.listings.price"],
+  });
+  const items = (result.itemsResult && result.itemsResult.items) || [];
+  const out = {};
+  for (const item of items) {
+    const asin = item.asin;
+    if (!asin) continue;
+    const title = item.itemInfo?.title?.displayValue;
+    const image = item.images?.primary?.large?.url;
+    const money = item.offersV2?.listings?.[0]?.price?.money;
+    const price = money ? money.displayAmount : "";
+    const savings = item.offersV2?.listings?.[0]?.price?.savings?.percentage;
+    out[asin] = {
+      asin,
+      title: title || "",
+      // Request a sharper render than Amazon's default thumbnail. getItems returns
+      // _SL500_ while searchItems returns _AC_UL500_ — normalize both to _AC_UL640_.
+      image: image ? image.replace(/_(AC_)?(UL|SL|SX|SY)\d+_/, "_AC_UL640_") : "",
+      url: item.detailPageURL || `https://www.amazon.com/dp/${asin}?tag=${PARTNER_TAG}`,
+      price,
+      ...(typeof savings === "number" ? { savingsPercent: savings } : {}),
+      // Absent price means out of stock / no buyable offer right now.
+      inStock: Boolean(price),
+    };
+  }
+  return out;
+}
+
+module.exports = { searchProducts, searchManyKeywords, getItems, getToken };
 
 // CLI usage: node amazon-creators-api.js "wedding guest dress" 5
 if (require.main === module) {

@@ -38,12 +38,45 @@ function walk(dir, out = []) {
   return out;
 }
 
+/**
+ * Does this module reach lib/getPages, directly or through other local modules?
+ *
+ * Transitive resolution matters: lib/accessoryLinks.ts imports getPages, so a route that
+ * imports only accessoryLinks still reads the filesystem at runtime. A direct-import-only
+ * check would silently pass such a route — reintroducing exactly the bug this gate exists
+ * to prevent.
+ */
+function readsContent(file, seen = new Set()) {
+  const resolved = path.resolve(file);
+  if (seen.has(resolved)) return false; // cycle guard
+  seen.add(resolved);
+
+  let src;
+  try {
+    src = fs.readFileSync(resolved, "utf8");
+  } catch {
+    return false;
+  }
+  if (/from\s+["']@\/lib\/getPages["']/.test(src)) return true;
+
+  for (const m of src.matchAll(/from\s+["'](@\/[^"']+|\.\.?\/[^"']+)["']/g)) {
+    const spec = m[1];
+    const base = spec.startsWith("@/")
+      ? path.join(root, spec.slice(2))
+      : path.resolve(path.dirname(resolved), spec);
+    for (const ext of [".ts", ".tsx", ".js", ".jsx", "/index.ts", "/index.tsx"]) {
+      const candidate = base + ext;
+      if (fs.existsSync(candidate) && readsContent(candidate, seen)) return true;
+    }
+  }
+  return false;
+}
+
 const offenders = [];
 for (const file of walk(appDir)) {
   const src = fs.readFileSync(file, "utf8");
-  const readsContent = /from\s+["']@\/lib\/getPages["']/.test(src);
   const revalidates = /export\s+const\s+revalidate\s*=/.test(src);
-  if (!readsContent || !revalidates) continue;
+  if (!revalidates || !readsContent(file)) continue;
 
   const key = routeKeyFor(file);
   if (key) offenders.push({ key, file: path.relative(root, file) });

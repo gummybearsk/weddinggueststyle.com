@@ -12,6 +12,8 @@ import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
 import StickyEditorPick from "@/components/StickyEditorPick";
 import PriceSnapshot from "@/components/PriceSnapshot";
 import HeroPicks from "@/components/HeroPicks";
+import FinishTheOutfit from "@/components/FinishTheOutfit";
+import { getAccessoryLinks } from "@/lib/accessoryLinks";
 import { computeInsights, deriveBestFor, deriveRationale } from "@/lib/priceInsights";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
@@ -347,6 +349,7 @@ export default function InnerPage({ params }: PageProps) {
   }));
   const asOf = priceAsOfLabel();
   const insights = computeInsights(products);
+  const accessoryLinks = getAccessoryLinks();
 
   // Split the catalogue: a small ranked set the reader can actually choose from, and the
   // rest as a browsable grid. A flat wall of 90+ dresses is why these pages don't convert.
@@ -422,6 +425,7 @@ export default function InnerPage({ params }: PageProps) {
             <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
             <FurtherReading slug={page.slug} />
+            <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
           </>
         )}
@@ -435,6 +439,7 @@ export default function InnerPage({ params }: PageProps) {
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
+            <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
           </>
         )}
@@ -446,6 +451,7 @@ export default function InnerPage({ params }: PageProps) {
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
+            <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -461,6 +467,7 @@ export default function InnerPage({ params }: PageProps) {
             <FurtherReading slug={page.slug} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
+            <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
           </>
         )}
@@ -473,6 +480,7 @@ export default function InnerPage({ params }: PageProps) {
             <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
             <FurtherReading slug={page.slug} />
             <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
+            <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
           </>

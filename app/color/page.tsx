@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
+import { picksForPillar } from "@/lib/featured";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import { colorSections } from "@/lib/homepageData";
+
+// Renders live Amazon prices — must revalidate, and therefore MUST be listed in
+// next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
+export const revalidate = 43200;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Color — 2026 Palette Guide",
@@ -28,6 +34,8 @@ export default function ColorPillarPage() {
       intro="The 2026 wedding guest palette — butter yellow, sage, fuchsia, chocolate brown, jewel tones — and which colors work for which season, venue, and dress code. Links to our detailed color guides below."
       sections={colorSections}
       longFormParagraphs={longForm}
+      products={picksForPillar(colorSections.map((s) => s.slug), 12)}
+      asOf={priceAsOfLabel()}
     />
   );
 }

@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
+import { picksForPillar } from "@/lib/featured";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import { styleSections } from "@/lib/homepageData";
+
+// Renders live Amazon prices — must revalidate, and therefore MUST be listed in
+// next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
+export const revalidate = 43200;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Style — Maxi, Midi, Floral, Modest, Long Sleeve",
@@ -28,6 +34,8 @@ export default function StylePillarPage() {
       intro="Maxi, midi, knee-length, A-line, floral, modest, long-sleeve — wedding guest dresses organized by the silhouette and details you want. This pillar guide breaks down what works where, and links to our detailed picks."
       sections={styleSections}
       longFormParagraphs={longForm}
+      products={picksForPillar(styleSections.map((s) => s.slug), 12)}
+      asOf={priceAsOfLabel()}
     />
   );
 }

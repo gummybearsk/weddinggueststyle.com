@@ -474,10 +474,11 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "E" && (
           <>
-            <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
+            <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
             <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
             <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
+            <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
             <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
             <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />

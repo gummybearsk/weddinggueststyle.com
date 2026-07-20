@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
+import { picksForPillar } from "@/lib/featured";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import { venueSections } from "@/lib/homepageData";
+
+// Renders live Amazon prices — must revalidate, and therefore MUST be listed in
+// next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
+export const revalidate = 43200;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Venue — Beach, Garden, Vineyard, Ballroom",
@@ -28,6 +34,8 @@ export default function VenuePillarPage() {
       intro="Beach, garden, vineyard, Indian wedding, ballroom, religious venue — each location has hidden constraints that don't appear on the invitation. This pillar guide breaks down dress choices by venue and links to our detailed picks."
       sections={venueSections}
       longFormParagraphs={longForm}
+      products={picksForPillar(venueSections.map((s) => s.slug), 12)}
+      asOf={priceAsOfLabel()}
     />
   );
 }

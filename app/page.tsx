@@ -3,6 +3,9 @@ export const revalidate = 43200;
 
 import Link from "next/link";
 import FAQ from "@/components/FAQ";
+import ShopTheEdit from "@/components/ShopTheEdit";
+import { getFeatured } from "@/lib/featured";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import {
   seasonSections,
   dressCodeSections,
@@ -119,6 +122,9 @@ function CategoryGroup({
 }
 
 export default function HomePage() {
+  const featured = getFeatured(6);
+  const asOf = priceAsOfLabel();
+
   return (
     <>
       <FAQSchema />
@@ -146,6 +152,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Short orienting block. Readers arrive from search wanting a dress — this establishes
+          who we are in a few lines, then gets out of the way so the products can load above
+          the fold rather than behind a wall of editorial. */}
+      <section className="pt-4 pb-10 sm:pt-6 sm:pb-12 bg-ivory">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl space-y-5 text-base leading-[1.8] text-ink-700 font-light">
+            <p>
+              The invitation says &ldquo;cocktail attire&rdquo; and gives you nothing else to work
+              with. We cover more than 100 wedding-guest scenarios — by season, dress code, colour,
+              fit and venue — and for each one we keep a short list of dresses that are actually in
+              stock, at the price Amazon is charging today.
+            </p>
+            <p>
+              Below is what readers are shopping for right now, pulled straight from what performs
+              in search. Every guide behind it is written by our editor{" "}
+              <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>,
+              and prices are re-checked against Amazon every day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Products first — the reason people came. */}
+      <ShopTheEdit
+        featured={featured}
+        asOf={asOf}
+        standfirst="Ranked by what our readers actually search for and click, using our own Bing Webmaster and Search Console data — not by what we feel like featuring."
+      />
+
       {/* Editorial intro content — moved up directly after hero for SEO + authority */}
       <section className="pt-4 pb-12 sm:pt-6 sm:pb-16 bg-ivory">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -159,7 +194,7 @@ export default function HomePage() {
               Wedding guest dressing in 2026 is harder than it should be. The dress code phrase on the invitation is ambiguous, the venue lives in three Instagram squares, and the quiet pressure to look photographed-ready without trying so hard that you remember trying never quite goes away. Wedding Guest Style exists for that exact moment — the few weeks between RSVP and ceremony when you need a real, useful answer to &ldquo;what do I wear.&rdquo;
             </p>
             <p>
-              We index over 100 different wedding-guest scenarios — by season, dress code, color, body type, silhouette, and venue — and curate Amazon-available picks for each one. Every dress on this site was hand-selected from top-rated listings, vetted for fabric quality, fit accuracy in customer reviews, and the kind of finish that photographs well in mixed wedding lighting. We list real prices, real review counts, and honest sizing notes when the listing&apos;s sizing diverges from what reviewers actually report.
+              We index over 100 different wedding-guest scenarios — by season, dress code, color, body type, silhouette, and venue — and curate Amazon-available picks for each one. Every dress on this site was hand-selected from top-rated listings, vetted for fabric quality, construction and the kind of finish that photographs well in mixed wedding lighting. We list the live Amazon price, re-checked daily, and honest sizing notes when a listing&apos;s sizing runs away from what it claims. Anything that sells out comes off the page rather than sitting there as a dead link.
             </p>
 
             <h3 className="display-serif text-2xl text-ink-900 pt-8">

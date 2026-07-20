@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from "react";
 const navGroups = [
   {
     label: "By Season",
-    href: "/#by-season",
+    href: "/season",
     items: [
       { title: "Summer Dresses", slug: "summer-wedding-guest-dresses" },
       { title: "Summer Semi-Formal", slug: "summer-semi-formal-wedding-guest-dresses" },
@@ -21,7 +21,7 @@ const navGroups = [
   },
   {
     label: "By Dress Code",
-    href: "/#by-dress-code",
+    href: "/dress-code",
     items: [
       { title: "Black Tie", slug: "black-tie-wedding-guest-dresses" },
       { title: "Black Tie Optional", slug: "black-tie-optional-wedding-guest-dresses" },
@@ -55,7 +55,7 @@ const navGroups = [
   },
   {
     label: "By Color",
-    href: "/#by-color",
+    href: "/color",
     items: [
       { title: "Black", slug: "black-wedding-guest-dresses" },
       { title: "Elegant Black", slug: "elegant-black-wedding-guest-dresses" },
@@ -92,7 +92,7 @@ const navGroups = [
   },
   {
     label: "By Body Type",
-    href: "/#by-body-type",
+    href: "/body-type",
     items: [
       { title: "Plus Size", slug: "plus-size-wedding-guest-dresses" },
       { title: "Plus Size Cocktail", slug: "plus-size-cocktail-wedding-guest-dresses" },
@@ -106,7 +106,7 @@ const navGroups = [
   },
   {
     label: "By Style",
-    href: "/#by-style",
+    href: "/style",
     items: [
       { title: "Maxi", slug: "maxi-wedding-guest-dresses" },
       { title: "Maxi 2026", slug: "wedding-guest-maxi-dress-2026" },
@@ -129,7 +129,7 @@ const navGroups = [
   },
   {
     label: "By Venue",
-    href: "/#by-venue",
+    href: "/venue",
     items: [
       { title: "Beach", slug: "beach-wedding-guest-dresses" },
       { title: "Beach With Sleeves", slug: "beach-wedding-guest-dresses-with-sleeves" },

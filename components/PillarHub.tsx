@@ -1,5 +1,6 @@
 import Link from "next/link";
-import type { HomepageSection } from "@/lib/types";
+import type { HomepageSection, Product } from "@/lib/types";
+import ProductCarousel from "./ProductCarousel";
 
 interface PillarHubProps {
   pillarSlug: string;       // "season", "color", etc — used for breadcrumb display only (not URL change)
@@ -8,6 +9,10 @@ interface PillarHubProps {
   intro: string;
   sections: HomepageSection[];
   longFormParagraphs: string[]; // 4-6 paragraphs of pillar-level editorial content (1,800+ word target)
+  /** Live, in-stock products pooled from this pillar's cluster pages. */
+  products?: Product[];
+  /** Associates price disclosure — required whenever live prices render. */
+  asOf?: string | null;
 }
 
 function CollectionPageSchema({ pillarLabel, h1, sections }: { pillarLabel: string; h1: string; sections: HomepageSection[] }) {
@@ -49,7 +54,7 @@ function BreadcrumbSchema({ pillarLabel, pillarSlug }: { pillarLabel: string; pi
   );
 }
 
-export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs }: PillarHubProps) {
+export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], asOf = null }: PillarHubProps) {
   return (
     <>
       <CollectionPageSchema pillarLabel={pillarLabel} h1={h1} sections={sections} />
@@ -72,6 +77,25 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
           <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light max-w-3xl">{intro}</p>
         </div>
       </div>
+
+      {products.length >= 4 && (
+        <section className="bg-cream-50 border-b border-ink-200 py-12 sm:py-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="eyebrow text-blush-600 mb-3">Shop this edit</p>
+            <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-2">
+              In stock now across {pillarLabel.toLowerCase()}
+            </h2>
+            <p className="text-sm text-ink-600 font-light mb-8 max-w-2xl leading-relaxed">
+              Pulled from the guides below and re-checked against Amazon daily. Anything that
+              sells out drops off rather than sitting here as a dead link.
+            </p>
+            <ProductCarousel products={products} />
+            {asOf && (
+              <p className="mt-8 text-xs text-ink-500 font-light leading-relaxed">{asOf}</p>
+            )}
+          </div>
+        </section>
+      )}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         {/* Cluster grid — links to all child pages */}

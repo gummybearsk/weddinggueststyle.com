@@ -51,6 +51,12 @@ function readsContent(file, seen = new Set()) {
   if (seen.has(resolved)) return false; // cycle guard
   seen.add(resolved);
 
+  // The loader itself is the base case. Without this the recursion walks INTO
+  // lib/getPages.ts, finds no import of itself, and returns false — so a route reaching
+  // the loader through an intermediate module (app/season → lib/featured → lib/getPages)
+  // would pass the gate while still reading the filesystem at runtime.
+  if (resolved === path.join(root, "lib", "getPages.ts")) return true;
+
   let src;
   try {
     src = fs.readFileSync(resolved, "utf8");
@@ -58,6 +64,8 @@ function readsContent(file, seen = new Set()) {
     return false;
   }
   if (/from\s+["']@\/lib\/getPages["']/.test(src)) return true;
+  // Any module doing its own fs read of the content dir counts too.
+  if (/require\(["']fs["']\)|from\s+["']fs["']/.test(src) && /content/.test(src)) return true;
 
   for (const m of src.matchAll(/from\s+["'](@\/[^"']+|\.\.?\/[^"']+)["']/g)) {
     const spec = m[1];

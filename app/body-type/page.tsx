@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
+import { picksForPillar } from "@/lib/featured";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import { bodyTypeSections } from "@/lib/homepageData";
+
+// Renders live Amazon prices — must revalidate, and therefore MUST be listed in
+// next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
+export const revalidate = 43200;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Body Type — Plus, Petite, Maternity, Over 50",
@@ -28,6 +34,8 @@ export default function BodyTypePillarPage() {
       intro="Plus-size, petite, maternity, over-50, for-big-tummy — silhouettes built to flatter, not hide. This pillar guide breaks down what works for different bodies and links to our detailed picks."
       sections={bodyTypeSections}
       longFormParagraphs={longForm}
+      products={picksForPillar(bodyTypeSections.map((s) => s.slug), 12)}
+      asOf={priceAsOfLabel()}
     />
   );
 }

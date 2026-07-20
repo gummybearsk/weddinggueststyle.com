@@ -10,6 +10,13 @@ const nextConfig = {
       "/sitemap.xml": ["./content/pages/**/*.json"],
       "/": ["./content/pages/**/*.json"],
       "/[slug]": ["./content/pages/**/*.json"],
+      // Pillar hubs render live product rows pooled from their cluster pages.
+      "/season": ["./content/pages/**/*.json"],
+      "/dress-code": ["./content/pages/**/*.json"],
+      "/color": ["./content/pages/**/*.json"],
+      "/body-type": ["./content/pages/**/*.json"],
+      "/style": ["./content/pages/**/*.json"],
+      "/venue": ["./content/pages/**/*.json"],
     },
   },
   images: {

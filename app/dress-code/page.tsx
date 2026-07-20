@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
+import { picksForPillar } from "@/lib/featured";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import { dressCodeSections } from "@/lib/homepageData";
+
+// Renders live Amazon prices — must revalidate, and therefore MUST be listed in
+// next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
+export const revalidate = 43200;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dress Codes Explained — Black Tie to Casual (2026)",
@@ -28,6 +34,8 @@ export default function DressCodePillarPage() {
       intro="Black tie, cocktail, semi-formal, dressy casual — each phrase has specific meaning, expected fabrics, and silhouettes. This pillar guide decodes every common wedding dress code and links to our detailed picks for each category."
       sections={dressCodeSections}
       longFormParagraphs={longForm}
+      products={picksForPillar(dressCodeSections.map((s) => s.slug), 12)}
+      asOf={priceAsOfLabel()}
     />
   );
 }

@@ -42,9 +42,14 @@ export function getLayoutPlan(slug: string, sectionCount: number): LayoutPlan {
   const showPullQuote = ((h >> 11) & 1) === 0 && sectionCount >= 3;
   const showFactsBox = ((h >> 13) & 1) === 0;
 
-  // Split somewhere in the middle so the two halves are balanced for B/C/E layouts.
-  const splitContentAt =
-    sectionCount > 2 ? Math.max(1, Math.min(sectionCount - 1, Math.floor(sectionCount / 2) + ((h >> 15) % 2))) : 0;
+  // How much editorial runs BEFORE the product block on content-first layouts (B/E).
+  //
+  // This used to split at the midpoint, which on a 13-section page buried the products
+  // behind ~1,200 words. Readers arrive from search wanting a dress; many left before ever
+  // scrolling to one. Capped at 1-2 sections — enough to establish context and carry the
+  // exact-match keyword above the products, not enough to lose the reader. Still varies by
+  // hash so the layouts don't become uniform.
+  const splitContentAt = sectionCount > 2 ? 1 + ((h >> 15) % 2) : 0;
 
   const faqVisibleByDefault = 1 + ((h >> 17) % 3); // 1-3
   return {

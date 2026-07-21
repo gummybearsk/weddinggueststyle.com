@@ -5,7 +5,6 @@ import Link from "next/link";
 import FAQ from "@/components/FAQ";
 import ShopTheEdit from "@/components/ShopTheEdit";
 import { getFeatured } from "@/lib/featured";
-import { priceAsOfLabel } from "@/lib/amazonData";
 import {
   seasonSections,
   dressCodeSections,
@@ -123,7 +122,6 @@ function CategoryGroup({
 
 export default function HomePage() {
   const featured = getFeatured(6);
-  const asOf = priceAsOfLabel();
 
   return (
     <>
@@ -157,18 +155,17 @@ export default function HomePage() {
           the fold rather than behind a wall of editorial. */}
       <section className="pt-4 pb-10 sm:pt-6 sm:pb-12 bg-ivory">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl space-y-5 text-base leading-[1.8] text-ink-700 font-light">
+          <div className="max-w-3xl mx-auto space-y-5 text-base leading-[1.8] text-ink-700 font-light">
             <p>
               The invitation says &ldquo;cocktail attire&rdquo; and gives you nothing else to work
               with. We cover more than 100 wedding-guest scenarios — by season, dress code, colour,
               fit and venue — and for each one we keep a short list of dresses that are actually in
-              stock, at the price Amazon is charging today.
+              stock, at today&rsquo;s price.
             </p>
             <p>
               Below is what readers are shopping for right now, pulled straight from what performs
               in search. Every guide behind it is written by our editor{" "}
               <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>,
-              and prices are re-checked against Amazon every day.
             </p>
           </div>
         </div>
@@ -177,8 +174,7 @@ export default function HomePage() {
       {/* Products first — the reason people came. */}
       <ShopTheEdit
         featured={featured}
-        asOf={asOf}
-        standfirst="Ranked by what our readers actually search for and click, using our own Bing Webmaster and Search Console data — not by what we feel like featuring."
+        standfirst="The categories our readers reach for most often."
       />
 
       {/* Editorial intro content — moved up directly after hero for SEO + authority */}
@@ -194,7 +190,7 @@ export default function HomePage() {
               Wedding guest dressing in 2026 is harder than it should be. The dress code phrase on the invitation is ambiguous, the venue lives in three Instagram squares, and the quiet pressure to look photographed-ready without trying so hard that you remember trying never quite goes away. Wedding Guest Style exists for that exact moment — the few weeks between RSVP and ceremony when you need a real, useful answer to &ldquo;what do I wear.&rdquo;
             </p>
             <p>
-              We index over 100 different wedding-guest scenarios — by season, dress code, color, body type, silhouette, and venue — and curate Amazon-available picks for each one. Every dress on this site was hand-selected from top-rated listings, vetted for fabric quality, construction and the kind of finish that photographs well in mixed wedding lighting. We list the live Amazon price, re-checked daily, and honest sizing notes when a listing&apos;s sizing runs away from what it claims. Anything that sells out comes off the page rather than sitting there as a dead link.
+              We cover more than 100 different wedding-guest scenarios — by season, dress code, colour, body type, silhouette and venue — with a short list of picks for each. Every dress is chosen for fabric quality, construction, and the kind of finish that photographs well in mixed wedding lighting, with an honest note whenever a listing&apos;s sizing runs away from what it claims.
             </p>
 
             <h3 className="display-serif text-2xl text-ink-900 pt-8">

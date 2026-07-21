@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
 import { picksForPillar } from "@/lib/featured";
-import { priceAsOfLabel } from "@/lib/amazonData";
+import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { seasonSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
@@ -33,8 +33,8 @@ export default function SeasonPillarPage() {
       intro="Every season has its own dress-code adjustments, fabric expectations, and color palette. This pillar guide breaks down what to wear from summer beach ceremonies to deep-winter ballrooms — and links to our detailed guides for each season."
       sections={seasonSections}
       longFormParagraphs={longForm}
-      products={picksForPillar(seasonSections.map((s) => s.slug), 12)}
-      asOf={priceAsOfLabel()}
+      products={picksForPillar(getPillarSlugs("season"), 12)}
+      groups={getPillarGroups("season")}
     />
   );
 }

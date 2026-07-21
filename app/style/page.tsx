@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
 import { picksForPillar } from "@/lib/featured";
-import { priceAsOfLabel } from "@/lib/amazonData";
+import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { styleSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
@@ -34,8 +34,8 @@ export default function StylePillarPage() {
       intro="Maxi, midi, knee-length, A-line, floral, modest, long-sleeve — wedding guest dresses organized by the silhouette and details you want. This pillar guide breaks down what works where, and links to our detailed picks."
       sections={styleSections}
       longFormParagraphs={longForm}
-      products={picksForPillar(styleSections.map((s) => s.slug), 12)}
-      asOf={priceAsOfLabel()}
+      products={picksForPillar(getPillarSlugs("style"), 12)}
+      groups={getPillarGroups("style")}
     />
   );
 }

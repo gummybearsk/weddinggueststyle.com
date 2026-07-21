@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
 import { picksForPillar } from "@/lib/featured";
-import { priceAsOfLabel } from "@/lib/amazonData";
+import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { colorSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
@@ -34,8 +34,8 @@ export default function ColorPillarPage() {
       intro="The 2026 wedding guest palette — butter yellow, sage, fuchsia, chocolate brown, jewel tones — and which colors work for which season, venue, and dress code. Links to our detailed color guides below."
       sections={colorSections}
       longFormParagraphs={longForm}
-      products={picksForPillar(colorSections.map((s) => s.slug), 12)}
-      asOf={priceAsOfLabel()}
+      products={picksForPillar(getPillarSlugs("color"), 12)}
+      groups={getPillarGroups("color")}
     />
   );
 }

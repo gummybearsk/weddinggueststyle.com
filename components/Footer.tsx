@@ -58,7 +58,9 @@ export default function Footer() {
               <Link href="/editorial" className="text-blush-600 hover:underline">
                 Editorial Guidelines
               </Link>
-              {" "}for our full review process.
+              {" "}for our full review process. Prices and availability shown are accurate as
+              of the date displayed and are subject to change; the price shown at checkout
+              applies.
             </p>
           </div>
         </div>

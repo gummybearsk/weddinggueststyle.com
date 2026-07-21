@@ -13,12 +13,10 @@ import { FeaturedNiche } from "@/lib/featured";
  */
 export default function ShopTheEdit({
   featured,
-  asOf,
-  heading = "Shop what people are actually looking for",
+  heading = "Shop by category",
   standfirst,
 }: {
   featured: { niche: FeaturedNiche; products: Product[] }[];
-  asOf: string | null;
   heading?: string;
   standfirst?: string;
 }) {
@@ -46,21 +44,17 @@ export default function ShopTheEdit({
                 </h3>
                 <Link
                   href={`/${niche.slug}`}
-                  className="text-[11px] tracking-[0.18em] uppercase text-blush-600 hover:text-blush-700 transition-colors"
+                  className="text-[11px] tracking-[0.18em] uppercase text-blush-600 hover:text-blush-700 transition-colors border-b border-blush-300 hover:border-blush-500 pb-0.5"
                 >
-                  Read the guide →
+                  See all {niche.label.toLowerCase()} →
                 </Link>
               </div>
               <p className="text-sm text-ink-600 font-light mb-6 max-w-2xl">{niche.blurb}</p>
-              <ProductCarousel products={products} seeAllSlug={niche.slug} seeAllLabel="See all" />
+              <ProductCarousel products={products} seeAllSlug={niche.slug} seeAllLabel={`See all ${niche.label.toLowerCase()}`} />
             </div>
           ))}
         </div>
 
-        {/* Associates Operating Agreement disclosure — this block shows live prices. */}
-        {asOf && (
-          <p className="mt-12 text-xs text-ink-500 font-light leading-relaxed">{asOf}</p>
-        )}
       </div>
     </section>
   );

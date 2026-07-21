@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { HomepageSection, Product } from "@/lib/types";
 import ProductCarousel from "./ProductCarousel";
+import type { SubGroup } from "@/lib/taxonomy";
 
 interface PillarHubProps {
   pillarSlug: string;       // "season", "color", etc — used for breadcrumb display only (not URL change)
@@ -11,8 +12,8 @@ interface PillarHubProps {
   longFormParagraphs: string[]; // 4-6 paragraphs of pillar-level editorial content (1,800+ word target)
   /** Live, in-stock products pooled from this pillar's cluster pages. */
   products?: Product[];
-  /** Associates price disclosure — required whenever live prices render. */
-  asOf?: string | null;
+  /** Every published page in this pillar, grouped. Replaces the hand-kept 4-item list. */
+  groups?: SubGroup[];
 }
 
 function CollectionPageSchema({ pillarLabel, h1, sections }: { pillarLabel: string; h1: string; sections: HomepageSection[] }) {
@@ -54,7 +55,7 @@ function BreadcrumbSchema({ pillarLabel, pillarSlug }: { pillarLabel: string; pi
   );
 }
 
-export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], asOf = null }: PillarHubProps) {
+export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], groups = [] }: PillarHubProps) {
   return (
     <>
       <CollectionPageSchema pillarLabel={pillarLabel} h1={h1} sections={sections} />
@@ -86,41 +87,55 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
               In stock now across {pillarLabel.toLowerCase()}
             </h2>
             <p className="text-sm text-ink-600 font-light mb-8 max-w-2xl leading-relaxed">
-              Pulled from the guides below and re-checked against Amazon daily. Anything that
-              sells out drops off rather than sitting here as a dead link.
+              A quick look at what we&rsquo;re recommending across {pillarLabel.toLowerCase()}.
             </p>
             <ProductCarousel products={products} />
-            {asOf && (
-              <p className="mt-8 text-xs text-ink-500 font-light leading-relaxed">{asOf}</p>
-            )}
+            <div className="mt-8">
+              <a
+                href="#all-categories"
+                className="inline-flex items-center gap-2 text-[11px] tracking-[0.18em] uppercase font-medium text-ivory bg-ink-900 hover:bg-blush-600 px-8 py-4 transition-colors"
+              >
+                See all {pillarLabel.toLowerCase()} guides →
+              </a>
+            </div>
           </div>
         </section>
       )}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        {/* Cluster grid — links to all child pages */}
-        <section className="mb-16">
+        {/* Every page in this pillar, grouped. Compact link lists rather than large cards —
+            a hub with 39 entries has to stay scannable on a phone. */}
+        <section id="all-categories" className="mb-16 scroll-mt-24">
           <p className="eyebrow mb-4 text-blush-600">All {pillarLabel} Categories</p>
-          <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-8">
-            {sections.length} guides under {pillarLabel.toLowerCase()}
+          <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-2">
+            {groups.reduce((a, g) => a + (g.entries?.length ?? 0), 0)} guides under {pillarLabel.toLowerCase()}
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-            {sections.map((section) => (
-              <Link
-                key={section.id}
-                href={`/${section.slug}`}
-                className="group block bg-ivory border border-ink-200 hover:border-blush-400 transition-all duration-300 p-6 sm:p-8"
-              >
-                <h3 className="display-serif text-xl sm:text-2xl text-ink-900 group-hover:text-blush-600 transition-colors mb-3">
-                  {section.title}
+          <p className="text-sm text-ink-600 font-light mb-10 max-w-2xl">
+            Jump straight to the one you need.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+            {groups.map((group) => (
+              <div key={group.label}>
+                <h3 className="text-[11px] uppercase tracking-[0.18em] text-ink-900 pb-3 mb-3 border-b border-ink-200">
+                  {group.label}
+                  <span className="text-ink-400 ml-2 normal-case tracking-normal">
+                    {group.entries?.length ?? 0}
+                  </span>
                 </h3>
-                <p className="text-sm text-ink-600 leading-relaxed font-light mb-4">
-                  {section.description}
-                </p>
-                <span className="text-[11px] uppercase tracking-[0.18em] text-ink-900 group-hover:text-blush-600 transition-colors border-b border-ink-900 group-hover:border-blush-600 pb-1">
-                  Explore →
-                </span>
-              </Link>
+                <ul className="space-y-2.5">
+                  {(group.entries ?? []).map((e) => (
+                    <li key={e.slug}>
+                      <Link
+                        href={`/${e.slug}`}
+                        className="text-sm text-ink-700 hover:text-blush-600 transition-colors font-light leading-snug block"
+                      >
+                        {e.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             ))}
           </div>
         </section>

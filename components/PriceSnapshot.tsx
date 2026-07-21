@@ -10,11 +10,9 @@ import { PriceInsights } from "@/lib/priceInsights";
 export default function PriceSnapshot({
   insights,
   category,
-  trackedSince,
 }: {
   insights: PriceInsights | null;
   category: string;
-  trackedSince: string;
 }) {
   if (!insights) return null;
   const i = insights;
@@ -49,11 +47,9 @@ export default function PriceSnapshot({
   return (
     <figure className="my-12 border border-ink-200 bg-cream-50">
       <figcaption className="px-6 py-4 border-b border-ink-200">
-        <p className="eyebrow text-blush-600 mb-1">Our own price tracking</p>
+        <p className="eyebrow text-blush-600 mb-1">At a glance</p>
         <p className="text-sm text-ink-700 font-light leading-relaxed">
-          We re-check every dress on this page against Amazon&rsquo;s API once a day and log
-          what changes. Here is what the {category.toLowerCase()} we recommend actually cost
-          today.
+          What the {category.toLowerCase()} on this page cost today.
         </p>
       </figcaption>
 
@@ -79,8 +75,7 @@ export default function PriceSnapshot({
       </table>
 
       <p className="px-6 py-3 border-t border-ink-200 text-xs text-ink-500 font-light">
-        Tracked daily since {trackedSince}. Figures move as Amazon&rsquo;s prices and stock
-        move — we drop anything that sells out rather than leaving a dead link on the page.
+        Prices change often — check the current price before you buy.
       </p>
     </figure>
   );

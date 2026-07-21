@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
 import { picksForPillar } from "@/lib/featured";
-import { priceAsOfLabel } from "@/lib/amazonData";
+import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { dressCodeSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
@@ -34,8 +34,8 @@ export default function DressCodePillarPage() {
       intro="Black tie, cocktail, semi-formal, dressy casual — each phrase has specific meaning, expected fabrics, and silhouettes. This pillar guide decodes every common wedding dress code and links to our detailed picks for each category."
       sections={dressCodeSections}
       longFormParagraphs={longForm}
-      products={picksForPillar(dressCodeSections.map((s) => s.slug), 12)}
-      asOf={priceAsOfLabel()}
+      products={picksForPillar(getPillarSlugs("dress-code"), 12)}
+      groups={getPillarGroups("dress-code")}
     />
   );
 }

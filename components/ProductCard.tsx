@@ -49,7 +49,7 @@ export default function ProductCard({
         target="_blank"
         rel="noopener noreferrer nofollow sponsored"
         className="absolute inset-0 z-20"
-        aria-label={`Shop ${product.title} on Amazon`}
+        aria-label={`Shop ${product.title}`}
       />
 
       <div className="relative aspect-[3/4] bg-cream-50 overflow-hidden">

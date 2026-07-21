@@ -209,9 +209,10 @@ function ProductBlock({
     <section className="mb-14">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6">{title}</h2>
       <ProductGrid products={products} />
-      {/* Required by the Associates Operating Agreement — must sit under every product block. */}
+      {/* Amazon requires displayed prices to carry an "as of" date. Kept to one short line
+          per page; the full disclosure lives in the footer. */}
       {asOf && (
-        <p className="mt-6 text-xs text-ink-500 font-light leading-relaxed">{asOf}</p>
+        <p className="mt-6 text-xs text-ink-400 font-light">{asOf}</p>
       )}
     </section>
   );
@@ -267,7 +268,7 @@ function FactsBox({
         </div>
       </dl>
       <p className="mt-4 text-xs text-ink-500 italic font-light">
-        Live from Amazon across the {products.length} {category.toLowerCase()} on this page.
+        Across the {products.length} {category.toLowerCase()} on this page.
       </p>
     </aside>
   );
@@ -419,10 +420,10 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "A" && (
           <>
-            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
-            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
+            <HeroPicks products={heroPicks} category={page.title} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
-            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
+            <PriceSnapshot insights={insights} category={page.title} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
             <FurtherReading slug={page.slug} />
             <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
@@ -433,9 +434,9 @@ export default function InnerPage({ params }: PageProps) {
         {plan.variant === "B" && (
           <>
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
-            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
-            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
-            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
+            <PriceSnapshot insights={insights} category={page.title} />
+            <HeroPicks products={heroPicks} category={page.title} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -446,8 +447,8 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "C" && (
           <>
-            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
-            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
+            <HeroPicks products={heroPicks} category={page.title} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
@@ -455,15 +456,15 @@ export default function InnerPage({ params }: PageProps) {
             <RelatedPages relatedPages={page.relatedPages} />
             <FurtherReading slug={page.slug} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
-            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
+            <PriceSnapshot insights={insights} category={page.title} />
           </>
         )}
 
         {plan.variant === "D" && (
           <>
-            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
-            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
-            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
+            <HeroPicks products={heroPicks} category={page.title} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
+            <PriceSnapshot insights={insights} category={page.title} />
             <FurtherReading slug={page.slug} />
             <ContentSections sections={page.contentSections} hClass={hClass} divider={plan.showSectionDividers} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
@@ -476,11 +477,11 @@ export default function InnerPage({ params }: PageProps) {
           <>
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
-            <HeroPicks products={heroPicks} category={page.title} asOf={asOf} />
-            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={heroPicks.length >= 3 ? null : asOf} />
+            <HeroPicks products={heroPicks} category={page.title} />
+            <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
-            <PriceSnapshot insights={insights} category={page.title} trackedSince="March 2026" />
+            <PriceSnapshot insights={insights} category={page.title} />
             <FinishTheOutfit links={accessoryLinks} currentSlug={page.slug} />
             <RelatedPages relatedPages={page.relatedPages} />
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}

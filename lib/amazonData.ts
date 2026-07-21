@@ -102,5 +102,5 @@ export function priceAsOfLabel(): string | null {
     year: "numeric",
     timeZone: "UTC",
   });
-  return `Product prices and availability are accurate as of ${d} and are subject to change. Any price and availability information displayed on Amazon at the time of purchase will apply.`;
+  return `Prices shown as of ${d}.`;
 }

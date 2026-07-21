@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
 import { picksForPillar } from "@/lib/featured";
-import { priceAsOfLabel } from "@/lib/amazonData";
+import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { venueSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
@@ -34,8 +34,8 @@ export default function VenuePillarPage() {
       intro="Beach, garden, vineyard, Indian wedding, ballroom, religious venue — each location has hidden constraints that don't appear on the invitation. This pillar guide breaks down dress choices by venue and links to our detailed picks."
       sections={venueSections}
       longFormParagraphs={longForm}
-      products={picksForPillar(venueSections.map((s) => s.slug), 12)}
-      asOf={priceAsOfLabel()}
+      products={picksForPillar(getPillarSlugs("venue"), 12)}
+      groups={getPillarGroups("venue")}
     />
   );
 }

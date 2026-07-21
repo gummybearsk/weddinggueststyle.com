@@ -14,11 +14,9 @@ import { Product } from "@/lib/types";
 export default function HeroPicks({
   products,
   category,
-  asOf,
 }: {
   products: (Product & { why?: string })[];
   category: string;
-  asOf: string | null;
 }) {
   if (products.length < 3) return null;
 
@@ -28,9 +26,7 @@ export default function HeroPicks({
         Our picks for {category.toLowerCase()}
       </h2>
       <p className="text-sm text-ink-600 font-light mb-8 max-w-2xl leading-relaxed">
-        Ranked from the {products.length} strongest options currently in stock. Prices are
-        pulled from Amazon daily, and anything that sells out drops off this list rather
-        than sitting here as a dead link.
+        Our favourites right now, in order.
       </p>
 
       <ol className="space-y-6">
@@ -44,7 +40,7 @@ export default function HeroPicks({
               target="_blank"
               rel="noopener noreferrer nofollow sponsored"
               className="absolute inset-0 z-20"
-              aria-label={`Shop ${p.title} on Amazon`}
+              aria-label={`Shop ${p.title}`}
             />
 
             <div className="flex flex-col sm:flex-row gap-5 p-5">
@@ -94,11 +90,6 @@ export default function HeroPicks({
         ))}
       </ol>
 
-      {/* Associates Operating Agreement disclosure — this block shows live prices, so it
-          must carry the timestamp even when no further product grid follows. */}
-      {asOf && (
-        <p className="mt-6 text-xs text-ink-500 font-light leading-relaxed">{asOf}</p>
-      )}
     </section>
   );
 }

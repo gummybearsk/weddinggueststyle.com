@@ -4,6 +4,7 @@ export const revalidate = 43200;
 import Link from "next/link";
 import FAQ from "@/components/FAQ";
 import ShopTheEdit from "@/components/ShopTheEdit";
+import StickyEditorPick from "@/components/StickyEditorPick";
 import { getFeatured } from "@/lib/featured";
 import {
   seasonSections,
@@ -127,6 +128,9 @@ export default function HomePage() {
     <>
       <FAQSchema />
       <WebsiteSchema />
+
+      {/* Persistent CTA once the reader is past the fold. */}
+      <StickyEditorPick product={featured[0]?.products[0] ?? null} />
 
       {/* Hero Section — slim editorial */}
       <section className="relative bg-ivory pt-10 pb-6 sm:pt-14 sm:pb-8 overflow-hidden">

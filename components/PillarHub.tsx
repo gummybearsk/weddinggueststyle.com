@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { HomepageSection, Product } from "@/lib/types";
 import ProductCarousel from "./ProductCarousel";
+import StickyEditorPick from "./StickyEditorPick";
 import type { SubGroup } from "@/lib/taxonomy";
 
 interface PillarHubProps {
@@ -59,6 +60,7 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
   return (
     <>
       <CollectionPageSchema pillarLabel={pillarLabel} h1={h1} sections={sections} />
+      <StickyEditorPick product={products[0] ?? null} />
       <BreadcrumbSchema pillarLabel={pillarLabel} pillarSlug={pillarSlug} />
 
       {/* Header */}

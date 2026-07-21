@@ -74,15 +74,20 @@ function FAQSchema({ faqs }: { faqs: { question: string; answer: string }[] }) {
 /**
  * ItemList of the products on this page.
  *
- * Deliberately omitted, and they must stay omitted:
- *  - `aggregateRating` — the Creators API does not serve customerReviews, so any rating
- *    here would be scraped data asserted to Google as fact.
- *  - `hasMerchantReturnPolicy` / `shippingDetails` — we previously hardcoded 30-day free
- *    returns and free 2-5 day shipping for every product. That is per-seller on Amazon and
- *    we have no feed for it, so it was fabricated.
+ * Every field below is sourced from the daily Creators API refresh — seller, condition,
+ * availability, price and deal end-date are real values, not defaults.
  *
- * `price` comes from the daily API refresh only (lib/amazonData.ts). Publishing a stale
- * price as structured data is what triggers merchant-listing manual actions.
+ * Deliberately omitted, and they must stay omitted:
+ *  - `aggregateRating` — the API does not serve customerReviews, so any rating here would
+ *    be scraped data asserted to Google as fact.
+ *  - `hasMerchantReturnPolicy` / `shippingDetails` — Search Console reports both as
+ *    missing (15 items, non-critical, "items with these issues are valid"). We previously
+ *    hardcoded 30-day free returns and free 2-5 day shipping for EVERY product, which was
+ *    invented. The Creators API exposes no shipping or returns data at all — requesting
+ *    `offersV2.listings.deliveryInfo` returns HTTP 400 and the valid-resource enum
+ *    contains no equivalent. Re-adding them means fabricating merchant claims, which
+ *    risks a manual action; the warning is the cheaper, honest trade. Do not "fix" these
+ *    two by inventing values.
  */
 function ItemListSchema({ products, title }: { products: Product[]; title: string }) {
   const schema = {
@@ -99,13 +104,27 @@ function ItemListSchema({ products, title }: { products: Product[]; title: strin
         description: product.title,
         image: product.image,
         url: product.url,
-        brand: { "@type": "Brand", name: "Amazon Fashion" },
+        ...(product.seller ? { brand: { "@type": "Brand", name: product.seller } } : {}),
         offers: {
           "@type": "Offer",
           price: product.price.replace(/[^0-9.]/g, ""),
           priceCurrency: "USD",
-          availability: "https://schema.org/InStock",
+          // From the API's availability.type rather than a hardcoded InStock.
+          availability:
+            product.availability === "IN_STOCK"
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
           url: product.url,
+          ...(product.condition === "New"
+            ? { itemCondition: "https://schema.org/NewCondition" }
+            : {}),
+          // We are an affiliate, not the merchant — name the actual seller.
+          ...(product.seller
+            ? { seller: { "@type": "Organization", name: product.seller } }
+            : {}),
+          ...(product.priceValidUntil
+            ? { priceValidUntil: product.priceValidUntil.slice(0, 10) }
+            : {}),
         },
       },
     })),

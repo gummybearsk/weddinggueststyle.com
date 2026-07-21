@@ -213,7 +213,19 @@ async function getItems(asins) {
     partnerTag: PARTNER_TAG,
     partnerType: "Associates",
     marketplace: "www.amazon.com",
-    resources: ["images.primary.large", "itemInfo.title", "offersV2.listings.price"],
+    resources: [
+      "images.primary.large",
+      "itemInfo.title",
+      "offersV2.listings.price",
+      // Real values for the Offer node. NOTE: the API exposes NO shipping or returns
+      // data — `offersV2.listings.deliveryInfo` is rejected as an invalid resource, and
+      // the valid-enum error lists nothing covering either. So hasMerchantReturnPolicy
+      // and shippingDetails cannot be populated truthfully and are deliberately omitted.
+      "offersV2.listings.availability",
+      "offersV2.listings.condition",
+      "offersV2.listings.merchantInfo",
+      "offersV2.listings.dealDetails",
+    ],
   });
   const items = (result.itemsResult && result.itemsResult.items) || [];
   const out = {};
@@ -222,12 +234,23 @@ async function getItems(asins) {
     if (!asin) continue;
     const title = item.itemInfo?.title?.displayValue;
     const image = item.images?.primary?.large?.url;
-    const money = item.offersV2?.listings?.[0]?.price?.money;
+    const listing = item.offersV2?.listings?.[0];
+    const money = listing?.price?.money;
     const price = money ? money.displayAmount : "";
-    const savings = item.offersV2?.listings?.[0]?.price?.savings?.percentage;
+    const savings = listing?.price?.savings?.percentage;
+    // Everything below comes straight from the API — no defaults, no guesses. Fields the
+    // API doesn't return are simply absent, so the schema can omit them rather than invent.
+    const seller = listing?.merchantInfo?.name || "";
+    const condition = listing?.condition?.value || "";
+    const availability = listing?.availability?.type || "";
+    const priceValidUntil = listing?.dealDetails?.endTime || "";
     out[asin] = {
       asin,
       title: title || "",
+      ...(seller ? { seller } : {}),
+      ...(condition ? { condition } : {}),
+      ...(availability ? { availability } : {}),
+      ...(priceValidUntil ? { priceValidUntil } : {}),
       // Request a sharper render than Amazon's default thumbnail. getItems returns
       // _SL500_ while searchItems returns _AC_UL500_ — normalize both to _AC_UL640_.
       image: image ? image.replace(/_(AC_)?(UL|SL|SX|SY)\d+_/, "_AC_UL640_") : "",

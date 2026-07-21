@@ -22,6 +22,11 @@ interface AmazonItem {
   price: string;
   inStock: boolean;
   savingsPercent?: number;
+  // Straight from the API. Absent when Amazon doesn't return them.
+  seller?: string;
+  condition?: string;
+  availability?: string;
+  priceValidUntil?: string;
 }
 
 interface AmazonData {
@@ -76,6 +81,10 @@ export function withLiveData(products: Product[]): Product[] {
       url: live.url,
       inStock: true,
       ...(live.savingsPercent ? { savingsPercent: live.savingsPercent } : {}),
+      ...(live.seller ? { seller: live.seller } : {}),
+      ...(live.condition ? { condition: live.condition } : {}),
+      ...(live.availability ? { availability: live.availability } : {}),
+      ...(live.priceValidUntil ? { priceValidUntil: live.priceValidUntil } : {}),
       // Scraped ratings are never carried through.
       rating: undefined,
       reviewCount: undefined,

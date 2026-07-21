@@ -22,6 +22,12 @@ export interface Product {
   // ── Populated at build/ISR from content/amazon-data.json (never hand-edited) ─
   inStock?: boolean;
   savingsPercent?: number;
+  /** Actual Amazon seller (merchantInfo.name) — we are not the merchant. */
+  seller?: string;
+  condition?: string;
+  availability?: string;
+  /** ISO end of the current deal, when one is running. */
+  priceValidUntil?: string;
 }
 
 export interface FAQ {

@@ -125,6 +125,11 @@ function ItemListSchema({ products, title }: { products: Product[]; title: strin
           ...(product.priceValidUntil
             ? { priceValidUntil: product.priceValidUntil.slice(0, 10) }
             : {}),
+          // Google asks for validFrom alongside priceValidUntil. Real value from
+          // dealDetails.startTime — never synthesised.
+          ...(product.priceValidFrom
+            ? { validFrom: product.priceValidFrom.slice(0, 10) }
+            : {}),
         },
       },
     })),

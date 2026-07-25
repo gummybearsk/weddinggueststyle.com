@@ -27,6 +27,7 @@ interface AmazonItem {
   condition?: string;
   availability?: string;
   priceValidUntil?: string;
+  priceValidFrom?: string;
 }
 
 interface AmazonData {
@@ -85,6 +86,7 @@ export function withLiveData(products: Product[]): Product[] {
       ...(live.condition ? { condition: live.condition } : {}),
       ...(live.availability ? { availability: live.availability } : {}),
       ...(live.priceValidUntil ? { priceValidUntil: live.priceValidUntil } : {}),
+      ...(live.priceValidFrom ? { priceValidFrom: live.priceValidFrom } : {}),
       // Scraped ratings are never carried through.
       rating: undefined,
       reviewCount: undefined,

@@ -26,8 +26,9 @@ export interface Product {
   seller?: string;
   condition?: string;
   availability?: string;
-  /** ISO end of the current deal, when one is running. */
+  /** ISO start/end of the current deal, when one is running. */
   priceValidUntil?: string;
+  priceValidFrom?: string;
 }
 
 export interface FAQ {

@@ -244,6 +244,7 @@ async function getItems(asins) {
     const condition = listing?.condition?.value || "";
     const availability = listing?.availability?.type || "";
     const priceValidUntil = listing?.dealDetails?.endTime || "";
+    const priceValidFrom = listing?.dealDetails?.startTime || "";
     out[asin] = {
       asin,
       title: title || "",
@@ -251,6 +252,7 @@ async function getItems(asins) {
       ...(condition ? { condition } : {}),
       ...(availability ? { availability } : {}),
       ...(priceValidUntil ? { priceValidUntil } : {}),
+      ...(priceValidFrom ? { priceValidFrom } : {}),
       // Request a sharper render than Amazon's default thumbnail. getItems returns
       // _SL500_ while searchItems returns _AC_UL500_ — normalize both to _AC_UL640_.
       image: image ? image.replace(/_(AC_)?(UL|SL|SX|SY)\d+_/, "_AC_UL640_") : "",

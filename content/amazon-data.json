@@ -1,6 +1,6 @@
 {
-  "fetchedAt": "2026-09-02T09:23:21.129Z",
-  "count": 3180,
+  "fetchedAt": "2026-09-03T09:31:43.987Z",
+  "count": 3179,
   "items": {
     "B0DNF7X15V": {
       "asin": "B0DNF7X15V",
@@ -22,7 +22,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41DUpLC0b2L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3L8BPG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$92.99",
+      "price": "$95.99",
       "inStock": true
     },
     "B0GCN8YR8Z": {
@@ -158,7 +158,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31hJtGSZClL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G7D8YK6C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$61.99",
+      "price": "$55.79",
+      "savingsPercent": 10,
       "inStock": true
     },
     "B0G4BPH9XB": {
@@ -169,8 +170,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41CJVxzeeTL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4BPH9XB?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$41.39",
-      "savingsPercent": 10,
+      "price": "$45.99",
       "inStock": true
     },
     "B0G2WL5SRF": {
@@ -181,7 +181,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41YNbOTIqkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2WL5SRF?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$14.04",
       "inStock": true
     },
     "B0G231LPDF": {
@@ -280,11 +280,13 @@
     "B0GC6K92J2": {
       "asin": "B0GC6K92J2",
       "title": "EYNMIN Floral Maxi Dress Spaghetti Strap Flowy A Line 2026 Spring Summer Wedding Guest Dresses for Women Long Sundress Black",
-      "availability": "OUT_OF_STOCK",
+      "seller": "EYNMIN",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31EKGhdT7EL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GC6K92J2?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$62.99",
+      "inStock": true
     },
     "B0CC27KQQS": {
       "asin": "B0CC27KQQS",
@@ -445,6 +447,7 @@
       "image": "https://m.media-amazon.com/images/I/41R9-NTiHEL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G9333DZN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$29.99",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0FKMJZ7P6": {
@@ -486,13 +489,11 @@
     "B0DDSJV4W6": {
       "asin": "B0DDSJV4W6",
       "title": "Ever-Pretty Plus Women's Wedding Guest Dresses V Neck A Line High Low Plus Size Long Sleeve Semi Formal Dress for Curvy Women Black US22",
-      "seller": "Ever Pretty Moment",
-      "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31rDBmG3XXL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DDSJV4W6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$52.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0GKYX7JX4": {
       "asin": "B0GKYX7JX4",
@@ -669,7 +670,7 @@
       "image": "https://m.media-amazon.com/images/I/41E5eSFpKdL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GD4LJ6XM?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$45.99",
-      "savingsPercent": 8,
+      "savingsPercent": 15,
       "inStock": true
     },
     "B0F5WGQ16M": {
@@ -878,11 +879,13 @@
     "B0F1K3D9LS": {
       "asin": "B0F1K3D9LS",
       "title": "YIOYOLA Vacation Dress for Women 2025 Trendy Beach Sundresses for Petite Wedding Guest Casual Summer Black Dresses with Pockets (YYL308-Black,L)",
-      "availability": "OUT_OF_STOCK",
+      "seller": "YL Fashionstore",
+      "condition": "New",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31YhvDTwNkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F1K3D9LS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$12.22",
+      "inStock": true
     },
     "B0FY681MPS": {
       "asin": "B0FY681MPS",
@@ -1007,7 +1010,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41bCXc8I+5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LKKW7T?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 12,
       "inStock": true
     },
     "B0GCCQGMN7": {
@@ -1018,7 +1022,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31uUFHr5U1L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GCCQGMN7?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$40.99",
+      "price": "$42.99",
       "inStock": true
     },
     "B0G48M1GXN": {
@@ -1026,10 +1030,11 @@
       "title": "YATHON Black Wedding Guest Dress for Women Elegant Halter Neck Tie Back Summer Midi Cocktail Party Evening Date Night Dresses (YT646-Black,M)",
       "seller": "YT Fashionstore",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31KOOg51oJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G48M1GXN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 42,
       "inStock": true
     },
     "B0G11NJSH4": {
@@ -1129,7 +1134,7 @@
       "title": "Simplee Women Floral Summer Midi Dress Beach Vacation Square Neck Spring Sun Dress A Line Chiffon Long Wedding Guest Dress 2026 (Orange Floral L)",
       "seller": "Simplee Apparel",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41b3Bo9JHiL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2356ZZK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$46.99",
@@ -1265,8 +1270,7 @@
       "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/51gKPteglsL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B09P1FTBNQ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$18.04",
-      "savingsPercent": 8,
+      "price": "$18.99",
       "inStock": true
     },
     "B0FWJWDP1P": {
@@ -1331,7 +1335,7 @@
       "seller": "Fashion Fitting Shop",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/51JOAN8WalL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/51j4OwIHWJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F21DDLWP?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$34.99",
       "inStock": true
@@ -1568,8 +1572,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41WI8fhQroL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GF6C3RNK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$18.74",
-      "savingsPercent": 6,
+      "price": "$24.99",
       "inStock": true
     },
     "B0FY65Z37W": {
@@ -1614,7 +1617,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31B+yH+x8rL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GCJV6M3Y?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$63.99",
+      "price": "$51.19",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B0DP9BBYYD": {
@@ -1657,7 +1661,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51PBj5zS+zL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D79KN9PT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$27.95",
+      "price": "$12.58",
       "inStock": true
     },
     "B0FX7MJXCZ": {
@@ -1770,7 +1774,7 @@
       "asin": "B0C53BB6TH",
       "title": "ZZV Formal Dresses for Women V Neck Gowns Evening Party Long Cocktail Dress",
       "availability": "OUT_OF_STOCK",
-      "image": "https://m.media-amazon.com/images/I/31Yr6nPG3DL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/41GukPoFjsL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0C53BB6TH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "",
       "inStock": false
@@ -1803,8 +1807,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41OhyRBqx+L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FKMRZGWL?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$53.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0BSLL6854": {
@@ -1870,7 +1874,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/318QFhkgvoL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DJ2B1BJ6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$48.99",
+      "price": "$49.99",
       "inStock": true
     },
     "B0G2M9F5JS": {
@@ -1893,7 +1897,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41CkTzaqc3L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3N8ZJG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$85.99",
       "inStock": true
     },
     "B0D93PBRBR": {
@@ -1994,7 +1998,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31XIJAwwieL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LMJNWS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 24,
       "inStock": true
     },
     "B0F9PH93NB": {
@@ -2067,11 +2072,11 @@
     },
     "B0CBX4YSJ3": {
       "asin": "B0CBX4YSJ3",
-      "title": "REORIA Women's Sexy Casual Crew Neck Lounge Slimming Long Dress Elegant Wedding Guest Long Sleeve Ribbed Bodycon Maxi Dresses Black Medium",
+      "title": "REORIA Women's Long Sleeve Ribbed Bodycon Maxi Dresses Black",
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/21YEqc1OdaL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/210HydhWzvL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CBX4YSJ3?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$44.97",
       "inStock": true
@@ -2187,7 +2192,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31cbRyOE4wL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CJ9Q3XJD?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$170.20",
+      "price": "$171.08",
       "inStock": true
     },
     "B0DHZWLCY6": {
@@ -2246,7 +2251,7 @@
     },
     "B0CBX4G4GB": {
       "asin": "B0CBX4G4GB",
-      "title": "REORIA Women's Sexy Casual Crew Neck Lounge Slimming Long Dress Elegant Wedding Guest Long Sleeve Ribbed Bodycon Maxi Dresses Black Small",
+      "title": "REORIA Women's Long Sleeve Ribbed Bodycon Maxi Dresses Black",
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -2520,7 +2525,7 @@
     },
     "B0CBX4LLCP": {
       "asin": "B0CBX4LLCP",
-      "title": "REORIA Women's Fall Sexy Casual Crew Neck Lounge Long Dress Formal Wedding Guest Long Sleeve Ribbed Bodycon Maxi Dresses Rose red Large",
+      "title": "REORIA Women's Long Sleeve Ribbed Bodycon Maxi Dresses Rose Red",
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -2763,7 +2768,7 @@
     },
     "B0G1T4Q8MP": {
       "asin": "B0G1T4Q8MP",
-      "title": "Simplee Womens Wedding Guest Maxi Dress 2026 Strapless Boho Floral Spaghetti Strap High Waist Party Sexy Long Formal Layered Flowy Dress(Rust Red M)",
+      "title": "Simplee Womens Maxi Boho Floral Strpless Wedding Guest Beach Long Dress",
       "seller": "Simplee Apparel",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -2916,12 +2921,12 @@
     "B0FDG6149F": {
       "asin": "B0FDG6149F",
       "title": "MIRUXIA Navy Blue Cold Shoulder Pleated Bridesmaids Dresses for Teens 2025 Chiffon V-Neck Long Formal Wedding Guest Party Dress with Slit for Women US2",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31ETh0wI2NL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG6149F?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$51.99",
+      "price": "$59.99",
       "inStock": true
     },
     "B0D673QGN2": {
@@ -2973,6 +2978,7 @@
       "image": "https://m.media-amazon.com/images/I/315P24ub80L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F9YHRT1H?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$14.99",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0CXTBRC4M": {
@@ -3050,8 +3056,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31LvvbH7q3L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D8SP8FPH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$54.99",
+      "savingsPercent": 21,
       "inStock": true
     },
     "B0FFMR6TXR": {
@@ -3080,10 +3086,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31uKOWuvJwL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6N2X7D?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$44.97",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0F7XBZD7R": {
@@ -3199,11 +3207,13 @@
     "B0GGHD5KZN": {
       "asin": "B0GGHD5KZN",
       "title": "MEROKEETY Womens Wedding Guest Cocktail Party Dresses, Navy, XS",
-      "availability": "OUT_OF_STOCK",
+      "seller": "MEROKEETY",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31lDQ5szZzL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GGHD5KZN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$59.99",
+      "inStock": true
     },
     "B0DP21T5Z7": {
       "asin": "B0DP21T5Z7",
@@ -3237,11 +3247,14 @@
     "B0GGRTBFJK": {
       "asin": "B0GGRTBFJK",
       "title": "GRACE KARIN Floral Wedding Guest Dresses Dark Green with White Flowers XL",
-      "availability": "OUT_OF_STOCK",
+      "seller": "Livestmall",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/4173s03FTyL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GGRTBFJK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$49.99",
+      "savingsPercent": 17,
+      "inStock": true
     },
     "B0FCG3VQHD": {
       "asin": "B0FCG3VQHD",
@@ -3259,11 +3272,11 @@
     },
     "B0CBX6R6XR": {
       "asin": "B0CBX6R6XR",
-      "title": "REORIA Women's Fall Sexy Casual Crew Neck Lounge Long Dress Formal Wedding Guest Long Sleeve Ribbed Bodycon Maxi Dresses Khaki X-Large",
+      "title": "REORIA Women's Long Sleeve Ribbed Bodycon Maxi Dresses Khaki",
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/21ztOn+UPpL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/21J0GM9hiIL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CBX6R6XR?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$44.97",
       "inStock": true
@@ -3512,7 +3525,7 @@
     },
     "B0G1T138Z2": {
       "asin": "B0G1T138Z2",
-      "title": "Simplee Womens Wedding Guest Maxi Dress 2026 Strapless Boho Floral Spaghetti Strap High Waist Party Sexy Long Formal Layered Flowy Dress(Rust Red L)",
+      "title": "Simplee Womens Maxi Boho Floral Strpless Wedding Guest Beach Long Dress",
       "seller": "Simplee Apparel",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -3552,7 +3565,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41YNbOTIqkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2WN857F?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$13.28",
       "inStock": true
     },
     "B0GF1RXNFC": {
@@ -3644,7 +3657,7 @@
     },
     "B0CC4G68LH": {
       "asin": "B0CC4G68LH",
-      "title": "BeryLove Women Sequin Formal Party Dresses Flutter Short Sleeve Wedding Guest Cocktail Long Evening Dress BLS007 Black L",
+      "title": "Womens Wedding Guest Dresses for Women Sequin Cocktail Gown Black L",
       "seller": "BeryLove",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -3800,7 +3813,6 @@
       "image": "https://m.media-amazon.com/images/I/41+ol6kXUBL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F4N2ZXKD?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$39.99",
-      "savingsPercent": 9,
       "inStock": true
     },
     "B0FZV9NKLD": {
@@ -3835,7 +3847,6 @@
       "image": "https://m.media-amazon.com/images/I/318ZjsrnOuL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07RKLTM6C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$36.99",
-      "savingsPercent": 8,
       "inStock": true
     },
     "B0CSYNHF31": {
@@ -3935,13 +3946,11 @@
     "B07RFF64R4": {
       "asin": "B07RFF64R4",
       "title": "DRESSTELLS Coctail Dresses for Women 2026 Formal Wedding Guest Black Tie Knee Length Vintage 1950s Evening Gown Burgundy S",
-      "seller": "dresstells",
-      "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31pE7FkOl4L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07RFF64R4?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0FD9VC8SB": {
       "asin": "B0FD9VC8SB",
@@ -4660,7 +4669,8 @@
       "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31KOOg51oJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G48P1GJY?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 42,
       "inStock": true
     },
     "B086QML4BH": {
@@ -4884,7 +4894,7 @@
       "title": "CurvySweet Isolde Women's One Shoulder Mesh Ribbon Ruched Formal Maxi Dress",
       "seller": "Curvysweet Studio",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31IY7Kbk9TL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FS1N2FYQ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$72.99",
@@ -5311,21 +5321,24 @@
     "B0GBW2FVT1": {
       "asin": "B0GBW2FVT1",
       "title": "Mmufk V-Neck Bridesmaid Dresses with Pockets Slit Long Chiffon Ruffle Ruched A-Line Empire Waist Wedding Guest Dress Black Size 16",
-      "availability": "OUT_OF_STOCK",
+      "seller": "yang bo store",
+      "condition": "New",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31tfjpYssQL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GBW2FVT1?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$64.99",
+      "savingsPercent": 13,
+      "inStock": true
     },
     "B0FDG58B9D": {
       "asin": "B0FDG58B9D",
       "title": "MIRUXIA Chiffon Cold Shoulder Black Bridesmaids Dress for Women A-line Long Formal Evening Gowns V-Neck Ruched Wedding Guest Dresses US14",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31zZOPX4RjL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG58B9D?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
+      "price": "$63.99",
       "inStock": true
     },
     "B0DJS32RDJ": {
@@ -5400,7 +5413,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/318QFhkgvoL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DJ2B46LH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$48.99",
+      "price": "$49.99",
       "inStock": true
     },
     "B0C46KZ2MN": {
@@ -5574,8 +5587,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31Vp511zkrL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ1CV9F9?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.52",
-      "savingsPercent": 32,
+      "price": "$58.99",
       "inStock": true
     },
     "B0DJT2BGMS": {
@@ -5760,7 +5772,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41hedt9ZB3L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3WQ6Q5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$85.99",
       "inStock": true
     },
     "B0FXRDPLHQ": {
@@ -5885,7 +5897,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31zEfbxBYSL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LMSJ65?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 42,
       "inStock": true
     },
     "B0C4Y6679M": {
@@ -6060,7 +6073,7 @@
       "title": "AUSELILY Maxi Dresses Women 2026 Ruffle Sleeve V Neck Summer Wrap Dress",
       "seller": "AUSELILY",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31IzZegjyIL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FWRLMZWG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$36.99",
@@ -6132,12 +6145,12 @@
     "B0FDG54777": {
       "asin": "B0FDG54777",
       "title": "MIRUXIA Chiffon Cold Shoulder Sky Blue Bridesmaids Dress for Women A-line Long Formal Evening Gowns V-Neck Ruched Wedding Guest Dresses US14",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31KYaoCuRQL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG54777?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
+      "price": "$63.99",
       "inStock": true
     },
     "B0CBZL5ZTQ": {
@@ -6523,12 +6536,10 @@
       "seller": "ZESICA",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-07T06:59:59Z",
-      "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/311y5TEAKBL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G354S5QN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$43.19",
-      "savingsPercent": 28,
+      "price": "$56.99",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0FXR9H9C2": {
@@ -6721,12 +6732,12 @@
     "B0FDG4CYDS": {
       "asin": "B0FDG4CYDS",
       "title": "MIRUXIA Plus Size Cold Shoulder Yellow Bridesmaid Dress Long for Junior with Slit Spaghetti Straps V Neck Ruched Formal Wedding Guest Dresses US20W",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31gW1s0BpOL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG4CYDS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$64.99",
+      "price": "$69.99",
       "inStock": true
     },
     "B0F841STS4": {
@@ -6823,7 +6834,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41q0LRirqvL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3Y6TGK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$92.99",
+      "price": "$95.99",
       "inStock": true
     },
     "B0D93NV66Q": {
@@ -6913,7 +6924,7 @@
       "title": "PRETTYGARDEN Womens Floral Bodycon Maxi Sun Dresses, Brown Floral,XL",
       "seller": "PRETTYGARDEN",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/4108hXzBt8L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FVXQ572C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$19.99",
@@ -6953,11 +6964,13 @@
     "B0GDDBT1PB": {
       "asin": "B0GDDBT1PB",
       "title": "ZESICA Summer Strapless Floral Wedding Guest Dress for Women Brown S",
-      "availability": "OUT_OF_STOCK",
+      "seller": "ZESICA",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31puIh7HXxL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GDDBT1PB?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$59.99",
+      "inStock": true
     },
     "B0FWKJQ8HG": {
       "asin": "B0FWKJQ8HG",
@@ -6998,12 +7011,12 @@
     "B0FDG74GFV": {
       "asin": "B0FDG74GFV",
       "title": "MIRUXIA Cold Shoulder Ruffles Brown Bridesmaid Dresses for Teens Plus Size A-line Ruched Long Formal Wedding Guest Dress US16W",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31wDfWgWLUL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG74GFV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$64.99",
+      "price": "$69.99",
       "inStock": true
     },
     "B0CLRRF8SZ": {
@@ -7090,10 +7103,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31DDjHniuIL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6PCDPJ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$44.97",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0FR4DHCNF": {
@@ -7397,7 +7412,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31suPztbefL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DF7S5YF6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.99",
+      "price": "$39.99",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B0G1SVGHK5": {
@@ -7429,7 +7445,7 @@
       "title": "Ekaliy Women's Cape Dress Pleated Cocktail Party Mini Dress Brown XXL",
       "seller": "Mei Yuan You",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31v9ITYH2yL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FPWZ3NZ4?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$43.99",
@@ -7822,11 +7838,14 @@
     "B0GBW8XNDM": {
       "asin": "B0GBW8XNDM",
       "title": "Mmufk Chiffon Bridesmaid Dress with Slit Pocket V-Neck Sleeveless A-Line Ruffle Empire Waist Long Wedding Guest Gown Burgundy Size 12",
-      "availability": "OUT_OF_STOCK",
+      "seller": "yang bo store",
+      "condition": "New",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31U+dg9SHwL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GBW8XNDM?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$64.99",
+      "savingsPercent": 13,
+      "inStock": true
     },
     "B0D66ZDJSZ": {
       "asin": "B0D66ZDJSZ",
@@ -7845,7 +7864,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31IfjJZXz4L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG3QYX4?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
+      "price": "$63.99",
       "inStock": true
     },
     "B0F83ZXH64": {
@@ -7897,8 +7916,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31GiaAcdgZL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DG2L585H?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$51.99",
-      "savingsPercent": 26,
+      "price": "$49.39",
+      "savingsPercent": 29,
       "inStock": true
     },
     "B0GJS5Q7T4": {
@@ -8031,7 +8050,7 @@
       "title": "Ever-Pretty Women's Sleeveless Bridesmaid Dress Chiffon Formal Dresses",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31+Jvhu1KLL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CR9Y85K9?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$85.99",
@@ -8197,8 +8216,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31NDnDpyZxL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0C4928N9Z?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$43.69",
-      "savingsPercent": 5,
+      "price": "$45.99",
       "inStock": true
     },
     "B0DKXFKQC7": {
@@ -8317,10 +8335,10 @@
     },
     "B0CW9QJY4B": {
       "asin": "B0CW9QJY4B",
-      "title": "Burgundy Satin Prom Dresses for Women Spaghetti Straps Mermaid Beaded Formal Dresses for Wedding Guest 26 Plus",
+      "title": "Memphty Burgundy Satin Prom Dresses for Women Spaghetti Straps Mermaid Beaded Formal Dresses for Wedding Guest 26 Plus",
       "seller": "HeNanShuaiLingJianZhuLaoWuYouXianGongSi",
       "condition": "New",
-      "availability": "LEADTIME",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31W166rtiAL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CW9QJY4B?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$99.99",
@@ -8548,7 +8566,7 @@
       "title": "Women's Lace Chiffon Midi A Line Dress Wedding Formal Evening Burgundy L",
       "seller": "BeryLove",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31C1C3jRZtL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B08CH2H22X?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$43.06",
@@ -8664,7 +8682,7 @@
       "title": "Milumia Women's Halter Floral Bodycon Dress Summer Vacation Sleeveless Party Cocktail Maxi Dresses Yellow Medium",
       "seller": "Milumia",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31Zx9E1n0ZL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F8BQ8ZQZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$19.99",
@@ -8758,6 +8776,7 @@
       "image": "https://m.media-amazon.com/images/I/41nBzd2AOmL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GCML9Z9P?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$39.99",
+      "savingsPercent": 7,
       "inStock": true
     },
     "B0CSMRHKGM": {
@@ -8984,7 +9003,7 @@
     },
     "B0G1QZHG64": {
       "asin": "B0G1QZHG64",
-      "title": "MIYIEONZ Womens Summer Boat Neck Mini Dress Sleeveless Ruched Slim Fit Going Out Cocktail Party Bodycon Dresses Small Yellow",
+      "title": "MIYIEONZ Women Bodycon Mini Dress Sexy Boat Neck Going Out Dresses Yellow S",
       "seller": "Lei wentian Store",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -9383,11 +9402,14 @@
     "B0G3PBD95J": {
       "asin": "B0G3PBD95J",
       "title": "PRETTYGARDEN Women's 2026 Summer Bodycon Midi Dress Casual Striped Cap Sleeve Party Wedding Guest Dresses Vacation Outfits(Striped Light Blue White,Small)",
-      "availability": "OUT_OF_STOCK",
+      "seller": "Morpeeo",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41+zoBRwOJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G3PBD95J?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$37.99",
+      "savingsPercent": 30,
+      "inStock": true
     },
     "B0F8Q6MR99": {
       "asin": "B0F8Q6MR99",
@@ -10132,14 +10154,13 @@
     },
     "B0G1T27J3F": {
       "asin": "B0G1T27J3F",
-      "title": "Simplee Womens Summer Strapless Maxi Dress 2026 Off the Shoulder Casual Cute Floral Boho Smocked Tube Dresses Vacation Long Sundress(Blue M)",
+      "title": "Simplee Womens Maxi Boho Floral Strpless Wedding Guest Beach Long Dress",
       "seller": "Simplee Apparel",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31ljRCV9UBL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G1T27J3F?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$52.99",
-      "savingsPercent": 5,
       "inStock": true
     },
     "B0F9DS5KFQ": {
@@ -10489,7 +10510,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/416lorp0eNL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CTKPFTLM?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$54.99",
+      "price": "$55.09",
       "inStock": true
     },
     "B0C1BV27LL": {
@@ -10606,7 +10627,7 @@
       "title": "Ever-Pretty Women's Summer V Neck Maxi Satin Formal Wedding Guest Dress",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31u1KnJl30L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQKS9PCG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$79.89",
@@ -10632,7 +10653,7 @@
       "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/41xCKasd-fL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0719HFV67?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$248.79",
+      "price": "$248.69",
       "savingsPercent": 11,
       "inStock": true
     },
@@ -10686,7 +10707,7 @@
       "title": "GRACE KARIN Champagne Gold Sequin Dress Formal Dresses for Women Evening Party Birthday Festival Dress XL",
       "seller": "GK Queen",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "priceValidUntil": "2026-09-05T06:59:59Z",
       "priceValidFrom": "2026-08-22T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/411A8Q9tF-L._AC_UL640_.jpg",
@@ -10785,7 +10806,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41-o7HQPwNL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FMJWMGPS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$72.99",
+      "price": "$73.99",
       "inStock": true
     },
     "B0F84285WP": {
@@ -10947,7 +10968,7 @@
     },
     "B0G1T44NRG": {
       "asin": "B0G1T44NRG",
-      "title": "Simplee Womens White Wedding Guest Maxi Dress 2026 Smocked Tiered Ruffle Long Flowy Chiffon Dresses Off the Shoulder Holiday Long Sundresses(White M)",
+      "title": "Simplee Womens Maxi Boho Floral Strpless Wedding Guest Beach Long Dress",
       "seller": "Simplee Apparel",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -10975,7 +10996,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31d3qqzjbEL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FJFFMGDK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$75.99",
+      "price": "$72.19",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0G1STZRR2": {
@@ -11035,13 +11057,11 @@
     "B0FXN461X5": {
       "asin": "B0FXN461X5",
       "title": "JurHevty Womens Long Sleeve Wedding Guest Dresses Chocolate Brown",
-      "seller": "BANYUEJIAN",
-      "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31+J9vjxb2L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FXN461X5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$53.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0FJ1X12BY": {
       "asin": "B0FJ1X12BY",
@@ -11200,7 +11220,7 @@
       "title": "OWIN Women Summer Wedding Guest Dress Sheer Mesh Ruched Bodycon Maxi Dress Sleeveless Elegant Party Cocktail Formal Dresses Brown Large",
       "seller": "OWIN",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31cuGsIQwZL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2Y5JFQD?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$51.99",
@@ -11410,8 +11430,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31fmwjRzC7L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GJ5QL6XT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$38.99",
-      "savingsPercent": 22,
+      "price": "$39.99",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B0FVX4RZFY": {
@@ -11450,13 +11470,11 @@
     "B0FXDSC56S": {
       "asin": "B0FXDSC56S",
       "title": "MEROKEETY Women's 2026 Summer Off The Shoulder Spaghetti Strap Floral Mesh Wedding Guest Cocktail Formal Party Maxi Dresses, Brown, Medium",
-      "seller": "MEROKEETY",
-      "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31SjpzDdmbL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FXDSC56S?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0C9DHYSXV": {
       "asin": "B0C9DHYSXV",
@@ -11472,7 +11490,7 @@
       "title": "SCOMCHIC Women Plus Size Formal Wedding Guest Long Sleeve Dress Brown",
       "seller": "SCOMCHIC",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "priceValidUntil": "2026-09-07T06:59:59Z",
       "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31ZCcSIMVOL._AC_UL640_.jpg",
@@ -11752,14 +11770,11 @@
     "B0DMDZ9NC5": {
       "asin": "B0DMDZ9NC5",
       "title": "Zeagoo Women's Summer Casual Midi Dress Spring Ruffle Sleeve V Neck A-line Flowy Boho Floral Dresses",
-      "seller": "ZEAGOO",
-      "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/41mZM1zVlnL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DMDZ9NC5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$14.99",
-      "savingsPercent": 58,
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0B6PD41XV": {
       "asin": "B0B6PD41XV",
@@ -11791,10 +11806,11 @@
       "title": "Cocktail Dresses for Women Wedding Guest, Formal Church Dress Navy Blue L",
       "seller": "dresstells",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31WrFViXCyL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07RJL4GYC?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$43.99",
+      "price": "$36.99",
+      "savingsPercent": 8,
       "inStock": true
     },
     "B0D62TLB14": {
@@ -12109,8 +12125,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31ZLF7gT29L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FCSCBMHT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$45.99",
-      "savingsPercent": 16,
+      "price": "$37.99",
+      "savingsPercent": 31,
       "inStock": true
     },
     "B0DHS8D4Y7": {
@@ -12121,8 +12137,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31fjTV8pTHL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DHS8D4Y7?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$54.99",
+      "savingsPercent": 21,
       "inStock": true
     },
     "B0FH6N2G2Y": {
@@ -12131,10 +12147,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31DDjHniuIL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6N2G2Y?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$44.97",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0BVB752S4": {
@@ -12516,8 +12534,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41ZrXET36HL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FYP1CDWN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "savingsPercent": 20,
+      "price": "$49.99",
       "inStock": true
     },
     "B0GJ37KZPR": {
@@ -12613,7 +12630,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41Li-5b44-L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GCJS1LFX?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$43.99",
+      "price": "$44.99",
       "inStock": true
     },
     "B0FX2RN4Z3": {
@@ -12690,7 +12707,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31XIJAwwieL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LP5V1Z?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 42,
       "inStock": true
     },
     "B0BZNPHGXW": {
@@ -12800,8 +12818,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/411awY+wBBL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4BM72SP?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$41.39",
-      "savingsPercent": 10,
+      "price": "$45.99",
       "inStock": true
     },
     "B0FQCGZX84": {
@@ -12960,8 +12977,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31KUiJ+UDML._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D8SLDD7S?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$53.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0FF91LC53": {
@@ -13219,7 +13236,7 @@
       "title": "Ever-Pretty Women's Chiffon Formal Evening Dress Wedding Guest Dresses",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31Lk3WKZpPL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FL2D2MCM?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$69.99",
@@ -13501,7 +13518,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31wjYEwEDOL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DF7WJ8PS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.99",
+      "price": "$39.99",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B0DF1W2XWM": {
@@ -13594,7 +13612,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/317dtvvn3RL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CTKQ3B8H?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$55.81",
+      "price": "$55.85",
       "inStock": true
     },
     "B0FDKTCS7L": {
@@ -13725,7 +13743,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/21an002rM4L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FRFW643T?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$55.99",
+      "price": "$57.99",
       "inStock": true
     },
     "B0FMJVX3K7": {
@@ -13736,7 +13754,7 @@
       "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41yvb0qtC+L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FMJVX3K7?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$72.99",
+      "price": "$73.99",
       "inStock": true
     },
     "B0G2YC9DFM": {
@@ -14103,13 +14121,11 @@
     "B0F9W761GX": {
       "asin": "B0F9W761GX",
       "title": "Ekaliy Women's One Shoulder Belted Maxi Dress Formal Wedding Guest Dress",
-      "seller": "Blooming Jenny's Store",
-      "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31heHMR6QOL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F9W761GX?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$57.98",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0CB7MJKY2": {
       "asin": "B0CB7MJKY2",
@@ -14214,12 +14230,10 @@
       "seller": "ZESICA",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-10T06:59:59Z",
-      "priceValidFrom": "2026-08-27T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31EIDBQLfVL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH5CQVV3?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$35.99",
-      "savingsPercent": 42,
+      "price": "$49.99",
+      "savingsPercent": 19,
       "inStock": true
     },
     "B0FJRMWHQW": {
@@ -14495,7 +14509,7 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/21nIcHBQhUL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/213NdbIzVaL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CHRS4N7J?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$44.97",
       "inStock": true
@@ -14544,7 +14558,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41bV-kPPN2L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GD67XCL6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$56.99",
+      "price": "$47.49",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0FXWCYCVJ": {
@@ -14567,7 +14582,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41YNbOTIqkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2WPK66J?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$13.28",
       "inStock": true
     },
     "B0G4BPN3LL": {
@@ -14578,8 +14593,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41CJVxzeeTL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4BPN3LL?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.09",
-      "savingsPercent": 6,
+      "price": "$45.99",
       "inStock": true
     },
     "B0D671CJ7N": {
@@ -14688,7 +14702,7 @@
       "seller": "Fashion Fitting Shop",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/41J6PUaWaML._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/51YdvNde5uL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F21CZHZH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$34.99",
       "inStock": true
@@ -14764,7 +14778,7 @@
       "title": "MEROKEETY Womens Summer Wedding Guest Sleeveless Maxi Dress, Wine, M",
       "seller": "MEROKEETY",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31Q04Aw02xL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FZV58MN2?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$55.99",
@@ -14783,11 +14797,13 @@
     "B0G4V3Z2GZ": {
       "asin": "B0G4V3Z2GZ",
       "title": "HTZMO Women Floral Wedding Guest Bodycon Maxi Dress Lace Square Neck Formal Party Elegant Long Dresses BlackFloral S",
-      "availability": "OUT_OF_STOCK",
+      "seller": "HTZMO Store",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41ca3UcwLZL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4V3Z2GZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$35.99",
+      "inStock": true
     },
     "B0CNCL3NCZ": {
       "asin": "B0CNCL3NCZ",
@@ -14806,7 +14822,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41mQ3uIkHiL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3HZ61S?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$85.99",
       "inStock": true
     },
     "B0FPX75QNG": {
@@ -14925,8 +14941,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31KUiJ+UDML._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D8SKX6MC?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$53.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0F6C5FPHQ": {
@@ -14985,6 +15001,7 @@
       "image": "https://m.media-amazon.com/images/I/31tlDLYNYQL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FL7VDK9C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$27.99",
+      "savingsPercent": 7,
       "inStock": true
     },
     "B0FH1MGYZV": {
@@ -15048,8 +15065,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/314EvaIZ3kL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DG8KDDBN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$56.99",
-      "savingsPercent": 5,
+      "price": "$55.99",
+      "savingsPercent": 6,
       "inStock": true
     },
     "B0FZC34X5H": {
@@ -15077,7 +15094,7 @@
       "title": "Emerald Green Satin Prom Dresses for Women Spaghetti Straps Mermaid Beaded Formal Dresses for Wedding Guest 28 Plus",
       "seller": "HeNanShuaiLingJianZhuLaoWuYouXianGongSi",
       "condition": "New",
-      "availability": "LEADTIME",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31nua+mjh0L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CW9PJ239?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$99.99",
@@ -15184,7 +15201,7 @@
       "seller": "fushixuan",
       "condition": "New",
       "availability": "LEADTIME",
-      "image": "https://m.media-amazon.com/images/I/31F1xkVYm7L._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/31qaxFBWiFL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F5PWCZYW?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$52.99",
       "inStock": true
@@ -15234,12 +15251,12 @@
     "B0CSF84BY4": {
       "asin": "B0CSF84BY4",
       "title": "MIRUXIA Emeral Green Prom Dresses Long A Line Ball Gown One Shoulder Satin Pleats Women's Formal Dresses US8",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31K2JZTKzpL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CSF84BY4?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$68.99",
+      "price": "$72.99",
       "inStock": true
     },
     "B0CJJDZVK6": {
@@ -15373,10 +15390,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31uKOWuvJwL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6PH41V?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$44.97",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0F2SMC4R3": {
@@ -15534,8 +15553,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41OyIWaVlqL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DK4M1Y8G?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$19.99",
-      "savingsPercent": 50,
+      "price": "$14.99",
+      "savingsPercent": 63,
       "inStock": true
     },
     "B0G9H5N94Q": {
@@ -15580,7 +15599,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/419oN3xwgGL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LR6XR1?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$14.98",
+      "savingsPercent": 42,
       "inStock": true
     },
     "B0F5VLVB1C": {
@@ -15685,21 +15705,17 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31sxI5Bjw9L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G7Y5GK4P?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$56.99",
-      "savingsPercent": 5,
+      "price": "$59.99",
       "inStock": true
     },
     "B0FXGGYZX3": {
       "asin": "B0FXGGYZX3",
       "title": "Simplee Women Floral Summer Maxi Dress Boho Flowy Ruffle Tiered Short Sleeves V Neck Long Wedding Guest Dresses Navy Apricot Floral L",
-      "seller": "Simplee Apparel",
-      "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/4187VEO15yL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FXGGYZX3?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$29.99",
-      "savingsPercent": 25,
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0GC5JKVC1": {
       "asin": "B0GC5JKVC1",
@@ -15971,14 +15987,13 @@
     },
     "B0G1T16S6P": {
       "asin": "B0G1T16S6P",
-      "title": "Simplee Womens White Wedding Guest Maxi Dress 2026 Smocked Tiered Ruffle Long Flowy Chiffon Dresses Off the Shoulder Holiday Long Sundresses(White L)",
+      "title": "Simplee Womens Maxi Boho Floral Strpless Wedding Guest Beach Long Dress",
       "seller": "Simplee Apparel",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31aqpP23GHL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G1T16S6P?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$52.99",
-      "savingsPercent": 5,
       "inStock": true
     },
     "B0FSL1DWH7": {
@@ -16009,7 +16024,7 @@
       "title": "Zattcas Spring Summer Maxi Dresses for Women 2026 Spaghetti Strap V Neck Empire Waist Flowy Tiered Long Floral Sundress Boho Beach Vacation Wedding Guest Dress Navy Rosered M",
       "seller": "Zattcas company",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/4192TABec0L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GHW5YJ8C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$9.99",
@@ -16143,7 +16158,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41ANa0w+ijL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DYF3GC6L?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$34.99",
+      "price": "$32.99",
       "inStock": true
     },
     "B0FXRFKP4C": {
@@ -16297,12 +16312,10 @@
       "seller": "ZESICA",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-07T06:59:59Z",
-      "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31B5cs86yEL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G3521X8B?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$42.29",
-      "savingsPercent": 30,
+      "price": "$56.99",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0FDKYG7QQ": {
@@ -16359,16 +16372,16 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41mQ3uIkHiL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ46X69W?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$92.99",
+      "price": "$95.99",
       "inStock": true
     },
     "B0CBX6GHBS": {
       "asin": "B0CBX6GHBS",
-      "title": "REORIA Women's Fall Sexy Casual Crew Neck Lounge Long Dress Formal Wedding Guest Long Sleeve Ribbed Bodycon Maxi Dresses Black Large",
+      "title": "REORIA Women's Long Sleeve Ribbed Bodycon Maxi Dresses Black",
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/21YEqc1OdaL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/210HydhWzvL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CBX6GHBS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$44.97",
       "inStock": true
@@ -16455,12 +16468,12 @@
     "B0FDG3QYXD": {
       "asin": "B0FDG3QYXD",
       "title": "MIRUXIA Cold Shoulder Ruffles Burgundy Bridesmaid Dresses for Teens Plus Size A-line Ruched Long Formal Wedding Guest Dress US16W",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31IfjJZXz4L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG3QYXD?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$64.99",
+      "price": "$69.99",
       "inStock": true
     },
     "B0DWDQPV6K": {
@@ -16780,7 +16793,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51Sf80XWOeL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GCWNHK9N?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$19.99",
+      "price": "$19.98",
       "savingsPercent": 46,
       "inStock": true
     },
@@ -16792,7 +16805,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41LE3jgaBLL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2WNT9QF?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$13.28",
       "inStock": true
     },
     "B0G22Z2ZXW": {
@@ -16904,7 +16917,7 @@
       "title": "PRETTYGARDEN Women's Spaghetti Strap Floral Maxi Dress",
       "seller": "PRETTYGARDEN",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "priceValidUntil": "2026-09-07T06:59:59Z",
       "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31wAyzXseeL._AC_UL640_.jpg",
@@ -16963,7 +16976,7 @@
       "title": "XinFSh Women’s Floral Flowy A Line Corset Wedding Guest Maxi Dress White",
       "seller": "XinFSH Store",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41QJXECGloL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GG8SCSS8?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$63.99",
@@ -17397,7 +17410,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/4195P1nu9rL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3NZTWJ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$85.99",
       "inStock": true
     },
     "B0GGHN5W9D": {
@@ -17670,12 +17683,12 @@
     "B0FDG75Y2D": {
       "asin": "B0FDG75Y2D",
       "title": "MIRUXIA Chiffon Cold Shoulder Emerald Green Bridesmaids Dress for Women A-line Long Formal Evening Gowns V-Neck Ruched Wedding Guest Dresses US14",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31lgS5G+IZL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG75Y2D?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
+      "price": "$63.99",
       "inStock": true
     },
     "B0CVVN4917": {
@@ -17756,8 +17769,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31KUiJ+UDML._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FKMSV9S4?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$53.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0FF45QPT8": {
@@ -17852,10 +17865,10 @@
       "title": "Ever-Pretty Women's Chiffon Formal Evening Dress Wedding Guest Dresses",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31LZgOtUzzL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FLPDPLWG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$69.99",
+      "price": "$72.99",
       "inStock": true
     },
     "B0FWQN59M9": {
@@ -18349,6 +18362,7 @@
       "image": "https://m.media-amazon.com/images/I/41EnLVyRB+L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F9FNJB46?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$39.99",
+      "savingsPercent": 7,
       "inStock": true
     },
     "B0C864WJM2": {
@@ -18694,7 +18708,7 @@
       "title": "Wedtrend Burgundy Women's Floral Lace Wedding Guest Dress, Halter Chiffon Long Wedding Party Gown Sleeveless Long Swing Cocktail Dress Summer Formal Maxi Dresses for Special Occasion WT0201BurgundyXL",
       "seller": "Wedtrend",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31oGI7hDwfL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07RNZ7BL5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$55.99",
@@ -18865,9 +18879,9 @@
     "B0D8ZPFK6J": {
       "asin": "B0D8ZPFK6J",
       "title": "COOAN Women's Black Long Formal Dresses Cocktail Wedding Guest Dress Ruffle Split Elegant V Neck Party Gowns",
-      "seller": "Chsm Dress",
+      "seller": "COOAN",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31z+y6Fi3dL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D8ZPFK6J?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$39.99",
@@ -19041,11 +19055,13 @@
     "B0G4R3PBZ1": {
       "asin": "B0G4R3PBZ1",
       "title": "Gjvgj Dusty Rose Mother of The Groom Dresses for Women Tulle Formal 3/4 Sleeve Evening Party Gown Size4",
-      "availability": "OUT_OF_STOCK",
+      "seller": "zhang weiming",
+      "condition": "New",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41tjFwCdB0L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4R3PBZ1?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$64.99",
+      "inStock": true
     },
     "B0D1T539Q7": {
       "asin": "B0D1T539Q7",
@@ -19061,11 +19077,14 @@
     "B0G7YPMMND": {
       "asin": "B0G7YPMMND",
       "title": "MEROKEETY Womens Summer Formal Wedding Guest Cocktail Dress, WineRed, M",
-      "availability": "OUT_OF_STOCK",
+      "seller": "MEROKEETY",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31pfroZHhvL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G7YPMMND?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$49.99",
+      "savingsPercent": 17,
+      "inStock": true
     },
     "B0FH57DGCK": {
       "asin": "B0FH57DGCK",
@@ -19097,7 +19116,7 @@
     },
     "B0FS6DBN9P": {
       "asin": "B0FS6DBN9P",
-      "title": "Verdusa Women's Floral Wedding Guest Dress Long Sleeve Mesh Slimming Cocktail Vacation Maxi Dresses Black Khaki",
+      "title": "Verdusa Women's Floral Wedding Guest Dress Long Sleeve Mesh Maxi Dresses",
       "seller": "Verdusa",
       "condition": "New",
       "availability": "AVAILABLE_DATE",
@@ -19185,7 +19204,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31mmFylFSkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0B6PGBSTL?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$43.99",
+      "price": "$41.99",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0CT2GYZRB": {
@@ -19278,7 +19298,7 @@
       "image": "https://m.media-amazon.com/images/I/41KxYIFLQuL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DP72S8MK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$38.69",
-      "savingsPercent": 23,
+      "savingsPercent": 24,
       "inStock": true
     },
     "B0FX2P7KSR": {
@@ -19286,7 +19306,7 @@
       "title": "MEROKEETY Women's Floral Wedding Guest Cocktail Maxi Dress, Burgundy, S",
       "seller": "MEROKEETY",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31WOeh1V10L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FX2P7KSR?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$54.99",
@@ -19419,12 +19439,9 @@
       "seller": "MEETJEN",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-03T06:59:59Z",
-      "priceValidFrom": "2026-08-31T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/41cnURrRSaL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07MZR576D?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$42.29",
-      "savingsPercent": 10,
+      "price": "$45.99",
       "inStock": true
     },
     "B07QTZ8B1G": {
@@ -19575,8 +19592,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41X11UXT1+L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FYP2G72C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "savingsPercent": 20,
+      "price": "$49.99",
       "inStock": true
     },
     "B0F38KBVV6": {
@@ -19768,7 +19784,7 @@
       "seller": "Fashion Fitting Shop",
       "condition": "New",
       "availability": "IN_STOCK_SCARCE",
-      "image": "https://m.media-amazon.com/images/I/41J6PUaWaML._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/51YdvNde5uL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F21F65F6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$34.99",
       "inStock": true
@@ -19937,8 +19953,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/3170E-fOltL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F4X4D1XP?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$32.29",
-      "savingsPercent": 5,
+      "price": "$33.99",
       "inStock": true
     },
     "B0CQS5YK3W": {
@@ -20066,7 +20081,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41qkc9z4idL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3NV9KT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$85.99",
       "inStock": true
     },
     "B0B4JGM3DK": {
@@ -20249,7 +20264,7 @@
     "B0F8QR8R4D": {
       "asin": "B0F8QR8R4D",
       "title": "AKLASU Mother of the Bride Dresses Chiffon Lace Applique Short Sleeve Mother of the Groom Dress Long Formal Gown with Pocket Light Blue",
-      "seller": "rizhaoshuyimuyingyongpinyouxiangongsi",
+      "seller": "HeNanBeiLeFuShangMaoYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31lSgShGv6L._AC_UL640_.jpg",
@@ -20324,8 +20339,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31mX-cWKU8L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F23M6HGV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$24.69",
-      "savingsPercent": 5,
+      "price": "$25.99",
       "inStock": true
     },
     "B0C9QJN1DY": {
@@ -20559,8 +20573,8 @@
       "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41dOEXkzm9L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0C9QBVMBC?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$27.99",
-      "savingsPercent": 30,
+      "price": "$27.19",
+      "savingsPercent": 6,
       "inStock": true
     },
     "B0GDTNZR3G": {
@@ -20704,8 +20718,8 @@
       "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/412S17h9myL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F13JFW1K?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "savingsPercent": 38,
+      "price": "$28.99",
+      "savingsPercent": 55,
       "inStock": true
     },
     "B0FDQR6X7N": {
@@ -20793,7 +20807,6 @@
       "image": "https://m.media-amazon.com/images/I/31nV5cT9yNL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D9WDM9MH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$9.99",
-      "savingsPercent": 50,
       "inStock": true
     },
     "B0CGJCX2C5": {
@@ -20848,10 +20861,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31Zdk8Aw2gL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6PQJN5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$44.97",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0FC5PGCP7": {
@@ -21080,13 +21095,11 @@
     "B0DDSFLS66": {
       "asin": "B0DDSFLS66",
       "title": "Ever-Pretty Plus Women's Wedding Guest Dresses V Neck A Line High Low Plus Size Long Sleeve Semi Formal Dress for Curvy Women Black US26",
-      "seller": "Ever Pretty Moment",
-      "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31rDBmG3XXL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DDSFLS66?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$52.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0FH6YT7RQ": {
       "asin": "B0FH6YT7RQ",
@@ -21189,12 +21202,9 @@
       "seller": "Wenrine",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-03T06:59:59Z",
-      "priceValidFrom": "2026-08-20T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/41UDCHcXLhL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0BLSGCP1W?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$29.99",
-      "savingsPercent": 19,
+      "price": "$36.99",
       "inStock": true
     },
     "B0B2WCXD8P": {
@@ -21202,7 +21212,7 @@
       "title": "Amegoya Women's V Neck Long Sleeve Boho Maxi Dress Fall Wedding Guest Flowy Ruffle Tiered Engagement Dresses (XL Khaki)",
       "seller": "Amegoya",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "priceValidUntil": "2026-09-07T06:59:59Z",
       "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/41-N0BEWNdL._AC_UL640_.jpg",
@@ -21219,7 +21229,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31rYtYvWYqL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D2L9G1MH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$47.88",
+      "price": "$39.99",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B0D7V8SM71": {
@@ -21305,7 +21316,7 @@
       "availability": "LEADTIME",
       "image": "https://m.media-amazon.com/images/I/41IExWzGU7L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3HZ61V?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$92.99",
+      "price": "$95.99",
       "inStock": true
     },
     "B0C3HB2GKS": {
@@ -21965,7 +21976,7 @@
       "title": "LaClef Womens Mini Off Shoulder Maternity Dress with Double Ruffle (Sage, Medium)",
       "seller": "LaClef",
       "condition": "Used",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/41LPH4SpkuL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07BRSVCD7?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$28.80",
@@ -22063,8 +22074,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/410QFJXbdML._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FKBFWR2K?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
-      "savingsPercent": 14,
+      "price": "$53.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0CG87NF2Y": {
@@ -22098,7 +22109,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/21KyXsm3+hL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DR8VR8CP?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$13.24",
+      "price": "$11.72",
+      "savingsPercent": 10,
       "inStock": true
     },
     "B0BRYN7MBX": {
@@ -22162,7 +22174,7 @@
       "title": "SCOMCHIC Womens Plus Size Wedding Guest Cocktail Dresses Burgundy",
       "seller": "SCOMCHIC",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31f2AG9YjCL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DSZR58JS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$39.99",
@@ -22171,11 +22183,13 @@
     "B0FVX74TXJ": {
       "asin": "B0FVX74TXJ",
       "title": "CzzzyL Breastfeeding Dresses for Women Swiss Dot V Neck Wrap Dresses Long Sleeve Boho Wedding Guest Dress Button Down with Pockets S-LightBlue Large",
-      "availability": "OUT_OF_STOCK",
+      "seller": "CzzzyL",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41+bu9bW+WL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FVX74TXJ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$34.99",
+      "inStock": true
     },
     "B0FBMBDTQ7": {
       "asin": "B0FBMBDTQ7",
@@ -22276,7 +22290,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41aigmW9k1L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DDL1WNQQ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$40.99",
+      "price": "$38.94",
       "inStock": true
     },
     "B0GFW4G743": {
@@ -22795,7 +22809,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51hhd2Wwr6L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D79LQC4Y?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$36.95",
+      "price": "$13.30",
       "inStock": true
     },
     "B0FX7G3F4Y": {
@@ -22902,11 +22916,13 @@
     "B0F3MV4PKJ": {
       "asin": "B0F3MV4PKJ",
       "title": "S.L. Fashions Women's Tiered Midi Wedding Guest, Mother of The Bride Dress with Bead Embellishment (Petite and Regular Sizes), Fig, 18",
-      "availability": "OUT_OF_STOCK",
+      "seller": "Amazon.com",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31jKYVXrx9L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F3MV4PKJ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$129.00",
+      "inStock": true
     },
     "B0G7KXGT59": {
       "asin": "B0G7KXGT59",
@@ -23121,7 +23137,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41jjjaYZ0hL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DR8HNLDV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$29.99",
+      "price": "$24.99",
+      "savingsPercent": 10,
       "inStock": true
     },
     "B0DNQVSVQ5": {
@@ -23336,7 +23353,7 @@
       "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/417KVzHCSNL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GTQ1RB6W?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$53.99",
+      "price": "$55.99",
       "inStock": true
     },
     "B0F6XZ2MCP": {
@@ -23408,10 +23425,10 @@
       "title": "BTFBM Womens Mock Neck Satin Maxi Dress Summer 2026,Black,L",
       "seller": "BTFBM-US",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31aeebIabAL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0C65GG73R?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$60.98",
+      "price": "$60.99",
       "inStock": true
     },
     "B0CNRQPRNC": {
@@ -23621,7 +23638,7 @@
       "title": "CurvySweet Isolde Women's One Shoulder Mesh Ribbon Ruched Formal Maxi Dress",
       "seller": "Curvysweet Studio",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31rLqKc4CaL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2RMNYNQ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$72.99",
@@ -23741,11 +23758,13 @@
     "B0GBW113H8": {
       "asin": "B0GBW113H8",
       "title": "Mmufk Navy Blue Bridesmaid Dress with Slit Ruffle V-Neck Ruched A-Line Chiffon Long Sleeveless Wedding Guest Gown with Pockets Size 8",
-      "availability": "OUT_OF_STOCK",
+      "seller": "yang bo store",
+      "condition": "New",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31VN8kYpmlL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GBW113H8?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$59.99",
+      "inStock": true
     },
     "B0F21KW92C": {
       "asin": "B0F21KW92C",
@@ -23788,12 +23807,12 @@
     "B0FDG3Q6BZ": {
       "asin": "B0FDG3Q6BZ",
       "title": "MIRUXIA Women's Chiffon Ruffles Sleeve Navy Blue Bridesmaids Dresses with Slit Cold Shoulder V-Neck Wedding Guest Dress A-line Long Formal Evening Party Gowns US6",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31ETh0wI2NL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG3Q6BZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$54.99",
+      "price": "$59.99",
       "inStock": true
     },
     "B0CM8XV5Y6": {
@@ -23910,10 +23929,10 @@
       "title": "Ever-Pretty Women's Maxi Halter Formal Dress Stretchy Glitter Evening Gowns",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31IDSWnv95L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F4JRC19S?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$79.89",
       "inStock": true
     },
     "B0FR3YNVS6": {
@@ -24276,9 +24295,12 @@
       "seller": "MLANM",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-15T06:59:59Z",
+      "priceValidFrom": "2026-09-01T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/311Fm7rJP3L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DZH3WYST?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$24.29",
+      "price": "$22.49",
+      "savingsPercent": 10,
       "inStock": true
     },
     "B0F32G61NB": {
@@ -24399,7 +24421,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/312aRkzHOqL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DBV4437R?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$47.99",
+      "price": "$43.31",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0FNCV8WG1": {
@@ -24868,7 +24891,7 @@
       "title": "Verdusa Women's Fall Wedding Guest Dresses Off Shoulder Formal Elgant Dress",
       "seller": "Verdusa",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31oX20HUowL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GJRYTY22?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$52.99",
@@ -24879,7 +24902,7 @@
       "title": "JKMNAO Women Halter Tie High Slit Wedding Guest Maxi Dress Brown",
       "seller": "JKMNAO Store",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/41IGHotD7iL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FS1FP1FN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$66.99",
@@ -24989,7 +25012,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41zhED0CQCL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3V29QP?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$92.99",
+      "price": "$95.99",
       "inStock": true
     },
     "B0CL6Q5KBQ": {
@@ -25195,10 +25218,10 @@
       "title": "Ever-Pretty Women's V Neck Sleeveless Formal Dress Wedding Guest Dresses",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
-      "image": "https://m.media-amazon.com/images/I/31TAViqn1FL._AC_UL640_.jpg",
+      "availability": "IN_STOCK",
+      "image": "https://m.media-amazon.com/images/I/31yu7yzvlyL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GJT2T421?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$72.99",
+      "price": "$72.89",
       "inStock": true
     },
     "B0DHX4MBZ5": {
@@ -25355,7 +25378,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51Sf80XWOeL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GCWTR6NC?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$19.99",
+      "price": "$19.98",
       "savingsPercent": 46,
       "inStock": true
     },
@@ -25524,7 +25547,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51USysT-E5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D79LQ1K1?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$36.95",
+      "price": "$13.30",
       "inStock": true
     },
     "B0CNJYMV48": {
@@ -25651,8 +25674,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41T-j9v71aL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DPMCD1F5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$33.24",
-      "savingsPercent": 5,
+      "price": "$34.99",
       "inStock": true
     },
     "B098HY22GP": {
@@ -25891,11 +25913,13 @@
     "B0DMF8HC76": {
       "asin": "B0DMF8HC76",
       "title": "KOH KOH Petite Womens Long Flowy Modest Crewneck Short Cap Sleeve Casual Floor Length Floral Flower Print Summer Sundress A-line Maternity Tall Maxi Dress Gown, Dark Blue and Multi S 4-6",
-      "availability": "OUT_OF_STOCK",
+      "seller": "KOH KOH",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41KXY1JAwaL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DMF8HC76?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$42.50",
+      "inStock": true
     },
     "B0GJL6W4SD": {
       "asin": "B0GJL6W4SD",
@@ -26013,7 +26037,7 @@
       "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31dTLFcFMyL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CR6STDH6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$168.21",
+      "price": "$168.20",
       "savingsPercent": 42,
       "inStock": true
     },
@@ -26082,7 +26106,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/419K7HtVfkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQ3WQTYD?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$82.99",
+      "price": "$85.99",
       "inStock": true
     },
     "B0B24NF2VJ": {
@@ -26359,12 +26383,12 @@
     "B0FDG6B4T3": {
       "asin": "B0FDG6B4T3",
       "title": "MIRUXIA Women's Chiffon Ruffles Sleeve Hot Pink Bridesmaids Dresses with Slit Cold Shoulder V-Neck Wedding Guest Dress A-line Long Formal Evening Party Gowns US6",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/312JfrtBbmL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG6B4T3?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$54.99",
+      "price": "$59.99",
       "inStock": true
     },
     "B0CK19GYKT": {
@@ -26935,19 +26959,17 @@
       "image": "https://m.media-amazon.com/images/I/41bZIEs4LkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DXLDCZGR?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$56.94",
-      "savingsPercent": 19,
+      "savingsPercent": 15,
       "inStock": true
     },
     "B0G4GMSRXJ": {
       "asin": "B0G4GMSRXJ",
       "title": "SCOMCHIC Womens Plus Size Maxi Dress Short Sleeve Square Neck Smocked Boho Wedding Guest Lace Trim Tiered A Line Dresses White",
-      "seller": "SCOMCHIC",
-      "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/317lrnIBDLL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4GMSRXJ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$24.98",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0F8Q5YJ8W": {
       "asin": "B0F8Q5YJ8W",
@@ -27355,8 +27377,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/316+1aqOtML._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FPR5V8GZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "savingsPercent": 29,
+      "price": "$48.99",
+      "savingsPercent": 13,
       "inStock": true
     },
     "B0H2DHLKWN": {
@@ -27422,7 +27444,7 @@
       "title": "WIHOLL Cap Sleeve Crewneck Tshirts Maxi Dresses for Women 2026 Elegant Classy Floral Dress with Pockets Spring Dresses Work Teacher Outfits Vacation Resort Wear M",
       "seller": "WIHOLL FASHION",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41sFayjo22L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FV7WZZ4C?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$17.98",
@@ -27620,7 +27642,7 @@
       "seller": "Fashion Fitting Shop",
       "condition": "New",
       "availability": "IN_STOCK",
-      "image": "https://m.media-amazon.com/images/I/51JOAN8WalL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/51j4OwIHWJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F21DVQ7H?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$34.99",
       "inStock": true
@@ -27948,7 +27970,7 @@
       "title": "BELAROI Plus Size Maxi Dress for Curvy Women Summer Scoop Neck Short Sleeve Long Dresses Pockets Beach Coverup Casual Outfits(2X, Navy Blue)",
       "seller": "BELAROI",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31+-BDqcKwL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FX8JXFCV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$13.52",
@@ -28075,12 +28097,12 @@
     "B0FDG76FBG": {
       "asin": "B0FDG76FBG",
       "title": "MIRUXIA Plus Size Cold Shoulder Dusty Rose Bridesmaid Dress Long for Junior with Slit Spaghetti Straps V Neck Ruched Formal Wedding Guest Dresses US20W",
-      "seller": "SuoHaiJiao",
+      "seller": "HeNanTuoLiRenLiZiYuanYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31e+1Fw-P8L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FDG76FBG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$64.99",
+      "price": "$69.99",
       "inStock": true
     },
     "B0CK17G6WH": {
@@ -28483,7 +28505,7 @@
       "title": "ZESICA Womens Summer Sleeveless Floral Wedding Guest Dress Sage M",
       "seller": "ZESICA",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31dBd37AJcL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G4VBRY3H?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$59.99",
@@ -28514,11 +28536,16 @@
     "B0DM6295RC": {
       "asin": "B0DM6295RC",
       "title": "OFEEFAN Maxi Dress Summer Dresses Spring Dresses 2026 Wedding Guest Sage Green L",
-      "availability": "OUT_OF_STOCK",
+      "seller": "OFEEFAN",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
+      "priceValidUntil": "2026-09-05T06:59:59Z",
+      "priceValidFrom": "2026-08-22T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31Na6SSyy5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DM6295RC?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$19.99",
+      "savingsPercent": 50,
+      "inStock": true
     },
     "B0GVYP449C": {
       "asin": "B0GVYP449C",
@@ -28578,7 +28605,7 @@
       "title": "Ever-Pretty Women's Summer Backless Bridesmaid Dresses Flowy Formal Dress",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31MD2mQgmcL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6D8VWF?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$89.89",
@@ -28826,7 +28853,7 @@
       "title": "Plus Size Smocked Casual Summer Maxi Dresses for Curvy Women",
       "seller": "CICIDUDU",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/41AuCtCraKL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FBW6YGQF?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$39.99",
@@ -28902,9 +28929,12 @@
       "seller": "Homrain",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-06T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31HVJU7qyyL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G8VBJ7L7?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$36.99",
+      "price": "$31.44",
+      "savingsPercent": 15,
       "inStock": true
     },
     "B0F634XS3R": {
@@ -29127,7 +29157,7 @@
       "title": "ABINGOO Women Satin Spaghetti Straps A-Line Flowy Mini Dress Sweetheart Pleated Short Homecoming Party Club Dresses(Purple,S)",
       "seller": "ABINGOO-US",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41ju9ZRXlAL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GTTLY9QL?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$38.99",
@@ -29257,22 +29287,20 @@
       "title": "AKMESXAY Modest Asymmetrical Pleated Satin Bridesmaid Dresses Long A Line Ruched Navy Blue Satin Semi Formal Evening Dresses for Wedding 20",
       "seller": "ANIXAS",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31Sj90++LpL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G23V3XYZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$109.99",
+      "price": "$94.98",
       "inStock": true
     },
     "B0H6HQL69F": {
       "asin": "B0H6HQL69F",
       "title": "Peach Satin Bridesmaid Dresses Long V Neck Flutter Sleeve A-Line Formal Wedding Guest Dress High Slit Maxi Satin Evening Gown with Pockets",
-      "seller": "tfcrhgbujo4545",
-      "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31RDmJ9v7OL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0H6HQL69F?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$58.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0GBTLN7DJ": {
       "asin": "B0GBTLN7DJ",
@@ -29431,7 +29459,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/314D9A37SJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2RRL84J?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$13.28",
       "inStock": true
     },
     "B0FHPGSFRC": {
@@ -29481,11 +29509,13 @@
     "B08HYWXMGZ": {
       "asin": "B08HYWXMGZ",
       "title": "kissmay Womens Dresses Plus Size, Fall Wedding Guest Dresses Ladies Wedding Dress Plus Size Semi Formal Dresses for Women Fancy Womens Dresses Long Sleeve Black Red 20 Plus",
-      "availability": "OUT_OF_STOCK",
+      "seller": "Kissmay company",
+      "condition": "New",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/51yATUKY8nL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B08HYWXMGZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$49.99",
+      "inStock": true
     },
     "B0D8SKK4CG": {
       "asin": "B0D8SKK4CG",
@@ -29495,8 +29525,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41C7Y1LIH3L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D8SKK4CG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$56.99",
-      "savingsPercent": 19,
+      "price": "$53.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0G4RN15TY": {
@@ -29569,7 +29599,7 @@
       "title": "HTZMO Women's Formal Bodycon Maxi Dress Cowl Neck Ruched Slit Wedding Guest Cocktail Party Elegant Long Dresses Blue XL",
       "seller": "HTZMO Store",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31xpDDuNhmL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G5P56WCX?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$32.49",
@@ -29595,7 +29625,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41X6vXBGaaL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FPXC57ZX?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$59.99",
+      "price": "$60.99",
       "inStock": true
     },
     "B0D28118D7": {
@@ -29629,7 +29659,7 @@
       "title": "Sparkly Glitter Cocktail Dress for Women Midi Formal Wedding Dress Silver L",
       "seller": "Homrain",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/3117Gq1RQjL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0GYN6BVPV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$46.99",
@@ -29887,7 +29917,7 @@
       "title": "Ever-Pretty Women's Sequin V-Neck Formal Mother of the Bride Dresses Silver",
       "seller": "Ever-Pretty",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31A8hkJDe5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CN2ZJBRT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$86.89",
@@ -30253,8 +30283,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31ZLF7gT29L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FCSH51MS?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$45.99",
-      "savingsPercent": 16,
+      "price": "$37.99",
+      "savingsPercent": 31,
       "inStock": true
     },
     "B0GCD862P7": {
@@ -30293,10 +30323,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31Zdk8Aw2gL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6MS7FZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$44.97",
+      "savingsPercent": 25,
       "inStock": true
     },
     "B0DR8VSJW9": {
@@ -30304,10 +30336,10 @@
       "title": "Maxi Dresses for Women 2026 Summer Dress Outfits Women Beach Fashion Spaghetti Strap Wedding Guest Dress Black Dresses L",
       "seller": "Geifa",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/21FjnR5-EkL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DR8VSJW9?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$10.97",
+      "price": "$16.75",
       "inStock": true
     },
     "B0DPH3QZ39": {
@@ -30620,7 +30652,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51xGNpy6ikL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CRB7LRZV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$29.98",
+      "price": "$27.50",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0DM918HLM": {
@@ -30707,7 +30740,7 @@
       "title": "Plus Size Wedding Dress Bride Women White Wrap Maxi Lace Chiffon Long Bridal Shower Reception Prom Photoshoot Gowns",
       "seller": "Pinup Fashion",
       "condition": "New",
-      "availability": "IN_STOCK",
+      "availability": "IN_STOCK_SCARCE",
       "image": "https://m.media-amazon.com/images/I/31qWuXEZmaL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CJTDLDW5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$67.99",
@@ -31079,13 +31112,11 @@
     "B0CNQPXZYB": {
       "asin": "B0CNQPXZYB",
       "title": "Melynnco Velvet Dresses for Women Elegant Cocktail Party Fall Wrap Long Sleeve Christmas Dress Medium Dark Green",
-      "seller": "Melynnco",
-      "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31OOtJJLMQL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CNQPXZYB?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0FYF2Q9BD": {
       "asin": "B0FYF2Q9BD",
@@ -31162,7 +31193,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31g59L3+4JL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0BRV2LGHG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$45.99",
+      "price": "$41.50",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0DKFR76YG": {
@@ -31231,12 +31263,10 @@
       "seller": "dresstells",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-03T06:59:59Z",
-      "priceValidFrom": "2026-09-01T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31AiDq+x9xL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CHRV9YFX?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$41.39",
-      "savingsPercent": 10,
+      "price": "$42.29",
+      "savingsPercent": 8,
       "inStock": true
     },
     "B0BQ97WW78": {
@@ -31327,8 +31357,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41Q-tVA1NoL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CY58T9MW?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$11.99",
-      "savingsPercent": 8,
+      "price": "$9.99",
+      "savingsPercent": 23,
       "inStock": true
     },
     "B0FWQFX13D": {
@@ -31507,7 +31537,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/412RPlomj5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0BY81ZGXV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$27.99",
+      "price": "$24.91",
+      "savingsPercent": 11,
       "inStock": true
     },
     "B0CP5F1NRT": {
@@ -31935,14 +31966,11 @@
     "B0FY55843P": {
       "asin": "B0FY55843P",
       "title": "PRETTYGARDEN Women's Formal Cocktail Maxi Dresses 2026 Summer Off Shoulder Floral Mesh Bodycon Spring Wedding Guest Dress (Floral Pink,Medium)",
-      "seller": "PRETTYGARDEN",
-      "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/41Tp-TnyyyL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FY55843P?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$24.99",
-      "savingsPercent": 58,
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0F655C71B": {
       "asin": "B0F655C71B",
@@ -31974,7 +32002,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41LE3jgaBLL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2WPC8W5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$14.80",
+      "savingsPercent": 12,
       "inStock": true
     },
     "B0DHVYRHZ6": {
@@ -32230,7 +32259,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/51USysT-E5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D79LCS92?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$36.95",
+      "price": "$13.30",
+      "savingsPercent": 10,
       "inStock": true
     },
     "B0FGCRB2F2": {
@@ -32252,8 +32282,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/519GtuuTc0L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F4X54BK4?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$32.29",
-      "savingsPercent": 5,
+      "price": "$33.99",
       "inStock": true
     },
     "B0F6YHV6M7": {
@@ -32292,11 +32321,13 @@
     "B0D5QD4LBZ": {
       "asin": "B0D5QD4LBZ",
       "title": "S.L. Fashions Women's Tiered Midi Wedding Guest, Mother of the Bride Dress with Bead Embellishment (Petite and Regular Sizes), Multi Color, 10P",
-      "availability": "OUT_OF_STOCK",
+      "seller": "Amazon.com",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41DLTzR8CUL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D5QD4LBZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$129.00",
+      "inStock": true
     },
     "B0FN7FZGK6": {
       "asin": "B0FN7FZGK6",
@@ -32402,7 +32433,7 @@
       "title": "GRACE KARIN Mother of The Bride Dresses Wedding Guest Dresses with Jacket",
       "seller": "HIS Outfitters",
       "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "IN_STOCK_SCARCE",
       "priceValidUntil": "2026-09-07T06:59:59Z",
       "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/318ndJC+35L._AC_UL640_.jpg",
@@ -32576,13 +32607,11 @@
     "B0CJCQWZMZ": {
       "asin": "B0CJCQWZMZ",
       "title": "Alex Evenings Women's Long Off The Shoulder Dress, Silver Sequin, 16P",
-      "seller": "Amazon.com",
-      "condition": "New",
-      "availability": "AVAILABLE_DATE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/41hPAsdQ6uL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CJCQWZMZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$132.09",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0FY5RQZTD": {
       "asin": "B0FY5RQZTD",
@@ -32722,7 +32751,7 @@
       "title": "Kikibell Boho Dress for Women Long Flowy Dresses for Women Flowy Maxi Dress with Sleeves Elegant Dresses for Women Dark Green XL",
       "seller": "Kikibell",
       "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/31MGFCaVncL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CQYGPNH5?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$49.98",
@@ -32902,11 +32931,14 @@
     "B0F6T1TW7B": {
       "asin": "B0F6T1TW7B",
       "title": "PRETTYGARDEN Womens 2026 Fall Fashion Clothing Boho Maxi Dresses Floral Long Sleeve Flowy Elegant Wedding Guest Holiday Dress (Blue,Large)",
-      "availability": "OUT_OF_STOCK",
+      "seller": "PRETTYGARDEN",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41mcn9n7s5L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0F6T1TW7B?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$22.99",
+      "savingsPercent": 47,
+      "inStock": true
     },
     "B0GH772BXG": {
       "asin": "B0GH772BXG",
@@ -32948,7 +32980,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41eICMI32TL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LLQCPT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$25.98",
+      "price": "$12.34",
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0G11BGPSX": {
@@ -32979,7 +33012,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/41D3z7RegJL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0G2WPF5HZ?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.95",
+      "price": "$14.04",
       "inStock": true
     },
     "B0FM7FZ1BJ": {
@@ -33175,11 +33208,13 @@
     "B09JS8V9JW": {
       "asin": "B09JS8V9JW",
       "title": "Newshows Dresses for Women Summer Wedding Guest 2025 Fall Teacher Outfits Casual Teacher Elegant Classy Modest Vacation Beach Long Flowy Plus Size Maxi Floral Dress(Black Floral Red White, M)",
-      "availability": "OUT_OF_STOCK",
+      "seller": "Newshows Official",
+      "condition": "New",
+      "availability": "AVAILABLE_DATE",
       "image": "https://m.media-amazon.com/images/I/41GXZiLIMsL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B09JS8V9JW?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
+      "price": "$37.04",
+      "inStock": true
     },
     "B0DP6YKQB8": {
       "asin": "B0DP6YKQB8",
@@ -33381,7 +33416,7 @@
       "image": "https://m.media-amazon.com/images/I/31QAFlYXfZL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D12VZF84?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$29.83",
-      "savingsPercent": 6,
+      "savingsPercent": 5,
       "inStock": true
     },
     "B0C76JDRCC": {
@@ -33398,7 +33433,7 @@
     },
     "B0CZDVHP81": {
       "asin": "B0CZDVHP81",
-      "title": "Trary Black Heels Closed Pointed Toe Chunky Pumps Shoes Women Comfortable Block High Heels Slip-On Office Party Wedding Dress Women's Shoes 3.54\" Heel Size 8",
+      "title": "Trary Black Women's Pumps Shoes Size 8",
       "seller": "Better Moves",
       "condition": "New",
       "availability": "IN_STOCK",
@@ -33426,7 +33461,7 @@
       "availability": "IN_STOCK",
       "priceValidUntil": "2026-09-07T06:59:59Z",
       "priceValidFrom": "2026-08-24T07:00:00Z",
-      "image": "https://m.media-amazon.com/images/I/41augvljtHL._AC_UL640_.jpg",
+      "image": "https://m.media-amazon.com/images/I/31PvhOzr62L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0C3L69QRN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$31.99",
       "savingsPercent": 30,
@@ -33468,8 +33503,7 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31NjaARmynL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0C6JQXRZH?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$38.99",
-      "savingsPercent": 22,
+      "price": "$49.99",
       "inStock": true
     },
     "B0BRR5ZP3V": {
@@ -33601,12 +33635,10 @@
       "seller": "PiePieBuy",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-10T06:59:59Z",
-      "priceValidFrom": "2026-08-27T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/41DWD+HsuIL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07GXKGKY3?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "savingsPercent": 30,
+      "price": "$45.58",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B07VC5CLMW": {
@@ -33617,8 +33649,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/418o+lPnbCL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B07VC5CLMW?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.99",
-      "savingsPercent": 37,
+      "price": "$36.99",
+      "savingsPercent": 38,
       "inStock": true
     },
     "B0DQL6ZWDN": {
@@ -33627,12 +33659,10 @@
       "seller": "topshoesUS",
       "condition": "New",
       "availability": "IN_STOCK",
-      "priceValidUntil": "2026-09-03T06:59:59Z",
-      "priceValidFrom": "2026-08-24T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31q4rsHXIYL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0DQL6ZWDN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$37.99",
-      "savingsPercent": 19,
+      "price": "$39.99",
+      "savingsPercent": 15,
       "inStock": true
     },
     "B071KLN1XL": {
@@ -33963,10 +33993,12 @@
       "seller": "ReoRia (Remember Who I am)",
       "condition": "New",
       "availability": "IN_STOCK",
+      "priceValidUntil": "2026-09-17T06:59:59Z",
+      "priceValidFrom": "2026-09-03T07:00:00Z",
       "image": "https://m.media-amazon.com/images/I/31ajDCmS0-L._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0FH6N9SKG?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.97",
-      "savingsPercent": 17,
+      "price": "$39.97",
+      "savingsPercent": 33,
       "inStock": true
     },
     "B0FMXQW54D": {
@@ -34123,13 +34155,11 @@
     "B0CNQRC572": {
       "asin": "B0CNQRC572",
       "title": "Melynnco Fall Cocktail Dresses for Women Wedding Guest Formal Christmas Party Long Sleeve Velvet Dress Small Dark Green",
-      "seller": "Melynnco",
-      "condition": "New",
-      "availability": "IN_STOCK_SCARCE",
+      "availability": "OUT_OF_STOCK",
       "image": "https://m.media-amazon.com/images/I/31OOtJJLMQL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0CNQRC572?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$39.99",
-      "inStock": true
+      "price": "",
+      "inStock": false
     },
     "B0FRFLDKGS": {
       "asin": "B0FRFLDKGS",
@@ -34290,7 +34320,8 @@
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31rYtYvWYqL._AC_UL640_.jpg",
       "url": "https://www.amazon.com/dp/B0D2L9X8CK?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "$49.99",
+      "price": "$39.99",
+      "savingsPercent": 20,
       "inStock": true
     },
     "B0DK3GLWRX": {
@@ -34662,7 +34693,7 @@
     "B0G2X41YLJ": {
       "asin": "B0G2X41YLJ",
       "title": "AKLASU Mother of the Bride Dresses Chiffon Lace Applique Short Sleeve Mother of the Groom Dress Long Formal Gown with Pocket Light Yellow",
-      "seller": "rizhaoshuyimuyingyongpinyouxiangongsi",
+      "seller": "HeNanBeiLeFuShangMaoYouXianGongSi",
       "condition": "New",
       "availability": "IN_STOCK",
       "image": "https://m.media-amazon.com/images/I/31OEXnk616L._AC_UL640_.jpg",
@@ -34938,15 +34969,6 @@
       "url": "https://www.amazon.com/dp/B0GK8WMCFV?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
       "price": "$48.99",
       "inStock": true
-    },
-    "B0GGQRGZDN": {
-      "asin": "B0GGQRGZDN",
-      "title": "Ever-Pretty Women's Plus Size Ruffle Sleeves Off Shoulder Empire Waist A Line Chiffon Wedding Guest Dress Yellow US20",
-      "availability": "OUT_OF_STOCK",
-      "image": "https://m.media-amazon.com/images/I/41PavwKHdNL._AC_UL640_.jpg",
-      "url": "https://www.amazon.com/dp/B0GGQRGZDN?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
-      "price": "",
-      "inStock": false
     },
     "B0DQTTB51H": {
       "asin": "B0DQTTB51H",

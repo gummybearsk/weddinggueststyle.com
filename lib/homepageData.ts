@@ -626,7 +626,7 @@ export const dressCodeSections: HomepageSection[] = [
     id: "best-formal-dresses",
     title: "Best Formal Wedding Guest Dresses",
     description: "Our top-rated formal picks for black tie and upscale weddings. Elegant gowns, structured maxis, and refined cocktail dresses that command attention.",
-    slug: "best-formal-wedding-guest-dresses",
+    slug: "formal-wedding-guest-dresses",
     products: [
       {
         title: "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",

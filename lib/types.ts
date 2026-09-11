@@ -58,6 +58,24 @@ export interface PageData {
   faqs: FAQ[];
   relatedPages: RelatedPage[];
   publishDate?: string; // ISO date string (YYYY-MM-DD). Pages with future dates are hidden until that date.
+  /**
+   * Outbound authority citations (Rule 29 / Rule 44e). Every claim of convention or
+   * etiquette on a page should be traceable to a named body that publishes it, with the
+   * date it was read. A hedge is not a source — see SOURCES.md.
+   */
+  sources?: PageSource[];
+}
+
+export interface PageSource {
+  /** Publisher, e.g. "The Emily Post Institute". */
+  publisher: string;
+  /** Page or article title as published. */
+  title: string;
+  url: string;
+  /** ISO date the source was last read, shown to the reader. */
+  readOn: string;
+  /** What this source supports on this page. */
+  supports: string;
 }
 
 export interface HomepageSection {

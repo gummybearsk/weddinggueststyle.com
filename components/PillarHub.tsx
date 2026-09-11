@@ -4,6 +4,9 @@ import ProductCarousel from "./ProductCarousel";
 import StickyEditorPick from "./StickyEditorPick";
 import type { SubGroup } from "@/lib/taxonomy";
 
+import SourcesList from "@/components/SourcesList";
+import type { PageSource } from "@/lib/types";
+
 interface PillarHubProps {
   pillarSlug: string;       // "season", "color", etc — used for breadcrumb display only (not URL change)
   pillarLabel: string;      // "Season", "Color", etc
@@ -11,6 +14,8 @@ interface PillarHubProps {
   intro: string;
   sections: HomepageSection[];
   longFormParagraphs: string[]; // 4-6 paragraphs of pillar-level editorial content (1,800+ word target)
+  /** Outbound authority citations (Rule 29). */
+  sources?: PageSource[];
   /** Live, in-stock products pooled from this pillar's cluster pages. */
   products?: Product[];
   /** Every published page in this pillar, grouped. Replaces the hand-kept 4-item list. */
@@ -56,7 +61,7 @@ function BreadcrumbSchema({ pillarLabel, pillarSlug }: { pillarLabel: string; pi
   );
 }
 
-export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], groups = [] }: PillarHubProps) {
+export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], groups = [], sources }: PillarHubProps) {
   return (
     <>
       <CollectionPageSchema pillarLabel={pillarLabel} h1={h1} sections={sections} />
@@ -155,6 +160,9 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
             ))}
           </div>
         </section>
+
+        {/* Outbound authority citations (Rule 29). Renders nothing when absent. */}
+        <SourcesList sources={sources} />
 
         {/* Back to home */}
         <div className="mt-16 pt-8 border-t border-ink-200">

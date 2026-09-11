@@ -10,6 +10,7 @@ import { getFurtherReading } from "@/lib/furtherReading";
 import type { ContentSection, Product } from "@/lib/types";
 import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
 import StickyEditorPick from "@/components/StickyEditorPick";
+import SourcesList from "@/components/SourcesList";
 import PriceSnapshot from "@/components/PriceSnapshot";
 import HeroPicks from "@/components/HeroPicks";
 import FinishTheOutfit from "@/components/FinishTheOutfit";
@@ -511,6 +512,9 @@ export default function InnerPage({ params }: PageProps) {
             {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
           </>
         )}
+
+        {/* Outbound authority citations (Rule 29). Renders nothing when a page has none. */}
+        <SourcesList sources={page.sources} />
       </div>
     </>
   );

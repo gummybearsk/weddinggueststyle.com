@@ -11,6 +11,7 @@ import type { ContentSection, Product } from "@/lib/types";
 import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
 import StickyEditorPick from "@/components/StickyEditorPick";
 import SourcesList from "@/components/SourcesList";
+import HeroImage from "@/components/HeroImage";
 import PriceSnapshot from "@/components/PriceSnapshot";
 import HeroPicks from "@/components/HeroPicks";
 import FinishTheOutfit from "@/components/FinishTheOutfit";
@@ -374,21 +375,41 @@ export default function InnerPage({ params }: PageProps) {
     bestFor: deriveBestFor(p),
   }));
   const asOf = priceAsOfLabel();
-  const insights = computeInsights(products);
   const accessoryLinks = getAccessoryLinks();
 
   // Split the catalogue: a small ranked set the reader can actually choose from, and the
   // rest as a browsable grid. A flat wall of 90+ dresses is why these pages don't convert.
   const HERO_COUNT = 6;
-  const heroPicks = products.slice(0, HERO_COUNT).map((p, i) => ({
+
+  // Hard cap on how many products reach the HTML at all.
+  //
+  // These pages were shipping every product in the JSON — 74 unique ASINs on
+  // /casual-wedding-guest-dresses against 2,396 words of editorial, so 86% of the rendered
+  // page was product-grid markup. That is the shape Google's March 2026 core update
+  // classified as an "intermediary" / thin affiliate aggregator, and it is the most likely
+  // reason 99 of 119 published pages have never earned a Google impression.
+  //
+  // ProductGrid's "load more" does NOT help: it paginates client-side, so every product is
+  // still in the server-rendered HTML that Googlebot reads.
+  //
+  // buildergelnails.com — same stack, same author, same affiliate programme — earns 5,755
+  // Google clicks a quarter with ~10 products and ~8,500 words on its top page. The
+  // evidence says fewer, better-argued picks rank and convert better than a wall of them.
+  const MAX_RENDERED_PRODUCTS = 14;
+  const shown = products.slice(0, MAX_RENDERED_PRODUCTS);
+
+  const heroPicks = shown.slice(0, HERO_COUNT).map((p, i) => ({
     ...p,
-    why: deriveRationale(p, products, i),
+    why: deriveRationale(p, shown, i),
   }));
-  const restProducts = products.slice(HERO_COUNT);
+  const restProducts = shown.slice(HERO_COUNT);
+
+  // Price stats describe the picks actually on the page, not the full catalogue.
+  const insights = computeInsights(shown);
 
   const plan = getLayoutPlan(page.slug, page.contentSections.length);
   const hClass = headingClass(plan.headingStyle);
-  const eyebrow = eyebrowText(plan.eyebrowStyle, products.length);
+  const eyebrow = eyebrowText(plan.eyebrowStyle, shown.length);
 
   const sectionsFirst = page.contentSections.slice(0, plan.splitContentAt);
   const sectionsRest = page.contentSections.slice(plan.splitContentAt);
@@ -406,7 +427,7 @@ export default function InnerPage({ params }: PageProps) {
       <FAQSchema faqs={page.faqs} />
       <BreadcrumbSchema title={page.title} slug={page.slug} />
       <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} />
-      {products.length > 0 && <ItemListSchema products={products} title={`Top ${page.title}`} />}
+      {shown.length > 0 && <ItemListSchema products={shown} title={`Top ${page.title}`} />}
 
       {/* Persistent CTA — pages run 2,000+ words with one product block otherwise. */}
       <StickyEditorPick product={products[0] ?? null} />
@@ -432,6 +453,8 @@ export default function InnerPage({ params }: PageProps) {
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light">{page.intro}</p>
+
+          <HeroImage image={page.heroImage} />
         </div>
       </div>
 
@@ -439,7 +462,7 @@ export default function InnerPage({ params }: PageProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
         {plan.showFactsBox && (
           <div className="pt-10">
-            <FactsBox products={products} category={page.title} />
+            <FactsBox products={shown} category={page.title} />
           </div>
         )}
 

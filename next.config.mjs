@@ -31,6 +31,12 @@ const nextConfig = {
         protocol: "https",
         hostname: "images-na.ssl-images-amazon.com",
       },
+      {
+        // Editorial photography (Unsplash Licence — commercial use permitted).
+        // Credited in-page to the photographer per Unsplash's attribution guidance.
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
     ],
   },
   async redirects() {
@@ -44,6 +50,52 @@ const nextConfig = {
       {
         source: "/author/sarah-mitchell",
         destination: "/author/sukie-gao",
+        permanent: true,
+      },
+      // Consolidation: two pages targeted the same "dressy casual" intent and split the
+      // signal between them — 3 impressions / 0 clicks each. One page, one intent.
+      {
+        source: "/what-does-dressy-casual-mean-for-a-wedding-guest",
+        destination: "/what-is-dressy-casual-for-a-wedding",
+        permanent: true,
+      },
+      // Duplicate-intent consolidation (2026-09-11). Five pages competed for "black
+      // wedding guest dresses" and split 33 Bing impressions between them; same pattern for
+      // formal, fuchsia and winter. Each cluster now has one page, and the losers 301 into
+      // it so any accumulated equity follows.
+      {
+        source: "/elegant-black-wedding-guest-dresses",
+        destination: "/black-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/best-black-wedding-guest-dresses",
+        destination: "/black-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/best-black-dress-for-wedding-guest",
+        destination: "/black-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/elegant-black-dresses-for-wedding-guests",
+        destination: "/black-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/best-formal-wedding-guest-dresses",
+        destination: "/formal-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/short-fuchsia-wedding-guest-dresses",
+        destination: "/fuchsia-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/classy-winter-wedding-guest-dresses",
+        destination: "/winter-wedding-guest-dresses",
         permanent: true,
       },
     ];

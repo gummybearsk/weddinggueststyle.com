@@ -64,6 +64,27 @@ export interface PageData {
    * date it was read. A hedge is not a source — see SOURCES.md.
    */
   sources?: PageSource[];
+  /** Editorial hero photograph, credited. */
+  heroImage?: PageImage;
+}
+
+/**
+ * An editorial photograph with its licence trail (Rule 29 / Rule 44e).
+ *
+ * NOTE: a licensed stock photo improves the page but does NOT satisfy Rule 22's
+ * "Experience" signal — Google's quality-rater guidance explicitly discounts generic
+ * stock. Only original photography by the author does that. See SOURCES.md.
+ */
+export interface PageImage {
+  /** images.unsplash.com file URL, without query params. */
+  url: string;
+  alt: string;
+  photographer: string;
+  /** Photographer's profile page, for the visible credit link. */
+  profileUrl: string;
+  /** e.g. "Unsplash". */
+  source: string;
+  sourceUrl: string;
 }
 
 export interface PageSource {

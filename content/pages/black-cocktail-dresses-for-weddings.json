@@ -67,7 +67,7 @@
     },
     {
       "title": "Elegant Black Wedding Guest Dresses",
-      "slug": "elegant-black-wedding-guest-dresses"
+      "slug": "black-wedding-guest-dresses"
     },
     {
       "title": "Black Tie Wedding Guest Dresses",
@@ -76,10 +76,6 @@
     {
       "title": "Cocktail Wedding Guest Dresses",
       "slug": "cocktail-wedding-guest-dresses"
-    },
-    {
-      "title": "Best Black Wedding Guest Dresses",
-      "slug": "best-black-wedding-guest-dresses"
     },
     {
       "title": "Wedding Dress Codes",
@@ -195,5 +191,13 @@
       "readOn": "11 September 2026",
       "supports": "contemporary guidance on wearing black as a wedding guest"
     }
-  ]
+  ],
+  "heroImage": {
+    "url": "https://images.unsplash.com/photo-1595877786670-393ef0ac0961",
+    "photographer": "Marcel Strauß",
+    "profileUrl": "https://unsplash.com/@martzzl",
+    "source": "Unsplash",
+    "sourceUrl": "https://unsplash.com/",
+    "alt": "Guests in formal dresses at an evening wedding reception"
+  }
 }

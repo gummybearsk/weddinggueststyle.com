@@ -102,3 +102,66 @@ export function picksForPillar(slugs: string[], count = 12): Product[] {
   }
   return out;
 }
+
+/**
+ * Seasonal edit — the in-season categories, chosen by the calendar rather than hardcoded.
+ *
+ * A wedding-guest shopper in September wants fall and winter, not the summer edit the
+ * homepage used to open with. Pairs with lib/seasonOrder.ts, which reorders the season
+ * navigation on the same rule.
+ */
+const SEASON_EDIT: Record<string, { slug: string; label: string; blurb: string }[]> = {
+  fall: [
+    { slug: "fall-wedding-guest-dresses", label: "Fall", blurb: "Sleeves, heavier fabrics, hems that survive a damp lawn." },
+    { slug: "october-wedding-guest-dresses", label: "October", blurb: "Peak wedding month — and peak unpredictable weather." },
+    { slug: "thanksgiving-wedding-guest-dresses", label: "Thanksgiving", blurb: "Family-heavy, photographed all day, usually indoors." },
+    { slug: "shades-of-brown-wedding-guest-dresses", label: "Chocolate & Cognac", blurb: "The palette that took over autumn." },
+  ],
+  winter: [
+    { slug: "winter-wedding-guest-dresses", label: "Winter", blurb: "Velvet, long sleeves, and something you can actually wear a coat over." },
+    { slug: "december-wedding-guest-dresses", label: "December", blurb: "Dark by four o'clock — dress for evening whatever the invitation says." },
+    { slug: "new-years-eve-wedding-guest-dresses", label: "New Year's Eve", blurb: "The one wedding where full metallic is the correct answer." },
+    { slug: "velvet-wedding-guest-dresses", label: "Velvet", blurb: "The definitive cold-weather fabric." },
+  ],
+  spring: [
+    { slug: "spring-wedding-guest-dresses", label: "Spring", blurb: "Pastels, florals, and a layer for the evening." },
+    { slug: "garden-party-wedding-guest-dresses", label: "Garden Party", blurb: "Block heels, because grass." },
+    { slug: "floral-wedding-guest-dresses", label: "Florals", blurb: "Scale matters more than colour." },
+  ],
+  summer: [
+    { slug: "summer-wedding-guest-dresses", label: "Summer", blurb: "Breathable fabric that still reads as occasion wear." },
+    { slug: "beach-wedding-guest-dresses", label: "Beach", blurb: "Sand-proof hems and shoes you can carry." },
+    { slug: "flowy-summer-wedding-guest-dresses", label: "Flowy", blurb: "Movement without losing the silhouette." },
+  ],
+};
+
+/** In-season categories with live products, newest season first. Silently skips missing pages. */
+export function getSeasonalEdit(season: string, count = 4): { niche: FeaturedNiche; products: Product[] }[] {
+  const out: { niche: FeaturedNiche; products: Product[] }[] = [];
+  for (const n of SEASON_EDIT[season] || []) {
+    const products = picksFor(n.slug, 4);
+    if (products.length) out.push({ niche: n, products });
+    if (out.length >= count) break;
+  }
+  return out;
+}
+
+/**
+ * Genuinely discounted, in-stock products across the whole catalogue.
+ *
+ * `savingsPercent` comes straight from the Amazon API (never computed by us), so this row
+ * is a real price signal rather than invented urgency. ~32% of in-stock items carry one.
+ */
+export function getDeals(count = 8, minPercent = 15): Product[] {
+  const seen = new Set<string>();
+  const deals: Product[] = [];
+  for (const n of FEATURED_NICHES) {
+    for (const p of picksFor(n.slug, 40)) {
+      const pct = p.savingsPercent ?? 0;
+      if (pct < minPercent || seen.has(p.url)) continue;
+      seen.add(p.url);
+      deals.push(p);
+    }
+  }
+  return deals.sort((a, b) => (b.savingsPercent ?? 0) - (a.savingsPercent ?? 0)).slice(0, count);
+}

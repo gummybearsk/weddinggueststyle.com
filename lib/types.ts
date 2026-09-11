@@ -66,6 +66,8 @@ export interface PageData {
   sources?: PageSource[];
   /** Editorial hero photograph, credited. */
   heroImage?: PageImage;
+  /** Override the per-type product cap (lib/productCap.ts) for this page. */
+  productCap?: number;
 }
 
 /**

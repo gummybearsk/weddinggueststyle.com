@@ -5,7 +5,10 @@ import Link from "next/link";
 import FAQ from "@/components/FAQ";
 import ShopTheEdit from "@/components/ShopTheEdit";
 import StickyEditorPick from "@/components/StickyEditorPick";
-import { getFeatured } from "@/lib/featured";
+import { getFeatured, getSeasonalEdit, getDeals } from "@/lib/featured";
+import { seasonForMonth } from "@/lib/seasonOrder";
+import DealsRow from "@/components/DealsRow";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import {
   seasonSections,
   dressCodeSections,
@@ -15,6 +18,7 @@ import {
   venueSections,
   homepageFaqs,
 } from "@/lib/homepageData";
+import { orderSeasonSections } from "@/lib/seasonOrder";
 
 function FAQSchema() {
   const schema = {
@@ -123,6 +127,11 @@ function CategoryGroup({
 
 export default function HomePage() {
   const featured = getFeatured(6);
+  const season = seasonForMonth(new Date().getMonth());
+  const seasonalEdit = getSeasonalEdit(season, 4);
+  const deals = getDeals(8, 15);
+  const seasonLabel = season.charAt(0).toUpperCase() + season.slice(1);
+  const asOf = priceAsOfLabel();
 
   return (
     <>
@@ -154,6 +163,24 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Seasonal edit FIRST — a shopper landing in September wants fall, not an essay. */}
+      {seasonalEdit.length > 0 && (
+        <ShopTheEdit
+          featured={seasonalEdit}
+          heading={`The ${seasonLabel} Edit`}
+          standfirst="What readers are shopping for this season, in stock at today's price."
+        />
+      )}
+
+      {/* Genuine price drops from the live Amazon feed. Renders nothing if nothing is on sale. */}
+      <DealsRow products={deals} asOf={asOf ?? undefined} />
+
+      {/* Products first — the reason people came. */}
+      <ShopTheEdit
+        featured={featured}
+        standfirst="The categories our readers reach for most often."
+      />
+
       {/* Short orienting block. Readers arrive from search wanting a dress — this establishes
           who we are in a few lines, then gets out of the way so the products can load above
           the fold rather than behind a wall of editorial. */}
@@ -174,12 +201,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* Products first — the reason people came. */}
-      <ShopTheEdit
-        featured={featured}
-        standfirst="The categories our readers reach for most often."
-      />
 
       {/* Editorial intro content — moved up directly after hero for SEO + authority */}
       <section className="pt-4 pb-12 sm:pt-6 sm:pb-16 bg-ivory">
@@ -284,7 +305,7 @@ export default function HomePage() {
           id="by-season"
           title="Wedding Guest Dresses by Season"
           description="Choose the right dress for the time of year. Lightweight fabrics for summer, cozy styles for winter, and everything in between."
-          sections={seasonSections}
+          sections={orderSeasonSections(seasonSections)}
           pillarHref="/season"
         />
 

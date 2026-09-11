@@ -16,6 +16,7 @@ import PriceSnapshot from "@/components/PriceSnapshot";
 import HeroPicks from "@/components/HeroPicks";
 import FinishTheOutfit from "@/components/FinishTheOutfit";
 import { getAccessoryLinks } from "@/lib/accessoryLinks";
+import { productCapFor } from "@/lib/productCap";
 import { computeInsights, deriveBestFor, deriveRationale } from "@/lib/priceInsights";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
@@ -395,8 +396,9 @@ export default function InnerPage({ params }: PageProps) {
   // buildergelnails.com — same stack, same author, same affiliate programme — earns 5,755
   // Google clicks a quarter with ~10 products and ~8,500 words on its top page. The
   // evidence says fewer, better-argued picks rank and convert better than a wall of them.
-  const MAX_RENDERED_PRODUCTS = 14;
-  const shown = products.slice(0, MAX_RENDERED_PRODUCTS);
+  // Per page TYPE — see lib/productCap.ts. Articles stay lean so they read as articles;
+  // category and deals pages get a real grid, because browsing is why the visitor came.
+  const shown = products.slice(0, productCapFor(page.slug, page.productCap));
 
   const heroPicks = shown.slice(0, HERO_COUNT).map((p, i) => ({
     ...p,

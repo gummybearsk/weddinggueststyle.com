@@ -8,6 +8,8 @@ const nextConfig = {
   experimental: {
     outputFileTracingIncludes: {
       "/sitemap.xml": ["./content/pages/**/*.json"],
+      // Daily publish sweep reads every page's publishDate at runtime (Rule 39a).
+      "/api/cron/publish-check": ["./content/pages/**/*.json"],
       "/": ["./content/pages/**/*.json"],
       "/[slug]": ["./content/pages/**/*.json"],
       // Pillar hubs render live product rows pooled from their cluster pages.

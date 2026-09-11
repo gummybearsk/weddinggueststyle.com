@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/check-sitemap-pairing.mjs",
+    "prebuild": "node scripts/check-sitemap-pairing.mjs && node scripts/check-sitemap-freshness.mjs . && node scripts/check-schema-urls.mjs .",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

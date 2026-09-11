@@ -1,9 +1,9 @@
 import { MetadataRoute } from "next";
 import { getAllSlugs, getPageData } from "@/lib/getPages";
 
-// Revalidate every 24h so scheduled-publish pages appear in /sitemap.xml on their publish date
+// Revalidate hourly so a daily cron always finds it expired (Rule 17a). Scheduled pages appear in /sitemap.xml on their publish date
 // without requiring a manual deploy. Required by Rule 17 for any site using publishDate gating.
-export const revalidate = 86400;
+export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://weddinggueststyle.com";

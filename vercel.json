@@ -1,0 +1,6 @@
+{
+  "crons": [
+    { "path": "/sitemap.xml", "schedule": "40 5 * * *" },
+    { "path": "/api/cron/publish-check", "schedule": "10 5 * * *" }
+  ]
+}

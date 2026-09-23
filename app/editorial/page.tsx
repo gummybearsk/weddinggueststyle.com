@@ -120,7 +120,7 @@ export default function EditorialPage() {
           <p>
             The &ldquo;Last updated&rdquo; date on each page reflects the most recent substantive review,
             not auto-generated build dates. If you spot an outdated link, broken product, or factual error,
-            email <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>
+            email <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>
             and we&apos;ll fix it within a week.
           </p>
         </section>
@@ -140,7 +140,7 @@ export default function EditorialPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Contact</h2>
           <p>
             For editorial feedback, content corrections, or partnership inquiries, email{" "}
-            <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
+            <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
           </p>
         </section>
       </div>

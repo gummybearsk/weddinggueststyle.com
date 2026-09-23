@@ -4,7 +4,7 @@ import Link from "next/link";
 import ProductGrid from "@/components/ProductGrid";
 import FAQ from "@/components/FAQ";
 import AuthorByline from "@/components/AuthorByline";
-import { getAllSlugsIncludingScheduled, getPublishedPageData } from "@/lib/getPages";
+import { getAllSlugsIncludingScheduled, getPublishedPageData, isLinkableSlug } from "@/lib/getPages";
 import { getLayoutPlan, headingClass, eyebrowText } from "@/lib/layoutVariant";
 import { getFurtherReading } from "@/lib/furtherReading";
 import type { ContentSection, Product } from "@/lib/types";
@@ -329,7 +329,8 @@ function FurtherReading({ slug }: { slug: string }) {
   );
 }
 
-function RelatedPages({ relatedPages }: { relatedPages: { title: string; slug: string }[] }) {
+function RelatedPages({ relatedPages: all }: { relatedPages: { title: string; slug: string }[] }) {
+  const relatedPages = all.filter((r) => isLinkableSlug(r.slug));
   if (!relatedPages.length) return null;
   return (
     <section className="py-12 sm:py-16">

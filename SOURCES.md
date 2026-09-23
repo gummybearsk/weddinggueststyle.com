@@ -15,8 +15,13 @@ and the Amazon products the site merchandises against them.
 |---|---|---|---|---|
 | S1 | **Amazon Product Advertising / Creators API** | Primary party. The merchant is accountable for its own price, availability, brand, and image. Associates Operating Agreement *requires* displayed prices come from here. | `node scripts/refresh-amazon.js` → `content/amazon-data.json` (carries `fetchedAt`) | 2026-09-11 (see file stamp) |
 | S2 | **The site's own Bing Webmaster + Google Search Console exports** | Primary party (the search engines' own measurement of this domain). Only valid source for any claim about what this site ranks for. | `GSC & Webmaster/<stem> GSC-Webmaster <date>/` — totals from `Totals.csv` only, per rule 43 | 2026-09-11 |
-| S3 | **Etiquette authorities for dress-code definitions** — Emily Post Institute (emilypost.com), Debrett's (debretts.com) | Established, named, accountable bodies that publish the formal-wear conventions themselves; the recognised outbound authority for this niche (rule 29). | Direct page fetch; cite page title + read date | — |
+| S3 | **Etiquette authority for dress-code definitions** — Emily Post Institute, *Attire Guide: Dress Codes from Casual to White Tie Formal* (emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie) | Established, named, accountable body that publishes the formal-wear conventions itself; the recognised outbound authority for this niche (rule 29). Lists garments per code for women and men. | Direct page fetch (WebFetch works); cite page title + read date | 2026-09-23 |
 | S4 | **Author's own wear-testing and photography** | Experience signal (rule 22) — the only class of claim AI cannot fabricate. Sukie Gao's own measurements, fit notes, dated anecdotes, original photos. | Author-supplied | — |
+
+## Retired sources
+
+- **Debrett's** `debretts.com/guide/dress-codes/` — on 2026-09-23 this URL served a subscription page with no dress-code content, and `/etiquette/events-and-dress-codes/` returned 404. Removed from every page's citations the same day. Re-add only with a URL that shows the text being cited.
+- Merriam-Webster, Cambridge Dictionary and The Knot return 403 to fetchers — unverifiable, so not cited.
 
 ## Rejected as sources
 

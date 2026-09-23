@@ -9,9 +9,9 @@ import { dressCodeSections } from "@/lib/homepageData";
 export const revalidate = 43200;
 
 export const metadata: Metadata = {
-  title: "Wedding Dress Codes Explained: What Each One Means (2026)",
+  title: { absolute: "Wedding Dress Codes Explained: Black Tie to Casual (2026)" },
   description:
-    "Wedding dress codes decoded: black tie, black tie optional, formal, semi-formal, cocktail, dressy casual and casual. What each one actually allows, what it forbids, and the venues where it appears.",
+    "Wedding dress codes explained in order, most formal first: black tie, black tie optional, formal, cocktail, semi-formal, dressy casual and casual — what each means for guests.",
   alternates: { canonical: "https://weddinggueststyle.com/dress-code" },
 };
 
@@ -43,13 +43,6 @@ export default function DressCodePillarPage() {
           url: "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
           readOn: "11 September 2026",
           supports: "the black tie, black tie optional, formal, semi-formal, cocktail, dressy casual and festive attire definitions on this page",
-        },
-        {
-          publisher: "Debrett's",
-          title: "Dress Codes",
-          url: "https://www.debretts.com/guide/dress-codes/",
-          readOn: "11 September 2026",
-          supports: "the formal-wear conventions referenced for traditional and British weddings",
         },
       ]}
     />

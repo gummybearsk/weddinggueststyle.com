@@ -59,6 +59,19 @@ const nextConfig = {
         destination: "/what-is-dressy-casual-for-a-wedding",
         permanent: true,
       },
+      // Duplicate-intent consolidation (2026-09-23). Sage: the -2026 twin split the
+      // sage cluster (81 Bing impressions, 0 clicks across both). Fall long-sleeve: the
+      // winner ranks Google #9 and converts 19% on Bing; the twin had 3 impressions.
+      {
+        source: "/sage-green-wedding-guest-dresses-2026",
+        destination: "/sage-green-wedding-guest-dresses",
+        permanent: true,
+      },
+      {
+        source: "/fall-wedding-guest-dresses-long-sleeve",
+        destination: "/best-fall-wedding-guest-dresses-2026-long-sleeve",
+        permanent: true,
+      },
       // Duplicate-intent consolidation (2026-09-11). Five pages competed for "black
       // wedding guest dresses" and split 33 Bing impressions between them; same pattern for
       // formal, fuchsia and winter. Each cluster now has one page, and the losers 301 into

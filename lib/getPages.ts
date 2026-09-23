@@ -44,6 +44,14 @@ export function getPublishedPageData(slug: string): PageData | null {
   return page;
 }
 
+// A related-page link is safe to render when the target is not a content page
+// (a hub such as /dress-code) or is a content page whose publishDate has arrived.
+// Linking a queued page early serves crawlers a 404 that the ISR cache then pins.
+export function isLinkableSlug(slug: string): boolean {
+  const page = getPageData(slug);
+  return page ? isPublished(page) : true;
+}
+
 export function getAllPages(): PageData[] {
   return getAllSlugs()
     .map((slug) => getPageData(slug))

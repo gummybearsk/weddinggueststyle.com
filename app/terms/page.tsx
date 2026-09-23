@@ -125,7 +125,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">11. Contact</h2>
           <p>
-            For questions about these Terms of Service, email <a href="mailto:hello@weddinggueststyle.com" className="text-blush-600 hover:underline">hello@weddinggueststyle.com</a>.
+            For questions about these Terms of Service, email <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
           </p>
         </section>
       </div>

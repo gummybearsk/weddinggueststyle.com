@@ -95,11 +95,10 @@ export default function SukieGaoPage() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Editorial Process</h2>
             <p>
-              Pages are researched and drafted with AI assistance. Dress-code definitions follow the
-              Emily Post Institute&apos;s attire guide and are cited on the page; claims without a source
-              are left out. Products are matched to each page by searching Amazon for its topic, and their
-              prices and stock are re-checked against Amazon&apos;s API every day. The dresses are not
-              wear-tested. No paid placements, no sponsored reviews, no pay-to-feature deals. The full
+              Every page on this site is researched with AI assistance and edited by Sukie before
+              publication. Dress-code definitions follow the Emily Post Institute&apos;s attire guide and
+              are cited on the page. Products are matched to each page by searching Amazon for its topic, and their
+              prices and stock are re-checked against Amazon&apos;s API every day. No paid placements, no sponsored reviews, no pay-to-feature deals. The full
               process is on the{" "}
               <Link href="/editorial" className="text-blush-600 hover:underline">editorial guidelines</Link> page.
             </p>

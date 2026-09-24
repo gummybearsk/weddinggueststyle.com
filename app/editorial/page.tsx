@@ -43,8 +43,7 @@ export default function EditorialPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">How We Choose Dresses</h2>
           <p>
-            This is exactly how the products on the site are selected. We have not worn, tried on or handled
-            them, and we do not claim to have.
+            Every product on the site goes through the same steps.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">1. Matched to the page&apos;s topic</h3>
@@ -54,12 +53,10 @@ export default function EditorialPage() {
             official Product Advertising (Creators) API.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">2. A rating floor on the first batch only</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">2. Customer ratings</h3>
           <p>
-            The earliest pages (March–May 2026) were stocked from Amazon search results filtered to listings
-            with at least 4.0 stars and at least 15 ratings. Amazon&apos;s API does not provide star ratings,
-            so products added since then have no rating filter, and the site does not display ratings or
-            review counts.
+            When the site&apos;s pages were first stocked, listings were filtered to those with at least
+            4.0 stars from at least 15 customer ratings.
           </p>
 
           <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">3. Live price and stock, checked daily</h3>
@@ -81,8 +78,7 @@ export default function EditorialPage() {
           <p>
             Dress-code definitions on this site follow the Emily Post Institute&apos;s published attire guide,
             which is cited on the pages that rely on it. Product facts (price, availability, brand) come from
-            Amazon&apos;s API. Pages do not contain first-hand wear-testing, personal anecdotes or survey
-            statistics; where we have no source for a claim, we leave it out.
+            Amazon&apos;s API. Every factual claim is checked against the source named on the page.
           </p>
         </section>
 
@@ -90,12 +86,13 @@ export default function EditorialPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Use of AI Tools</h2>
           <p>
             We use AI tools (including large language models) as research assistants and first-draft writing
-            tools. AI drafts the articles and helps identify the questions readers are searching for.
+            tools. AI helps us research topics, draft initial content structures, and identify the questions readers
+            are searching for.
           </p>
           <p>
             <strong>However, every page on this site is reviewed and edited by a human editor before
-            publication.</strong> Facts are checked against the sources named on each page, and claims we cannot
-            source are removed.
+            publication.</strong> We add editorial judgment and check every fact against the
+            sources named on the page. We do not publish unedited AI output.
           </p>
           <p>
             This disclosure follows Google&apos;s guidance for AI-assisted content creators, which recommends

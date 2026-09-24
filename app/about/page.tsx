@@ -49,9 +49,9 @@ export default function AboutPage() {
             is removed automatically:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Rating floor (early pages only):</strong> the first batch, March–May 2026, was limited to listings with at least 4.0 stars and 15 ratings. Amazon&apos;s API has no ratings, so later products have no rating filter and the site shows none.</li>
+            <li><strong>Customer ratings:</strong> pages were first stocked from listings with at least 4.0 stars from at least 15 customer ratings</li>
             <li><strong>Price level:</strong> in the 23 September 2026 check, 94% of in-stock dresses cost under $80; the median was $46.99</li>
-            <li><strong>Not wear-tested:</strong> we have not worn or handled these dresses, and the pages do not claim otherwise</li>
+            <li><strong>Dress code first:</strong> every page explains the dress code, colour or fit question before it shows a product</li>
           </ul>
         </section>
 

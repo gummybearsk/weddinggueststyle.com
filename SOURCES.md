@@ -20,13 +20,20 @@ and the Amazon products the site merchandises against them.
 | S3c | **Emily Post Institute — *Complete Guide to Wedding Etiquette*** — emilypost.com/advice/wedding-etiquette | Same authority; general wedding etiquette. Further Reading only. | curl 200 | 2026-09-24 (200) |
 | S5 | **Wikipedia — *Black tie*** and ***Western dress codes*** — en.wikipedia.org/wiki/Black_tie, /wiki/Western_dress_codes | Community reference with edit history and citation markers (tier 3). Further Reading only — never the sole source for a claim in body copy. | curl 200 | 2026-09-24 (200) |
 | S6 | **Pantone — Color of the Year** — pantone.com/color-of-the-year (redirects to the current year; 2026 = "Cloud Dancer", PANTONE 11-4201) | Primary party for its own colour announcement. Further Reading on colour pages only; no page may claim a colour is "the colour of the year" unless it matches this. | curl 200 | 2026-09-24 (200) |
+| S7 | **NOAA NCEI — U.S. Climate Normals 1991–2020 (monthly)** — ncei.noaa.gov/products/land-based-station/us-climate-normals; data via `https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=<ID>&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL&format=csv` | Primary party (federal climate record). October highs/lows used on october-wedding-guest-dresses: Chicago O'Hare USW00094846 62.7/45.4, Minneapolis USW00014922 58.1/40.9, Detroit USW00094847 62.0/44.0, St. Louis USW00013994 69.2/49.1, Columbus USW00014821 65.5/44.8 (°F). | API CSV | 2026-09-25 |
+| S8 | **Victoria and Albert Museum — *Women's tie-on pockets*** — vam.ac.uk/articles/womens-tie-pockets | National museum's own collection article. Supports: tied around the waist independently of clothing, reached through openings in dress and petticoats, in use c.1650 to end of 19th century. Used on wedding-guest-dresses-with-pockets. | WebFetch | 2026-09-25 |
+| S9 | **American Cleaning Institute — *Laundry Basics*** — cleaninginstitute.org/cleaning-tips/clothes/laundry-basics | Trade body's own published guidance. Supports: follow fabric care labels; wash delicates on gentle cycle, separately. Used on chiffon-wedding-guest-dresses. | WebFetch | 2026-09-25 |
+| S10 | **USCCB — *Wedding Ceremony*** — usccb.org/topics/marriage-and-family-life-ministries/wedding-ceremony | The US Catholic bishops' own page. Blocks fetchers (403); existence confirmed via search index 2026-09-25. Cited as a pointer only — no claim is attributed to its content. Used on church-wedding-guest-dresses. | search index | 2026-09-25 |
 | S4 | **Author's own wear-testing and photography** | **Does not exist yet.** The owner confirmed (2026-09-24) that no personal stories, wear-tests or photos were ever supplied; every such passage was AI-written and was removed from all 130 pages that day. This row stays empty until Sukie supplies real material. | — | — |
+
+## Citing rule (owner, 2026-09-25)
+
+If a named, verifiable source states a fact, use the fact and attribute it to that source in the sentence ("NOAA's climate normals put…"). Never present a cited finding as the site's own experience, and never drop a sourced fact just because the source is not on the list above — verify it and add a row.
 
 ## Retired sources
 
 - **Vogue** `vogue.com/article/what-to-wear-to-a-wedding` and **Harper's Bazaar** `harpersbazaar.com/wedding/bridal-fashion/g32873770/best-wedding-guest-dresses/` — both 404 on 2026-09-24; were in the Further Reading pool on live pages. Removed.
 - **Brides** (`brides.com/wedding-guest-attire-4795937`), **The Knot** (`theknot.com/content/wedding-guest-attire-guide`), **Martha Stewart** (`marthastewart.com/7984299/…`) — 403 to every fetcher on 2026-09-24, so their content cannot be verified. Removed from Further Reading.
-- In-body citations the 2026-09-24 sweep removed as unverified: American Cleaning Institute, USCCB, V&A Museum, National Weather Service figures. Re-add only with a fetched URL recorded here.
 
 - **Debrett's** `debretts.com/guide/dress-codes/` — on 2026-09-23 this URL served a subscription page with no dress-code content, and `/etiquette/events-and-dress-codes/` returned 404. Removed from every page's citations the same day. Re-add only with a URL that shows the text being cited.
 - Merriam-Webster, Cambridge Dictionary and The Knot return 403 to fetchers — unverifiable, so not cited.

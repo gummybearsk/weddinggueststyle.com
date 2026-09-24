@@ -81,7 +81,7 @@ export function eyebrowText(style: EyebrowStyle, count: number): string {
     case "volume":
       return `Volume · ${count} picks`;
     case "hand-picked":
-      return `${count} hand-picked`;
+      return `${count} in-stock picks`;
     case "edit-count":
     default:
       return `The Edit · ${count} picks`;

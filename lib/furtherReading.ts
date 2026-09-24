@@ -14,42 +14,27 @@ interface Source {
   fits: ("etiquette" | "color" | "season" | "venue" | "dress-code" | "style" | "body-type" | "general")[];
 }
 
+// Every URL here was fetched and confirmed on 2026-09-24 (see SOURCES.md). Brides, The Knot and
+// Martha Stewart were removed: they return 403 to every fetcher, so their content cannot be
+// verified. Vogue and Harper's Bazaar were removed: their URLs had become 404s.
 const SOURCES: Source[] = [
   {
     publisher: "Emily Post Institute",
     url: "https://emilypost.com/advice/wedding-etiquette",
-    label: "Wedding etiquette — Emily Post Institute",
-    fits: ["etiquette", "dress-code", "general"],
+    label: "Emily Post's complete guide to wedding etiquette",
+    fits: ["etiquette", "general"],
   },
   {
-    publisher: "Brides",
-    url: "https://www.brides.com/wedding-guest-attire-4795937",
-    label: "Wedding guest dress code guide — Brides",
-    fits: ["dress-code", "general"],
+    publisher: "Emily Post Institute",
+    url: "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
+    label: "Attire guide: dress codes from casual to white tie — Emily Post Institute",
+    fits: ["dress-code", "style", "venue"],
   },
   {
-    publisher: "The Knot",
-    url: "https://www.theknot.com/content/wedding-guest-attire-guide",
-    label: "What to wear as a wedding guest — The Knot",
-    fits: ["dress-code", "venue", "general"],
-  },
-  {
-    publisher: "Vogue",
-    url: "https://www.vogue.com/article/what-to-wear-to-a-wedding",
-    label: "What to wear to a wedding — Vogue",
-    fits: ["color", "style", "general"],
-  },
-  {
-    publisher: "Harper's Bazaar",
-    url: "https://www.harpersbazaar.com/wedding/bridal-fashion/g32873770/best-wedding-guest-dresses/",
-    label: "Best wedding guest dresses — Harper's Bazaar",
-    fits: ["color", "style", "season"],
-  },
-  {
-    publisher: "Martha Stewart Weddings",
-    url: "https://www.marthastewart.com/7984299/wedding-guest-attire-guide",
-    label: "Wedding guest attire by dress code — Martha Stewart",
-    fits: ["dress-code", "etiquette"],
+    publisher: "Emily Post Institute",
+    url: "https://emilypost.com/advice/wedding-guest-attire",
+    label: "Wedding guest attire — Emily Post Institute",
+    fits: ["color", "season", "venue", "style", "general"],
   },
   {
     publisher: "Wikipedia",
@@ -61,7 +46,7 @@ const SOURCES: Source[] = [
     publisher: "Wikipedia",
     url: "https://en.wikipedia.org/wiki/Western_dress_codes",
     label: "Western dress codes — Wikipedia",
-    fits: ["dress-code"],
+    fits: ["dress-code", "general"],
   },
   {
     publisher: "Pantone",
@@ -97,26 +82,11 @@ export interface FurtherReadingLink {
 export function getFurtherReading(slug: string, count: number = 3): FurtherReadingLink[] {
   const h = hashSlug(slug);
   const category = inferCategory(slug);
+  const fit = (s: Source) => (s.fits.includes(category) ? 0 : s.fits.includes("general") ? 1 : 2);
 
-  // Prefer sources that fit the category; fall back to general.
-  const ranked = SOURCES.slice().sort((a, b) => {
-    const aFits = a.fits.includes(category) ? 0 : a.fits.includes("general") ? 1 : 2;
-    const bFits = b.fits.includes(category) ? 0 : b.fits.includes("general") ? 1 : 2;
-    return aFits - bFits;
-  });
-
-  // Pick `count` sources, rotated by the slug hash so different pages get different combos.
-  const picks: FurtherReadingLink[] = [];
-  const seenPublisher = new Set<string>();
-  const offset = h % SOURCES.length;
-  let attempts = 0;
-  while (picks.length < count && attempts < SOURCES.length * 2) {
-    const candidate = ranked[(offset + picks.length + attempts) % ranked.length];
-    if (!seenPublisher.has(candidate.publisher)) {
-      picks.push({ publisher: candidate.publisher, url: candidate.url, label: candidate.label });
-      seenPublisher.add(candidate.publisher);
-    }
-    attempts++;
-  }
-  return picks;
+  // Best topical fit first; within the same fit, rotate by slug hash so pages vary.
+  return SOURCES.map((s, i) => ({ s, key: fit(s) * 100 + ((i + h) % SOURCES.length) }))
+    .sort((a, b) => a.key - b.key)
+    .slice(0, count)
+    .map(({ s }) => ({ publisher: s.publisher, url: s.url, label: s.label }));
 }

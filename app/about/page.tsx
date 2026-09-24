@@ -17,7 +17,7 @@ export default function AboutPage() {
       </nav>
 
       <h1 className="text-4xl font-bold text-gray-900 mb-3">About Wedding Guest Style</h1>
-      <p className="text-sm text-gray-500 mb-10">Last updated: April 15, 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Last updated: September 24, 2026</p>
 
       <div className="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed">
         <section>
@@ -39,19 +39,19 @@ export default function AboutPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">What Makes Us Different</h2>
           <p>
-            Most wedding-fashion sites either link to brands they have direct partnerships with (limited
-            selection) or scrape product data without curation (unreliable quality). We do neither.
+            Every dress page is organised around one question a guest actually has — a dress code, a colour,
+            a season, a fit — and explains the answer before it shows a single product. Dress-code
+            definitions follow the Emily Post Institute&apos;s attire guide and are cited on the page.
           </p>
           <p>
-            Every dress on the site has been hand-picked from Amazon listings with verified reviews. We
-            prioritize:
+            The products themselves come from Amazon, matched to each page by searching for its topic.
+            Prices and stock are re-checked against Amazon&apos;s API every day, and anything unavailable
+            is removed automatically:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Real reviews:</strong> Minimum 4.5 stars with at least 20 reviews — we read review photos and feedback before recommending</li>
-            <li><strong>Fit accuracy:</strong> Brands and listings with consistent &ldquo;true to size&rdquo; feedback in customer reviews</li>
-            <li><strong>Photographic accuracy:</strong> Listings where customer photos match the marketing images</li>
-            <li><strong>Reasonable pricing:</strong> Most dresses under $80, almost all under $150</li>
-            <li><strong>Dress code appropriateness:</strong> Each dress is matched to specific dress code categories, not generic &ldquo;wedding guest&rdquo;</li>
+            <li><strong>Rating floor (early pages only):</strong> the first batch, March–May 2026, was limited to listings with at least 4.0 stars and 15 ratings. Amazon&apos;s API has no ratings, so later products have no rating filter and the site shows none.</li>
+            <li><strong>Price level:</strong> in the 23 September 2026 check, 94% of in-stock dresses cost under $80; the median was $46.99</li>
+            <li><strong>Not wear-tested:</strong> we have not worn or handled these dresses, and the pages do not claim otherwise</li>
           </ul>
         </section>
 
@@ -62,11 +62,11 @@ export default function AboutPage() {
             inner page on the site covers one specific dress category (e.g., black tie, casual, blush pink) with:
           </p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>15-50 hand-picked dresses for that category</li>
+            <li>A grid of in-stock dresses from Amazon (12 on question pages, up to 24 on category pages, up to 32 on deals pages)</li>
             <li>A dress code or color guide explaining when the category is appropriate</li>
             <li>Body type fit advice</li>
             <li>Fabric and styling considerations</li>
-            <li>Real-user FAQs answered in detail</li>
+            <li>FAQs answering the questions readers search for</li>
           </ul>
           <p>
             For more detail on how we research and write content, see our
@@ -81,12 +81,7 @@ export default function AboutPage() {
             <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>
             {" "}(
             <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>
-            ). Sukie writes from a guest&apos;s perspective — what actually works in photographs, what holds
-            up across an eight-hour event, and what dress code phrases actually mean in practice.
-          </p>
-          <p>
-            We&apos;re not industry insiders selling you on a brand or designer. We&apos;re wedding guests
-            who got tired of the search and built the resource we wish had existed when we started.
+            ).
           </p>
           <p className="text-sm text-gray-500 italic">
             Articles on this site are researched with AI assistance and edited by Sukie before publication.
@@ -101,9 +96,8 @@ export default function AboutPage() {
             cost to you. This is what funds the work behind the site and lets us keep it free.
           </p>
           <p>
-            We do not accept paid placements, sponsored reviews, or pay-to-feature deals. Affiliate
-            relationships do not influence our editorial decisions. If a dress is not worth recommending,
-            we don&apos;t include it — regardless of commission rate.
+            We do not accept paid placements, sponsored reviews, or pay-to-feature deals. Commission
+            rates play no part in which products appear.
           </p>
         </section>
 

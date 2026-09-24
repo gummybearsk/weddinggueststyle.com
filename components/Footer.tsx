@@ -33,8 +33,7 @@ export default function Footer() {
           <div>
             <p className="eyebrow mb-3">Editor&apos;s Note</p>
             <p className="text-base text-ink-700 leading-[1.75] font-light mb-4">
-              A curated edit of wedding guest dresses, hand-picked for the women
-              who get dressed for the photograph. Organized by every variable
+              A guide to wedding guest dresses, organized by every variable
               that matters — season, dress code, color, body type, venue.
             </p>
             <p className="text-sm text-ink-600 italic font-light">

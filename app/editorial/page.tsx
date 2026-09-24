@@ -17,7 +17,7 @@ export default function EditorialPage() {
       </nav>
 
       <h1 className="text-4xl font-bold text-gray-900 mb-3">Editorial Guidelines &amp; Disclosure</h1>
-      <p className="text-sm text-gray-500 mb-10">Last updated: April 15, 2026</p>
+      <p className="text-sm text-gray-500 mb-10">Last updated: September 24, 2026</p>
 
       <div className="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed">
         <section>
@@ -35,74 +35,67 @@ export default function EditorialPage() {
           <p>
             <strong>What this does NOT mean:</strong> We do not get paid more to recommend any particular dress
             or brand. We have not accepted free products, sponsorships, or paid placements in exchange for
-            coverage. Our recommendations are based on review quality, customer feedback, fit accuracy, and
-            dress code appropriateness — not commission rates.
+            coverage. Which products appear depends on the page&apos;s topic and on live Amazon price and stock data
+            — not on commission rates.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">How We Choose Dresses</h2>
-          <p>Each dress that appears on the site has passed our editorial review for the following criteria:</p>
-
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">1. Customer Reviews</h3>
           <p>
-            We require a minimum of 4.5 stars with at least 20 verified customer reviews. We read 4-star
-            reviews more carefully than 5-star (4-star reviews tend to surface fit issues, fabric concerns,
-            and other practical feedback that helps us decide whether to recommend a dress).
+            This is exactly how the products on the site are selected. We have not worn, tried on or handled
+            them, and we do not claim to have.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">2. Fit Accuracy</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">1. Matched to the page&apos;s topic</h3>
           <p>
-            We look for listings with consistent &ldquo;true to size&rdquo; or &ldquo;runs slightly small/large&rdquo;
-            feedback. Listings with wildly inconsistent sizing reviews are excluded — even if the average rating
-            is high.
+            Each page&apos;s products come from searching Amazon for that page&apos;s subject — a colour, a
+            dress code, a silhouette or a season. Since May 2026 those searches run through Amazon&apos;s
+            official Product Advertising (Creators) API.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">3. Photographic Accuracy</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">2. A rating floor on the first batch only</h3>
           <p>
-            Customer photos must reasonably match the marketing photos. Listings where the customer photos
-            consistently look different from the model photos are excluded.
+            The earliest pages (March–May 2026) were stocked from Amazon search results filtered to listings
+            with at least 4.0 stars and at least 15 ratings. Amazon&apos;s API does not provide star ratings,
+            so products added since then have no rating filter, and the site does not display ratings or
+            review counts.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">4. Dress Code Appropriateness</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">3. Live price and stock, checked daily</h3>
           <p>
-            Each dress is categorized into specific dress code pages (black tie, semi-formal, cocktail, etc.)
-            based on fabric, silhouette, and styling — not just the seller&apos;s product title.
+            Every day the site re-reads price and availability for every listed product from Amazon&apos;s API.
+            Anything that is out of stock or has no current price is removed from the page automatically, and
+            each product grid shows the date the prices were last checked.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">5. Reasonable Pricing</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mt-6 mb-2">4. Price level</h3>
           <p>
-            Most dresses on the site cost less than $80. Almost all cost under $150. We focus on accessible
-            options because most wedding guests don&apos;t want to spend $300+ on a dress they may only wear
-            once.
+            In the 23 September 2026 price check, 94% of the in-stock dresses on the site cost under $80 and
+            almost 99% under $150; the median was $46.99.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">How We Research Content</h2>
           <p>
-            Our style guides, dress code explanations, and FAQs are written based on:
+            Dress-code definitions on this site follow the Emily Post Institute&apos;s published attire guide,
+            which is cited on the pages that rely on it. Product facts (price, availability, brand) come from
+            Amazon&apos;s API. Pages do not contain first-hand wear-testing, personal anecdotes or survey
+            statistics; where we have no source for a claim, we leave it out.
           </p>
-          <ul className="list-disc pl-6 space-y-2">
-            <li>Standard wedding etiquette references including The Knot, WeddingWire, and Brides magazine</li>
-            <li>Direct experience attending weddings across multiple dress codes</li>
-            <li>Real customer reviews and feedback from product listings</li>
-            <li>Cultural and religious wedding tradition references for relevant pages (e.g., Indian, Jewish, Catholic ceremonies)</li>
-            <li>Seasonal fashion trend research from runway shows and editorial coverage</li>
-          </ul>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Use of AI Tools</h2>
           <p>
             We use AI tools (including large language models) as research assistants and first-draft writing
-            tools. AI helps us efficiently summarize customer review patterns, draft initial content
-            structures, and identify keyword opportunities.
+            tools. AI drafts the articles and helps identify the questions readers are searching for.
           </p>
           <p>
             <strong>However, every page on this site is reviewed and edited by a human editor before
-            publication.</strong> We add our own dress code experience, real-life styling considerations,
-            and editorial judgment to every page. We do not publish unedited AI output.
+            publication.</strong> Facts are checked against the sources named on each page, and claims we cannot
+            source are removed.
           </p>
           <p>
             This disclosure follows Google&apos;s guidance for AI-assisted content creators, which recommends

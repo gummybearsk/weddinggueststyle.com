@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Wedding Guest Style",
   },
   description:
-    "The wedding guest dress finder. Browse 100+ editorial guides by season, dress code, color, body type, and venue — from black-tie to beach. Hand-picked Amazon picks, honest reviews, real sizing notes. 2026 edit.",
+    "The wedding guest dress finder. Browse 100+ editorial guides by season, dress code, color, body type, and venue — from black-tie to beach. Dress-code definitions cited to Emily Post, with in-stock Amazon picks checked daily.",
   metadataBase: new URL("https://weddinggueststyle.com"),
   openGraph: {
     type: "website",

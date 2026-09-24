@@ -513,7 +513,7 @@ export const dressCodeSections: HomepageSection[] = [
   {
     id: "best-dresses",
     title: "Best Wedding Guest Dresses",
-    description: "Our top-rated picks across all styles. Every dress here is 4.5+ stars with verified reviews — the best of the best for any wedding.",
+    description: "In-stock picks across every style, with prices checked daily against Amazon.",
     slug: "best-wedding-guest-dresses",
     products: [
       {
@@ -1844,7 +1844,7 @@ export const homepageFaqs: FAQ[] = [
   },
   {
     question: "How much should I spend on a wedding guest dress?",
-    answer: "A great wedding guest dress doesn't have to break the bank. Amazon offers beautiful options ranging from $25 to $60 that look much more expensive than their price tag. The key is focusing on fit and fabric quality rather than brand names. Many of the most popular wedding guest dresses on Amazon are under $40 and have thousands of positive reviews.",
+    answer: "A great wedding guest dress doesn't have to break the bank. In our 23 September 2026 price check, the median in-stock dress on this site cost $46.99, and 94% cost under $80. The key is focusing on fit and fabric quality rather than brand names.",
   },
   {
     question: "What should I wear to a fall wedding?",

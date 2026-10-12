@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const innerPages = slugs.map((slug) => {
     const page = getPageData(slug);
-    const lastMod = page?.publishDate ? new Date(page.publishDate) : new Date("2026-03-15");
+    const lastMod = page?.modifiedDate || page?.publishDate ? new Date((page?.modifiedDate || page?.publishDate)!) : new Date("2026-03-15");
     return {
       url: `${baseUrl}/${slug}`,
       lastModified: lastMod,
@@ -23,14 +23,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const pillarPages = [
     { url: `${baseUrl}/season`, priority: 0.9 },
-    { url: `${baseUrl}/dress-code`, priority: 0.9 },
+    { url: `${baseUrl}/dress-code`, priority: 0.9, lastMod: "2026-10-12" }, // types-of-dress-codes refresh
     { url: `${baseUrl}/color`, priority: 0.9 },
     { url: `${baseUrl}/body-type`, priority: 0.9 },
     { url: `${baseUrl}/style`, priority: 0.9 },
     { url: `${baseUrl}/venue`, priority: 0.9 },
-  ].map((p) => ({
+  ].map((p: { url: string; priority: number; lastMod?: string }) => ({
     url: p.url,
-    lastModified: new Date("2026-05-25"),
+    lastModified: new Date(p.lastMod ?? "2026-05-25"),
     changeFrequency: "weekly" as const,
     priority: p.priority,
   }));

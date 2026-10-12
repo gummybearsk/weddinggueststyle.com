@@ -162,14 +162,14 @@ function BreadcrumbSchema({ title, slug }: { title: string; slug: string }) {
   );
 }
 
-function ArticleSchema({ title, description, slug, intro, publishDate }: { title: string; description: string; slug: string; intro: string; publishDate?: string }) {
+function ArticleSchema({ title, description, slug, intro, publishDate, modifiedDate }: { title: string; description: string; slug: string; intro: string; publishDate?: string; modifiedDate?: string }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description: description,
     url: `https://weddinggueststyle.com/${slug}`,
-    ...(publishDate && { datePublished: publishDate, dateModified: publishDate }),
+    ...(publishDate && { datePublished: publishDate, dateModified: modifiedDate || publishDate }),
     author: {
       "@type": "Person",
       name: "Sukie Gao",
@@ -429,7 +429,7 @@ export default function InnerPage({ params }: PageProps) {
     <>
       <FAQSchema faqs={page.faqs} />
       <BreadcrumbSchema title={page.title} slug={page.slug} />
-      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} />
+      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} modifiedDate={page.modifiedDate} />
       {shown.length > 0 && <ItemListSchema products={shown} title={`Top ${page.title}`} />}
 
       {/* Persistent CTA — pages run 2,000+ words with one product block otherwise. */}
@@ -452,7 +452,7 @@ export default function InnerPage({ params }: PageProps) {
           <h1 className="display-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">{page.h1}</h1>
 
           <div className="mt-6">
-            <AuthorByline publishDate={page.publishDate} />
+            <AuthorByline publishDate={page.modifiedDate || page.publishDate} />
           </div>
 
           <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light">{page.intro}</p>

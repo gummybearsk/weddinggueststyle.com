@@ -38,7 +38,7 @@ const PILLARS: Pillar[] = [
       { label: "Summer", match: /summer|flowy-summer/ },
       { label: "Autumn", match: /\bfall\b|fall-|autumn|october|november|thanksgiving/ },
       { label: "Winter", match: /winter|december|january|new-years/ },
-      { label: "Spring", match: /spring/ },
+      { label: "Spring", match: /spring|march/ },
     ],
   },
   {
@@ -80,7 +80,7 @@ const PILLARS: Pillar[] = [
       { label: "Length", match: /midi|maxi|tea-length|knee-length|long-wedding|short-/ },
       { label: "Silhouette", match: /a-line|mermaid|floral|elegant|designer/ },
       { label: "Fabric", match: /velvet|satin|chiffon|lace/ },
-      { label: "Details", match: /pockets|with-sleeves|long-sleeve/ },
+      { label: "Details", match: /pockets|with-sleeves|long-sleeve|sexy/ },
       { label: "Accessories", match: /accessor|shoes|clutch|cover-ups|bags|wraps/ },
     ],
   },

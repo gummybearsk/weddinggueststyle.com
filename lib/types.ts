@@ -58,6 +58,7 @@ export interface PageData {
   faqs: FAQ[];
   relatedPages: RelatedPage[];
   publishDate?: string; // ISO date string (YYYY-MM-DD). Pages with future dates are hidden until that date.
+  modifiedDate?: string; // ISO date of the last real content revision; set only when the copy actually changes.
   /**
    * Outbound authority citations (Rule 29 / Rule 44e). Every claim of convention or
    * etiquette on a page should be traceable to a named body that publishes it, with the

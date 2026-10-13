@@ -1,4 +1,11 @@
-name: Daily Rebuild (Publish Scheduled Pages)
+name: Daily IndexNow Ping
+
+# No rebuild here any more. Scheduled pages go live on their date without a deploy:
+# app/[slug] renders them on first request (ISR), the Vercel cron /api/cron/publish-check
+# (05:10 UTC) clears any pinned 404 and refreshes hubs, and /sitemap.xml regenerates on
+# its own cron (05:40 UTC). The daily Amazon refresh push already triggers the one build
+# a day the price data needs, so the deploy hook that used to sit here built the same
+# commit a second time.
 
 on:
   schedule:
@@ -7,17 +14,11 @@ on:
   workflow_dispatch: # Allow manual trigger
 
 jobs:
-  rebuild:
+  ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger Vercel Deploy Hook
-        run: curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
-
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Wait for Vercel deploy to propagate
-        run: sleep 90
 
       - name: Notify IndexNow (Bing + Yandex)
         run: node scripts/notify-indexnow.js

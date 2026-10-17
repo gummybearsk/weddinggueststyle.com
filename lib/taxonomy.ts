@@ -37,7 +37,7 @@ const PILLARS: Pillar[] = [
     groups: [
       { label: "Summer", match: /summer|flowy-summer/ },
       { label: "Autumn", match: /\bfall\b|fall-|autumn|october|november|thanksgiving/ },
-      { label: "Winter", match: /winter|december|january|new-years/ },
+      { label: "Winter", match: /winter|december|january|new-years|holiday/ },
       { label: "Spring", match: /spring|march/ },
     ],
   },

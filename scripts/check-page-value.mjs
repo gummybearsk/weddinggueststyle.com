@@ -89,6 +89,21 @@ for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json')).sort()) {
   const visuals = [p.heroVisual, ...(p.contentSections ?? []).map((s) => s?.visual)].filter(Boolean);
   const hasVisual = visuals.some((v) => ['ladder', 'wearAvoid', 'compare', 'bars', 'verdict', 'chart', 'diagram'].includes(v?.kind) && String(v?.caption ?? '').length > 20);
   if (!hasImage && !hasTool && !hasTable && !hasVisual) fails.push(`PV-4 ${id}: ships no asset (no image, tool or data table) — text alone does not beat the SERP`);
+  // PV-14 / PV-15 (Rule 58, owner 2026-10-22): a real, credited photo and a produced diagram on every
+  // page, unless the brief records why not. Product-grid thumbnails do not count as the photo: it must be
+  // an image object carrying its provenance (license / credit / photographer / source).
+  const isCreditedImage = (o) => o && typeof o === 'object' && !Array.isArray(o)
+    && /^(https?:\/\/|\/)/i.test(String(o.url ?? o.src ?? ''))
+    && ['license', 'licence', 'credit', 'photographer', 'author', 'sourceUrl'].some((k) => o[k]);
+  const findCredited = (o, depth = 0) => {
+    if (!o || typeof o !== 'object' || depth > 6) return false;
+    if (isCreditedImage(o)) return true;
+    return Object.entries(o).some(([k, v]) => k !== 'products' && findCredited(v, depth + 1));
+  };
+  const hasPhoto = findCredited(p);
+  const hasDiagram = hasVisual || hasTable || hasTool || /"(chart|diagram)"\s*:/.test(raw);
+  if (!hasPhoto && String(b.noPhoto ?? '').trim().length < 20) fails.push(`PV-14 ${id}: no real, credited photo (heroImage/image with license or credit) and no brief.noPhoto reason — Rule 58`);
+  if (!hasDiagram && String(b.noDiagram ?? '').trim().length < 20) fails.push(`PV-15 ${id}: no produced diagram/data visual and no brief.noDiagram reason — Rule 58`);
   if (b.winningFormat === 'tool' && !hasTool) fails.push(`PV-4 ${id}: top 3 are tools but this page has no "tool" — build the tool or drop the page`);
 
   if (!b.intentGroup) fails.push(`PV-5 ${id}: brief.intentGroup missing`);

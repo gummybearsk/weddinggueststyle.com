@@ -85,10 +85,15 @@ function stripInterpolation(str) {
 
 // ------------------------------------------------- 1. SearchAction landmine
 const searchActionHits = [];
+// Strip comments before scanning: a gate that fires on the word "SearchAction"
+// inside a comment explaining why the site deliberately has no SearchAction is a
+// false positive, and a false positive trains people to bypass the gate.
+const stripComments = (t) => t.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/[^\n]*/g, '');
 for (const f of sourceFiles) {
-  const src = fs.readFileSync(f, 'utf8');
+  const raw = fs.readFileSync(f, 'utf8');
+  const src = stripComments(raw);
   if (!/search_term_string|SearchAction/.test(src)) continue;
-  const line = src.split('\n').findIndex((l) => /search_term_string|SearchAction/.test(l)) + 1;
+  const line = raw.split('\n').findIndex((l) => /search_term_string|SearchAction/.test(stripComments(l))) + 1;
   const isPathForm = /\/\{search_term_string\}/.test(src);
   searchActionHits.push({ file: rel(f), line, isPathForm });
 }
@@ -144,6 +149,47 @@ for (const f of sourceFiles) {
 }
 if (insecure.length === 0) add('PASS', 'SD-3', 'No http:// absolute URLs (Rule 12).');
 else for (const h of insecure.slice(0, 6)) add('FAIL', 'SD-3', `http:// URL must be https:// (Rule 12): ${h.url}  (${h.file})`, 'Change to https://.');
+
+// ------------------------------------------------------------- 3b. canonical ownership (SD-4)
+// A site-wide `alternates.canonical` in the ROOT layout is inherited by every route that
+// does not override it — including not-found.tsx, whose canonical then points at the
+// homepage. On any soft-404 that tells Google "this URL duplicates the homepage".
+// rivalsrandomizer.org, 2026-09-11: GSC reported 2 pages "Duplicate without user-selected
+// canonical" with a foreign gambling domain as Google's chosen canonical; the 404 page was
+// carrying canonical → homepage. Rule: no canonical in the root layout; every page.tsx
+// under app/ declares its own.
+{
+  const appDir = path.join(ROOT, 'app');
+  const rootLayout = ['layout.tsx', 'layout.jsx', 'layout.ts', 'layout.js'].map((n) => path.join(appDir, n)).find((p) => fs.existsSync(p));
+  const layoutSrc = rootLayout ? fs.readFileSync(rootLayout, 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/[^\n]*/g, '') : '';
+  const layoutHasCanonical = /alternates\s*:\s*\{[^}]*canonical/.test(layoutSrc);
+  const pages = walk(appDir).filter((p) => /[\\/]page\.(tsx|jsx|ts|js)$/.test(p) && !/[\\/]api[\\/]/.test(p));
+  const noCanonical = pages.filter((p) => {
+    const src = fs.readFileSync(p, 'utf8');
+    // a page owns its canonical if it sets alternates.canonical in metadata/generateMetadata
+    if (/canonical/.test(src)) return false;
+    // ...or if its metadata export delegates to an imported helper whose module sets one
+    // (e.g. `export const generateMetadata = () => pillarMetadata("x")`). Without this the gate
+    // false-fails shared-helper sites (hintsheet.com, 2026-10-11) — and a gate that cries wolf
+    // gets bypassed (Rule 45).
+    const metaCall = src.match(/export\s+(?:const|async\s+function|function)\s+(?:generateMetadata|metadata)\b[\s\S]{0,200}?\b([A-Za-z_$][\w$]*)\s*\(/);
+    if (!metaCall) return true;
+    const helper = metaCall[1];
+    for (const m of src.matchAll(/import\s+([^;]+?)\s+from\s+["']([^"']+)["']/g)) {
+      if (!new RegExp(`\\b${helper}\\b`).test(m[1])) continue;
+      const spec = m[2];
+      const base = spec.startsWith('@/') ? path.join(ROOT, spec.slice(2)) : spec.startsWith('.') ? path.resolve(path.dirname(p), spec) : null;
+      if (!base) continue;
+      const file = ['', '.tsx', '.ts', '.jsx', '.js', '/index.tsx', '/index.ts'].map((x) => base + x).find((f) => fs.existsSync(f) && fs.statSync(f).isFile());
+      if (file && /canonical/.test(fs.readFileSync(file, 'utf8'))) return false;
+    }
+    return true;
+  });
+  if (layoutHasCanonical) add('FAIL', 'SD-4', `Root layout sets a site-wide alternates.canonical (${rel(rootLayout)}) — not-found.tsx and any route without its own canonical inherit it and declare themselves duplicates of the homepage.`,
+    'Remove alternates.canonical from the root layout; set it on app/page.tsx and on every route.');
+  if (noCanonical.length) for (const p of noCanonical.slice(0, 8)) add('FAIL', 'SD-4', `Route declares no canonical: ${rel(p)}`, 'Add alternates: { canonical: "/<route>" } to its metadata or generateMetadata.');
+  if (!layoutHasCanonical && !noCanonical.length) add('PASS', 'SD-4', `Every page route owns its canonical (${pages.length} routes); root layout sets none.`);
+}
 
 // ------------------------------------------------------------- 4. LIVE mode
 const URL_KEYS = new Set(['url', 'target', 'item', 'logo', 'image', 'sameAs', 'contentUrl', '@id', 'mainEntityOfPage', 'thumbnailUrl']);

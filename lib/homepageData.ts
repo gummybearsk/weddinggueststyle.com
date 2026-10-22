@@ -1310,7 +1310,7 @@ export const styleSections: HomepageSection[] = [
     id: "long-dresses",
     title: "Long Wedding Guest Dresses",
     description: "Elegant floor-length and maxi dresses that make a dramatic entrance. Perfect for formal and black-tie weddings.",
-    slug: "long-wedding-guest-dresses",
+    slug: "maxi-wedding-guest-dresses",
     products: [
       {
         title: "Women's Long Sleeve Bodycon Dresses 2026 Spring Sexy Floral Mesh Slit Ruched Tight Maxi Wedding Guest Dress",
@@ -1820,34 +1820,26 @@ export const venueSections: HomepageSection[] = [
 export const homepageFaqs: FAQ[] = [
   {
     question: "What should I wear as a wedding guest?",
-    answer: "The best wedding guest dress depends on the dress code, venue, and season. For formal weddings, choose a floor-length or midi dress in an elegant fabric. For casual weddings, a pretty sundress or flowy midi works perfectly. Always check the invitation for dress code guidance and consider the venue — a beach wedding calls for lighter fabrics than a ballroom event.",
+    answer: "Match the dress code on the invitation. The Emily Post Institute's attire guide lists, for example, a cocktail dress, a little black dress or dressy separates for women at semi-formal events, and a dark suit, dress shirt and tie for men. Then adjust for the time of day, the venue and the couple's culture or religion.",
+  },
+  {
+    question: "What are the wedding dress codes in order?",
+    answer: "From most to least formal: white tie, black tie, black tie optional, semi-formal (which includes cocktail attire), dressy casual and casual. Each step down loosens the length of the dress and the formality of the suit.",
+  },
+  {
+    question: "What should men wear to a wedding?",
+    answer: "A tailcoat at white tie, a black tuxedo at black tie, a tuxedo or dark suit at black tie optional, a dark business suit with a tie at semi-formal or cocktail, a sport coat or blazer with slacks at dressy casual, and khakis with a button-down or polo at casual, per the Emily Post Institute's attire guide.",
+  },
+  {
+    question: "What should I wear if the invitation has no dress code?",
+    answer: "Read the invitation itself. The Emily Post Institute says the invitation and the time of the wedding are your best guide to its formality. Cocktail-level dress, the middle of the ladder, is the safest default when nothing is stated.",
   },
   {
     question: "What colors should I avoid as a wedding guest?",
-    answer: "The main color to avoid is white, cream, or ivory — anything that could be mistaken for a bridal gown. Some couples also prefer guests avoid wearing all-black to their wedding. Very bright neon colors or overly flashy outfits that might distract from the bride should also be reconsidered. When in doubt, opt for jewel tones, pastels, or rich earth tones.",
-  },
-  {
-    question: "Is it OK to wear black to a wedding?",
-    answer: "Yes, black is generally acceptable for most weddings, especially for evening or formal events. A chic black cocktail dress or elegant black gown is a classic and sophisticated choice. However, for very casual daytime or outdoor weddings, you might want to opt for something more colorful. If you're unsure, you can always add colorful accessories to brighten up a black dress.",
-  },
-  {
-    question: "What is cocktail attire for a wedding?",
-    answer: "Cocktail attire means a dress that falls at or just above the knee to mid-calf (midi length). It's dressier than casual but not as formal as black tie. Think elegant fabrics like silk, chiffon, or lace in solid colors or tasteful prints. Pair with heels or dressy flats and elegant jewelry. A well-fitted cocktail dress is one of the most versatile options for wedding guest attire.",
-  },
-  {
-    question: "Can I wear a long dress to a casual wedding?",
-    answer: "Absolutely! A flowy maxi dress in a casual fabric like cotton or jersey is perfect for casual weddings. The key is choosing relaxed silhouettes and fabrics that don't look overly formal. Pair it with flat sandals or wedges rather than formal heels to keep the look appropriately casual and comfortable.",
-  },
-  {
-    question: "What should I wear to a beach wedding?",
-    answer: "For a beach wedding, choose light, breathable fabrics like chiffon, cotton, or linen. Flowy midi or maxi dresses work beautifully. Avoid heavy fabrics and overly structured styles. Opt for flat sandals, wedges, or block heels that won't sink in the sand. Bright colors, tropical prints, and pastels all work wonderfully for seaside celebrations.",
+    answer: "Anything that reads as white in photographs: white, ivory, cream and very pale shades. In our study of 10,700 guest posts, \"Is this too white?\" was the most debated question, and cream, pale yellow and white-ground florals were the shades people were least sure about. Some cultures also reserve red for the bride.",
   },
   {
     question: "How much should I spend on a wedding guest dress?",
     answer: "A great wedding guest dress doesn't have to break the bank. In our 23 September 2026 price check, the median in-stock dress on this site cost $46.99, and 94% cost under $80. The key is focusing on fit and fabric quality rather than brand names.",
-  },
-  {
-    question: "What should I wear to a fall wedding?",
-    answer: "Fall weddings call for rich, warm colors like burgundy, emerald green, rust, navy, and plum. Long sleeves or three-quarter sleeves are perfect for cooler weather. Fabrics like velvet, satin, and chiffon add a seasonal elegance. Midi and maxi lengths work well, and you can layer with a stylish wrap or shawl for outdoor ceremonies.",
   },
 ];

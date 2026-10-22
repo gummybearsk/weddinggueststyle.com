@@ -45,6 +45,11 @@ const PILLARS: Pillar[] = [
     key: "dress-code",
     label: "Dress Code",
     groups: [
+      // Guides first: the dress-code explainers are the site's core, for women and men.
+      { label: "For men", match: /-for-men$|-for-men-|^mens-/ },
+      { label: "Etiquette: can I wear…?", match: /^can-you-wear|colors-to-avoid|as-a-guest|what-wedding-guests-ask/ },
+      { label: "Research", match: /-study$/ },
+      { label: "Dress code guides", match: /-attire$|^what-is-|^what-does-|-vs-|^what-to-wear-to-a-casual/ },
       { label: "Black tie & formal", match: /black-tie|formal(?!.*semi)|designer/ },
       { label: "Cocktail & semi-formal", match: /cocktail|semi-formal/ },
       { label: "Casual & dressy casual", match: /casual|what-to-wear/ },
@@ -133,4 +138,36 @@ export function getPillarSlugs(pillarKey: string): string[] {
 
 export function getPillarLabel(pillarKey: string): string {
   return PILLARS.find((p) => p.key === pillarKey)?.label ?? pillarKey;
+}
+
+export interface NavGroup {
+  label: string;
+  href: string;
+  items: TaxonomyEntry[];
+}
+
+const NAV_LABELS: Record<string, string> = {
+  "dress-code": "Dress Codes",
+  season: "Season",
+  color: "Color",
+  "body-type": "Fit",
+  style: "Style",
+  venue: "Venue",
+};
+
+/**
+ * Header navigation, generated from the same registry that groups pages into hubs
+ * (Rule 52). Scheduled pages appear on their publish date with no nav edit, and a page
+ * removed from content/pages disappears from the menu instead of becoming a dead link.
+ */
+export function getNavGroups(maxItems = 16): NavGroup[] {
+  // Dress codes lead: they are the site's core since the 2026-10-22 pivot.
+  const ordered = [...PILLARS].sort((a, b) => Number(b.key === "dress-code") - Number(a.key === "dress-code"));
+  return ordered.map((p) => ({
+    label: NAV_LABELS[p.key] ?? p.label,
+    href: `/${p.key}`,
+    items: getPillarGroups(p.key)
+      .flatMap((g) => g.entries ?? [])
+      .slice(0, maxItems),
+  })).filter((g) => g.items.length > 0);
 }

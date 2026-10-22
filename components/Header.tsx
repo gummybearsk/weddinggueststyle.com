@@ -3,144 +3,12 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
-const navGroups = [
-  {
-    label: "By Season",
-    href: "/season",
-    items: [
-      { title: "Summer Dresses", slug: "summer-wedding-guest-dresses" },
-      { title: "Summer Semi-Formal", slug: "summer-semi-formal-wedding-guest-dresses" },
-      { title: "Summer Butter Yellow", slug: "summer-butter-yellow-wedding-guest-dresses" },
-      { title: "Fall Dresses", slug: "fall-wedding-guest-dresses" },
-      { title: "Spring Dresses", slug: "spring-wedding-guest-dresses" },
-      { title: "Winter Dresses", slug: "winter-wedding-guest-dresses" },
-      { title: "Casual Fall", slug: "casual-fall-wedding-guest-dresses" },
-      { title: "Summer 2026", slug: "wedding-guest-dresses-summer-2026" },
-    ],
-  },
-  {
-    label: "By Dress Code",
-    href: "/dress-code",
-    items: [
-      { title: "Black Tie", slug: "black-tie-wedding-guest-dresses" },
-      { title: "Black Tie Optional", slug: "black-tie-optional-wedding-guest-dresses" },
-      { title: "Formal", slug: "formal-wedding-guest-dresses" },
-      { title: "Semi-Formal", slug: "semi-formal-wedding-guest-dresses" },
-      { title: "Cocktail", slug: "cocktail-wedding-guest-dresses" },
-      { title: "Casual", slug: "casual-wedding-guest-dresses" },
-      { title: "Dressy Casual", slug: "dressy-casual-wedding-guest-dresses" },
-      { title: "Business Casual", slug: "business-casual-wedding-guest-dresses" },
-      { title: "Casual Outfits for Women", slug: "casual-wedding-outfits-for-women" },
-      { title: "What to Wear (Casual)", slug: "what-to-wear-to-a-casual-wedding" },
-      { title: "Casual Attire for Women", slug: "casual-wedding-attire-for-women" },
-      { title: "Casual Attire for Guests", slug: "casual-wedding-attire-for-guests" },
-      { title: "Dressy Casual Attire", slug: "dressy-casual-wedding-attire" },
-      { title: "What Is Dressy Casual?", slug: "what-is-dressy-casual-for-a-wedding" },
-      { title: "Black Cocktail", slug: "black-cocktail-wedding-guest-dresses" },
-      { title: "Best Black", slug: "black-wedding-guest-dresses" },
-      { title: "Black Cocktail Dress", slug: "black-cocktail-dress-for-wedding" },
-      { title: "Black Tie Optional 2026", slug: "black-tie-optional-dresses-for-women-2026" },
-      { title: "Formal Dresses for Guest", slug: "formal-dresses-for-wedding-guest" },
-      { title: "Cocktail for Guests", slug: "wedding-cocktail-dresses-for-guests" },
-      { title: "Elegant Black w/ Sleeves", slug: "elegant-black-wedding-guest-dresses-with-sleeves" },
-      { title: "Semi-Formal w/ Sleeves", slug: "semi-formal-wedding-guest-dresses-with-sleeves" },
-      { title: "Elegant", slug: "elegant-wedding-guest-dresses" },
-      { title: "Designer", slug: "designer-wedding-guest-dresses" },
-      { title: "Best Picks", slug: "best-wedding-guest-dresses" },
-    ],
-  },
-  {
-    label: "By Color",
-    href: "/color",
-    items: [
-      { title: "Black", slug: "black-wedding-guest-dresses" },
-      { title: "Blue", slug: "blue-wedding-guest-dresses" },
-      { title: "Light Blue", slug: "light-blue-wedding-guest-dresses" },
-      { title: "Navy", slug: "navy-wedding-guest-dresses" },
-      { title: "Navy Blue Gown", slug: "navy-blue-wedding-guest-gown" },
-      { title: "Green", slug: "green-wedding-guest-dresses" },
-      { title: "Dark Green", slug: "dark-green-wedding-guest-dresses" },
-      { title: "Emerald Green", slug: "emerald-green-wedding-guest-dresses" },
-      { title: "Olive Green", slug: "olive-green-wedding-guest-dresses" },
-      { title: "Sage Green", slug: "sage-green-wedding-guest-dresses" },
-      { title: "Pink", slug: "pink-wedding-guest-dresses" },
-      { title: "Pink 2026", slug: "pink-wedding-guest-dresses-2026" },
-      { title: "Light Pink", slug: "light-pink-wedding-guest-dresses" },
-      { title: "Soft Pink", slug: "soft-pink-wedding-guest-dresses" },
-      { title: "Rose Pink", slug: "rose-pink-wedding-guest-dresses" },
-      { title: "Dark Pink", slug: "dark-pink-wedding-guest-dresses" },
-      { title: "Hot Pink", slug: "hot-pink-wedding-guest-dresses" },
-      { title: "Bright Pink", slug: "bright-pink-wedding-guest-dresses" },
-      { title: "Blush", slug: "blush-wedding-guest-dresses" },
-      { title: "Fuchsia", slug: "fuchsia-wedding-guest-dresses" },
-      { title: "Burgundy", slug: "burgundy-wedding-guest-dresses" },
-      { title: "Yellow", slug: "yellow-wedding-guest-dresses" },
-      { title: "Bright Yellow", slug: "bright-yellow-wedding-guest-dresses" },
-      { title: "Butter Yellow", slug: "butter-yellow-wedding-guest-dresses" },
-      { title: "Brown", slug: "brown-wedding-guest-dresses" },
-      { title: "Chocolate Brown", slug: "chocolate-brown-wedding-guest-dresses" },
-      { title: "Chocolate Brown Velvet", slug: "chocolate-brown-velvet-wedding-guest-dress" },
-      { title: "Shades of Brown", slug: "shades-of-brown-wedding-guest-dresses" },
-    ],
-  },
-  {
-    label: "By Body Type",
-    href: "/body-type",
-    items: [
-      { title: "Plus Size", slug: "plus-size-wedding-guest-dresses" },
-      { title: "Plus Size Cocktail", slug: "plus-size-cocktail-wedding-guest-dresses" },
-      { title: "Plus Size Summer", slug: "plus-size-summer-wedding-guest-dresses" },
-      { title: "Trendy Plus Size", slug: "trendy-plus-size-wedding-guest-dresses" },
-      { title: "Big Tummy", slug: "wedding-guest-dresses-for-big-tummy" },
-      { title: "Petite", slug: "petite-wedding-guest-dresses" },
-      { title: "Maternity", slug: "maternity-wedding-guest-dresses" },
-      { title: "Over 50", slug: "wedding-guest-dresses-over-50" },
-    ],
-  },
-  {
-    label: "By Style",
-    href: "/style",
-    items: [
-      { title: "Maxi", slug: "maxi-wedding-guest-dresses" },
-      { title: "Maxi 2026", slug: "wedding-guest-maxi-dress-2026" },
-      { title: "Midi", slug: "midi-wedding-guest-dresses" },
-      { title: "Long", slug: "long-wedding-guest-dresses" },
-      { title: "Knee Length", slug: "knee-length-wedding-guest-dresses" },
-      { title: "Tea Length", slug: "tea-length-wedding-guest-dresses" },
-      { title: "A-Line", slug: "a-line-wedding-guest-dresses" },
-      { title: "Floral", slug: "floral-wedding-guest-dresses" },
-      { title: "Floral Maxi", slug: "floral-maxi-wedding-guest-dresses" },
-      { title: "Modest", slug: "modest-wedding-guest-dresses" },
-      { title: "Long Sleeve", slug: "long-sleeve-wedding-guest-dresses" },
-      { title: "With Sleeves", slug: "wedding-guest-dresses-with-sleeves" },
-      { title: "Fall Long Sleeve", slug: "best-fall-wedding-guest-dresses-2026-long-sleeve" },
-      { title: "Modest w/ Sleeves 2026", slug: "modest-wedding-guest-dresses-with-sleeves-2026" },
-      { title: "Flowy Summer", slug: "flowy-summer-wedding-guest-dresses" },
-      { title: "Petite Fall 2026", slug: "petite-wedding-guest-dresses-fall-2026" },
-    ],
-  },
-  {
-    label: "By Venue",
-    href: "/venue",
-    items: [
-      { title: "Beach", slug: "beach-wedding-guest-dresses" },
-      { title: "Beach With Sleeves", slug: "beach-wedding-guest-dresses-with-sleeves" },
-      { title: "Beach Over 50", slug: "beach-wedding-guest-dresses-over-50" },
-      { title: "Mermaid Beach", slug: "mermaid-beach-wedding-guest-dresses" },
-      { title: "Garden Party", slug: "garden-party-wedding-guest-dresses" },
-      { title: "Butter Yellow Garden", slug: "butter-yellow-garden-wedding-guest-dresses" },
-      { title: "Indian Wedding", slug: "indian-wedding-guest-dresses" },
-      { title: "Western Indian Attire", slug: "western-indian-wedding-guest-attire" },
-      { title: "Stylish Indian Outfits", slug: "stylish-indian-wedding-guest-outfits" },
-      { title: "Traditional Indian", slug: "traditional-indian-wedding-guest-dresses" },
-    ],
-  },
-];
+import type { NavGroup } from "@/lib/taxonomy";
 
 function DesktopDropdown({
   group,
 }: {
-  group: (typeof navGroups)[0];
+  group: NavGroup;
 }) {
   const [open, setOpen] = useState(false);
   const timeout = useRef<NodeJS.Timeout | null>(null);
@@ -185,6 +53,13 @@ function DesktopDropdown({
                 </Link>
               ))}
             </div>
+            <Link
+              href={group.href}
+              className="block px-5 pt-3 mt-2 border-t border-ink-200 text-[11px] uppercase tracking-[0.18em] text-blush-600 hover:text-blush-700"
+              onClick={() => setOpen(false)}
+            >
+              See all {group.label.toLowerCase()} →
+            </Link>
           </div>
         </div>
       )}
@@ -192,7 +67,7 @@ function DesktopDropdown({
   );
 }
 
-export default function Header() {
+export default function Header({ navGroups }: { navGroups: NavGroup[] }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [expandedGroup, setExpandedGroup] = useState<string | null>(null);
 
@@ -265,6 +140,13 @@ export default function Header() {
                 </button>
                 {expandedGroup === group.label && (
                   <div className="pl-4 pb-2 space-y-0.5">
+                    <Link
+                      href={group.href}
+                      className="block py-2 text-sm font-medium text-blush-600"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      All {group.label.toLowerCase()} →
+                    </Link>
                     {group.items.map((item) => (
                       <Link
                         key={item.slug}

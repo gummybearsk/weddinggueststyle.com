@@ -22,11 +22,6 @@ const CANDIDATES: { title: string; slug: string; blurb: string }[] = [
     slug: "wedding-guest-cover-ups-and-wraps",
     blurb: "Sleeves your dress doesn't have.",
   },
-  {
-    title: "Clutches and Bags",
-    slug: "wedding-guest-clutches-and-bags",
-    blurb: "What fits, and where it goes at dinner.",
-  },
 ];
 
 export function getAccessoryLinks() {

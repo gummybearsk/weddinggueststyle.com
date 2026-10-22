@@ -39,6 +39,58 @@ export interface FAQ {
 export interface ContentSection {
   heading: string;
   content: string;
+  /** Produced diagram rendered under this section's text (guide pages). */
+  visual?: Visual;
+}
+
+// ── Produced visuals (Rule 22 / 48): drawn in code from sourced values, never bought ──
+
+export interface VisualBase {
+  title?: string;
+  /** Visible caption naming the source and read date (Rule 44e). */
+  caption: string;
+}
+
+export interface LadderVisual extends VisualBase {
+  kind: "ladder";
+  /** Rung keys from lib/dressCodes.ts to emphasise. */
+  highlight?: string[];
+}
+
+export interface WearAvoidVisual extends VisualBase {
+  kind: "wearAvoid";
+  columns: { label: string; wear: string[]; avoid: string[] }[];
+}
+
+export interface CompareVisual extends VisualBase {
+  kind: "compare";
+  columns: string[];
+  rows: { label: string; cells: string[] }[];
+}
+
+export interface BarsVisual extends VisualBase {
+  kind: "bars";
+  unit?: string;
+  data: { label: string; value: number; highlight?: boolean }[];
+}
+
+export interface VerdictVisual extends VisualBase {
+  kind: "verdict";
+  rows: { context: string; verdict: "yes" | "caution" | "no"; note: string }[];
+}
+
+export type Visual = LadderVisual | WearAvoidVisual | CompareVisual | BarsVisual | VerdictVisual;
+
+/** Rule 54 SERP brief, recorded per page. */
+export interface PageBrief {
+  intentGroup: string;
+  /** Variant keywords this one page is built to own. */
+  keywords: string[];
+  serpTop3: { url: string; format: string; weakness: string }[];
+  winningFormat: string;
+  infoGain: string;
+  asset: string;
+  verified: string;
 }
 
 export interface RelatedPage {
@@ -69,6 +121,15 @@ export interface PageData {
   heroImage?: PageImage;
   /** Override the per-type product cap (lib/productCap.ts) for this page. */
   productCap?: number;
+  /** "guide" pages render the answer-first explainer layout instead of the shop layout. */
+  kind?: "guide";
+  /** 15–90 word direct answer rendered above the fold (Rule 54c). */
+  answer?: string;
+  /** Who the guide dresses: both is the default for dress-code guides. */
+  audience?: "women" | "men" | "both";
+  /** Diagram shown directly under the answer. */
+  heroVisual?: Visual;
+  brief?: PageBrief;
 }
 
 /**

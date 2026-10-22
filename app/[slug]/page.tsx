@@ -18,6 +18,8 @@ import FinishTheOutfit from "@/components/FinishTheOutfit";
 import { getAccessoryLinks } from "@/lib/accessoryLinks";
 import { productCapFor } from "@/lib/productCap";
 import { computeInsights, deriveBestFor, deriveRationale } from "@/lib/priceInsights";
+import VisualBlock from "@/components/visuals/VisualBlock";
+import type { PageData } from "@/lib/types";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
 export const revalidate = 43200;
@@ -364,6 +366,80 @@ function RelatedPages({ relatedPages: all }: { relatedPages: { title: string; sl
   );
 }
 
+
+// ─── Guide layout: answer first, diagram, then depth ────────────────────────
+//
+// Dress-code and etiquette explainers. The searcher wants an answer, so it sits above the
+// fold (Rule 54c), followed by a produced diagram, then sections that can each carry their
+// own visual. Products are a short "shop the look" rail, never the bulk of the page.
+
+function GuideSections({ sections }: { sections: ContentSection[] }) {
+  return (
+    <>
+      {sections.map((section, i) => (
+        <section key={i} className="mb-12">
+          <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-4">{section.heading}</h2>
+          <div className="text-base text-ink-700 leading-[1.8] whitespace-pre-line font-light">{section.content}</div>
+          <VisualBlock visual={section.visual} />
+        </section>
+      ))}
+    </>
+  );
+}
+
+function GuidePage({ page, products, asOf }: { page: PageData; products: Product[]; asOf: string | null }) {
+  const shop = products.slice(0, productCapFor(page.slug, page.productCap ?? 8));
+  return (
+    <>
+      <FAQSchema faqs={page.faqs} />
+      <BreadcrumbSchema title={page.title} slug={page.slug} />
+      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.answer ? `${page.answer} ${page.intro}` : page.intro} publishDate={page.publishDate} modifiedDate={page.modifiedDate} />
+      {shop.length > 0 && <ItemListSchema products={shop} title={`Shop the look: ${page.title}`} />}
+
+      <div className="bg-ivory border-b border-ink-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-10 sm:pt-14 sm:pb-12">
+          <nav className="text-[11px] uppercase tracking-[0.18em] text-ink-500 mb-8 flex items-center gap-2" aria-label="Breadcrumb">
+            <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
+            <span className="text-ink-300">/</span>
+            <Link href="/dress-code" className="hover:text-blush-600 transition-colors">Dress codes</Link>
+            <span className="text-ink-300">/</span>
+            <span className="text-ink-700">{page.title}</span>
+          </nav>
+          <p className="eyebrow mb-4">
+            {page.audience === "men" ? "Dress code guide · for men" : page.audience === "women" ? "Dress code guide · for women" : "Dress code guide · for women & men"}
+          </p>
+          <h1 className="display-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">{page.h1}</h1>
+          <div className="mt-6">
+            <AuthorByline publishDate={page.modifiedDate || page.publishDate} />
+          </div>
+          {page.answer && (
+            <div className="mt-8 border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-blush-700 mb-2">The short answer</p>
+              <p className="text-lg sm:text-xl text-ink-900 leading-relaxed">{page.answer}</p>
+            </div>
+          )}
+          <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light">{page.intro}</p>
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="max-w-3xl">
+          <VisualBlock visual={page.heroVisual} />
+          <div className="pt-6">
+            <GuideSections sections={page.contentSections} />
+          </div>
+        </div>
+        {shop.length > 0 && <ProductBlock products={shop} title="Shop the look" asOf={asOf} />}
+        <div className="max-w-3xl">
+          {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
+          <SourcesList sources={page.sources} />
+        </div>
+        <RelatedPages relatedPages={page.relatedPages} />
+      </div>
+    </>
+  );
+}
+
 // ─── Main page ──────────────────────────────────────────────────────────────
 
 export default function InnerPage({ params }: PageProps) {
@@ -377,6 +453,7 @@ export default function InnerPage({ params }: PageProps) {
     bestFor: deriveBestFor(p),
   }));
   const asOf = priceAsOfLabel();
+  if (page.kind === "guide") return <GuidePage page={page} products={products} asOf={asOf} />;
   const accessoryLinks = getAccessoryLinks();
 
   // Split the catalogue: a small ranked set the reader can actually choose from, and the

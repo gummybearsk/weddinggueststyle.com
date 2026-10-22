@@ -3,6 +3,7 @@ import { Inter, Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getNavGroups } from "@/lib/taxonomy";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,11 +29,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wedding Guest Dresses 2026 — Find by Season, Color, Body Type & Venue",
+    default: "Wedding Guest Attire for Women & Men: Every Dress Code Decoded",
     template: "%s | Wedding Guest Style",
   },
   description:
-    "The wedding guest dress finder. Browse 100+ editorial guides by season, dress code, color, body type, and venue — from black-tie to beach. Dress-code definitions cited to Emily Post, with in-stock Amazon picks checked daily.",
+    "Wedding guest attire for women and men, decoded for every dress code from white tie to casual. Dress-code guides cited to Emily Post, original data from 10,700 guest questions, and in-stock picks checked daily.",
   metadataBase: new URL("https://weddinggueststyle.com"),
   openGraph: {
     type: "website",
@@ -40,13 +41,8 @@ export const metadata: Metadata = {
     siteName: "Wedding Guest Style",
     url: "https://weddinggueststyle.com",
   },
-  alternates: {
-    canonical: "https://weddinggueststyle.com",
-    languages: {
-      "en-US": "https://weddinggueststyle.com",
-      "x-default": "https://weddinggueststyle.com",
-    },
-  },
+  // No site-wide canonical here: every route sets its own (SD-4), so 404s and new routes
+  // never declare themselves duplicates of the homepage.
   verification: {
     yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
     other: {
@@ -91,7 +87,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${cormorant.variable} font-sans antialiased`}>
-        <Header />
+        <Header navGroups={getNavGroups()} />
         <main>{children}</main>
         <Footer />
       </body>

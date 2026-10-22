@@ -1,7 +1,11 @@
 // Revalidate every 12 hours so scheduled pages appear in nav/sitemap
 export const revalidate = 43200;
 
+import type { Metadata } from "next";
 import Link from "next/link";
+import DressCodeDecoderSection from "@/components/DressCodeDecoderSection";
+import { getPillarGroups } from "@/lib/taxonomy";
+import { getPublishedPageData } from "@/lib/getPages";
 import FAQ from "@/components/FAQ";
 import ShopTheEdit from "@/components/ShopTheEdit";
 import StickyEditorPick from "@/components/StickyEditorPick";
@@ -19,6 +23,19 @@ import {
   homepageFaqs,
 } from "@/lib/homepageData";
 import { orderSeasonSections } from "@/lib/seasonOrder";
+
+export const metadata: Metadata = {
+  title: { absolute: "Wedding Guest Attire for Women & Men: Every Dress Code Decoded" },
+  description:
+    "Wedding guest attire for women and men, decoded for every dress code: white tie, black tie, black tie optional, cocktail, semi-formal, dressy casual and casual. What to wear, what to avoid, with in-stock picks.",
+  alternates: {
+    canonical: "https://weddinggueststyle.com",
+    languages: {
+      "en-US": "https://weddinggueststyle.com",
+      "x-default": "https://weddinggueststyle.com",
+    },
+  },
+};
 
 function FAQSchema() {
   const schema = {
@@ -48,7 +65,7 @@ function WebsiteSchema() {
     name: "Wedding Guest Style",
     url: "https://weddinggueststyle.com",
     description:
-      "Find the perfect wedding guest dress for every season, dress code, and body type.",
+      "Wedding guest attire for women and men, decoded for every dress code.",
     publisher: {
       "@type": "Organization",
       name: "Wedding Guest Style",
@@ -132,6 +149,10 @@ export default function HomePage() {
   const deals = getDeals(8, 15);
   const seasonLabel = season.charAt(0).toUpperCase() + season.slice(1);
   const asOf = priceAsOfLabel();
+  const colorsGuideLive = getPublishedPageData("wedding-guest-dress-colors-to-avoid") !== null;
+  const guideGroups = getPillarGroups("dress-code").filter((g) =>
+    ["Dress code guides", "For men", "Etiquette: can I wear…?"].includes(g.label),
+  );
 
   return (
     <>
@@ -141,25 +162,58 @@ export default function HomePage() {
       {/* Persistent CTA once the reader is past the fold. */}
       <StickyEditorPick product={featured[0]?.products[0] ?? null} />
 
-      {/* Hero Section — slim editorial */}
-      <section className="relative bg-ivory pt-10 pb-6 sm:pt-14 sm:pb-8 overflow-hidden">
+      {/* Hero — the site's job in one line, then the decoder: the answer above the fold. */}
+      <section className="relative bg-ivory pt-10 pb-8 sm:pt-14 sm:pb-10 overflow-hidden">
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Editorial eyebrow */}
           <div className="flex items-center justify-center gap-4 mb-6 text-blush-600">
             <span className="hidden sm:block w-12 h-px bg-blush-300" />
-            <span className="eyebrow text-blush-600">The Edit · 2026</span>
+            <span className="eyebrow text-blush-600">The dress-code reference · women &amp; men</span>
             <span className="hidden sm:block w-12 h-px bg-blush-300" />
           </div>
-
-          <h1 className="display-serif text-5xl sm:text-7xl lg:text-8xl text-ink-900">
-            Wedding Guest <span className="display-italic text-blush-600">Style</span>
+          <h1 className="display-serif text-4xl sm:text-6xl lg:text-7xl text-ink-900">
+            Wedding Guest Attire, <span className="display-italic text-blush-600">Decoded</span>
           </h1>
-
-          <p className="mt-6 text-base sm:text-lg text-ink-600 max-w-xl mx-auto leading-relaxed font-light">
-            A curated edit of wedding guest dresses for every season,
-            dress code, and venue — chosen for the women who get dressed for
-            the photograph.
+          <p className="mt-6 text-base sm:text-lg text-ink-600 max-w-2xl mx-auto leading-relaxed font-light">
+            Wedding guest attire for every dress code on the invitation, for women and for men: what
+            each code means, what to wear, what to skip, and the edge cases (time of day, venue,
+            color) that decide most outfits.
           </p>
+        </div>
+      </section>
+
+      <section className="bg-ivory pb-12 sm:pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <DressCodeDecoderSection />
+        </div>
+      </section>
+
+      {/* Every guide, generated from the taxonomy so new guides appear here on their publish date. */}
+      <section className="bg-white border-y border-ink-200 py-12 sm:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="eyebrow mb-3">The guides</p>
+          <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-10">Every dress code, every question</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
+            {guideGroups.map((g) => (
+              <div key={g.label}>
+                <h3 className="text-[11px] uppercase tracking-[0.18em] text-ink-900 pb-3 mb-3 border-b border-ink-200">{g.label}</h3>
+                <ul className="space-y-2.5">
+                  {(g.entries ?? []).map((e) => (
+                    <li key={e.slug}>
+                      <Link href={`/${e.slug}`} className="text-sm text-ink-700 hover:text-blush-600 font-light">{e.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-12 border border-ink-200 bg-cream-50 p-6 sm:p-8 grid gap-4 sm:grid-cols-[1fr_auto] items-center">
+            <div>
+              <p className="eyebrow mb-2">Original research</p>
+              <p className="display-serif text-xl sm:text-2xl text-ink-900">What 10,700 wedding guests asked before they got dressed</p>
+              <p className="mt-2 text-sm text-ink-600 font-light">Which dress codes confuse people most, the white worry, lengths, shoes and the wedding season, counted from real posts.</p>
+            </div>
+            <Link href="/wedding-dress-code-study" className="justify-self-start text-[11px] tracking-[0.18em] uppercase font-medium text-ivory bg-ink-900 hover:bg-blush-600 px-6 py-3 transition-colors">Read the study →</Link>
+          </div>
         </div>
       </section>
 
@@ -181,78 +235,58 @@ export default function HomePage() {
         standfirst="The categories our readers reach for most often."
       />
 
-      {/* Short orienting block. Readers arrive from search wanting a dress — this establishes
-          who we are in a few lines, then gets out of the way so the products can load above
-          the fold rather than behind a wall of editorial. */}
-      <section className="pt-4 pb-10 sm:pt-6 sm:pb-12 bg-ivory">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto space-y-5 text-base leading-[1.8] text-ink-700 font-light">
-            <p>
-              The invitation says &ldquo;cocktail attire&rdquo; and gives you nothing else to work
-              with. We cover more than 100 wedding-guest scenarios — by season, dress code, colour,
-              fit and venue — and for each one we keep a short list of dresses that are actually in
-              stock, at today&rsquo;s price.
-            </p>
-            <p>
-              Below is what readers are shopping for right now, pulled straight from what performs
-              in search. Every guide behind it is written by our editor{" "}
-              <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>,
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Editorial intro content — moved up directly after hero for SEO + authority */}
-      <section className="pt-4 pb-12 sm:pt-6 sm:pb-16 bg-ivory">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow mb-4">The Guide</p>
-          <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-10">
-            On Dressing for Someone Else&apos;s Wedding
-          </h2>
-
+      {/* Orienting editorial — every claim here traces to SOURCES.md (Emily Post S3/S3b) or
+          to the site's own Reddit study. No trend claims: those had no source. */}
+      <section className="pt-12 pb-12 sm:pt-16 sm:pb-16 bg-ivory">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="eyebrow mb-4">How to use this site</p>
+          <h2 className="display-serif text-3xl sm:text-4xl text-ink-900 mb-8">Start with the invitation, then the clock and the venue</h2>
           <div className="space-y-6 text-base leading-[1.8] text-ink-700 font-light">
             <p>
-              Wedding guest dressing in 2026 is harder than it should be. The dress code phrase on the invitation is ambiguous, the venue lives in three Instagram squares, and the quiet pressure to look photographed-ready without trying so hard that you remember trying never quite goes away. Wedding Guest Style exists for that exact moment — the few weeks between RSVP and ceremony when you need a real, useful answer to &ldquo;what do I wear.&rdquo;
+              Wedding guest attire comes down to one line on the invitation. Find your code in the decoder above,
+              then open its guide: every guide covers what women wear and what men wear, because couples are
+              dressing for the same invitation. Where men&rsquo;s questions differ enough to need their own
+              page, there is one, starting with the{" "}
+              <Link href="/wedding-dress-code-for-men" className="text-blush-600 hover:underline">wedding dress code for men</Link>.
             </p>
             <p>
-              We cover more than 100 different wedding-guest scenarios — by season, dress code, colour, body type, silhouette and venue — with a short list of picks for each. Every dress is chosen for fabric quality, construction, and the kind of finish that photographs well in mixed wedding lighting, with an honest note whenever a listing&apos;s sizing runs away from what it claims.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              How to choose the right wedding guest dress
-            </h3>
-            <p>
-              Start with the invitation. The dress code phrase — even a vague one — is the single most important constraint. &ldquo;Black tie&rdquo; means floor-length, no exceptions. &ldquo;Black tie optional&rdquo; permits formal cocktail-length in dressy fabric. &ldquo;Cocktail&rdquo; sits between midi and knee-length in evening-appropriate construction. &ldquo;Semi-formal&rdquo; opens the door to fluid midi silhouettes in chiffon or silk-blend. &ldquo;Dressy casual&rdquo; means defined-silhouette in dressier-than-everyday fabric with real shoes — not jeans, never sneakers. &ldquo;Casual&rdquo; at a wedding still excludes the things that read truly casual: jeans, t-shirts, flip-flops, athletic anything.
+              Few guests ask what a dress code means. In our{" "}
+              <Link href="/wedding-dress-code-study" className="text-blush-600 hover:underline">study of 10,700 posts</Link>{" "}
+              from guests asking strangers whether an outfit works, only 25 asked that in so many words. What
+              they ask, over and over, is whether one dress or suit fits the code at one venue and one time of day, and
+              the guides are built around exactly those tie-breakers.
             </p>
             <p>
-              After dress code, the next constraints in order: venue (outdoor grass or sand affects shoe choice; religious ceremonies usually require more modest coverage), time of day (afternoon ceremonies welcome lighter fabrics and softer colors; evening events shift toward formal fabrics and richer palettes), and season (lightweight cotton-voile or silk-cotton blend for summer; wool-blend crepe or velvet for winter). Most importantly: choose a dress you&apos;ll feel confident in for eight hours straight, ceremony through reception. The photograph lasts decades; the discomfort of a dress that looked good in the mirror but pinches by hour three doesn&apos;t.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              The 2026 wedding guest palette
-            </h3>
-            <p>
-              The defining color story of 2026 is the move away from cool-toned pastels (sage, baby blue, dusty lavender — the 2024-2025 palette) toward warmer earth-and-spice tones. Butter yellow is the breakout color of the year — softer than pastel yellow, warmer than cream — and it photographs beautifully in nearly every venue from garden to beach to indoor reception. Chocolate brown has returned from the 2010s to become a sophisticated alternative to black at fall and winter formal events. Fuchsia, dusty rose, and saturated dark pink dominate the pink spectrum. Terracotta, rust, and cognac anchor the warm-earth palette. For modest and religious-ceremony contexts, deep jewel tones (emerald, sapphire, ruby, plum) remain the strongest choice.
+              The Emily Post Institute&rsquo;s wedding guide says the invitation and the time of the wedding are your
+              best guide to its formality, and asks two venue questions before anything else: does the couple&rsquo;s
+              religion or culture call for head coverings, and would bare shoulders, bare arms or open-toed shoes
+              offend? Its attire guide adds a tie-breaker for semi-formal events: if it starts after 6 p.m., err
+              toward formality. Our study points the same way: guests asked whether an outfit was too casual more
+              often than whether it was too formal.
             </p>
             <p>
-              What to actively avoid: pure white at any wedding (always), neon brights at evening formal (clash with venue lighting), pale ivory in flowing simple silhouettes (drifts toward bridal-adjacent in photos), and pure black at outdoor afternoon ceremonies (reads slightly funereal in bright natural light). If you want a dark dress at a daytime outdoor wedding, choose deep navy, oxblood, chocolate brown, or deep forest green instead of black.
+              Color is the other recurring worry. &ldquo;Is this too white?&rdquo; posts drew more replies than any other
+              question in the study; cream, pale yellow and white-ground florals are the shades people were least
+              sure about.
+              {/* Linked only once live: an early link to a scheduled page pins a 404 (Rule 17). */}
+              {colorsGuideLive && (
+                <>
+                  {" "}The{" "}
+                  <Link href="/wedding-guest-dress-colors-to-avoid" className="text-blush-600 hover:underline">colors to avoid</Link>{" "}
+                  guide goes through each one.
+                </>
+              )}
             </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              Wedding guest etiquette, briefly
-            </h3>
+            <h3 className="display-serif text-2xl text-ink-900 pt-6">Our editorial standards</h3>
             <p>
-              The unwritten rules: never wear white or anything close to it. Don&apos;t try to outshine the bride — you won&apos;t, but the attempt shows in photographs years later. Match the formality of your dress to the dress code more carefully than the formality of your hair or makeup. When in doubt, lean slightly more dressed-up rather than down. Bring a wrap or pashmina for outdoor weddings — temperatures drop 15-20°F once the sun sets, and you&apos;ll want it before the reception ends. Tip the photographers and the bartenders. RSVP on time. The photograph lasts longer than the discomfort, the conversation, or the cost of the dress.
-            </p>
-
-            <h3 className="display-serif text-2xl text-ink-900 pt-8">
-              Our editorial standards
-            </h3>
-            <p>
-              Wedding Guest Style does not accept paid placements, sponsored reviews, free-product partnerships, or pay-to-feature deals. Products are matched to each page by searching Amazon for its topic, and their prices and stock are re-checked against Amazon&apos;s API every day. When you click an Amazon affiliate link and complete a purchase, we earn a small commission — at no cost to you. That commission funds the site. Commission rates play no part in which products appear. The full process is on the <Link href="/editorial" className="text-blush-600 hover:underline">editorial guidelines</Link> page.
-            </p>
-            <p>
-              You can read more about our review process in <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>, our editor <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link> (<a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>), or how we make money in our <Link href="/about" className="text-blush-600 hover:underline">About</Link> page. All affiliate disclosures and policies are in <Link href="/privacy" className="text-blush-600 hover:underline">Privacy</Link> and <Link href="/terms" className="text-blush-600 hover:underline">Terms</Link>.
+              Wedding Guest Style does not accept paid placements, sponsored reviews, free-product partnerships, or
+              pay-to-feature deals. Products are matched to each page by searching Amazon for its topic, and their
+              prices and stock are re-checked against Amazon&apos;s API every day. When you click an Amazon affiliate
+              link and complete a purchase, we earn a small commission at no cost to you. Commission rates play no part
+              in which products appear. The full process is on the{" "}
+              <Link href="/editorial" className="text-blush-600 hover:underline">editorial guidelines</Link> page; our
+              editor is <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>{" "}
+              (<a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>).
             </p>
           </div>
         </div>
@@ -264,8 +298,8 @@ export default function HomePage() {
           <div className="text-center mb-12 sm:mb-16">
             <p className="eyebrow mb-3">Browse the Edit</p>
             <h2 className="display-serif text-3xl sm:text-5xl text-ink-900 max-w-3xl mx-auto">
-              Find your wedding guest dress, organized
-              <span className="display-italic text-blush-600"> the way you actually shop</span>
+              Shopping for the dress?
+              <span className="display-italic text-blush-600"> Browse the edit</span>
             </h2>
             <p className="mt-6 text-base sm:text-lg text-ink-600 max-w-2xl mx-auto leading-relaxed font-light">
               Six ways in. Pick the variable that matters most to you and we&apos;ll show you the dresses that work — across every season, dress code, color, body type, silhouette, and venue.
@@ -275,8 +309,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               { href: "/season",     label: "By Season",     blurb: "Lightweight summer cottons, fall long-sleeves, cozy winter velvets, and the in-between season pieces that bridge them." },
-              { href: "/dress-code", label: "By Dress Code", blurb: "Black-tie, black-tie optional, formal, semi-formal, cocktail, dressy casual, casual — decoded with what each actually allows." },
-              { href: "/color",      label: "By Color",      blurb: "Butter yellow, fuchsia, dusty rose, chocolate brown, sage green — the 2026 palette with the shades that photograph best." },
+              { href: "/dress-code", label: "By Dress Code", blurb: "White tie to casual, for women and men — what each code allows, what it rules out, and the edge cases." },
+              { href: "/color",      label: "By Color",      blurb: "Every color family, plus the shades guests most often ask about: white, ivory, cream, black and red." },
               { href: "/body-type",  label: "By Body Type",  blurb: "Plus size, petite, maternity, over 50, and for-big-tummy — silhouettes built to flatter, not to hide." },
               { href: "/style",      label: "By Style",      blurb: "Maxi, midi, knee-length, A-line, floral, modest, long sleeve — the cuts and details organized for fast browsing." },
               { href: "/venue",      label: "By Venue",      blurb: "Beach, garden party, vineyard, Indian wedding, formal ballroom — picks that match the location and its hidden expectations." },

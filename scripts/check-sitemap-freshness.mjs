@@ -27,7 +27,12 @@ const results = [];
 const add = (level, id, msg, fix) => results.push({ level, id, msg, fix });
 
 // --- 1. sitemap route exists and is not build-frozen ---------------------
-const [smPath, smSrc] = findFirst('app/sitemap.ts', 'src/app/sitemap.ts', 'app/sitemap.js', 'src/app/sitemap.js');
+// A sitemap is either a metadata route (app/sitemap.ts) or a route handler
+// (app/sitemap.xml/route.ts). Both are subject to the same freezing rules.
+const [smPath, smSrc] = findFirst(
+  'app/sitemap.ts', 'src/app/sitemap.ts', 'app/sitemap.js', 'src/app/sitemap.js',
+  'app/sitemap.xml/route.ts', 'src/app/sitemap.xml/route.ts', 'app/sitemap.xml/route.js', 'src/app/sitemap.xml/route.js',
+);
 if (!smSrc) {
   add('FAIL', 'SM-1', 'No app/sitemap.ts found.', 'Create one that reads content at runtime.');
 } else {
@@ -36,6 +41,8 @@ if (!smSrc) {
   if (!rev && !forceDynamic) {
     add('FAIL', 'SM-2', `${smPath} has no \`revalidate\` and is not force-dynamic — the sitemap is FROZEN at build time.`,
       'Add `export const revalidate = 3600`.');
+  } else if (forceDynamic && !rev) {
+    add('PASS', 'SM-2', `${smPath} is force-dynamic — rendered on every request, no ISR copy to stall.`);
   } else if (rev) {
     const n = Number(rev[1]);
     if (n === 0) add('PASS', 'SM-2', `${smPath} revalidate = 0 (always dynamic).`);

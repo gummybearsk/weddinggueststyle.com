@@ -113,14 +113,13 @@ export function picksForPillar(slugs: string[], count = 12): Product[] {
 const SEASON_EDIT: Record<string, { slug: string; label: string; blurb: string }[]> = {
   fall: [
     { slug: "fall-wedding-guest-dresses", label: "Fall", blurb: "Sleeves, heavier fabrics, hems that survive a damp lawn." },
-    { slug: "october-wedding-guest-dresses", label: "October", blurb: "Peak wedding month — and peak unpredictable weather." },
-    { slug: "thanksgiving-wedding-guest-dresses", label: "Thanksgiving", blurb: "Family-heavy, photographed all day, usually indoors." },
+    { slug: "casual-fall-wedding-guest-dresses", label: "Casual Fall", blurb: "Barn, backyard and vineyard weddings." },
     { slug: "shades-of-brown-wedding-guest-dresses", label: "Chocolate & Cognac", blurb: "The palette that took over autumn." },
   ],
   winter: [
     { slug: "winter-wedding-guest-dresses", label: "Winter", blurb: "Velvet, long sleeves, and something you can actually wear a coat over." },
-    { slug: "december-wedding-guest-dresses", label: "December", blurb: "Dark by four o'clock — dress for evening whatever the invitation says." },
-    { slug: "new-years-eve-wedding-guest-dresses", label: "New Year's Eve", blurb: "The one wedding where full metallic is the correct answer." },
+    { slug: "holiday-wedding-guest-dresses", label: "Holiday", blurb: "Dark by four o'clock — dress for evening whatever the invitation says." },
+    { slug: "what-to-wear-to-a-christmas-wedding", label: "Christmas", blurb: "Festive without dressing as the decorations." },
     { slug: "velvet-wedding-guest-dresses", label: "Velvet", blurb: "The definitive cold-weather fabric." },
   ],
   spring: [
@@ -131,7 +130,7 @@ const SEASON_EDIT: Record<string, { slug: string; label: string; blurb: string }
   summer: [
     { slug: "summer-wedding-guest-dresses", label: "Summer", blurb: "Breathable fabric that still reads as occasion wear." },
     { slug: "beach-wedding-guest-dresses", label: "Beach", blurb: "Sand-proof hems and shoes you can carry." },
-    { slug: "flowy-summer-wedding-guest-dresses", label: "Flowy", blurb: "Movement without losing the silhouette." },
+    { slug: "maxi-wedding-guest-dresses", label: "Maxi", blurb: "Movement without losing the silhouette." },
   ],
 };
 

@@ -47,6 +47,7 @@ scripts/*
 !scripts/check-sitemap-pairing.mjs
 !scripts/check-sitemap-freshness.mjs
 !scripts/check-schema-urls.mjs
+!scripts/check-page-value.mjs
 !scripts/fetch-page-products.js
 !scripts/check-templating.mjs
 weddinggueststyle.com.code-workspace

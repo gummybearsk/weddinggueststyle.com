@@ -1,0 +1,452 @@
+{
+  "slug": "wedding-dress-code-study",
+  "kind": "guide",
+  "audience": "both",
+  "title": "Wedding Dress Code Study",
+  "metaTitle": "Wedding Dress Code Study: What 10,700 Guests Asked (2026)",
+  "metaDescription": "Wedding dress code study: we analyzed 10,700 posts from wedding guests asking if their outfit works. Which codes confuse people, the white worry, lengths and more.",
+  "h1": "Wedding Dress Code Study: What 10,700 Wedding Guests Asked Before They Got Dressed",
+  "answer": "Cocktail and \"no dress code\" invitations cause the most outfit questions (2,442 of 10,700 posts, 22.8%), followed by formal and black tie. The single most debated worry is white: \"Is this too white?\" posts drew a median of 23 replies, more than any other kind of question.",
+  "intro": "This wedding dress code study reads 10,700 posts written by wedding guests on r/Weddingattireapproval, a forum where people post an outfit and ask strangers whether it suits an invitation. Between 16 April and 21 October 2026, guests posted about 57 times a day. We counted which dress codes they were dressing for, what they were afraid of getting wrong, which colors and lengths they asked about, and how the questions rose and fell through the wedding season. The numbers below are counts from the posts themselves, with the method spelled out so anyone can check or reuse them.",
+  "heroVisual": {
+    "kind": "bars",
+    "title": "Which dress code the guest was dressing for",
+    "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section. Categories are the flair each poster chose; 8 largest dress-code flairs shown.",
+    "data": [
+      {
+        "label": "Cocktail or no dress code",
+        "value": 2442,
+        "highlight": true
+      },
+      {
+        "label": "Formal",
+        "value": 2151,
+        "highlight": false
+      },
+      {
+        "label": "Black / white tie",
+        "value": 1307,
+        "highlight": false
+      },
+      {
+        "label": "Semi-formal / dressy casual",
+        "value": 1307,
+        "highlight": false
+      },
+      {
+        "label": "Is this too white?",
+        "value": 944,
+        "highlight": false
+      },
+      {
+        "label": "Barn / beach / garden theme",
+        "value": 681,
+        "highlight": false
+      },
+      {
+        "label": "Special dress code",
+        "value": 426,
+        "highlight": false
+      },
+      {
+        "label": "Casual",
+        "value": 250,
+        "highlight": false
+      }
+    ]
+  },
+  "contentSections": [
+    {
+      "heading": "How we counted",
+      "content": "We collected every post published on r/Weddingattireapproval between 16 April and 21 October 2026 from the Arctic Shift Reddit archive: 10,700 posts with their title, text, flair and reply count. We did not collect or quote anyone's photos, usernames or replies.\n\nTwo kinds of measurement appear on this page:\n\n• Flairs. Every post on the forum carries a label its author picks, such as \"DC: Formal\" or \"Is this too white?\". Those counts are exact.\n• Keyword rules. For questions that no flair captures (\"is this too casual?\", \"midi or maxi?\"), we searched each post's title and text with a fixed phrase list, after removing the phrases \"black tie\" and \"white tie\" so that a dress code name could not count as a color. A post can match several rules, so these shares do not add up to 100%.\n\nThe forum's posters are mostly dressing themselves in dresses, so this is a picture of women's questions far more than men's: only 233 posts (2.2%) match our strict rule for a man's outfit (a tuxedo, a men's suit, or a partner's suit, tie or shoes). A looser rule that counts any mention of a husband, boyfriend, fiancé, groomsman, guy or tux finds 1,171 (10.9%), the figure our men's guides use. Treat every number here as \"what guests who asked strangers for help were worried about\", not as a survey of all wedding guests."
+    },
+    {
+      "heading": "Cocktail and \"no dress code\" invitations confuse people most",
+      "content": "The largest group of posts, 2,442 (22.8%), came from guests whose invitation said cocktail attire or gave no dress code at all. Formal came second with 2,151, and black tie or white tie and semi-formal or dressy casual tied for third at 1,307 each.\n\nThe pattern makes sense once you look at what each code leaves open. Black tie tells you a great deal: a floor-length gown or a very dressy cocktail dress for women, a tuxedo for men, according to the Emily Post Institute's attire guide. Cocktail attire, and especially no stated code, leaves length, fabric and shine to the guest. The less an invitation says, the more people ask.\n\nIn 1,806 posts (16.9%) the guest spelled out the dress code wording from the invitation or wedding website, which is usually the clue that the wording itself is the problem: \"garden party formal\", \"fall formal\", \"cocktail attire, outdoor venue\".",
+      "visual": {
+        "kind": "bars",
+        "title": "Special wordings are a category of their own",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section.",
+        "data": [
+          {
+            "label": "Special dress code (e.g. \"garden formal\")",
+            "value": 426,
+            "highlight": true
+          },
+          {
+            "label": "Barn / beach / garden theme",
+            "value": 681
+          },
+          {
+            "label": "Casual",
+            "value": 250
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Guests fear underdressing more than overdressing",
+      "content": "When a post names its worry, the worry is more often \"not dressy enough\" than \"too much\". 736 posts (6.9%) ask whether an outfit is too casual or formal enough, against 477 (4.5%) asking whether it is too formal, too dressy or overdressed. A further 540 (5.0%) ask whether something is too short, too low, too sheer or has too high a slit.\n\nThe practical reading: when two outfits are both plausible for the invitation, most guests are more comfortable in the dressier one. That matches the Emily Post Institute's own tie-breaker for semi-formal events, to err on the side of formality when the event starts after 6 p.m.",
+      "visual": {
+        "kind": "bars",
+        "title": "What guests worried they were getting wrong",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section. Keyword rules on post title and text; a post can match more than one.",
+        "data": [
+          {
+            "label": "Too casual / not formal enough",
+            "value": 736,
+            "highlight": true
+          },
+          {
+            "label": "Too revealing (short, low, sheer, slit)",
+            "value": 540
+          },
+          {
+            "label": "Too formal / overdressed",
+            "value": 477
+          },
+          {
+            "label": "Budget mentioned",
+            "value": 423
+          },
+          {
+            "label": "Renting mentioned",
+            "value": 130
+          }
+        ]
+      }
+    },
+    {
+      "heading": "White is the most argued-about question",
+      "content": "\"Is this too white?\" has its own flair on the forum, and 944 posts used it. Those posts drew a median of 23 replies each, the highest of any flair (the forum-wide median is 15.5). Black and white tie posts came next at 18.\n\nInside the white-worry posts, the shades people named show where the line blurs. After white itself, the most named were cream (81 posts), yellow (70), floral prints (56), beige (28), pastel (26) and ivory (22). Pale yellow and white-ground florals are the cases guests are least sure about, because in photographs they can read as white.\n\nOur guide to wedding guest dress colors to avoid walks through each of these shades.",
+      "visual": {
+        "kind": "bars",
+        "title": "Shades named in \"Is this too white?\" posts",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section. 944 posts with the \"Is this too white?\" flair; word match on title and text.",
+        "data": [
+          {
+            "label": "Cream",
+            "value": 81,
+            "highlight": true
+          },
+          {
+            "label": "Yellow",
+            "value": 70
+          },
+          {
+            "label": "Floral",
+            "value": 56
+          },
+          {
+            "label": "Beige",
+            "value": 28
+          },
+          {
+            "label": "Print",
+            "value": 28
+          },
+          {
+            "label": "Pastel",
+            "value": 26
+          },
+          {
+            "label": "Ivory",
+            "value": 22
+          },
+          {
+            "label": "Champagne",
+            "value": 14
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Long is the length people ask about",
+      "content": "Posts that mention a dress length mention long ones far more than short ones: 994 mention a maxi, a floor-length dress or a gown, 456 a midi, 72 a mini or short dress and 70 a knee-length dress. Trousers and jumpsuits came up in 310 posts.\n\nThe long-dress questions cluster around formal and black-tie-optional invitations, where guests are deciding whether a midi is \"enough\" or a gown is \"too much\". The black tie optional guide covers exactly that choice.",
+      "visual": {
+        "kind": "bars",
+        "title": "Dress lengths mentioned",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section.",
+        "data": [
+          {
+            "label": "Maxi / floor-length / gown",
+            "value": 994,
+            "highlight": true
+          },
+          {
+            "label": "Midi",
+            "value": 456
+          },
+          {
+            "label": "Trousers / jumpsuit",
+            "value": 310
+          },
+          {
+            "label": "Mini / short dress",
+            "value": 72
+          },
+          {
+            "label": "Knee-length",
+            "value": 70
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Length questions move with the dress code",
+      "content": "Splitting the length mentions by the poster's own dress-code label shows how the question changes as the invitation gets more formal. In black tie and white tie posts, long dresses dominate almost completely: 253 posts mention a maxi, floor-length dress or gown, against 23 that mention a midi and 2 a short dress. Formal posts still lean long (267 long, 105 midi), but the midi is now a real contender.\n\nCocktail and no-dress-code posts are where the lengths meet: 147 long, 130 midi and 60 short. Semi-formal and dressy casual look much the same (90, 82 and 24). That spread is the clearest sign in the data that cocktail and semi-formal are the codes where length is genuinely open, while black tie has, in practice, settled on floor-length.",
+      "visual": {
+        "kind": "compare",
+        "title": "Length mentions by dress-code label",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section. Word match on title and text within each flair: long = maxi, floor-length or gown; short = mini, short dress or knee-length.",
+        "columns": [
+          "Long",
+          "Midi",
+          "Short"
+        ],
+        "rows": [
+          {
+            "label": "Black / white tie (1,307 posts)",
+            "cells": [
+              "253",
+              "23",
+              "2"
+            ]
+          },
+          {
+            "label": "Formal (2,151)",
+            "cells": [
+              "267",
+              "105",
+              "17"
+            ]
+          },
+          {
+            "label": "Cocktail / no code (2,442)",
+            "cells": [
+              "147",
+              "130",
+              "60"
+            ]
+          },
+          {
+            "label": "Semi-formal / dressy casual (1,307)",
+            "cells": [
+              "90",
+              "82",
+              "24"
+            ]
+          },
+          {
+            "label": "Barn / beach / garden (681)",
+            "cells": [
+              "46",
+              "31",
+              "7"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "heading": "The venue and the clock change the answer",
+      "content": "One post in five (2,203, 20.6%) mentions an outdoor setting: a garden, a barn, a vineyard, a lawn or a beach. 1,004 posts (9.4%) mention an evening or night-time start, and 443 (4.1%) a church, cathedral, temple, mosque or synagogue.\n\nThese details matter because the same invitation wording means different things in different settings. Emily Post's wedding guest guide asks two venue questions before anything else: whether the couple's religion or culture calls for head coverings, and whether bare shoulders, bare arms or open-toed shoes would offend. A guest dressing for a cocktail-attire church ceremony needs a layer; the same guest at an evening rooftop reception does not."
+    },
+    {
+      "heading": "Questions follow the wedding season",
+      "content": "Posting peaked in May (2,141 posts) and stayed above 1,700 a month through August before falling to 1,445 in September. April and October are part-months in our window (from the 16th and to the 21st). Guests ask most in the weeks before the late-spring and summer peak, which is when a clear dress-code explanation is most useful.",
+      "visual": {
+        "kind": "bars",
+        "title": "Posts per month, 2026",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section. April counted from the 16th, October to the 21st.",
+        "data": [
+          {
+            "label": "April (from 16th)",
+            "value": 967
+          },
+          {
+            "label": "May",
+            "value": 2141,
+            "highlight": true
+          },
+          {
+            "label": "June",
+            "value": 1777
+          },
+          {
+            "label": "July",
+            "value": 1752
+          },
+          {
+            "label": "August",
+            "value": 1860
+          },
+          {
+            "label": "September",
+            "value": 1445
+          },
+          {
+            "label": "October (to 21st)",
+            "value": 758
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Shoes are the accessory people ask about",
+      "content": "Across the five main dress-code labels, 1,227 posts mention shoes, heels, flats, sandals or boots, more than mention any single fabric or color other than black and white. Among the 280 posts labeled \"Accessory Help\", 158 are about shoes, 73 about jewelry, 71 about a bag or clutch, 39 about a jacket, shawl or coat and 31 about hair.\n\nOutdoor weddings explain part of it: barn, beach and garden posts mention shoes in 121 of 681 cases, because grass and sand rule out the stiletto most people would otherwise reach for.",
+      "visual": {
+        "kind": "bars",
+        "title": "What \"Accessory Help\" posts ask about",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift Reddit archive). Method in the first section. 280 posts with the \"Accessory Help\" flair; a post can mention several items.",
+        "data": [
+          {
+            "label": "Shoes",
+            "value": 158,
+            "highlight": true
+          },
+          {
+            "label": "Jewelry",
+            "value": 73
+          },
+          {
+            "label": "Bag or clutch",
+            "value": 71
+          },
+          {
+            "label": "Jacket, shawl or coat",
+            "value": 39
+          },
+          {
+            "label": "Hair",
+            "value": 31
+          }
+        ]
+      }
+    },
+    {
+      "heading": "Cultural weddings bring their own questions",
+      "content": "A small but distinct group of posts concerns weddings with cultural dress expectations. 127 posts either carry the forum's \"Indian or Desi Wedding\" label or mention an Indian, Desi, Hindu, Sikh, Punjabi, Gujarati or Tamil wedding. Chinese weddings come up in 22 posts, Mexican in 21, Greek in 17 and Jewish in 11.\n\nThese are the guests for whom a Western dress-code definition is least useful on its own, because color rules can differ: Wikipedia's wedding dress article notes that \"in Eastern cultures, such as Chinese and Indian cultures, brides will often wear red\". Our guide to whether you can wear red to a wedding covers what that means for a guest."
+    },
+    {
+      "heading": "Almost nobody asks what a dress code means",
+      "content": "Only 25 posts asked, in so many words, what a dress code means. Few guests ask for a definition outright. What they cannot judge is whether one particular dress, in one particular venue, at one particular time of day, sits inside the definition. That is why this site's dress-code guides lead with the decision rules (length, fabric, time of day, venue) rather than a dictionary definition, and why each one covers what men wear alongside what women wear."
+    },
+    {
+      "heading": "Use and cite this study",
+      "content": "You are welcome to quote these numbers in articles, newsletters or classes. Please credit \"Wedding Guest Style\" with a link to this page. If you would like the counts behind a chart, or want us to run a different question against the same posts, use the contact page."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is the most confusing wedding dress code?",
+      "answer": "In this study, cocktail attire and invitations with no stated dress code produced the most outfit questions: 2,442 of 10,700 posts. Formal came second with 2,151."
+    },
+    {
+      "question": "How many wedding guests worry about wearing white?",
+      "answer": "944 of the 10,700 posts (8.8%) used the forum's \"Is this too white?\" label, and those posts drew more replies than any other kind of question."
+    },
+    {
+      "question": "Where does the data come from?",
+      "answer": "Public posts on r/Weddingattireapproval between 16 April and 21 October 2026, retrieved from the Arctic Shift Reddit archive. We counted labels and keywords only; no photos, usernames or replies were collected."
+    }
+  ],
+  "relatedPages": [
+    {
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
+    },
+    {
+      "title": "What to wear to a wedding as a guest",
+      "slug": "what-to-wear-to-a-wedding-as-a-guest"
+    },
+    {
+      "title": "Wedding guest dress colors to avoid",
+      "slug": "wedding-guest-dress-colors-to-avoid"
+    },
+    {
+      "title": "What is cocktail attire?",
+      "slug": "what-is-cocktail-attire"
+    },
+    {
+      "title": "Can you wear red to a wedding?",
+      "slug": "can-you-wear-red-to-a-wedding"
+    },
+    {
+      "title": "Black tie optional",
+      "slug": "what-does-black-tie-optional-mean"
+    },
+    {
+      "title": "Wedding dress code for men",
+      "slug": "wedding-dress-code-for-men"
+    }
+  ],
+  "sources": [
+    {
+      "publisher": "Arctic Shift",
+      "title": "Reddit archive API (r/Weddingattireapproval posts)",
+      "url": "https://arctic-shift.photon-reddit.com/",
+      "readOn": "21 October 2026",
+      "supports": "the 10,700 posts analyzed on this page"
+    },
+    {
+      "publisher": "Reddit",
+      "title": "r/Weddingattireapproval",
+      "url": "https://www.reddit.com/r/Weddingattireapproval/",
+      "readOn": "21 October 2026",
+      "supports": "the forum whose public posts were counted"
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Attire Guide: Dress Codes from Casual to White Tie",
+      "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
+      "readOn": "22 October 2026",
+      "supports": "black tie garments and the after-6 p.m. formality advice"
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Wedding Guest Attire: What to Wear to a Wedding",
+      "url": "https://emilypost.com/advice/wedding-guest-attire",
+      "readOn": "22 October 2026",
+      "supports": "the head-covering and bare-shoulder venue questions"
+    },
+    {
+      "publisher": "Wikipedia",
+      "title": "Wedding dress",
+      "url": "https://en.wikipedia.org/wiki/Wedding_dress",
+      "readOn": "22 October 2026",
+      "supports": "red as a bridal color in Chinese and Indian weddings"
+    }
+  ],
+  "products": [],
+  "publishDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "wedding dress code data (link asset)",
+    "keywords": [
+      "wedding dress code study",
+      "wedding guest attire statistics",
+      "wedding guest outfit questions"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://www.reddit.com/r/Weddingattireapproval/",
+        "format": "forum",
+        "weakness": "answers one outfit at a time; no aggregate view of what confuses guests"
+      },
+      {
+        "url": "https://www.theknot.com/content/wedding-guest-attire-guide",
+        "format": "guide",
+        "weakness": "definitions only; no measured data on what guests actually ask"
+      },
+      {
+        "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
+        "format": "reference list",
+        "weakness": "garment lists without wedding-specific edge cases or data"
+      }
+    ],
+    "winningFormat": "original data study with charts",
+    "infoGain": "the only published count of what 10,700 real wedding guests asked about dress codes, with method",
+    "asset": "7 produced bar charts from the site's own analysis",
+    "verified": "2026-10-22"
+  }
+}

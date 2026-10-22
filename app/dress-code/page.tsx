@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
+import DressCodeDecoderSection from "@/components/DressCodeDecoderSection";
+import DressCodeLadder from "@/components/visuals/DressCodeLadder";
 import { picksForPillar } from "@/lib/featured";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { dressCodeSections } from "@/lib/homepageData";
+import { DRESS_CODE_SOURCE } from "@/lib/dressCodes";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
@@ -11,18 +14,20 @@ export const revalidate = 43200;
 export const metadata: Metadata = {
   title: { absolute: "Wedding Dress Codes Explained: Black Tie to Casual (2026)" },
   description:
-    "Wedding dress codes explained: the different types of wedding dress codes in order, most formal first — black tie, black tie optional, formal, cocktail, semi-formal, dressy casual and casual — and what each means for guests.",
+    "Wedding dress codes explained for women and men: the types of wedding dress codes in order, most formal first — white tie, black tie, black tie optional, cocktail, semi-formal, dressy casual and casual — and what each one means for guests.",
   alternates: { canonical: "https://weddinggueststyle.com/dress-code" },
 };
 
+const LADDER_CAPTION = `Garment lists: ${DRESS_CODE_SOURCE.publisher}, "${DRESS_CODE_SOURCE.title}", read ${DRESS_CODE_SOURCE.readOn}. Emily Post files cocktail dresses under semi-formal, so they share a rung.`;
+
 const longForm = [
-  "Wedding dress codes are the single most important constraint when choosing what to wear to a wedding, and also the most frequently mis-read. Couples write dress codes with one set of assumptions and guests read them with another, which is where most wedding-guest dressing worries start. This pillar guide breaks down every common dress code phrase, what it actually allows, what it actually forbids, and the venues where each one shows up.",
-  "Black tie is the most formal dress code most wedding guests will meet (white tie is rarer still). The Emily Post Institute's attire guide lists three options for women: a \"formal (floor length) evening gown\", a \"dressy cocktail dress\", or \"your dressiest 'little black dress'\". The floor-length gown in a formal fabric — silk, satin, chiffon, velvet or beaded mesh — is the choice that is never questioned; a cocktail dress works only when it is genuinely dressy in fabric and finish. A black tie reception is almost always in the evening, often at a hotel ballroom, museum or estate. When in doubt at black tie, choose longer and more conservative rather than shorter and more revealing.",
-  "Black tie optional sits between black tie and formal. Floor-length gowns are still preferred and correct, but a formal cocktail-length dress in a dressy fabric (think beaded sheath, satin midi, or velvet cocktail) is acceptable. The \"optional\" gives guests room to scale slightly down from full black tie without breaking the dress code. A useful rule of thumb: dress as if it were black tie unless the dress code, venue, or season makes that clearly impractical.",
-  "Formal — without the \"black tie\" qualifier — is one step less strict. Floor-length is welcome but not required; sophisticated midi-length cocktail dresses in formal fabrics work; men aren't required to wear tuxedos but should wear dark suits with ties. The reception is typically evening and sit-down. Semi-formal is one level less than formal: cocktail dresses dominate, men can wear suits without ties, the meal is more relaxed (often buffet or family-style), and the venue tends toward restaurants, mid-tier hotels, garden venues with reception tents, and similar.",
-  "Cocktail attire calls for cocktail-length dresses (knee to mid-calf, or short maxi if very dressy), in fabrics one step up from everyday — chiffon, silk-blend, satin, lace, beaded, or polished crepe. Emily Post's guide files cocktail dresses under semi-formal, listing a \"short afternoon or cocktail dress\", a \"little black dress\" and dressy separates, and notes that \"if the event is later than 6 in the evening, you'll want to err on the side of formality.\" Knee-length is the safest choice. Avoid anything resembling a daytime sundress, and sequined mini-dresses that read more nightclub than wedding. The cocktail dress code spans a wide range of venues — restaurants, garden ceremonies, hotels, and many destination weddings.",
-  "Dressy casual and casual are the two codes guests most often second-guess. Emily Post's attire guide lists, for dressy casual, a dress, a skirt and dressy top, a dressy pants outfit, or nice jeans with a dressy top; for casual, a sundress, a long or short skirt, khakis or nice jeans, and even shorts depending on the occasion and climate. Those are general event lists, and a wedding is still a ceremony, so the safer reading for a wedding is the dressier end of each list: a dress, a polished skirt and top, or a tailored pants outfit, with real shoes rather than sneakers. Beach and backyard weddings often fall into one of these two categories — the standard is \"polished casual,\" not \"weekend casual.\"",
-  "Two phrases that often confuse guests: \"festive attire\" and \"garden party attire.\" Festive attire is a contemporary dress code that means cocktail-or-better dress in lively colors, prints, or details — the couple wants the room to feel celebratory rather than uniformly formal. Floral prints, jewel tones, statement accessories, and metallic touches all work. Garden party attire is essentially cocktail with the expectation of outdoor venue: lighter fabrics, midi length preferred over floor-length (which drags on grass), block heels rather than stilettos (which sink), and color choices that read well against greenery (avoid kelly green or pure white which clash or compete).",
+  "Wedding dress codes are the one line on an invitation that guests most often mis-read, and the reason is rarely the definition. In our analysis of 10,700 posts on r/Weddingattireapproval between April and October 2026, only 25 asked in so many words what a dress code means. What they ask, over and over, is whether one particular dress or suit, at one particular venue and time of day, sits inside it. So this guide works as a ladder plus a set of tie-breakers.",
+  "Start with the ladder. From most to least formal, the codes you will meet on a wedding invitation are white tie, black tie, black tie optional, semi-formal (which, in the Emily Post Institute's attire guide, includes the cocktail dress), dressy casual and casual. Each step down loosens length first, then fabric, then the man's jacket and tie. At white tie, the guide lists only a floor-length evening gown for women and a black tailcoat with a white piqué wing-collared shirt, white vest and white bow tie for men. At black tie, women may also wear a dressy cocktail dress or their dressiest little black dress, and men wear a black tuxedo with a black bow tie. Black tie optional keeps the gown and the tuxedo as the ideal but lets men wear a dark suit with a white shirt and conservative tie.",
+  "In the middle of the ladder, the semi-formal list is where most weddings sit: a short afternoon or cocktail dress, a little black dress, a long dressy skirt and top or dressy separates for women; a dark business suit, dress shirt, tie and leather dress shoes for men. Many invitations say \"cocktail attire\" for the same thing, and the two words are used interchangeably more often than not. Our semi-formal vs cocktail guide sets out the small differences people do draw between them.",
+  "Below that, dressy casual asks women for a dress, a skirt and dressy top or a dressy pants outfit, and men for a sport coat or blazer with slacks, tie optional. Casual is the loosest code: a sundress, a skirt or nice khakis for women, khakis or good jeans with a button-down or polo for men. Emily Post's casual list is written for any event, and even includes shorts, but a wedding is still a ceremony; at a casual wedding, choose the dressier end of each list and real shoes.",
+  "Then the tie-breakers, in the order they usually decide the outfit. First, the clock: the Emily Post guide advises erring toward formality when a semi-formal event starts after 6 p.m., and its wedding-guest guide gives men different lists for daytime and evening. Second, the venue: before anything else, Emily Post's wedding guide asks whether the couple's religion or culture calls for head coverings and whether bare shoulders, bare arms or open-toed shoes would offend. Third, the ground: outdoor settings came up in one post in five in our study, and grass and sand rule out stilettos and long trains. Fourth, the color: avoid anything that reads as white in photographs, and check cultural color rules for the couple's tradition.",
+  "When the invitation gives no dress code at all, read the invitation itself. Emily Post's wedding guide puts it plainly: the invitation and the time of the wedding will be your best guide to its formality. An engraved card for a 7 p.m. hotel reception is telling you something different from an emailed invitation to a 1 p.m. backyard lunch. Cocktail-level dress, the middle of the ladder, is the safest default, and in our study the \"cocktail or no dress code\" label was the single most common reason guests asked for help.",
+  "Men get one guide per code alongside women on every page here, plus dedicated men's guides where the questions are different enough to need one: cocktail attire for men, semi-formal attire for men, beach wedding attire for men and a full wedding dress code for men walk-through. If you are dressing a couple, the decoder above shows both lists side by side for every code.",
 ];
 
 export default function DressCodePillarPage() {
@@ -30,8 +35,15 @@ export default function DressCodePillarPage() {
     <PillarHub
       pillarSlug="dress-code"
       pillarLabel="Dress Code"
-      h1="Wedding Dress Codes: The Types, and What Each One Actually Means"
-      intro="Wedding dress codes are the single most important line on an invitation and the one guests most often mis-read. Black tie, black tie optional, formal, semi-formal, cocktail, dressy casual, casual — each phrase carries a specific meaning, expected fabrics and silhouettes. This guide decodes every common wedding dress code, explains what each actually allows and forbids, and links to detailed picks for each category."
+      h1="Wedding Dress Codes Explained: Every Type, for Women and Men"
+      answer="Wedding dress codes run, most formal first: white tie, black tie, black tie optional, semi-formal and cocktail, dressy casual, then casual. The higher the code, the longer the dress and the darker and more formal the suit, up to a tuxedo at black tie and a tailcoat at white tie."
+      intro="Wedding dress codes tell guests how formal to be, and each phrase on an invitation maps to specific clothes for women and for men. Pick the code from your invitation in the decoder below to see both lists, use the ladder to see where it sits, and open the full guide for the edge cases: time of day, venue, season, colour and what to do when the invitation says nothing at all."
+      lead={
+        <div className="grid gap-8 lg:grid-cols-2 items-start">
+          <DressCodeDecoderSection />
+          <DressCodeLadder caption={LADDER_CAPTION} />
+        </div>
+      }
       sections={dressCodeSections}
       longFormParagraphs={longForm}
       products={picksForPillar(getPillarSlugs("dress-code"), 12)}
@@ -39,10 +51,17 @@ export default function DressCodePillarPage() {
       sources={[
         {
           publisher: "The Emily Post Institute",
-          title: "Attire Guide: Dress Codes from Casual to White Tie Formal",
+          title: "Attire Guide: Dress Codes from Casual to White Tie",
           url: "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
-          readOn: "12 October 2026",
-          supports: "the women's attire listed under black tie, semi-formal (including cocktail dresses), dressy casual and casual on this page, and the after-6pm formality note",
+          readOn: "22 October 2026",
+          supports: "the women's and men's garments listed for every code on this page, and the after-6 p.m. formality advice",
+        },
+        {
+          publisher: "The Emily Post Institute",
+          title: "Wedding Guest Attire: What to Wear to a Wedding",
+          url: "https://emilypost.com/advice/wedding-guest-attire",
+          readOn: "22 October 2026",
+          supports: "the venue questions (head coverings, bare shoulders) and the invitation-and-time rule when no code is given",
         },
       ]}
     />

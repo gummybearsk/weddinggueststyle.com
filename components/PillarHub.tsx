@@ -20,6 +20,10 @@ interface PillarHubProps {
   products?: Product[];
   /** Every published page in this pillar, grouped. Replaces the hand-kept 4-item list. */
   groups?: SubGroup[];
+  /** Direct answer rendered above the fold (Rule 54c). */
+  answer?: string;
+  /** Interactive or produced asset shown right under the header. */
+  lead?: React.ReactNode;
 }
 
 function CollectionPageSchema({ pillarLabel, h1, sections }: { pillarLabel: string; h1: string; sections: HomepageSection[] }) {
@@ -61,7 +65,7 @@ function BreadcrumbSchema({ pillarLabel, pillarSlug }: { pillarLabel: string; pi
   );
 }
 
-export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], groups = [], sources }: PillarHubProps) {
+export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections, longFormParagraphs, products = [], groups = [], sources, answer, lead }: PillarHubProps) {
   return (
     <>
       <CollectionPageSchema pillarLabel={pillarLabel} h1={h1} sections={sections} />
@@ -82,9 +86,21 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
 
           <p className="eyebrow mb-4">Pillar Guide · {pillarLabel}</p>
           <h1 className="display-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">{h1}</h1>
+          {answer && (
+            <div className="mt-8 max-w-3xl border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-blush-700 mb-2">The short answer</p>
+              <p className="text-lg sm:text-xl text-ink-900 leading-relaxed">{answer}</p>
+            </div>
+          )}
           <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light max-w-3xl">{intro}</p>
         </div>
       </div>
+
+      {lead && (
+        <section className="border-b border-ink-200 py-10 sm:py-14">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">{lead}</div>
+        </section>
+      )}
 
       {products.length >= 4 && (
         <section className="bg-cream-50 border-b border-ink-200 py-12 sm:py-16">

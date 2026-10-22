@@ -7,8 +7,10 @@ import type { NavGroup } from "@/lib/taxonomy";
 
 function DesktopDropdown({
   group,
+  alignRight = false,
 }: {
   group: NavGroup;
+  alignRight?: boolean;
 }) {
   const [open, setOpen] = useState(false);
   const timeout = useRef<NodeJS.Timeout | null>(null);
@@ -39,14 +41,16 @@ function DesktopDropdown({
         </svg>
       </Link>
       {open && (
-        <div className="absolute top-full left-0 pt-1 z-50">
-          <div className={`bg-ivory border border-ink-200 py-3 shadow-[0_8px_32px_rgba(26,24,21,0.08)] ${group.items.length > 8 ? "min-w-[400px]" : "min-w-[220px]"}`}>
-            <div className={group.items.length > 8 ? "grid grid-cols-2 gap-x-1" : ""}>
+        <div className={`absolute top-full pt-1 z-50 ${alignRight ? "right-0" : "left-0"}`}>
+          {/* Two columns get a fixed width and wrap long titles; nowrap here made the
+              columns run into each other. */}
+          <div className={`bg-ivory border border-ink-200 py-3 shadow-[0_8px_32px_rgba(26,24,21,0.08)] ${group.items.length > 8 ? "w-[34rem]" : "w-[17rem]"}`}>
+            <div className={group.items.length > 8 ? "grid grid-cols-2 gap-x-2" : ""}>
               {group.items.map((item) => (
                 <Link
                   key={item.slug}
                   href={`/${item.slug}`}
-                  className="block px-5 py-2 text-sm text-ink-700 hover:bg-cream-100 hover:text-blush-700 transition-colors whitespace-nowrap font-light"
+                  className="block px-5 py-2 text-sm leading-snug text-ink-700 hover:bg-cream-100 hover:text-blush-700 transition-colors font-light"
                   onClick={() => setOpen(false)}
                 >
                   {item.title}
@@ -89,8 +93,8 @@ export default function Header({ navGroups }: { navGroups: NavGroup[] }) {
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-7">
-            {navGroups.map((group) => (
-              <DesktopDropdown key={group.label} group={group} />
+            {navGroups.map((group, i) => (
+              <DesktopDropdown key={group.label} group={group} alignRight={i >= navGroups.length - 2} />
             ))}
           </nav>
 

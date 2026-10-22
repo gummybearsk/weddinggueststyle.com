@@ -10,6 +10,7 @@ import { getFurtherReading } from "@/lib/furtherReading";
 import type { ContentSection, Product } from "@/lib/types";
 import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
 import StickyEditorPick from "@/components/StickyEditorPick";
+import ProductCarousel from "@/components/ProductCarousel";
 import SourcesList from "@/components/SourcesList";
 import HeroImage from "@/components/HeroImage";
 import PriceSnapshot from "@/components/PriceSnapshot";
@@ -218,6 +219,7 @@ function ContentSections({
           <div className="text-base text-ink-700 leading-[1.8] whitespace-pre-line font-light">
             {section.content}
           </div>
+          <VisualBlock visual={section.visual} />
         </section>
       ))}
     </>
@@ -419,17 +421,31 @@ function GuidePage({ page, products, asOf }: { page: PageData; products: Product
             </div>
           )}
           <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light">{page.intro}</p>
+          <div className="max-w-3xl">
+            <HeroImage image={page.heroImage} />
+          </div>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        {/* Products sit right after the answer and the diagram: readers rarely scroll to the
+            bottom of a 2,000-word guide to find them. */}
+        {shop.length > 0 && (
+          <section className="my-10 border-y border-ink-200 py-8">
+            <p className="eyebrow mb-2">Shop the look</p>
+            <h2 className="display-serif text-2xl text-ink-900 mb-6">In stock now for {page.title.toLowerCase()}</h2>
+            <ProductCarousel products={shop} />
+            {asOf && <p className="mt-4 text-xs text-ink-400 font-light">{asOf}</p>}
+          </section>
+        )}
         <div className="max-w-3xl">
           <VisualBlock visual={page.heroVisual} />
-          <div className="pt-6">
+        </div>
+        <div className="max-w-3xl">
+          <div className="pt-2">
             <GuideSections sections={page.contentSections} />
           </div>
         </div>
-        {shop.length > 0 && <ProductBlock products={shop} title="Shop the look" asOf={asOf} />}
         <div className="max-w-3xl">
           {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
           <SourcesList sources={page.sources} />
@@ -532,6 +548,13 @@ export default function InnerPage({ params }: PageProps) {
             <AuthorByline publishDate={page.modifiedDate || page.publishDate} />
           </div>
 
+          {page.answer && (
+            <div className="mt-8 border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-blush-700 mb-2">The short answer</p>
+              <p className="text-lg text-ink-900 leading-relaxed">{page.answer}</p>
+            </div>
+          )}
+
           <p className="mt-6 text-base sm:text-lg text-ink-700 leading-[1.75] font-light">{page.intro}</p>
 
           <HeroImage image={page.heroImage} />
@@ -561,9 +584,9 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "B" && (
           <>
+            <HeroPicks products={heroPicks} category={page.title} />
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             <PriceSnapshot insights={insights} category={page.title} />
-            <HeroPicks products={heroPicks} category={page.title} />
             <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />
@@ -603,9 +626,9 @@ export default function InnerPage({ params }: PageProps) {
 
         {plan.variant === "E" && (
           <>
+            <HeroPicks products={heroPicks} category={page.title} />
             <ContentSections sections={sectionsFirst} hClass={hClass} divider={plan.showSectionDividers} />
             {plan.showPullQuote && quoteText && <PullQuote>{quoteText}</PullQuote>}
-            <HeroPicks products={heroPicks} category={page.title} />
             <ProductBlock products={restProducts} title={`More ${page.title}`} asOf={asOf} />
             <ContentSections sections={sectionsRest} hClass={hClass} divider={false} />
             <FurtherReading slug={page.slug} />

@@ -55,9 +55,9 @@ export const FEATURED_NICHES: FeaturedNiche[] = [
     blurb: "Sleeves, heavier fabrics, and hems that survive a damp lawn.",
   },
   {
-    slug: "fuchsia-wedding-guest-dresses",
-    label: "Fuchsia & Hot Pink",
-    blurb: "The colour that photographs loudest, done without looking costume.",
+    slug: "pink-wedding-guest-dresses",
+    label: "Pink, Blush to Fuchsia",
+    blurb: "Every pink, from the pale shades guests worry about to the loud ones.",
   },
   {
     slug: "shades-of-brown-wedding-guest-dresses",
@@ -113,14 +113,14 @@ export function picksForPillar(slugs: string[], count = 12): Product[] {
 const SEASON_EDIT: Record<string, { slug: string; label: string; blurb: string }[]> = {
   fall: [
     { slug: "fall-wedding-guest-dresses", label: "Fall", blurb: "Sleeves, heavier fabrics, hems that survive a damp lawn." },
-    { slug: "casual-fall-wedding-guest-dresses", label: "Casual Fall", blurb: "Barn, backyard and vineyard weddings." },
+    { slug: "wedding-guest-shoes-for-fall", label: "Fall Shoes", blurb: "Grass, gravel and a long day on your feet." },
     { slug: "shades-of-brown-wedding-guest-dresses", label: "Chocolate & Cognac", blurb: "The palette that took over autumn." },
   ],
   winter: [
     { slug: "winter-wedding-guest-dresses", label: "Winter", blurb: "Velvet, long sleeves, and something you can actually wear a coat over." },
     { slug: "holiday-wedding-guest-dresses", label: "Holiday", blurb: "Dark by four o'clock — dress for evening whatever the invitation says." },
     { slug: "what-to-wear-to-a-christmas-wedding", label: "Christmas", blurb: "Festive without dressing as the decorations." },
-    { slug: "velvet-wedding-guest-dresses", label: "Velvet", blurb: "The definitive cold-weather fabric." },
+    { slug: "wedding-guest-cover-ups-and-wraps", label: "Cover-ups", blurb: "Sleeves your dress doesn't have." },
   ],
   spring: [
     { slug: "spring-wedding-guest-dresses", label: "Spring", blurb: "Pastels, florals, and a layer for the evening." },

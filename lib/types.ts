@@ -140,7 +140,7 @@ export interface PageData {
  * stock. Only original photography by the author does that. See SOURCES.md.
  */
 export interface PageImage {
-  /** images.unsplash.com file URL, without query params. */
+  /** images.unsplash.com file URL without query params, or a local /images/... path. */
   url: string;
   alt: string;
   photographer: string;
@@ -149,6 +149,11 @@ export interface PageImage {
   /** e.g. "Unsplash". */
   source: string;
   sourceUrl: string;
+  /** Licence name for non-Unsplash images, e.g. "CC BY-SA 4.0" or "Public domain (US government work)". */
+  license?: string;
+  licenseUrl?: string;
+  /** Optional visible caption describing what the photo shows (who/where/when, from the source page). */
+  caption?: string;
 }
 
 export interface PageSource {

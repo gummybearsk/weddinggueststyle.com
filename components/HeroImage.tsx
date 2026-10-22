@@ -15,7 +15,7 @@ export default function HeroImage({ image }: { image?: PageImage }) {
     <figure className="mt-8">
       <div className="relative w-full overflow-hidden rounded-2xl bg-blush-50" style={{ aspectRatio: "16 / 9" }}>
         <Image
-          src={`${image.url}?w=1600&q=80&auto=format&fit=crop`}
+          src={image.url.startsWith("/") ? image.url : `${image.url}?w=1600&q=80&auto=format&fit=crop`}
           alt={image.alt}
           fill
           sizes="(max-width: 768px) 100vw, 1100px"
@@ -24,6 +24,7 @@ export default function HeroImage({ image }: { image?: PageImage }) {
         />
       </div>
       <figcaption className="mt-2 text-xs text-ink-500">
+        {image.caption && <span className="block text-ink-600 mb-1">{image.caption}</span>}
         Photo:{" "}
         <a href={image.profileUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink-700">
           {image.photographer}
@@ -32,6 +33,18 @@ export default function HeroImage({ image }: { image?: PageImage }) {
         <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink-700">
           {image.source}
         </a>
+        {image.license && (
+          <>
+            {" · "}
+            {image.licenseUrl ? (
+              <a href={image.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-ink-700">
+                {image.license}
+              </a>
+            ) : (
+              image.license
+            )}
+          </>
+        )}
       </figcaption>
     </figure>
   );

@@ -64,7 +64,7 @@ const nextConfig = {
       // winner ranks Google #9 and converts 19% on Bing; the twin had 3 impressions.
       {
         source: "/sage-green-wedding-guest-dresses-2026",
-        destination: "/sage-green-wedding-guest-dresses",
+        destination: "/green-wedding-guest-dresses",
         permanent: true,
       },
       {
@@ -103,7 +103,7 @@ const nextConfig = {
       },
       {
         source: "/short-fuchsia-wedding-guest-dresses",
-        destination: "/fuchsia-wedding-guest-dresses",
+        destination: "/pink-wedding-guest-dresses",
         permanent: true,
       },
       {
@@ -136,11 +136,11 @@ const nextConfig = {
       { source: "/soft-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
       { source: "/light-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
       { source: "/rose-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
-      { source: "/bright-pink-wedding-guest-dresses", destination: "/hot-pink-wedding-guest-dresses", permanent: true },
-      { source: "/dark-pink-wedding-guest-dresses", destination: "/hot-pink-wedding-guest-dresses", permanent: true },
+      { source: "/bright-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
+      { source: "/dark-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
       { source: "/bright-yellow-wedding-guest-dresses", destination: "/yellow-wedding-guest-dresses", permanent: true },
-      { source: "/butter-yellow-garden-wedding-guest-dresses", destination: "/butter-yellow-wedding-guest-dresses", permanent: true },
-      { source: "/summer-butter-yellow-wedding-guest-dresses", destination: "/butter-yellow-wedding-guest-dresses", permanent: true },
+      { source: "/butter-yellow-garden-wedding-guest-dresses", destination: "/yellow-wedding-guest-dresses", permanent: true },
+      { source: "/summer-butter-yellow-wedding-guest-dresses", destination: "/yellow-wedding-guest-dresses", permanent: true },
       { source: "/navy-blue-wedding-guest-gown", destination: "/navy-wedding-guest-dresses", permanent: true },
       { source: "/wedding-guest-dresses-summer-2026", destination: "/summer-wedding-guest-dresses", permanent: true },
       { source: "/flowy-summer-wedding-guest-dresses", destination: "/summer-wedding-guest-dresses", permanent: true },
@@ -172,8 +172,26 @@ const nextConfig = {
       { source: "/western-indian-wedding-guest-attire", destination: "/indian-wedding-guest-dresses", permanent: true },
       { source: "/floral-maxi-wedding-guest-dresses", destination: "/floral-wedding-guest-dresses", permanent: true },
       { source: "/black-friday-wedding-guest-dress-deals", destination: "/best-wedding-guest-dresses", permanent: true },
-      { source: "/chiffon-wedding-guest-dresses", destination: "/satin-wedding-guest-dresses", permanent: true },
+      { source: "/chiffon-wedding-guest-dresses", destination: "/formal-wedding-guest-dresses", permanent: true },
       { source: "/wedding-guest-clutches-and-bags", destination: "/how-to-accessorize-a-wedding-guest-dress", permanent: true },
+      // Second consolidation pass (2026-10-22): shade, fabric and length pages with no traffic
+      // after 8+ weeks fold into their family page; the green trio also shared ~37% of its text.
+      { source: "/blush-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
+      { source: "/burgundy-wedding-guest-dresses", destination: "/red-wedding-guest-dresses", permanent: true },
+      { source: "/butter-yellow-wedding-guest-dresses", destination: "/yellow-wedding-guest-dresses", permanent: true },
+      { source: "/casual-fall-wedding-guest-dresses", destination: "/fall-wedding-guest-dresses", permanent: true },
+      { source: "/designer-wedding-guest-dresses", destination: "/elegant-wedding-guest-dresses", permanent: true },
+      { source: "/emerald-green-wedding-guest-dresses", destination: "/green-wedding-guest-dresses", permanent: true },
+      { source: "/dark-green-wedding-guest-dresses", destination: "/green-wedding-guest-dresses", permanent: true },
+      { source: "/olive-green-wedding-guest-dresses", destination: "/green-wedding-guest-dresses", permanent: true },
+      { source: "/sage-green-wedding-guest-dresses", destination: "/green-wedding-guest-dresses", permanent: true },
+      { source: "/fuchsia-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
+      { source: "/hot-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
+      { source: "/jewel-tone-wedding-guest-dresses", destination: "/winter-wedding-guest-dresses", permanent: true },
+      { source: "/knee-length-wedding-guest-dresses", destination: "/cocktail-wedding-guest-dresses", permanent: true },
+      { source: "/satin-wedding-guest-dresses", destination: "/formal-wedding-guest-dresses", permanent: true },
+      { source: "/velvet-wedding-guest-dresses", destination: "/winter-wedding-guest-dresses", permanent: true },
+      { source: "/wedding-guest-dresses-for-big-tummy", destination: "/plus-size-wedding-guest-dresses", permanent: true },
     ];
   },
 };

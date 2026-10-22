@@ -1020,9 +1020,9 @@ export const colorSections: HomepageSection[] = [
   },
   {
     id: "burgundy-dresses",
-    title: "Burgundy Wedding Guest Dresses",
-    description: "Deep, rich burgundy dresses are perfect for fall and winter weddings. This luxurious color flatters every skin tone.",
-    slug: "burgundy-wedding-guest-dresses",
+    title: "Red & Burgundy Wedding Guest Dresses",
+    description: "Red and deep burgundy dresses for fall and winter weddings, and when red is better left to the bride.",
+    slug: "red-wedding-guest-dresses",
     products: [
       {
         title: "Women's Off the Shoulder Wrap Prom Dresses Tea Length Bridesmaid Dress Satin Short Formal Gowns",

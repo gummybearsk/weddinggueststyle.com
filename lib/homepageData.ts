@@ -1078,7 +1078,7 @@ export const colorSections: HomepageSection[] = [
     id: "brown-dresses",
     title: "Brown Wedding Guest Dresses",
     description: "Warm and earthy, brown dresses offer a unique and chic alternative. From chocolate to terracotta, these tones are on trend.",
-    slug: "brown-wedding-guest-dresses",
+    slug: "shades-of-brown-wedding-guest-dresses",
     products: [
       {
         title: "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",

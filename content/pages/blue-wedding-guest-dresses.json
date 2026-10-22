@@ -1,13 +1,13 @@
 {
   "title": "Blue Wedding Guest Dresses",
   "metaTitle": "Blue Wedding Guest Dresses: Navy, Cobalt, Dusty, Powder",
-  "metaDescription": "Blue wedding guest dresses split into four shades that behave differently under light. How navy, cobalt, dusty and powder blue photograph, drape and hold up.",
-  "h1": "Blue Wedding Guest Dresses: Pick the Shade, Not the Colour",
+  "metaDescription": "Blue wedding guest dresses by dress code: which navy, cobalt, dusty or powder blue suits each invitation, how light shifts it, and how to avoid bridesmaids.",
+  "h1": "Blue Wedding Guest Dresses: Pick the Shade, Not the Color",
   "intro": "Which blue do you actually mean when you go looking for blue wedding guest dresses? The phrase covers at least four colors that behave nothing alike: navy holds its depth almost anywhere, cobalt turns electric on camera, dusty blue reads gray indoors and faintly lilac outdoors, and powder blue can wash out to near-white in direct midday sun. That last point matters more at a wedding than anywhere else. Choose for the room and the hour, not for the month printed on the invitation.",
   "contentSections": [
     {
       "heading": "Which blues guests ask about",
-      "content": "In the site's analysis of 10,700 posts on r/Weddingattireapproval, a forum where guests post an outfit and ask whether it works for a specific wedding, 960 posts mentioned blue or navy. Navy was named far more than any other shade, followed by the pale end of the range (light, pale, baby, sky, ice and powder blue). Of the 944 posts flaired \"Is this too white?\", 18 mentioned light blue, which is the honest size of the pale-blue risk: real, but small next to cream and ivory.\n\nThe pattern fits the practical advice on this page. Navy is the shade people reach for when they want a dark color that is not black. Pale blue is the one that prompts the \"will this read as white?\" question.",
+      "content": "In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), a forum where guests post an outfit and ask whether it works for a specific wedding, 960 posts mentioned blue or navy, about one in eleven. Navy was named far more than any other shade, followed by the pale end of the range (light, pale, baby, sky, ice and powder blue). Of the 944 posts flaired \"Is this too white?\", 18 mentioned light blue, which is the honest size of the pale-blue risk: real, but small next to cream and ivory.\n\nBlue is spread evenly across the dress codes: it turns up in 7.7% of black/white tie posts, 9.3% of formal posts and 8.5% of cocktail posts, so no invitation rules it out. The pattern fits the advice on this page. Navy is the shade people reach for when they want a dark color that is not black. Pale blue is the one that prompts the \"will this read as white?\" question.",
       "visual": {
         "kind": "bars",
         "title": "Blue shades named by wedding guests",
@@ -20,7 +20,7 @@
           },
           {
             "label": "Light / pale blue",
-            "value": 159
+            "value": 161
           },
           {
             "label": "Teal",
@@ -28,18 +28,82 @@
           },
           {
             "label": "Dusty blue",
-            "value": 17
+            "value": 18
           },
           {
             "label": "Royal blue / cobalt",
-            "value": 12
+            "value": 13
           },
           {
             "label": "Periwinkle",
             "value": 8
           }
         ],
-        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive); word match on post title and text, each post counted once per shade. \"Light blue\" includes pale, baby, sky, ice and powder blue."
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive), read 22 October 2026. Matched on post title plus text, lowercased, after masking \"black tie\" and \"white tie\"; each post counted once per shade. Regexes: any blue = \\bblue\\b|\\bnavy\\b; navy = \\bnavy\\b; light = \\b(light|pale|baby|sky|ice|powder)[- ]?blue\\b; teal = \\bteal\\b; dusty = \\bdusty[- ]?blue\\b; royal/cobalt = \\broyal[- ]?blue\\b|\\bcobalt\\b; periwinkle = \\bperiwinkle\\b. Aggregate counts only."
+      }
+    },
+    {
+      "heading": "Blue wedding guest dresses by dress code",
+      "content": "Color never sets the formality of a dress; length and fabric do. The Emily Post Institute's attire guide lists garments for each code without naming a color, so the job is to choose the blue and the cloth that carry the garment it asks for.\n\n• White tie: the list is a formal floor-length evening gown, with long gloves optional. In blue, that means navy, midnight or sapphire in satin, velvet or heavy crepe. A pastel chiffon maxi is the wrong weight for the room, however long it is.\n• Black tie: a floor-length gown, a dressy cocktail dress or your dressiest little black dress. A navy gown answers it exactly; a navy cocktail dress in satin or beading stands in for the dressy cocktail option. Our black tie attire guide covers the full code.\n• Black tie optional: the same gown and cocktail options plus dressy separates. Here the brighter blues come in: a cobalt or sapphire midi in crepe, or a dusty blue gown, are both at home.\n• Semi-formal and cocktail: a short afternoon or cocktail dress, a little black dress, a long dressy skirt and top, or dressy separates, and the guide says to err formal after 6 p.m. Cornflower, periwinkle and dusty blue suit an afternoon; move to navy or a deeper cobalt for an evening start.\n• Dressy casual: a dress, a skirt and dressy top, or a dressy pants outfit. Any blue works, and prints help.\n• Casual: a sundress or a long or short skirt. Chambray, light blue cotton and blue florals fit; satin looks overdressed.\n\nIf the invitation names no code, the Emily Post Institute's wedding attire advice is to read the invitation and the time of day: a 6 p.m. ballroom start calls for the black tie optional row, a noon garden ceremony for the semi-formal one.",
+      "visual": {
+        "kind": "compare",
+        "title": "Which blue, in which fabric, for each dress code",
+        "columns": [
+          "Emily Post lists (women)",
+          "Blue that works",
+          "Fabric that carries it"
+        ],
+        "rows": [
+          {
+            "label": "White tie",
+            "cells": [
+              "Formal floor-length evening gown; long gloves optional",
+              "Navy, midnight, sapphire",
+              "Satin, velvet, heavy crepe"
+            ]
+          },
+          {
+            "label": "Black tie",
+            "cells": [
+              "Floor-length gown, dressy cocktail dress, dressiest LBD",
+              "Navy or midnight gown; sapphire",
+              "Satin, velvet, beaded tulle"
+            ]
+          },
+          {
+            "label": "Black tie optional",
+            "cells": [
+              "Gown, dressy cocktail dress, LBD, dressy separates",
+              "Navy, cobalt, sapphire; dusty blue in a long gown",
+              "Crepe, satin, lined chiffon"
+            ]
+          },
+          {
+            "label": "Semi-formal / cocktail",
+            "cells": [
+              "Short afternoon or cocktail dress, LBD, long dressy skirt and top, dressy separates; err formal after 6 p.m.",
+              "Cornflower, periwinkle, dusty blue by day; navy or deep cobalt by night",
+              "Crepe, lace, midi satin"
+            ]
+          },
+          {
+            "label": "Dressy casual",
+            "cells": [
+              "Dress, skirt and dressy top, dressy pants outfit",
+              "Any blue; prints welcome",
+              "Chiffon, crepe, cotton or linen blends"
+            ]
+          },
+          {
+            "label": "Casual",
+            "cells": [
+              "Sundress, long or short skirt",
+              "Light blue, chambray, blue florals",
+              "Cotton, linen, eyelet"
+            ]
+          }
+        ],
+        "caption": "Garment lists: The Emily Post Institute, Attire Guide: Dress Codes from Casual to White Tie, read 22 October 2026. The shade and fabric columns are weddinggueststyle.com styling guidance, not measured data."
       }
     },
     {
@@ -47,16 +111,54 @@
       "content": "What decides whether a blue works is the light it will sit in for six hours. A ballroom lit with warm uplighting pushes cool colors toward gray. Dusty blue in that room can go flat; navy, because it is already dark, reads as a rich near-black and loses little. An outdoor ceremony at two in the afternoon does the opposite: bright daylight drains pale shades, and powder blue at noon can photograph as off-white.\n\nSo ask how much pigment the dress has and how much the room will take away. Midday outdoors, choose saturation: cobalt, sapphire, a strong periwinkle. Candlelit evening indoors, choose depth: navy, midnight, ink. Soft overcast light late in the afternoon is where the muted shades look most like they do on the hanger.\n\nCheck the dress yourself before the return window closes. Hold it under a warm bulb, then carry it to a window. Blues built on a red-purple base, such as periwinkle, cornflower and most dusty blues, lean mauve in warm light. Blues on a green base, such as teal and petrol, can look faintly olive. Neither is a flaw, but you want to know which one you own before you stand next to a warm-lit head table. The same test shows whether dye varies between the bodice and the skirt, which is easier to see under one bulb than under a phone flash."
     },
     {
+      "heading": "Which blue for which season and venue",
+      "content": "Season changes what a blue has to do. In spring, the mid blues are at their best: periwinkle, cornflower and a dusty blue all look deliberate against fresh green and soft light. In high summer, the problem is sun. Saturated blues such as cobalt, azure and sapphire keep their color in hard noon light, and a light fabric matters more than the shade; a navy satin in July is hard work. Fall is navy, teal and sapphire territory, in crepe, jacquard or velvet with a sleeve. Winter evenings suit midnight and ink in velvet, where pale blue chiffon looks out of season unless the fabric is heavier.\n\nVenue matters as much. On a beach or a lawn, a long hem collects sand and damp, so a midi or an ankle-length dress you can lift is easier than a train. In a church or other house of worship, the Emily Post Institute suggests checking whether bare shoulders or arms would offend, so pack a matching or contrasting wrap for a sleeveless blue dress. In a ballroom or hotel, warm uplighting is the norm, which is why the darker blues travel better there. In a barn or a vineyard, a printed blue midi or a dusty blue in a matte fabric sits better than shine."
+    },
+    {
       "heading": "Treat navy as a formal neutral",
-      "content": "Navy behaves like black in a dress code: what makes it formal is the length and the fabric, not the color. The Emily Post Institute's black tie list asks for a floor-length evening gown, a dressy cocktail dress or your dressiest little black dress, and says nothing about color, so a floor-length navy column in heavy crepe, satin or velvet answers a black tie invitation as well as black does. A navy jersey wrap dress at the same length does not, because the fabric gives it away.\n\nNavy also keeps enough pigment to show seam lines, pleating and the fall of a skirt in photographs, where black can turn into a silhouette in a dim reception. Beading and embroidery tend to show more clearly on navy.\n\nWhere navy struggles is heat. A dark, heavy dress in full sun is uncomfortable, so for an outdoor daytime ceremony take the same color in a lighter cloth, such as navy chiffon instead of navy satin."
+      "content": "Navy behaves like black in a dress code: what makes it formal is the length and the fabric, not the color. The Emily Post Institute's black tie list asks for a floor-length evening gown, a dressy cocktail dress or your dressiest little black dress, and says nothing about color, so a floor-length navy column in heavy crepe, satin or velvet answers a black tie invitation as well as black does. A navy jersey wrap dress at the same length does not, because the fabric gives it away.\n\nNavy also keeps enough pigment to show seam lines, pleating and the fall of a skirt in photographs, where black can turn into a silhouette in a dim reception. Beading and embroidery tend to show more clearly on navy.\n\nWhere navy struggles is heat. A dark, heavy dress in full sun is uncomfortable, so for an outdoor daytime ceremony take the same color in a lighter cloth, such as navy chiffon instead of navy satin. The navy wedding guest dresses page goes deeper on shades of navy and what to pair with them; the light blue edit does the same for the pale end."
     },
     {
       "heading": "Weigh the fabric before you trust the color",
       "content": "The same dye on three fabrics gives you three different dresses, and this is where online orders go wrong. Satin makes any blue louder: it reflects light off every curve, so a mid-blue satin reads brighter and shinier than the swatch, and it shows every crease from sitting through a ceremony. Crepe absorbs light, mutes the shade slightly and holds a clean line across the hip; if you want cobalt without a lacquered look, choose crepe.\n\nChiffon lightens whatever it is dyed. Over a matching lining it holds its color; over a nude lining it turns pale and translucent, and a dusty blue chiffon can drift toward gray-white in strong sun. Velvet deepens everything, which is why navy velvet suits winter so well.\n\nCheck the listing for fabric composition and lining color, and look for a photo taken in daylight rather than a studio shot. An unlined pale blue is the most likely to arrive lighter and thinner than it looked."
     },
     {
+      "heading": "Length, lining and fit before the color",
+      "content": "A blue dress goes wrong online more often through fit than through shade. Start with length. Cocktail and semi-formal dresses are usually knee to mid-calf, and a midi that ends at the widest part of the calf looks shorter than intended in photographs; aim just above the knee or just below the calf muscle. For black tie, a gown should brush the top of the shoe you will wear, so try it with those shoes before any hemming.\n\nThen check the lining. Pale blues in chiffon, georgette or thin satin are the most likely to show the outline of underwear and the seams of the bodice. A full lining in the same or a slightly deeper blue keeps the color even; a nude or white lining lightens the whole dress.\n\nFinally, the bodice. Satin and charmeuse show every pull line across the bust and hip, so size for your fullest measurement and take in the rest. Crepe and lined lace are more forgiving if you are between sizes. A blue with a strong sheen also magnifies creases from sitting through a ceremony; a fabric with some texture hides them."
+    },
+    {
       "heading": "Ask what the bridal party is wearing",
-      "content": "Blue is a common bridesmaid color family, and standing next to the wedding party in nearly the same shade is the main way a blue dress goes wrong. Ask someone close to the couple; it takes one message. If you get an answer, move at least two clear shades away: if the party is in dusty blue, wear navy or cobalt, not slate. If they are in navy, wear a strong periwinkle, or skip blue for that wedding.\n\nIf you cannot find out, change the silhouette. Bridesmaid dresses are often floor-length, matte, solid and simple through the bodice. A printed midi, a texture like jacquard or lace, a distinctive neckline or a sleeve detail separates you even if the shade lands close.\n\nFor accessories, go by the undertone rather than the color name. Blues with warmth, like periwinkle, cornflower and purple-cast navies, take gold and brass well. Blues with a green or steel cast, like teal and petrol, sit better with silver, pewter or white gold. Shoes in nude to your own skin tone, a metallic, or a deliberate contrast such as burgundy or rust all work; heels dyed to match the dress exactly tend to look dated."
+      "content": "Blue is a common bridesmaid color family, and standing next to the wedding party in nearly the same shade is the main way a blue dress goes wrong. Guests know it: in our Reddit analysis, posts that mention blue or navy are more than twice as likely to mention bridesmaids or the bridal party as posts in general (14.7% against 6.6%). Blue is also a favorite with the parents of the couple: it appears in 21.5% of posts flaired Mother of Bride/Groom, against 9.0% of all posts, so check what the mothers are wearing too. Ask someone close to the couple; it takes one message. If you get an answer, move at least two clear shades away: if the party is in dusty blue, wear navy or cobalt, not slate. If they are in navy, wear a strong periwinkle, or skip blue for that wedding.\n\nIf you cannot find out, change the silhouette. Bridesmaid dresses are often floor-length, matte, solid and simple through the bodice. A printed midi, a texture like jacquard or lace, a distinctive neckline or a sleeve detail separates you even if the shade lands close.\n\nFor accessories, go by the undertone rather than the color name. Blues with warmth, like periwinkle, cornflower and purple-cast navies, take gold and brass well. Blues with a green or steel cast, like teal and petrol, sit better with silver, pewter or white gold. Shoes in nude to your own skin tone, a metallic, or a deliberate contrast such as burgundy or rust all work; heels dyed to match the dress exactly tend to look dated.",
+      "visual": {
+        "kind": "bars",
+        "title": "Where blue meets the wedding party",
+        "unit": "%",
+        "data": [
+          {
+            "label": "Blue/navy posts that mention bridesmaids or the bridal party",
+            "value": 14.7,
+            "highlight": true
+          },
+          {
+            "label": "All posts that mention bridesmaids or the bridal party",
+            "value": 6.6
+          },
+          {
+            "label": "Mother of Bride/Groom posts that mention blue or navy",
+            "value": 21.5,
+            "highlight": true
+          },
+          {
+            "label": "All posts that mention blue or navy",
+            "value": 9.0
+          }
+        ],
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive), read 22 October 2026. Blue/navy posts (n=960) match \\bblue\\b|\\bnavy\\b; bridal party = \\bbridesmaids?\\b|\\bbridal party\\b|\\bwedding party\\b (141 of 960 blue posts; 703 of 10,700 posts). Mother of Bride/Groom flair: 23 of 107 posts. Title plus text, after masking \"black tie\" and \"white tie\". Aggregate counts only."
+      }
+    },
+    {
+      "heading": "Five checks before you order a blue dress",
+      "content": "• Ignore the color name. One retailer's \"dusty blue\" is another's \"slate\"; compare the photos instead.\n• Look for a daylight photo. Studio lighting flattens blue. A customer photo taken outdoors, or a model photo in natural light, shows the real shade.\n• Read the fabric line. Polyester satin, crepe, chiffon and velvet behave differently, as above. If the listing does not say, assume the cheapest likely option.\n• Find the lining color. It decides how pale a light blue will look on you.\n• Check the return window against the wedding date. The Federal Trade Commission advises checking the return terms, return shipping costs and any restocking fees before you buy; order early enough to swap a shade that arrives wrong.\n\nWhen it arrives, do the bulb-and-window test from the section on light, and hold it next to the bridesmaids' color if you know it."
     }
   ],
   "faqs": [
@@ -77,569 +179,115 @@
       "answer": "Not as a guest. Cobalt is a strong color that stands out in group photos, which only matters if the couple asked for a specific muted palette. Keep the finish and styling simple: cobalt in matte crepe with plain gold studs looks polished, while cobalt in high-shine satin with statement jewelry is a lot. Sapphire is the quieter alternative."
     },
     {
-      "question": "Do blue prints count, or should the dress be solid?",
-      "answer": "Prints count and often help, because bridal parties are usually in solids. Look for a print with a clear scale, such as large florals or wide watercolor washes; small busy repeats can blur into a gray smudge from a distance."
+      "question": "What color should my partner wear with my blue dress?",
+      "answer": "Coordinate rather than match. For a semi-formal wedding the Emily Post Institute lists a dark business suit for men, so a charcoal or mid-gray suit with a tie that picks up your blue works well; a navy suit beside a navy dress can look like a uniform. At black tie, the tuxedo is black whatever you wear, and a pocket square in your shade is enough."
     }
   ],
   "relatedPages": [
+    {
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
+    },
     {
       "title": "Navy Wedding Guest Dresses",
       "slug": "navy-wedding-guest-dresses"
     },
     {
-      "title": "Green Wedding Guest Dresses",
-      "slug": "green-wedding-guest-dresses"
+      "title": "Light Blue Wedding Guest Dresses",
+      "slug": "light-blue-wedding-guest-dresses"
     },
     {
-      "title": "Black Tie Wedding Guest Dresses",
-      "slug": "black-tie-wedding-guest-dresses"
+      "title": "Black Tie Attire",
+      "slug": "black-tie-attire"
     },
     {
-      "title": "Summer Wedding Guest Dresses",
-      "slug": "summer-wedding-guest-dresses"
+      "title": "What Is Semi-Formal Attire?",
+      "slug": "what-is-semi-formal-attire"
+    },
+    {
+      "title": "Wedding Guest Dress Colors to Avoid",
+      "slug": "wedding-guest-dress-colors-to-avoid"
     }
   ],
   "slug": "blue-wedding-guest-dresses",
   "products": [
     {
-      "title": "Women's Mock Neck Sleeveless Mesh Back Slit Ruched Bodycon Wedding Guest Cocktail Evening Party Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51JIi-bpF8L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GH71J4VY?tag=weddinggueststyle-20",
-      "price": "$38.99"
+      "title": "Women's Sexy One The Shoulder Ruched Mesh Formal Long Dress, S, Blue | Sundress Bodycon High Split Cocktail Wedding Maxi Dresses",
+      "image": "https://m.media-amazon.com/images/I/311BkLACO-L._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0GYHLSX37?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$39.98"
     },
     {
-      "title": "Women's Floral Strapless Maxi Dress 2026 Summer Mesh Tube Bodycon Formal Wedding Guest Cocktail Party Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/719ZTR5EXFL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX2TCN54?tag=weddinggueststyle-20",
-      "price": "$57.99"
+      "title": "Popilush Formal Dresses for Women Off Shoulder Shapewear Maxi Navy M",
+      "image": "https://m.media-amazon.com/images/I/41r34qQIUEL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0FCYHQZ41?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$138.99"
     },
     {
-      "title": "Women's Sleeveless Mesh Floral Summer 2025 Ruched Bodycon Slit Wedding Guest Cocktail Party Midi Dress",
-      "image": "https://m.media-amazon.com/images/I/51MJCYXr7GL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DZ2N19RG?tag=weddinggueststyle-20",
-      "price": "$38.99"
-    },
-    {
-      "title": "Sparkly Mother of The Bride Dresses for Women Long Chiffon 3/4 Sleeve Lace Appliques Formal Gown",
-      "image": "https://m.media-amazon.com/images/I/61mEMcnOTFL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D4Y8RJ6H?tag=weddinggueststyle-20",
-      "price": "$79.99"
-    },
-    {
-      "title": "Womens Sparkly Lace Appliques Chiffon Prom Dresses V-Neck Spaghetti Straps Formal Dress Long Ball Gowns with Slit",
-      "image": "https://m.media-amazon.com/images/I/61kEPqEwDzL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DQ3WQ6Q5?tag=weddinggueststyle-20",
-      "price": "$77.99"
-    },
-    {
-      "title": "Women's 2026 Summer Floral Strapless Dress Bodycon Tube Slit Mesh Wedding Guest Cocktail Party Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/614A2soEVaL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FXRDPLHQ?tag=weddinggueststyle-20",
-      "price": "$45.99"
-    },
-    {
-      "title": "Tea Length Mother of The Bride Dresses for Women High Low Formal Dress with Sleeves Lace Evening Gown",
-      "image": "https://m.media-amazon.com/images/I/61vqdcnoIqL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CDLHVJQ6?tag=weddinggueststyle-20",
-      "price": "$59.99"
-    },
-    {
-      "title": "Wedding Guest Dresses for Women Beach Fashion Casual Short Sleeve V Neck Solid Spring Summer Boho Maxi Dress",
-      "image": "https://m.media-amazon.com/images/I/71dbhc8n2vL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GCHZFFRM?tag=weddinggueststyle-20",
-      "price": "$43.99"
-    },
-    {
-      "title": "Women's Sleeveless Floral Bodycon Maxi Dress 2026 Summer Ruched Mesh Wedding Guest Cocktail Party Dresses",
-      "image": "https://m.media-amazon.com/images/I/71+kGw837AL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G4TW6JKR?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
-      "title": "2026 Women Summer Dress,Maxi Short Sleeve Floral Dresses,Semi Formal Flowy Wedding Guest Dress with Pocket",
-      "image": "https://m.media-amazon.com/images/I/71Ihe9a6lbL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G5PGXT36?tag=weddinggueststyle-20",
-      "price": "$59.99"
-    },
-    {
-      "title": "Women's Off the Shoulder Wrap Prom Dresses Tea Length Bridesmaid Dress Satin Short Formal Gowns",
-      "image": "https://m.media-amazon.com/images/I/51lrcaNOruL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B09MTB1FL2?tag=weddinggueststyle-20",
-      "price": "$76.99"
-    },
-    {
-      "title": "Bridesmaid Dresses Long for Women 2025 Satin Mermaid Strapless Pleated Formal Evening Party Gowns with Scarf",
-      "image": "https://m.media-amazon.com/images/I/51OU-Aj2yvL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FH9VSFBZ?tag=weddinggueststyle-20",
-      "price": "$82.69"
-    },
-    {
-      "title": "Long Sleeve Sequin Prom Dress Mermaid One Shoulder Floor Length Formal Evening Party Gown",
-      "image": "https://m.media-amazon.com/images/I/61o6ubbPMkL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G58RDFNT?tag=weddinggueststyle-20",
-      "price": "$59.86"
-    },
-    {
-      "title": "Women Wedding Guest Dress Elegant V Neck Flutter Sleeve Formal Party Gown Lustrous Knit Sparkle Cocktail",
-      "image": "https://m.media-amazon.com/images/I/71-7nbZQ-OL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G93DYBHB?tag=weddinggueststyle-20",
-      "price": "$49.79"
-    },
-    {
-      "title": "Womens 2026 Summer Boho Strapless Midi Dresses Off Shoulder Smocked Eyelet Wedding Guest Beach Long Dress Pockets",
-      "image": "https://m.media-amazon.com/images/I/71msFLc+rSL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G4Z6W83N?tag=weddinggueststyle-20",
-      "price": "$50.99"
-    },
-    {
-      "title": "Womens Casual Summer Dresses 2026 V Neck Short Sleeve Empire Waist Flowy A Line Ruffle Tiered Mini Sundress",
-      "image": "https://m.media-amazon.com/images/I/819iXW8TMxL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FXX66LPC?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens Summer Floral Dress Casual Short Sleeve V Neck Empire Waist Boho Flowy A Line Mini Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/81lSvlj2vzL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FXGFMXTP?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Women's 2026 Summer Sleeveless Dress Bodycon Mesh Wedding Guest Formal Cocktail Party Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61lmy4fkirL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D5B8D9XH?tag=weddinggueststyle-20",
-      "price": "$19.99"
-    },
-    {
-      "title": "Womens Spring Wedding Guest Dress 2026 Summer Beach Floral Cocktail Party Formal Ruffle Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/71FMARrwcIL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX2QR4Y6?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
-      "title": "Simplee Women's 2025 Velvet Short Sleeve Cocktail Dress Fall Winter Casual V Neck Empire Waist Mini Dresses with Pockets",
-      "image": "https://m.media-amazon.com/images/I/71l8zbpuT-L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DF7JVPTL?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Women's Summer Boho Floral Midi Dress 2026 Casual Ruffle Cap Sleeve Beach Wedding Guest Flowy Tiered Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/810F6d6J0hL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G4QTT6S4?tag=weddinggueststyle-20",
-      "price": "$53.99"
-    },
-    {
-      "title": "Women's Halter Floral Midi Dress Ruched Backless Flowy A Line Summer Beach Wedding Guest Dresses with Pockets",
-      "image": "https://m.media-amazon.com/images/I/61jhWLF5GGL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G2LMSJ65?tag=weddinggueststyle-20",
-      "price": "$35.98"
-    },
-    {
-      "title": "Off The Shoulder Bridesmaid Dresses with Pockets Ruched Chiffon Long Slit Formal Evening Gown",
-      "image": "https://m.media-amazon.com/images/I/715-s5NzT2L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C4Y6679M?tag=weddinggueststyle-20",
-      "price": "$59.99"
-    },
-    {
-      "title": "Women's Spring Floral Wedding Guest Bodycon Dresses 2026 Long Sleeve Crewneck Mesh Ruffle Mermaid Party Maxi Dress",
-      "image": "https://m.media-amazon.com/images/I/61t860OTE0L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FG2PFZYR?tag=weddinggueststyle-20",
-      "price": "$29.99"
-    },
-    {
-      "title": "Women Floral Corset Dress Summer Wedding Guest Dresses Flowy A Line Midi Sundress with Pockets",
-      "image": "https://m.media-amazon.com/images/I/71HE2SwYFgL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G11YQWGT?tag=weddinggueststyle-20",
-      "price": "$34.99"
-    },
-    {
-      "title": "V Neck Tulle Prom Dresses 2026 Long Sparkly Lace Formal Party Dress CLN011",
-      "image": "https://m.media-amazon.com/images/I/614CXcaL37L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B09NHS424C?tag=weddinggueststyle-20",
-      "price": "$94.86"
-    },
-    {
-      "title": "Women's Summer Sleeveless Midi Dress 2026 Strapless Ruched A Line Flowy Wedding Guest Party Beach Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/61-K6TudnXL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FY34NYWM?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
-      "title": "Womens Summer Floral Maxi Dress Sleeveless Cowl Neck Stretch Bodycon Cocktail Party Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/71ZNd7F2HDL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GFT78XDS?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens Off The Shoulder Floral Maxi Bodycon Dress Fall Long Sleeve Mesh Fitted Long Formal Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/71Up1+jm1oL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F7HMTRB1?tag=weddinggueststyle-20",
-      "price": "$42.99"
-    },
-    {
-      "title": "Women’s Lace Appliques Satin Prom Dresses Off The Shoulder Long Formal Dress Pleated Sequin High Slit Evening Gowns",
-      "image": "https://m.media-amazon.com/images/I/613-iospIpL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DQP55XY3?tag=weddinggueststyle-20",
-      "price": "$109.99"
-    },
-    {
-      "title": "Women's Formal Cocktail Maxi Dresses 2026 Summer Off Shoulder Floral Mesh Bodycon Spring Wedding Guest Dress",
-      "image": "https://m.media-amazon.com/images/I/71uj-vuihTL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FY5G31FJ?tag=weddinggueststyle-20",
-      "price": "$43.99"
-    },
-    {
-      "title": "Women's Summer Strapless Floral Midi Dress 2026 Bodycon Mesh Tube Wedding Guest Cocktail Party Formal Dresses",
-      "image": "https://m.media-amazon.com/images/I/71UczIhC4bL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FXWCV32B?tag=weddinggueststyle-20",
-      "price": "$58.99"
-    },
-    {
-      "title": "Chiffon Bridesmaid Dress for Women - Square Neck A Line Pleated Slit Formal Evening Dress with Pockets",
-      "image": "https://m.media-amazon.com/images/I/61GCfmKCFvL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F9LKDPRF?tag=weddinggueststyle-20",
-      "price": "$77.99"
-    },
-    {
-      "title": "Summer Dresses for Women 2026 Spring Casual Sleeveless V Neck Pleated Midi Work Cocktail Wedding Guest Dress",
-      "image": "https://m.media-amazon.com/images/I/71RvhSyy7dL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FQT4XTK7?tag=weddinggueststyle-20",
-      "price": "$44.99"
-    },
-    {
-      "title": "Floral Maxi Summer Wedding Guest Dress Halter Flowy A Line Smocked Tea Party Dresses Long Sundress for Women 2026",
-      "image": "https://m.media-amazon.com/images/I/61+nLkL3vSL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G7FD1JCP?tag=weddinggueststyle-20",
-      "price": "$60.99"
-    },
-    {
-      "title": "Plus Size Formal Dresses for Women with Embroidery Sequin and V-Neck, A-Line Maxi Dress for Wedding and Cocktail",
-      "image": "https://m.media-amazon.com/images/I/71cMSZdxYpL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FC6QPNHT?tag=weddinggueststyle-20",
-      "price": "$99.99"
-    },
-    {
-      "title": "Womens Mesh Bodycon Formal Maxi Dresses Summer Spaghetti Strap Ruffle Cocktail Wedding Guest Party Prom Long Dress",
-      "image": "https://m.media-amazon.com/images/I/614ffohFaRL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GHYZ6HBP?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Formal Maxi Wedding Guest Dresses for Women Spaghetti Strap Bow Tie Ruffle Bodycon Slit Mesh Cocktail Long Dress",
-      "image": "https://m.media-amazon.com/images/I/61lhmEBPJuL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GCKFJFKD?tag=weddinggueststyle-20",
-      "price": "$58.99"
-    },
-    {
-      "title": "Floral Maxi Wedding Guest Dresses for Women 2026 Summer V Neck Bow Tie Bodycon Mesh Formal Cocktail Long Dress",
-      "image": "https://m.media-amazon.com/images/I/61uldQ5E4OL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G7FFZ6SD?tag=weddinggueststyle-20",
-      "price": "$51.99"
-    },
-    {
-      "title": "Long Sleeve Sequin Prom Dress 2026 Mermaid V Neck Pleats Formal Evening Gowns with Slit",
-      "image": "https://m.media-amazon.com/images/I/61zuv9V0SVL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DNJPTWKR?tag=weddinggueststyle-20",
-      "price": "$84.99"
-    },
-    {
-      "title": "Sweetheart Chiffon Bridesmaid Dresses with Slit Long Pleated Prom Dress Strapless Formal Party Gowns",
-      "image": "https://m.media-amazon.com/images/I/51-nMLKgFcL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DJ79C46T?tag=weddinggueststyle-20",
-      "price": "$54.99"
-    },
-    {
-      "title": "Women's One Shoulder Bridesmaid Dress with Slit Long Ruched Chiffon Prom Gown",
-      "image": "https://m.media-amazon.com/images/I/517A9eiy58L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BD859TDL?tag=weddinggueststyle-20",
-      "price": "$77.99"
-    },
-    {
-      "title": "Tea Length Satin Mother of The Bride Dresses for Women A Line V Neck Cap Sleeve Formal Evening Party Gowns",
-      "image": "https://m.media-amazon.com/images/I/51slBdCA9SL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FM7BD23V?tag=weddinggueststyle-20",
-      "price": "$76.99"
-    },
-    {
-      "title": "Satin Ruffle Prom Dresses Long for Women Spaghetti Straps Mermaid Slit Cocktail Dresses Formal Gowns for Teens",
-      "image": "https://m.media-amazon.com/images/I/618-mcmYc2L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F21CWQMX?tag=weddinggueststyle-20",
-      "price": "$74.99"
-    },
-    {
-      "title": "Maxi Dresses Women 2026 Summer Long Flowy Wrap Dress Ruffle Sleeve Deep V Neck Formal Dress with Pockets",
-      "image": "https://m.media-amazon.com/images/I/61NRPMAkaVL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FWRLMZWG?tag=weddinggueststyle-20",
-      "price": "$34.99"
-    },
-    {
-      "title": "Summer Dresses for Women 2026 Boho Swiss Dot Smocked Square Neck Short Sleeve Spring Wedding Guest Maxi Dress",
-      "image": "https://m.media-amazon.com/images/I/81+3s+F+mFL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX99ZM1L?tag=weddinggueststyle-20",
-      "price": "$44.99"
-    },
-    {
-      "title": "Dresses for Women Summer 2026 Formal Sleeveless Smocked Floral Long Wedding Guest Dress Party Spring",
-      "image": "https://m.media-amazon.com/images/I/71tYzvJKx7L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FY6LW1Z8?tag=weddinggueststyle-20",
-      "price": "$46.99"
-    },
-    {
-      "title": "Womens Summer Maxi Dress 2026 Formal Wedding Guest V Neck Dresses Ruffle Sleeve Smocked Lace Long Clothes",
-      "image": "https://m.media-amazon.com/images/I/81bkUwr5JkL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GG7CL8M2?tag=weddinggueststyle-20",
-      "price": "$42.99"
-    },
-    {
-      "title": "Bridesmaid Dresses with Slit Pockets Chiffon V-Neck Ruffles Ruched A-Line Empire Waist Long Wedding Guest Dress",
-      "image": "https://m.media-amazon.com/images/I/61-mJxcQSmL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GBV2B5YK?tag=weddinggueststyle-20",
-      "price": "$73.99"
-    },
-    {
-      "title": "Spaghetti Straps Bridesmaid Dresses for Women Chiffon Long A Line Formal Evening Gown with Slit",
-      "image": "https://m.media-amazon.com/images/I/6141SRtCIyL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F83XSH37?tag=weddinggueststyle-20",
-      "price": "$72.99"
-    },
-    {
-      "title": "One Shoulder Bridesmaid Dresses for Women Chiffon A Line Pleated Long Formal Evening Gowns",
-      "image": "https://m.media-amazon.com/images/I/61v1BfbJy0L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FLPXVMK4?tag=weddinggueststyle-20",
-      "price": "$74.99"
-    },
-    {
-      "title": "One Shoulder Simple Chiffon Bridesmaid Dress Long Empire Waist Formal Dresses CYN003",
-      "image": "https://m.media-amazon.com/images/I/51zc59CKNeL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D672J3T6?tag=weddinggueststyle-20",
-      "price": "$79.98"
-    },
-    {
-      "title": "Chiffon Cold Shoulder Bridesmaid Dresses for Women 2026 A-line Long with Slit Formal Wedding Guest Dress",
-      "image": "https://m.media-amazon.com/images/I/51Qt-aw7zoL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FDG54777?tag=weddinggueststyle-20",
-      "price": "$56.99"
-    },
-    {
-      "title": "Women's Satin Tea Length Prom Dresses 2026 Strapless Cocktail Party Dress Semi Formal Gown LZY888",
-      "image": "https://m.media-amazon.com/images/I/51WQuZ1n9wL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DMVQXBLL?tag=weddinggueststyle-20",
-      "price": "$54.99"
-    },
-    {
-      "title": "Women's Chiffon V Neck Bridesmaid Dresses with Split Long Ruffle Formal Party Dress PUS066",
-      "image": "https://m.media-amazon.com/images/I/61KLsW+WhoL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CBZL5ZTQ?tag=weddinggueststyle-20",
-      "price": "$79.96"
-    },
-    {
-      "title": "Women's Summer Bodycon Maxi Tube Dress Ribbed Strapless Side Slit Long Going Out Casual Elegant Party Dresses",
-      "image": "https://m.media-amazon.com/images/I/610-1iZJj+L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CN8XZ9R3?tag=weddinggueststyle-20",
-      "price": "$36.72"
-    },
-    {
-      "title": "Women's 2026 Summer Sundresses Eyelet Cap Sleeve V Neck Short Boho Wedding Guest Dress Beach Vacation Clothes",
-      "image": "https://m.media-amazon.com/images/I/81+seiOb8CL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FQNTXHRQ?tag=weddinggueststyle-20",
-      "price": "$44.99"
-    },
-    {
-      "title": "Long Black Formal Dresses for Women Gowns Evening Party Cocktail Dress,Split Elegant V Neck Wrap Ruffle Wedding Guest Dr",
-      "image": "https://m.media-amazon.com/images/I/61vozf6iodL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C53BK6S9?tag=weddinggueststyle-20",
-      "price": "$58.78"
-    },
-    {
-      "title": "Vintage Floral Dress for Women 2026 Summer A-line Sleeveless Flowy Midi Elegant Wedding Guest Cocktail Dress",
-      "image": "https://m.media-amazon.com/images/I/51+c1vaAM1L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DR1G1Y43?tag=weddinggueststyle-20",
-      "price": "$37.59"
-    },
-    {
-      "title": "Women's Summer Wedding Guest Dress Strapless Tube Top Maxi Bodycon Long Floral Mesh Beach Vacation Party Dresses",
-      "image": "https://m.media-amazon.com/images/I/71HMItDCpLL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX2K6KJZ?tag=weddinggueststyle-20",
-      "price": "$41.99"
-    },
-    {
-      "title": "Women's Basic Sexy Lounge Slip Long Dress Elegant Sleeveless Backless Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51ZHjE9tUWL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BSBY86CM?tag=weddinggueststyle-20",
-      "price": "$37.97"
-    },
-    {
-      "title": "Women's Basic Summer Casual Lounge Long Dress Elegant Short Sleeve Crew Neck Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51tsycQXRGL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C46J7M9R?tag=weddinggueststyle-20",
-      "price": "$38.97"
-    },
-    {
-      "title": "Women's Short Sleeve V Neck Formal Wedding Guest Maxi Dresses Spring Fall Evening Party Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/61ob7Tk16bL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CXTBRC4M?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens Ruffle One Shoulder Strap Ruched Formal Prom Wedding Maxi Dress V Neck Elegant Split Cocktail Evening Long Gown",
-      "image": "https://m.media-amazon.com/images/I/71kCIn-8H5L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F9KL795R?tag=weddinggueststyle-20",
-      "price": "$62.99"
-    },
-    {
-      "title": "Women's Summer Dresses Square Neck Casual Short Sleeves Elastic Waist Party Mini Dress",
-      "image": "https://m.media-amazon.com/images/I/61H9cEQIYrL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BTS3L13Y?tag=weddinggueststyle-20",
-      "price": "$38.99"
-    },
-    {
-      "title": "Women’s Bodycon Long Maxi Dress Elegant Sleeveless Mock Neck Ruched Mesh Sheer Hem Cocktail Wedding Guest Dress",
-      "image": "https://m.media-amazon.com/images/I/51y7mo1cvhL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G2Y7MF8Z?tag=weddinggueststyle-20",
-      "price": "$45.99"
-    },
-    {
-      "title": "Women's 3/4 Flutter Chiffon Sleeve Cocktail Dress Crew Neck Formal Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/712SK2x4gXL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX9FK1W3?tag=weddinggueststyle-20",
-      "price": "$36.99"
-    },
-    {
-      "title": "Women Summer Elegant Strapless Midi Ruched Bodycon Dress Solid Color Stretch Mesh Slim Party Cocktail Dresses",
-      "image": "https://m.media-amazon.com/images/I/61m-C+jQt4L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CX54NBJ6?tag=weddinggueststyle-20",
-      "price": "$41.89"
-    },
-    {
-      "title": "Women 2026 Summer Spring Ruched Maxi Dress Adjustable Spaghetti Strap Floral Beach Long Sundress with Pockets",
-      "image": "https://m.media-amazon.com/images/I/61qBn86G0lL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GC6KRZN8?tag=weddinggueststyle-20",
-      "price": "$36.99"
-    },
-    {
-      "title": "Corset Dresses for Women Summer 2026 Floral Wedding Guest Chiffon Sundress",
-      "image": "https://m.media-amazon.com/images/I/615rEIwZluL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F9FJSRTB?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
-      "title": "Women's Plus Size Casual Summer Tiered Dresses Short Sleeve Scoop Neck Ruffle Hem Loose Fitting Midi Babydoll Dress",
-      "image": "https://m.media-amazon.com/images/I/612qb7X2wTL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BLGNB3MX?tag=weddinggueststyle-20",
-      "price": "$34.99"
-    },
-    {
-      "title": "Plus Size Maxi Dresses for Curvy Women 2026 Summer Casual Cap Sleeve Split Long Dress with Pockets Loose Fit",
-      "image": "https://m.media-amazon.com/images/I/61ZDQbXahrL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DNQWRSSQ?tag=weddinggueststyle-20",
-      "price": "$32.99"
-    },
-    {
-      "title": "Floral Halter Corset Midi Summer Wedding Guest Dress Bow Tie Smocked Slit Flowy Sundress Milkmaid Dresses for Women",
-      "image": "https://m.media-amazon.com/images/I/71eACqxwPJL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GFDFPFPR?tag=weddinggueststyle-20",
-      "price": "$60.99"
-    },
-    {
-      "title": "Women's Summer Square Neck Lace Corset Wedding Guest Maxi Dress Floral Flowy Bow Tie Tea Party Dresses with Pocktes",
-      "image": "https://m.media-amazon.com/images/I/71X+eXc5OiL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GG8L3SLJ?tag=weddinggueststyle-20",
-      "price": "$62.99"
-    },
-    {
-      "title": "Sparkly Mother of Bride Dresses Lace Appliques Cape Sleeves Tulle Crew Neck A-Line Long Elegant Formal Dress",
-      "image": "https://m.media-amazon.com/images/I/71xOVWsqL9L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FRF261L5?tag=weddinggueststyle-20",
-      "price": "$99.99"
-    },
-    {
-      "title": "Satin Prom Dresses Long for Women 2026 Spaghetti Straps Beaded V-Neck Formal Evening Party Gowns",
-      "image": "https://m.media-amazon.com/images/I/515qfLCAguL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BW3RNHV3?tag=weddinggueststyle-20",
-      "price": "$79.99"
-    },
-    {
-      "title": "Women 2026 Deep V Neck Sleeveless Ruched Bodycon Cocktail Club Party Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61C5LX9q6KL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FQJ1Y7V6?tag=weddinggueststyle-20",
-      "price": "$42.99"
-    },
-    {
-      "title": "Simplee Womens Summer Floral Summer Maxi Dresses Boho Flowy Flutter Short Sleeve Crew Neck Vacation Smocked Chiffon Dres",
-      "image": "https://m.media-amazon.com/images/I/81t+SWmE1GL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G1SY5782?tag=weddinggueststyle-20",
-      "price": "$48.99"
-    },
-    {
-      "title": "Women Elegant Summer Casual Bodycon Maxi Dress Sexy V Neck Halter Ruffle Wedding Guest Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/61PzwumvvfL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F1ZYNZZ4?tag=weddinggueststyle-20",
-      "price": "$55.99"
-    },
-    {
-      "title": "Women's Fall Long Sleeve Floral Maxi Dress Lace Eyelet Hollow Out Tiered Boho Wedding Guest Dresses Pockets",
-      "image": "https://m.media-amazon.com/images/I/81VsBTsOXZL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FD9CL59F?tag=weddinggueststyle-20",
-      "price": "$59.99"
-    },
-    {
-      "title": "Mermaid One Shoulder Bridesmaid Dresses for Women Satin Long Corset Prom Dresses Formal Evening Gown",
-      "image": "https://m.media-amazon.com/images/I/61g5cc1kMDL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DJT1T6YK?tag=weddinggueststyle-20",
-      "price": "$69.99"
-    },
-    {
-      "title": "Women's Maxi Dress 2026 Spring Long Sleeve Crewneck Floral Print Mesh Ruched Party Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/71dBtnUHdXL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FFFGC6MR?tag=weddinggueststyle-20",
-      "price": "$45.99"
-    },
-    {
-      "title": "Women Summer Midi Dresses Wrap Short Flutter Sleeve V Neck Boho Slit Flowy Ruffle Dress Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/71f4fDLtoDL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G38943DS?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens Boho Floral Long Sleeve Maxi Dress V Neck Empire Waist Fall Wedding Guest Dresses with Pockets",
-      "image": "https://m.media-amazon.com/images/I/71xr8th53PL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F6C9F93D?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
-      "title": "Women's Classic Round Neck Pleated Short Sleeves Chiffon Appliques Floor Length A Line Formal Evening Dresses",
-      "image": "https://m.media-amazon.com/images/I/613KHsmtC0L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DSVRY1N9?tag=weddinggueststyle-20",
-      "price": "$69.99"
-    },
-    {
-      "title": "Women Plus Size Bridesmaid Dresses - Off The Shoulder Formal Wedding Guest Bridal Shower Long Dress",
-      "image": "https://m.media-amazon.com/images/I/61tHX92sGyL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FF3V6X3V?tag=weddinggueststyle-20",
+      "title": "WOOSEA Women's High Neck Sexy Split Evening Cocktail Party Maxi Long Formal Dress Royal Blue",
+      "image": "https://m.media-amazon.com/images/I/31rZmhkK7ML._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0FVLHYV7J?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
       "price": "$65.99"
     },
     {
-      "title": "Womens Satin Tea Length Mother of The Bride Dress Crew Neck Formal Elegant Evening Gown with Pocket",
-      "image": "https://m.media-amazon.com/images/I/51lxwNsybAL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DJR15PT7?tag=weddinggueststyle-20",
-      "price": "$64.99"
+      "title": "WOOSEA Women's Elegant Sleeveless Off Shoulder Sexy Split Bodycon Long Formal Party Evening Dress Royal Blue",
+      "image": "https://m.media-amazon.com/images/I/31TzMOiWhLL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0GGZP9HC1?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$65.99"
     },
     {
-      "title": "Plus Size Maxi Dress Off The Shoulder Ruffle Smocked Wedding Guest Cocktail Slit Hem Flowy Dresses for Curvy Women",
-      "image": "https://m.media-amazon.com/images/I/71BIU5v5DrL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F9P6MS6Z?tag=weddinggueststyle-20",
-      "price": "$19.99"
+      "title": "A ADILACA Elegant Dresses for Women Evening Party Sexy, Long Sleeve Formal Dress for Women, Women's Off Shoulder V-Neck High Split Formal Party Dress Evening Gown (Royal Blue, L)",
+      "image": "https://m.media-amazon.com/images/I/31FyWuEndnL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0DY1CG2KG?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$14.99"
     },
     {
-      "title": "Womens Summer Pleated Midi Dress 2026 Spring Business Casual Short Sleeve A-Line Elegant Wedding Guest Party Dresses",
-      "image": "https://m.media-amazon.com/images/I/718-cLxdmYL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G6Y5ZY7G?tag=weddinggueststyle-20",
-      "price": "$42.99"
+      "title": "MUSHARE Women's V Neck Sexy Split Cocktail Dress with Pockets Ruffle Party Long Formal Dress Royal Blue",
+      "image": "https://m.media-amazon.com/images/I/31jq70kU3RL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0G4QFS461?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$59.39"
     },
     {
-      "title": "Womens Summer Floral Maxi Dress Mesh Sleeveless Tank Dresses Slit Bodycon Party Cocktail Wedding Guest Dress",
-      "image": "https://m.media-amazon.com/images/I/61zhhaqdqtL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G5WK86TC?tag=weddinggueststyle-20",
-      "price": "$37.99"
+      "title": "Miusol Women's Sexy Sleeveless Satin Contrast Sequin Lace Bridesmaid Party Dress (Large, Royal Blue)",
+      "image": "https://m.media-amazon.com/images/I/31-J+ls7MSL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0G589CH2J?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$59.99"
+    },
+    {
+      "title": "Women's Cocktail Formal Wedding Guest Vintage Tea Party Dress Navy Blue M | Midi Evening Dress, Perfect for Church, Prom, Retro 1950s Dinner, Mother of Bride & Bridesmaid",
+      "image": "https://m.media-amazon.com/images/I/31WrFViXCyL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B07RGCSF6G?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$39.99"
+    },
+    {
+      "title": "REORIA Summer Wedding Guest Maxi Dresses for Women, Haze Blue, S | Sleeveless,Square Neck,Sheer Mesh,Ruched,Slim,Bodycon,Formal,Elegant Long Dress,Cocktail,Club Nightout,2026 Trendy Clothes",
+      "image": "https://m.media-amazon.com/images/I/31bjH9pprSL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0GKDNN47P?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$42.47"
+    },
+    {
+      "title": "MUSHARE Women's V Neck Sexy Split Cocktail Dress with Pockets Ruffle Party Long Formal Dress Navy Blue",
+      "image": "https://m.media-amazon.com/images/I/31b2o8R0eTL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0G4QC33NX?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$59.39"
+    },
+    {
+      "title": "Verdusa Women’s Formal Wedding Guest Dresses Halter Flowy Long Dresses | Bouncy Dress, Cocktail Dress, Asymmetrical, Sleeveless, Prom Dress, Chiffon, Royal Blue, Large",
+      "image": "https://m.media-amazon.com/images/I/31zAMmGyYtL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0D6FWVC2M?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$49.99"
+    },
+    {
+      "title": "BORIFLORS Women's Elegant Fall Wedding Guest Long Sleeve Maxi Dress,M,Navy | Floral, Mermaid Ruffle, Square Neck, Ruched Mesh,Winter, Cocktail Party Forma, Long Dresses",
+      "image": "https://m.media-amazon.com/images/I/31i2tTUfebL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0H8RDSHLB?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$51.99"
+    },
+    {
+      "title": "PRETTYGARDEN Women's Summer Satin Maxi Cocktail Dress Dark Blue | Silk Fabric,Sleeveless Mock Neck,Fit and Flare,Asymmetrical Long Dresses,Elegant Formal,Wedding Guest Party,Cruise Outfits",
+      "image": "https://m.media-amazon.com/images/I/31IZT4ptLLL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0BRSDY8D8?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$57.99"
     }
   ],
   "publishDate": "2026-03-15",
@@ -650,15 +298,61 @@
       "title": "Attire Guide: Dress Codes from Casual to White Tie",
       "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
       "readOn": "22 October 2026",
-      "supports": "Black tie women's list (floor-length gown, dressy cocktail dress or dressiest little black dress) with no color requirement."
+      "supports": "Women's lists for white tie, black tie, black tie optional, semi-formal (err formal after 6 p.m.), dressy casual and casual, none naming a color; men's semi-formal dark business suit."
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Wedding Guest Attire: What to Wear to a Wedding",
+      "url": "https://emilypost.com/advice/wedding-guest-attire",
+      "readOn": "22 October 2026",
+      "supports": "The invitation and time of the wedding as the best guide to formality; checking whether bare shoulders or arms would offend at a house of worship."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Online Shopping",
+      "url": "https://consumer.ftc.gov/articles/online-shopping",
+      "readOn": "12 October 2026",
+      "supports": "Check return terms, return shipping and restocking fees before buying online."
     },
     {
       "publisher": "weddinggueststyle.com analysis of r/Weddingattireapproval",
       "title": "10,700 posts, 16 April – 21 October 2026 (aggregate counts only)",
       "url": "https://www.reddit.com/r/Weddingattireapproval/",
       "readOn": "22 October 2026",
-      "supports": "960 posts mentioning blue or navy; counts per shade; 18 of 944 \"Is this too white?\" posts mentioning light blue."
+      "supports": "960 posts mentioning blue or navy and counts per shade; 18 of 944 \"Is this too white?\" posts mentioning light blue; blue by dress-code flair; bridesmaid mentions (14.7% vs 6.6%); blue in Mother of Bride/Groom posts (21.5% vs 9.0%)."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "blue wedding guest dresses",
+    "keywords": [
+      "blue wedding guest dresses",
+      "blue wedding guest dress",
+      "blue dress for wedding guest",
+      "what color dress compliments a navy blue suit wedding guest",
+      "how to wear a navy blue dress for wedding guest",
+      "dusty blue wedding guest dress"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://www.selfieleslie.com/collections/blue-wedding-guest-dresses",
+        "format": "retailer collection grid",
+        "weakness": "Product grid with a 'Guest Dress Code' filter tag and a one-line meta description (slate, navy, periwinkle); no word on which blue suits which code, light, fabric or the bridesmaid clash."
+      },
+      {
+        "url": "https://www.adriannapapell.com/collections/blue-wedding-guest-dresses",
+        "format": "retailer grid with brand copy",
+        "weakness": "About 250 words of brand copy claiming blue 'works across every dress code' and 'blends in gracefully with any wedding palette', which ignores the bridal-party clash and gives no shade-by-code or fabric guidance."
+      },
+      {
+        "url": "https://us.princesspolly.com/collections/blue-wedding-guest-dresses",
+        "format": "retailer collection grid",
+        "weakness": "Pure product grid and sign-up copy; no editorial text at all. (SERP #2 astrthelabel.com and #3 lulus.com returned 403 to every fetcher on 2026-10-22, so the next fetchable results are listed.)"
+      }
+    ],
+    "winningFormat": "Shopping guide: answer first, products, then a dress-code-to-shade table, light and fabric rules, and a listing checklist",
+    "infoGain": "The only result that maps Emily Post's dress-code lists to a blue shade and fabric per code, explains how venue light shifts each blue, and shows from 960 Reddit posts that blue dresses raise the bridesmaid clash twice as often as average.",
+    "asset": "Reddit bars (blue shades named), compare table (dress code to blue and fabric), Reddit bars (bridal-party and mother-of-the-couple overlap)",
+    "verified": "2026-10-22"
+  }
 }

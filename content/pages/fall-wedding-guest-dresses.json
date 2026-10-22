@@ -1,14 +1,14 @@
 {
   "title": "Fall Wedding Guest Dresses",
   "metaTitle": "Fall Wedding Guest Dresses: A Fabric-First Field Guide",
-  "metaDescription": "Fall wedding guest dresses have to handle a warm ceremony, a cold terrace and a hot dance floor. Notes on fabric weight, sleeves, hems, color and dress codes.",
+  "metaDescription": "Fall wedding guest dresses for a warm ceremony, a cold terrace and a hot dance floor: fabric weight, sleeves, hems, colors, listings and every dress code.",
   "h1": "Fall Wedding Guest Dresses: What Survives All Three Halves of the Day",
   "intro": "Fall wedding guest dresses have to get through a day that changes its mind three times. The ceremony is at four, outdoors, with the sun still on the lawn, and you are warm enough to regret your sleeves. Cocktail hour moves to a covered terrace at six, the light goes gold and flat, and the air cools fast while you stand still holding a drink. By nine the reception is indoors, the dance floor is running hot, and the wrap you needed at six is folded over a chair you will not find again. One dress, three climates. Most fall outfit mistakes, such as the strapless satin, the unlined chiffon or the wool that photographs like a coat, come from solving only one of the three.",
   "answer": "For a fall wedding, wear a mid-weight dress in crepe, ponte, satin or velvet, with sleeves or a real layer for the evening. A midi length clears damp grass. Deep colors such as burgundy, green, rust, navy and chocolate suit the season and its light. Match length and fabric to the dress code, and skip white, ivory and cream.",
   "contentSections": [
     {
-      "heading": "Start with fabric weight",
-      "content": "Mid-weight is the right range for September through November. Below it you are in summer chiffon and georgette, which move beautifully and hold no heat at all. Above it you are in coating fabrics that look right in a photo and feel unbearable once two hundred people are dancing in one room.\n\nA mid-weight crepe is the most dependable choice. It has enough body to hang from the shoulder instead of clinging, it does not crease badly through a long ceremony, and it takes a deep color without going glassy. Ponte and double-knit jersey do a similar job with more stretch and slightly less formality.\n\nVelvet is the welcome exception. It is heavy, but the pile traps air rather than sealing it in, so it insulates without turning into a sauna the way a lined satin can. It is at its best from late October on.\n\nCheck the lining too. An unlined mid-weight dress will cling to tights in dry, heated indoor air. A lining in a different fiber from your hosiery, such as cupro, viscose or a silk blend, slips instead of grabbing. If you already own the dress, an anti-static spray on the lining helps."
+      "heading": "Fall wedding guest dresses start with fabric weight",
+      "content": "Mid-weight is the right range for September through November. Below it you are in summer chiffon and georgette, which move beautifully and hold no heat at all. Above it you are in coating fabrics that look right in a photo and feel unbearable once two hundred people are dancing in one room.\n\nA mid-weight crepe is the most dependable choice. It has enough body to hang from the shoulder instead of clinging, it does not crease badly through a long ceremony, and it takes a deep color without going glassy. Ponte and double-knit jersey do a similar job with more stretch and slightly less formality.\n\nVelvet is the welcome exception. It is heavy and warm, which suits a cold terrace or a late-autumn venue, and it photographs richly in low light. It is at its best from late October on.\n\nCheck the lining too. An unlined mid-weight dress will cling to tights in dry, heated indoor air. A lining in a different fiber from your hosiery, such as cupro, viscose or a silk blend, slips instead of grabbing. If you already own the dress, an anti-static spray on the lining helps."
     },
     {
       "heading": "Sleeves earn their place",
@@ -64,16 +64,65 @@
       }
     },
     {
+      "heading": "What fall guests worry about, in 959 posts",
+      "content": "The questions fall guests ask are mostly about temperature and length, not color. In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 959 mentioned a fall or autumn wedding, October or November. Of those, 130 mentioned a jacket, blazer, wrap, shawl or similar layer, 100 mentioned the event being outdoors and 64 used cold, chilly or freezing. Length came up just as often: gown, floor-length or maxi in 121 posts, midi in 51.\n\nFabric words were rarer than you might expect. Velvet appeared in 28 posts and satin in 21, while boots appeared in 19 and tights in 10. Most guests start from a dress they like and then ask how to make it warm enough, which is the order this page argues against: choose the weight first, and the layer becomes optional rather than urgent.\n\nThe flairs show the spread of codes. Of the 959 fall posts, 255 were filed as Cocktail or No Dress Code, 244 as Formal, 163 as Semi Formal/Dressy Casual and 119 as Black/White Tie. Fall weddings in this sample lean dressy, which is one reason velvet and long satin earn their place in the season.",
+      "visual": {
+        "kind": "bars",
+        "title": "What fall wedding posts mention",
+        "unit": " posts",
+        "caption": "Method: fall posts = title or text matching /\\b(fall|autumn)\\s+wedding|\\b(october|november)\\b/i (959 posts); each term counted once per post: layer = /\\b(jacket|blazer|wrap|shawl|pashmina|stole|shrug|bolero|cardigan)s?\\b/, long = /\\b(gowns?|floor[- ]length|maxi)\\b/, outdoors = /\\boutdoors?\\b/, cold = /\\b(cold|chilly|freezing)\\b/, midi = /\\bmidi\\b/, velvet = /\\bvelvet\\b/, satin = /\\bsatin\\b/, boots = /\\bboots?\\b/. Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive).",
+        "data": [
+          {
+            "label": "A layer (jacket, wrap, shawl…)",
+            "value": 130,
+            "highlight": true
+          },
+          {
+            "label": "Gown, floor-length or maxi",
+            "value": 121
+          },
+          {
+            "label": "Outdoors",
+            "value": 100
+          },
+          {
+            "label": "Cold, chilly or freezing",
+            "value": 64
+          },
+          {
+            "label": "Midi",
+            "value": 51
+          },
+          {
+            "label": "Velvet",
+            "value": 28
+          },
+          {
+            "label": "Satin",
+            "value": 21
+          },
+          {
+            "label": "Boots",
+            "value": 19
+          }
+        ]
+      }
+    },
+    {
       "heading": "Choose a hem that clears wet grass",
-      "content": "Fall ground stays damp long after the rain stops. Dew settles early in the evening, and grass that looked dry at noon can be soaking by the time the ceremony starts.\n\nA midi that ends at mid-calf is the practical answer. It clears the ground, works with an ankle boot, and does not soak up water. If you want floor length outdoors, check the fabric: chiffon and unlined crepe wick water up the hem, and a dark wet band does not dry before the reception. Heavier satin and velvet resist it better but can stain and crush. Floor length is easiest at indoor fall weddings and on paved courtyards; on a lawn in November, choose a midi.\n\nFor what goes on your feet, heel width matters more than height on soft ground. Our wedding guest shoes for fall guide covers grass, gravel and boots in detail."
+      "content": "Fall ground stays damp long after the rain stops. Dew settles early in the evening, and grass that looked dry at noon can be soaking by the time the ceremony starts.\n\nA midi that ends at mid-calf is the practical answer. It clears the ground, works with an ankle boot, and does not soak up water. If you want floor length outdoors, check the fabric: chiffon and unlined crepe wick water up the hem, and a dark wet band does not dry before the reception. Heavier satin and velvet resist it better but can stain and crush. Floor length is easiest at indoor fall weddings and on paved courtyards; on a lawn in November, choose a midi.\n\nShoes follow the ground. Heel width matters more than height on soft lawn: a block heel, a wedge or a pointed flat stays on top of damp grass and will not catch in gravel, while a stiletto sinks. From October on, closed toes are the more comfortable choice for any outdoor part of the day. Keep satin shoes and fine stilettos for an indoor reception, save a dressy ankle boot for a midi or tea-length dress (see the boots question below), and choose smooth leather over suede if rain is forecast."
     },
     {
       "heading": "September and November are different seasons",
       "content": "Early fall still behaves like summer with a cool evening. Mid-weight crepe, light satin and heavier chiffon all work, and colors can stay transitional: sage, dusty blue, copper, warm blush. The only real requirement is a layer for after dark.\n\nLate fall is a different brief. Velvet, jacquard, heavy crepe and wool blends earn their place, sleeves stop being optional, and the palette deepens along with everything around it. A pale chiffon dress at a mid-November wedding is not wrong, but it looks bought for a different event. October is the unpredictable month, and the reason mid-weight fabrics exist.\n\nPrints follow the same logic. A print reads as seasonal through its background, not its motif: the same rose on white is a June dress and on dark navy an October one. Dark-ground florals are the easiest fall print. A small repeat reads as texture and photographs almost as a solid; a large repeat needs a simple silhouette. Avoid prints with a lot of white ground, which edge toward the one color rule that still matters. Paisley, small geometric jacquards and tonal damask suit fall fabrics well.\n\nIf you want one dress for both a September and a November wedding, buy the middle of the weight range: a crepe or ponte midi in a deep color, with the layer, hosiery and shoes changed for each."
     },
     {
+      "heading": "Read the listing like a weather report",
+      "content": "Online listings rarely state fabric weight, so you have to infer it. Before ordering a fall dress, check:\n- Composition. Polyester crepe, viscose crepe, wool blends, ponte and velvet all have body. A dress described only as \"chiffon\" or \"georgette\" with no lining note is a summer dress.\n- Lining. \"Fully lined\" adds warmth and stops static against tights. \"Lined to the hip\" or \"bodice lined\" does neither below the waist.\n- Sleeve length in the photos, not the name. A \"long sleeve\" dress shot on a tall model may stop above the wrist on you, and an illusion or mesh sleeve adds no warmth at all.\n- The model's height and the listed length. If you plan to wear a midi with ankle boots, the hem needs to clear the top of the boot by a few inches or the two lines fight.\n- Color in daylight. Deep jewel tones and browns can look almost black on a studio background. Look for a customer photo or a shot taken outdoors before you choose between two shades.\n- Timing. Fall is peak wedding season, so build in time for an exchange: order early enough that a second size can arrive before the date."
+    },
+    {
       "heading": "Read the dress code through the season",
-      "content": "Dress codes are written for the whole year, so they need a little translation in fall. The Emily Post Institute's attire guide lists, for women, a short afternoon or cocktail dress, a little black dress, a long dressy skirt and top, or dressy separates for semi-formal, and a floor-length gown, a dressy cocktail dress or your dressiest little black dress for black tie.\n\nIn fall terms, a cocktail or semi-formal invitation means knee to midi length in a fabric with some weight; the same cut in summer chiffon can look underdressed. Emily Post advises erring formal after 6 p.m., and fall weddings often run into the dark. Black tie optional, common on fall invitations, adds dressy separates to the black tie list, so a polished midi in a rich fabric sits comfortably. At formal and black tie weddings, fall is the season where velvet and heavy satin gowns are the obvious answer rather than a bold one.\n\nIf the invitation says nothing, look at the venue and the start time. A five o'clock ceremony at a hotel is dressier than a two o'clock one in a barn."
+      "content": "Dress codes are written for the whole year, so they need a little translation in fall. The Emily Post Institute's attire guide lists, for women, a short afternoon or cocktail dress, a little black dress, a long dressy skirt and top, or dressy separates for semi-formal, and a floor-length gown, a dressy cocktail dress or your dressiest little black dress for black tie.\n\nIn fall terms, a cocktail or semi-formal invitation means knee to midi length in a fabric with some weight; the same cut in summer chiffon can look underdressed. Emily Post advises erring formal after 6 p.m., and fall weddings often run into the dark. Black tie optional, common on fall invitations, adds dressy separates to the black tie list, so a polished midi in a rich fabric sits comfortably. At formal and black tie weddings, fall is the season where velvet and heavy satin gowns are the obvious answer rather than a bold one.\n\nIf the invitation says nothing, look at the venue and the start time. A five o'clock ceremony at a hotel is dressier than a two o'clock one in a barn.\n\nIf you are the mother of the bride or groom, the same fall rules apply with two additions. Ask the couple about color before you buy, so your dress sits beside the wedding party's palette rather than inside it, and keep clear of ivory, champagne and other near-white shades. And because you will sit, stand and be photographed from the first look to the last dance, choose a fabric that recovers from creasing, such as stretch crepe, ponte or velvet, with a sleeve or a wrap you are happy to appear in every photo."
     }
   ],
   "faqs": [
@@ -84,28 +133,44 @@
     {
       "question": "Can I wear a sleeveless dress to a fall wedding?",
       "answer": "Yes, if the whole event is indoors or you plan a real layer for the outdoor parts. In September a sleeveless crepe dress with a blazer for after dark is fine; by November, a dress with sleeves is the more comfortable choice."
+    },
+    {
+      "question": "What color dress should a fall wedding guest wear?",
+      "answer": "Deep, warm or saturated colors suit fall light: burgundy, emerald and olive, rust and terracotta, navy, chocolate brown, plum and mustard. Green was the color named most often in fall wedding posts in our data, ahead of the brown family and navy. The one rule that holds in every season is to skip white, ivory and cream."
+    },
+    {
+      "question": "How should I dress for a fall wedding as a guest?",
+      "answer": "Start with the dress code on the invitation, then the venue and start time. Choose a mid-weight fabric, sleeves or a layer that belongs to the outfit, a hem that clears damp grass if any part is outdoors, and shoes with a heel wide enough for soft ground."
+    },
+    {
+      "question": "Should I wear tights to a fall wedding?",
+      "answer": "It depends on the date and the formality. Sheer tights in black or a skin tone are comfortable from late October onward and look right with velvet and crepe. Bare legs are still fine indoors or in September. Opaque tights read more casual and suit daytime and rustic weddings better than black tie."
+    },
+    {
+      "question": "Can I wear a floral dress to a fall wedding?",
+      "answer": "Yes. A floral reads as fall through its background color: a dark ground such as navy, black, burgundy or forest green looks seasonal, while florals on a white or pale ground look like spring. Florals came up in 42 of the 959 fall posts in our data."
     }
   ],
   "relatedPages": [
     {
-      "title": "Petite Wedding Guest Dresses",
-      "slug": "petite-wedding-guest-dresses"
-    },
-    {
       "title": "Winter Wedding Guest Dresses",
       "slug": "winter-wedding-guest-dresses"
-    },
-    {
-      "title": "Red Wedding Guest Dresses",
-      "slug": "red-wedding-guest-dresses"
     },
     {
       "title": "Long Sleeve Wedding Guest Dresses",
       "slug": "long-sleeve-wedding-guest-dresses"
     },
     {
-      "title": "Brown Wedding Guest Dresses",
-      "slug": "brown-wedding-guest-dresses"
+      "title": "Shades of Brown Wedding Guest Dresses",
+      "slug": "shades-of-brown-wedding-guest-dresses"
+    },
+    {
+      "title": "Red Wedding Guest Dresses",
+      "slug": "red-wedding-guest-dresses"
+    },
+    {
+      "title": "Wedding Guest Cover-Ups and Wraps",
+      "slug": "wedding-guest-cover-ups-and-wraps"
     }
   ],
   "slug": "fall-wedding-guest-dresses",
@@ -115,12 +180,6 @@
       "image": "https://m.media-amazon.com/images/I/51jwn2nVNFL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FCC1WJSF?tag=weddinggueststyle-20",
       "price": "$55.99"
-    },
-    {
-      "title": "ZESICA Women's Summer Off Shoulder Floral Bodycon Maxi Dress 2026 Ruched Elegant Formal Cocktail Wedding Guest Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/71OktsQ+uYL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G355FDMG?tag=weddinggueststyle-20",
-      "price": "$49.99"
     },
     {
       "title": "BTFBM Women's Maxi Dresses Spring 2026 Long Sleeve Ruched Bodycon Solid Ruffle Mermaid Cocktail Wedding Guest Dress",
@@ -141,34 +200,10 @@
       "price": "$39.92"
     },
     {
-      "title": "Memoriesea Women's Elegant Sleeveless High Neck Tie Cocktail Wedding Party Maxi Dress",
-      "image": "https://m.media-amazon.com/images/I/51V9DAEGFUL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DP58ZP22?tag=weddinggueststyle-20",
-      "price": "$46.99"
-    },
-    {
-      "title": "BTFBM Women Formal Cocktail Dresses Summer 2026 One Shoulder Twist Strap Ruched Bodycon Elegant Wedding Party Maxi Dress",
-      "image": "https://m.media-amazon.com/images/I/618qm4cW0LL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DRFX5PHP?tag=weddinggueststyle-20",
-      "price": "$34.84"
-    },
-    {
-      "title": "PRETTYGARDEN Womens Summer Wedding Guest Dress 2026 Spring Mesh Sleeveless Bodycon Ruched Floral Holiday Maxi Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/71J0agZZaDL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DRJGVXR2?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
       "title": "BEAUDRM Women's Fall Wedding Guest Dress Long Sleeve Cocktail Date Night Sexy Y2K Bodycon Ruched Mesh Formal Maxi Dresses",
       "image": "https://m.media-amazon.com/images/I/61it3lHFcYL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DWMRQWJM?tag=weddinggueststyle-20",
       "price": "$49.99"
-    },
-    {
-      "title": "ZESICA Women's 2026 Summer Cap Sleeve Casual Bodycon Dress Elegant Wedding Guest Cocktail Party Long Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/511PBpTgTML._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DZ2KJY8N?tag=weddinggueststyle-20",
-      "price": "$47.99"
     },
     {
       "title": "WIHOLL Women's Bodycon Maxi Dress Fall Fashion Long Sleeve Floral Print Tight Fitted Party Club Ruched Dresses",
@@ -183,12 +218,6 @@
       "price": "$39.97"
     },
     {
-      "title": "Verdusa Women's Formal Wedding Guest Dress Halter Flowy Chiffon Asymmetrical Long Summer Dress",
-      "image": "https://m.media-amazon.com/images/I/51hOvRB6mqL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F2SMC4R3?tag=weddinggueststyle-20",
-      "price": "$48.99"
-    },
-    {
       "title": "Verdusa Women's Floral Mesh Maxi Dresses Elegant Formal Long Sleeve Spring Wedding Guest Dress Cocktail",
       "image": "https://m.media-amazon.com/images/I/61NXa9j1ztL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0F297J7G3?tag=weddinggueststyle-20",
@@ -199,6 +228,102 @@
       "image": "https://m.media-amazon.com/images/I/61ewwsosVwL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FG7ZZKDQ?tag=weddinggueststyle-20",
       "price": "$42.99"
+    },
+    {
+      "title": "MEROKEETY Women's Fall Wedding Guest Cocktail Maxi Dresses, Brown, S | Long Sleeve, Floral, Boat Neck, Bodycon, Asymmetric Ruffle Hem, Mesh, Sexy High Slit, Bridesmaid, Dinner, 2026 Long Dress",
+      "image": "https://m.media-amazon.com/images/I/31gO3+tfQML._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0H3C5RKTX?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$52.99"
+    },
+    {
+      "title": "Simplee Women's Floral Boho Long Sleeve Maxi Dress V Neck Empire Waist Swing Flowy Wedding Guest Dress Navy Floral XL",
+      "image": "https://m.media-amazon.com/images/I/41ACT8V5AeL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0F7LV6CLP?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$40.98"
+    },
+    {
+      "title": "Women's Elegant Fall Wedding Guest Long Sleeve Maxi Dress,XS,Wine Red | Floral, Mermaid Ruffle, Square Neck, Ruched Mesh,Winter, Cocktail Party Forma, Long Dresses",
+      "image": "https://m.media-amazon.com/images/I/41dpmjYhINL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0H8RKK7MY?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$51.99"
+    },
+    {
+      "title": "BORIFLORS Women's Elegant Fall Wedding Guest Long Sleeve Maxi Dress,XS,Navy | Floral, Mermaid Ruffle, Square Neck, Ruched Mesh,Winter, Cocktail Party Forma, Long Dresses",
+      "image": "https://m.media-amazon.com/images/I/31i2tTUfebL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0H8RRZW25?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$37.79"
+    },
+    {
+      "title": "Kaximil Womens Floral Wedding Guest Cocktail Formal Maxi Dress, S, Navy | Long Sleeve, Square Neck, Bodycon, Mesh, Prom Dress, Elegant Party Long Dress",
+      "image": "https://m.media-amazon.com/images/I/31feO4VQ6nL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0H9Q3YMJY?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$40.49"
+    },
+    {
+      "title": "BORIFLORS Women's Bodycon Fall Wedding Guest Long Sleeve Maxi Dress,M,Black | Mermaid Ruffle, Square Neck, Ruched Mesh,Winter, Elegant, Cocktail Formal Long Dresses",
+      "image": "https://m.media-amazon.com/images/I/31xjWXxe56L._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0FX2MZQQW?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$41.99"
+    },
+    {
+      "title": "CYiNu Women's V Neck Wrap Velvet Long Sleeve Maxi Dress(Wine Red,L) | Elegant Bodycon Ruched Cocktail Party Dress",
+      "image": "https://m.media-amazon.com/images/I/31UL7xeBUAL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0BK8S5XTQ?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$59.99"
+    },
+    {
+      "title": "ZESICA Women's Velvet Midi Dress 2025 Casual V Neck Long Sleeve Solid Color Elastic High Waist Flowy Evening Party Dresses Green Large",
+      "image": "https://m.media-amazon.com/images/I/31aWfAPvmSL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0CMQK4X48?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$55.99"
+    },
+    {
+      "title": "Maxigerui Velvet Maxi Dress Fall Formal Wedding Guest Dress Burnt Orange L | Semi Formal to Formal, Autumn Winter Holiday Party Dress, Photo Outfit",
+      "image": "https://m.media-amazon.com/images/I/31k8jk+l8ML._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0D8T1JWT1?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$59.99"
+    },
+    {
+      "title": "Simplee Women’s Short Sleeve Velvet Maxi Dress V Neck Formal Dress(XL Green)",
+      "image": "https://m.media-amazon.com/images/I/410NMyoiT9L._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0B71LS7XW?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$50.98"
+    },
+    {
+      "title": "R.Vivimos Womens Fall Winter Velvet Elastic Waist Maxi Dress, WineRed, S | Short Sleeve, V Neck, Vintage Elegant, Tiered Ruffle, A-Line, Casual, Cocktail, Wedding Guest, Christmas, Flowy Long Dresses",
+      "image": "https://m.media-amazon.com/images/I/31BXU2l+fzL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0CGRL6WY9?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$29.39"
+    },
+    {
+      "title": "R.Vivimos Women's Velvet Square Neck Smocked Midi Dress Fall, DarkGreen, M | Winter, Puff Sleeve, Tiered Ruffle, A-Line Flowy Dresses for Wedding Guest, Dinner, Church, Christmas, Baby Shower, Casual",
+      "image": "https://m.media-amazon.com/images/I/31iT1s9hJ6L._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0CDR9N83M?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$31.49"
+    },
+    {
+      "title": "Bbonlinedress Womens Long Sleeve Velvet Wedding Guest Formal Winter Christmas Cocktail Party Midi Dress V-Burgundy M",
+      "image": "https://m.media-amazon.com/images/I/41HMITmXF0L._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0BFLC3KXV?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$48.99"
+    },
+    {
+      "title": "ZESICA Women's Velvet Midi Dress 2025 Casual V Neck Long Sleeve Solid Color Elastic High Waist Flowy Evening Party Dresses Caramel Large",
+      "image": "https://m.media-amazon.com/images/I/41tAx0b7KEL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0CMQM4J2M?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$55.99"
+    },
+    {
+      "title": "PRETTYGARDEN Sweater Dress Women Long Sleeve Maxi Flowy Pleated Dresses | Cozy Ribbed Knit, Swing A Line, Elegant Fall Outfits for Wedding Guest, Holiday Party, Date Night, Winter Office Work Clothes",
+      "image": "https://m.media-amazon.com/images/I/31wXniE9WQL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0F87N8HMG?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$36.79"
+    },
+    {
+      "title": "BTFBM Women Casual Long Sleeve Dress Fall Dresses 2025 Solid Color Relaxed Fit Smocked Tiered Flowy Boho Long Dresses(Solid Wine Red,Large)",
+      "image": "https://m.media-amazon.com/images/I/31Bmk7OY3dL._AC_UL500_.jpg",
+      "url": "https://www.amazon.com/dp/B0BBRGGQY8?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
+      "price": "$62.89"
     }
   ],
   "publishDate": "2026-03-15",
@@ -218,5 +343,37 @@
       "supports": "October average high and low temperatures for Chicago O'Hare (62.7°F / 45.4°F) and Minneapolis (58.1°F / 40.9°F)."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "fall wedding guest dresses",
+    "keywords": [
+      "fall wedding guest dresses",
+      "fall wedding guest dress",
+      "autumn wedding guest dresses",
+      "october wedding guest dresses",
+      "what color dress for fall wedding guest",
+      "how to dress for a fall wedding as a guest"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://petalandpup.com/collections/fall-wedding-guest-outfits",
+        "format": "retail category grid",
+        "weakness": "Product tiles only; no guidance on fabric weight, sleeves, layers, hem on wet grass or how dress codes change in fall."
+      },
+      {
+        "url": "https://macduggal.com/collections/fall-wedding-guest-dresses-edit",
+        "format": "retail collection with a two-sentence blurb",
+        "weakness": "Two sentences naming colors and fabrics; no temperatures, no decision rules, no early-vs-late fall distinction, nothing on dress codes."
+      },
+      {
+        "url": "https://showmeyourmumu.com/collections/fall-wedding-guest-dresses",
+        "format": "retail category grid",
+        "weakness": "No editorial text at all beyond navigation. (Revolve #2 timed out and Altar'd State returned 403 on 2026-10-22, so the next readable non-Pinterest result was used.)"
+      }
+    ],
+    "winningFormat": "shoppable category page with a practical fabric-and-weather guide",
+    "infoGain": "Plans the dress around three temperature stages with NOAA October normals, splits September from November, translates Emily Post codes into fall fabrics and lengths, and adds counts from 959 real fall-wedding guest posts.",
+    "asset": "two bars charts from 959 r/Weddingattireapproval fall posts (colors named; layers, length and fabric mentions) + NOAA October normals",
+    "verified": "2026-10-22"
+  }
 }

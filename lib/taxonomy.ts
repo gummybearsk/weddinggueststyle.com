@@ -171,3 +171,14 @@ export function getNavGroups(maxItems = 16): NavGroup[] {
       .slice(0, maxItems),
   })).filter((g) => g.items.length > 0);
 }
+
+const HUB_PRIORITY = ["dress-code", "body-type", "color", "season", "venue", "style"];
+
+/** The one hub a page sits under for breadcrumbs (Rule 33): first matching pillar in priority order. */
+export function getPrimaryHub(slug: string): { label: string; href: string } | null {
+  for (const key of HUB_PRIORITY) {
+    const pillar = PILLARS.find((p) => p.key === key);
+    if (pillar?.groups.some((g) => g.match.test(slug))) return { label: NAV_LABELS[key] ?? pillar.label, href: `/${key}` };
+  }
+  return null;
+}

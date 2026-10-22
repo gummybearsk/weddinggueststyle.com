@@ -1,17 +1,17 @@
 {
   "title": "Formal Wedding Guest Dresses",
-  "metaTitle": "Formal Wedding Guest Dresses 2026: Elegant Gowns Under $150",
-  "metaDescription": "Formal wedding guest dresses for 2026 — elegant gowns, formal wedding attire for women, and formal dresses for weddings at every price under $150.",
+  "metaTitle": "Formal Wedding Guest Dresses 2026: Gowns, Midis and Fabrics",
+  "metaDescription": "Formal wedding guest dresses: floor-length gowns and dressy midis in evening fabrics, Emily Post's day and evening rules, and five checks before you order.",
   "h1": "Formal Wedding Guest Dresses: 2026's Elegant Gowns for Upscale Weddings",
   "intro": "Formal wedding guest dresses set the tone at upscale celebrations, from hotel ballrooms to evening estate weddings. Whether the invitation says formal, evening attire or black tie optional, the dresses below cover the options, from structured A-line gowns to satin midis, and the guide explains how long to go, which fabrics read formal, and how to choose satin that looks expensive rather than shiny.",
   "contentSections": [
     {
-      "heading": "What \"formal\" asks for when no guide defines it",
-      "content": "Invitations use \"formal\" all the time, but the Emily Post Institute's attire guide has no standalone formal code. Its ladder runs white tie, black tie, black tie optional, then semi-formal. A formal wedding sits between the last two: above semi-formal's cocktail dresses, below the strict black tie list.\n\nSo the most useful reading is to shop from Emily Post's black tie optional list for women: a formal floor-length evening gown, a dressy cocktail dress, a little black dress, or dressy separates. The time and the venue then decide which end you choose. An evening wedding at a ballroom, hotel, club or estate leans floor-length. A daytime or late-afternoon formal wedding at a vineyard, garden or restaurant accepts a dressy midi or tea-length dress, provided the fabric is clearly evening-weight.\n\nIf the invitation actually says black tie, the site's black tie attire guide covers what changes; even there, Emily Post allows a dressy cocktail dress or \"your dressiest little black dress\" alongside the gown.",
+      "heading": "What \"formal\" asks for, by time of day",
+      "content": "Invitations use \"formal\" all the time, and the Emily Post Institute answers it in two places. Its general attire guide has no standalone formal code: the ladder runs white tie, black tie, black tie optional, then semi-formal. Its wedding guest attire article does list formal weddings, split by the clock. For a formal daytime wedding, women wear a \"cocktail or dressy afternoon dress.\" For a formal evening wedding, \"depending on local customs, long evening dress or dressy cocktail dress; gloves optional.\"\n\nSo formal does not automatically mean floor-length. The start time makes the first cut, and the venue and local custom make the second. An evening wedding at a ballroom, hotel, club or estate leans floor-length, because that is what most of the room will wear. A daytime or late-afternoon formal wedding at a vineyard, garden or restaurant accepts a dressy midi or tea-length dress, provided the fabric is clearly evening-weight. Emily Post's black tie optional list (a floor-length gown, a dressy cocktail dress, a little black dress or dressy separates) is the practical shopping list for everything in between.\n\nIf the invitation actually says black tie, the site's black tie attire guide covers what changes; even there, Emily Post allows a dressy cocktail dress or \"your dressiest little black dress\" alongside the gown.",
       "visual": {
         "kind": "verdict",
         "title": "Is this formal enough?",
-        "caption": "Verdicts follow The Emily Post Institute's black tie optional list for women (floor-length evening gown, dressy cocktail dress, little black dress, dressy separates) and its semi-formal note to lean formal after 6 p.m., read 22 October 2026. Notes are weddinggueststyle.com editorial guidance.",
+        "caption": "Verdicts follow The Emily Post Institute's Wedding Guest Attire article (formal daytime: cocktail or dressy afternoon dress; formal evening: long evening dress or dressy cocktail dress) and its attire guide's black tie optional list, both read 22 October 2026. Notes are weddinggueststyle.com editorial guidance.",
         "rows": [
           {
             "context": "Floor-length gown in satin, crepe or chiffon",
@@ -52,38 +52,83 @@
       }
     },
     {
+      "heading": "What guests ask before a formal wedding",
+      "content": "Length is the question guests bring to a formal wedding more than any other. In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 2,151 carried the subreddit's Formal dress-code flair. Of those, 252 mentioned \"cocktail,\" 181 \"floor-length,\" 152 \"gown\" and 105 \"midi,\" while only 23 mentioned tea length. The typical formal post is someone holding a cocktail-length or midi dress and asking whether it is enough.\n\nThe worry runs mostly one way. 87 Formal-flair posts used \"too casual\" or \"underdressed,\" against 51 that used \"too formal\" or \"overdressed.\" Jumpsuits came up in 38, which fits Emily Post's inclusion of dressy separates on the black tie optional list.\n\nThe practical reading: torn between a midi and a gown for an evening formal, choose the gown, because it is the lower-risk side of the line. For a daytime formal, a midi in satin, heavy crepe or lined chiffon matches Emily Post's daytime description, and you do not need to go longer.",
+      "visual": {
+        "kind": "bars",
+        "title": "What Formal-flair posts mention",
+        "unit": " posts",
+        "caption": "Base: the 2,151 posts flaired \"DC: Formal\". Case-insensitive match on title and text after masking \"black tie\" and \"white tie\". Regexes: \\bcocktail\\b, floor[\\s-]*length, \\bgowns?\\b, \\bmidi\\b, \\bmaxi\\b, \\bjumpsuit, tea[\\s-]*length. Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive).",
+        "data": [
+          {
+            "label": "Cocktail",
+            "value": 252,
+            "highlight": true
+          },
+          {
+            "label": "Floor-length",
+            "value": 181
+          },
+          {
+            "label": "Gown",
+            "value": 152
+          },
+          {
+            "label": "Midi",
+            "value": 105
+          },
+          {
+            "label": "Maxi",
+            "value": 46
+          },
+          {
+            "label": "Jumpsuit",
+            "value": 38
+          },
+          {
+            "label": "Tea length",
+            "value": 23
+          }
+        ]
+      }
+    },
+    {
       "heading": "Satin: the formal fabric that needs the most care",
       "content": "Satin is the fabric most guests reach for at a formal wedding, and it is the one where the difference between a good and a poor choice is easiest to see.\n\nWeight matters most. Heavy satin and duchess satin hold their shape, drape in deliberate folds, and look formal from across a room. Thin, very shiny satin wrinkles where you sit, shows the line of every seam and undergarment, and catches flash in harsh streaks. If a listing calls its fabric \"satin\" with no weight or lining mentioned, look closely at the reviews and photos for creasing and shine.\n\nFinish matters next. A matte-backed or crepe-back satin gives a softer glow than high-gloss charmeuse and is easier to wear in daylight. Stretch satin is comfortable but clings; it suits a structured cut better than a slip dress.\n\nCut changes the risk. A bias-cut satin slip skims the body and shows everything underneath, so it needs seamless underwear and a confident fit. An A-line or column in heavier satin is forgiving and photographs evenly.\n\nSatin also marks easily. Water, perspiration and creases show on it more than on crepe, so a satin dress for a hot summer wedding is the hard version of this choice. In warm weather, a lined chiffon or crepe gown looks just as formal and wears more easily. Satin comes into its own in fall and winter and in deep colors: midnight, wine, emerald and black."
     },
     {
-      "heading": "Other fabrics that read formal",
-      "content": "Heavy crepe gives a matte, sculpted finish that holds a clean line through hours of sitting and dancing, and it creases less than satin. Chiffon reads formal when it is layered over a lining or used for a full skirt; a single unlined layer looks like a day dress. Velvet is the cold-weather formal fabric; the site's winter wedding guest dress page covers how to choose it. Sequins and beading suit evening formal weddings and New Year's Eve, and are usually too much at a 2 p.m. ceremony. Lace is formal when it is structured and lined; a light cotton lace reads garden party.\n\nThe fabrics that undercut a formal dress code are thin jersey, casual cotton and anything that looks like it would be equally at home at the office."
+      "heading": "Other fabrics that read formal, and when to wear them",
+      "content": "Heavy crepe gives a matte, sculpted finish that holds a clean line through hours of sitting and dancing, and it creases less than satin. Chiffon reads formal when it is layered over a lining or used for a full skirt; a single unlined layer looks like a day dress. Velvet is the cold-weather formal fabric; the site's winter wedding guest dress page covers how to choose it. Sequins and beading suit evening formal weddings and New Year's Eve, and are usually too much at a 2 p.m. ceremony. Lace is formal when it is structured and lined; a light cotton lace reads garden party.\n\nThe fabrics that undercut a formal dress code are thin jersey, casual cotton and anything that looks like it would be equally at home at the office.\n\nSeason and venue then narrow the choice. An outdoor summer formal favors lined chiffon, georgette over a lining and lighter crepe; fall and winter move to satin, velvet and heavier crepe in deeper shades. A lawn or tented reception adds the ground to the list: a light chiffon hem that touches the floor drags and stains on grass, so hem it to clear the ground in block heels or choose an ankle or tea length. A cathedral or other house of worship may expect covered shoulders, which Emily Post lists among the questions to ask before the day; a long-sleeve gown or a matching wrap answers it without changing the dress."
     },
     {
       "heading": "Length, shape and one statement",
       "content": "Floor-length is the most traditional formal hem, especially in the evening; it should clear the floor in the shoes you will actually wear, so plan a hem. Midi and tea-length are often right for daytime formal weddings.\n\nAn A-line gown is the most forgiving formal silhouette. The fitted bodice provides structure and the flared skirt moves well, but only in a fabric with body, such as heavy crepe, duchess satin or structured chiffon; in jersey the same cut looks casual. A column suits a tall, lean line; a fit-and-flare or a wrap gown defines the waist.\n\nFormal dressing rewards restraint, which means one statement rather than several. Choose a dramatic neckline (a deep V, a sculptural one shoulder, an off-shoulder line), or a bold jewel color, or a striking back, or sequins, and keep everything else clean."
     },
     {
+      "heading": "What to check in formal wedding guest dresses before you order",
+      "content": "A formal dress shows its construction more than a casual one, because heavier fabric and a longer hem leave nothing to hide behind. Five details in a listing tell you most of what the photos will not.\n\n• Lining. A formal dress should be lined through the bodice and skirt. Chiffon and lace skirts need a full-length lining, or daylight and flash turn them see-through. If the listing does not mention one, assume it is absent.\n• Fiber content and weight. Look for the composition and, where given, words such as \"heavy,\" \"duchess\" or \"crepe-back.\" A bare \"satin\" with no weight or lining is the version most likely to crease and shine.\n• Garment length against your height. A floor-length dress is cut for a particular height in a particular heel. Compare the listed length (shoulder to hem) with your own measurement in the shoes you will wear, and use the model's height, if given, to judge where the hem will land.\n• Support. Strapless, one-shoulder and deep-V gowns need boning, built-in cups or an inner corset to stay in place through a long evening. A listing that mentions them is telling you something worth paying for.\n• Embellishment backing. Sequins and beading should sit on a lined base; unlined sequins scratch the inner arm and snag a chiffon wrap.\n\nThen plan the calendar backward from the date. Order early enough to try the dress with your shoes, see a tailor if the hem needs work, and still be inside the return window if it does not fit. Read the return terms before any alteration, since an altered dress may not be accepted back."
+    },
+    {
       "heading": "Where the money should go",
-      "content": "A formal dress does not have to be expensive, but it has to look substantial. At the lower end of the price range, solid colors in satin and crepe with simple silhouettes are the safest choices, and draping, ruching and asymmetric necklines add interest without relying on costly fabric.\n\nAs the price rises, the extra money should buy heavier fabric with better drape, a full lining, cleaner finishing, and sometimes boning or a structured bodice. If a more expensive listing mentions none of those, the premium is for the label. At any budget, fit and a correct hem do more for how formal a dress looks than anything else, so leave time for alterations; tailors are busiest in peak wedding months."
+      "content": "A formal dress does not have to be expensive, but it has to look substantial. At the lower end of the price range, solid colors in satin and crepe with simple silhouettes are the safest choices, and draping, ruching and asymmetric necklines add interest without relying on costly fabric.\n\nAs the price rises, the extra money should buy heavier fabric with better drape, a full lining, cleaner finishing, and sometimes boning or a structured bodice. If a more expensive listing mentions none of those, the premium is for the label. At any budget, fit and a correct hem do more for how formal a dress looks than anything else, so leave time for alterations; tailors are busiest in peak wedding months.\n\nThe dresses on this page come from Amazon's product API and are refreshed daily. Prices change with the daily refresh, so check the listed price and return terms at checkout."
     }
   ],
   "faqs": [
     {
       "question": "Can I wear a midi dress to a formal wedding?",
-      "answer": "Yes, if the fabric and construction are clearly evening-weight: a satin, silk or heavy crepe midi with heels and refined jewelry reads formal. For an evening ballroom or hotel wedding, floor-length is the safer choice."
+      "answer": "Yes, especially in daytime: Emily Post's wedding guest article lists a cocktail or dressy afternoon dress for a formal daytime wedding. Choose a satin, silk or heavy crepe midi with heels and refined jewelry. For an evening ballroom or hotel wedding, floor-length is the safer choice."
     },
     {
-      "question": "Is black appropriate for a formal wedding?",
-      "answer": "Yes. A black floor-length gown or a dressy black cocktail dress is a classic formal choice, and Emily Post's black tie list names \"your dressiest little black dress.\" Choose a fabric with some texture or sheen, and add metallic accessories so it reads celebratory."
+      "question": "Is an A-line dress formal enough for a formal wedding?",
+      "answer": "Yes, in the right fabric and length. The A-line is the most forgiving formal silhouette: a fitted bodice and a skirt that flares from the waist. In heavy crepe, duchess satin, structured chiffon or beaded tulle, at floor or tea length, it reads formal. The same shape in jersey or cotton reads like a day dress."
     },
     {
-      "question": "Are jumpsuits appropriate at a formal wedding?",
-      "answer": "They can be. Emily Post's black tie optional list includes dressy separates, and a wide-leg jumpsuit in satin, heavy crepe or velvet with evening shoes and jewelry fits that spirit. A gown is still the more expected choice at an evening formal."
+      "question": "Where should I buy formal wedding guest dresses?",
+      "answer": "Anywhere that states the fabric, the lining and the garment length, ships by a stated date, and gives you time to try the dress with your shoes. The Federal Trade Commission's online-shopping advice is to check who pays return shipping, how many days you have and any restocking fees before ordering. Every Amazon listing on this page shows the seller and return terms before checkout."
     },
     {
       "question": "What is the difference between formal and black tie optional?",
-      "answer": "Black tie optional is defined: Emily Post lists a floor-length gown, a dressy cocktail dress, a little black dress or dressy separates. \"Formal\" has no published definition, so guests read it from the venue and the time: floor-length for evening ballroom weddings, a dressy midi for daytime ones."
+      "answer": "Black tie optional has a published list: Emily Post names a floor-length gown, a dressy cocktail dress, a little black dress or dressy separates. Formal is defined by the clock instead: a cocktail or dressy afternoon dress in the day, a long evening dress or dressy cocktail dress at night. In practice the two overlap, and an evening formal usually looks like black tie optional."
     },
     {
       "question": "Is satin a good choice for a summer formal wedding?",
@@ -100,12 +145,12 @@
       "slug": "semi-formal-wedding-guest-dresses"
     },
     {
-      "title": "Long Wedding Guest Dresses",
-      "slug": "maxi-wedding-guest-dresses"
+      "title": "A-Line Wedding Guest Dresses",
+      "slug": "a-line-wedding-guest-dresses"
     },
     {
-      "title": "Cocktail Wedding Guest Dresses",
-      "slug": "cocktail-wedding-guest-dresses"
+      "title": "Tea Length Wedding Guest Dresses",
+      "slug": "tea-length-wedding-guest-dresses"
     },
     {
       "title": "Black Tie Attire",
@@ -116,8 +161,8 @@
       "slug": "what-does-black-tie-optional-mean"
     },
     {
-      "title": "Winter Wedding Guest Dresses",
-      "slug": "winter-wedding-guest-dresses"
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
     }
   ],
   "slug": "formal-wedding-guest-dresses",
@@ -201,22 +246,10 @@
       "price": "$49.99"
     },
     {
-      "title": "Women’s Summer Floral Wedding Guest Maxi Dress Spring Halter Cowl Neck Flowy Formal Cocktail Long Beach Dresses",
-      "image": "https://m.media-amazon.com/images/I/71cW17JEHxL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GDZK2XN9?tag=weddinggueststyle-20",
-      "price": "$62.99"
-    },
-    {
       "title": "Women's Off the Shoulder Wrap Prom Dresses Tea Length Bridesmaid Dress Satin Short Formal Gowns",
       "image": "https://m.media-amazon.com/images/I/51ozz55LDPL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FX9GJLK2?tag=weddinggueststyle-20",
       "price": "$76.99"
-    },
-    {
-      "title": "Summer Dresses for Women 2026 Spaghetti Straps Sundress Twist Knot Mesh Mermaid Wedding Guest Dress Beach Vacation",
-      "image": "https://m.media-amazon.com/images/I/7100l79PTIL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FY68PWRJ?tag=weddinggueststyle-20",
-      "price": "$42.99"
     },
     {
       "title": "Bridesmaid Dresses Long for Women 2025 Satin Mermaid Strapless Pleated Formal Evening Party Gowns with Scarf",
@@ -267,18 +300,6 @@
       "price": "$49.79"
     },
     {
-      "title": "Womens Summer One Shoulder Maxi Dress 2026 Floral Sleeveless Bodycon Mesh Long Beach Vacation Sun Dresses",
-      "image": "https://m.media-amazon.com/images/I/71tSwoCvyhL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FXG7RZV7?tag=weddinggueststyle-20",
-      "price": "$41.99"
-    },
-    {
-      "title": "Women's Sexy Crew Neck Lounge Long Dress Elegant Long Sleeve Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/417tKrDGUoL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CBX6GHBS?tag=weddinggueststyle-20",
-      "price": "$44.97"
-    },
-    {
       "title": "Womens Off The Shoulder Wedding Guest Maxi Long Dress 2026 Sexy Mesh One Shoulder Formal Cocktail Bodycon Dresses",
       "image": "https://m.media-amazon.com/images/I/71yStoHNIlL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FLJ5YT9Q?tag=weddinggueststyle-20",
@@ -301,18 +322,6 @@
       "image": "https://m.media-amazon.com/images/I/51Q7XiMP0xL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DR2CDPPH?tag=weddinggueststyle-20",
       "price": "$37.99"
-    },
-    {
-      "title": "Womens Summer Printed Tube Maxi Dress Strapless Bodycon Sleeveless Long Beach Vacation Dresses",
-      "image": "https://m.media-amazon.com/images/I/71-OsyQ2AfL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DNM2B59P?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens Spring Wedding Guest Dress 2026 Summer Beach Floral Cocktail Party Formal Ruffle Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61W03mAtRuL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX2QXDCT?tag=weddinggueststyle-20",
-      "price": "$59.99"
     },
     {
       "title": "Women's Fall Off Shoulder Floral Maxi Dresses Formal Long Sleeve Bodycon Cocktail Wedding Guest Dress",
@@ -423,12 +432,6 @@
       "price": "$39.98"
     },
     {
-      "title": "Women's One Shoulder Maxi Bodycon Mesh Ruched Floral Beach Cocktail Wedding Guest Dress with Side Slit",
-      "image": "https://m.media-amazon.com/images/I/51VTG3XL7aL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G6ZB3KY7?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
       "title": "Women's Elegant Open Back Satin Halter Dress for Wedding Guest Evening Gown Party Cocktail Formal Events",
       "image": "https://m.media-amazon.com/images/I/61gN96Bm5xL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G3WJBDF6?tag=weddinggueststyle-20",
@@ -439,12 +442,6 @@
       "image": "https://m.media-amazon.com/images/I/61OJr2qdGtL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0F8QGND2H?tag=weddinggueststyle-20",
       "price": "$72.99"
-    },
-    {
-      "title": "Womens Summer Strapless Maxi Dress 2026 Boho Floral Off Shoulder Wedding Guest Dresses Tiered Beach Long Sundress",
-      "image": "https://m.media-amazon.com/images/I/714NCntq8OL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G1T138Z2?tag=weddinggueststyle-20",
-      "price": "$49.99"
     },
     {
       "title": "Womens Mesh Bodycon Formal Maxi Dresses Summer Spaghetti Strap Ruffle Cocktail Wedding Guest Party Prom Long Dress",
@@ -609,12 +606,6 @@
       "price": "$55.99"
     },
     {
-      "title": "Women's Summer Wedding Guest Dress Strapless Tube Top Maxi Bodycon Long Floral Mesh Beach Vacation Party Dresses",
-      "image": "https://m.media-amazon.com/images/I/6130br-Mb+L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CQMTFHKT?tag=weddinggueststyle-20",
-      "price": "$41.99"
-    },
-    {
       "title": "Women Summer 2025 Floral Dresses Sleeveless Long Mesh Bodycon Maxi Dress Spaghetti Strap Wedding Guest Dress",
       "image": "https://m.media-amazon.com/images/I/616I3fxB1QL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DZ6F5KRD?tag=weddinggueststyle-20",
@@ -625,12 +616,6 @@
       "image": "https://m.media-amazon.com/images/I/81PCBwu77SL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B09X2YFFYD?tag=weddinggueststyle-20",
       "price": "$85.99"
-    },
-    {
-      "title": "Women Summer Floral Maxi Dresses Elegant Spaghetti Strap Dress Printed Party Dress Beach Long Dresses",
-      "image": "https://m.media-amazon.com/images/I/71gem062CHL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DP6ZZY1D?tag=weddinggueststyle-20",
-      "price": "$47.99"
     },
     {
       "title": "Women's 2026 Spring Floral Spaghetti Strap Maxi Dress Stretch Sexy Bodycon Dress Backless Slip Long Dresses",
@@ -696,7 +681,7 @@
     "sourceUrl": "https://unsplash.com/",
     "alt": "Guests in floor-length gowns photographed in daylight"
   },
-  "answer": "Formal wedding guest dresses are floor-length gowns or dressy midi and tea-length dresses in evening fabrics: heavy satin, crepe, lined chiffon, beading, or velvet in winter. Emily Post's attire guide has no separate \"formal\" code, so read it as just below black tie. Go floor-length for an evening ballroom or hotel wedding, and leave knee-length cotton or jersey for other occasions.",
+  "answer": "Formal wedding guest dresses are floor-length gowns or dressy midi and tea-length dresses in evening fabrics: heavy satin, crepe, lined chiffon, beading, or velvet in winter. Emily Post's wedding guest guide splits formal by time: a cocktail or dressy afternoon dress for a daytime wedding, a long evening dress or dressy cocktail dress in the evening. When unsure after dark, go floor-length.",
   "sources": [
     {
       "publisher": "The Emily Post Institute",
@@ -704,7 +689,60 @@
       "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
       "readOn": "22 October 2026",
       "supports": "No standalone formal code; women's black tie and black tie optional lists; lean formal after 6 p.m."
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Wedding Guest Attire: What to Wear to a Wedding",
+      "url": "https://emilypost.com/advice/wedding-guest-attire",
+      "readOn": "22 October 2026",
+      "supports": "Women's formal daytime (cocktail or dressy afternoon dress) and formal evening (long evening dress or dressy cocktail dress) attire; house-of-worship coverage question."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Online Shopping",
+      "url": "https://consumer.ftc.gov/articles/online-shopping",
+      "readOn": "12 October 2026",
+      "supports": "Checking return shipping, return days and restocking fees before ordering."
+    },
+    {
+      "publisher": "weddinggueststyle.com analysis of r/Weddingattireapproval",
+      "title": "10,700 posts, 16 April – 21 October 2026 (aggregate counts only)",
+      "url": "https://www.reddit.com/r/Weddingattireapproval/",
+      "readOn": "22 October 2026",
+      "supports": "Counts of length, fabric and worry terms in 2,151 Formal-flair posts."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "formal wedding guest dresses",
+    "keywords": [
+      "formal wedding guest dresses",
+      "formal wedding guest dress",
+      "formal dresses for wedding guests",
+      "a line formal wedding guest dress",
+      "where to buy formal wedding guest dresses",
+      "how to dress for a formal wedding guest"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://macduggal.com/collections/the-wedding-edit",
+        "format": "retailer collection (single brand)",
+        "weakness": "One-line blurb ('From black-tie affairs to casual receptions') above a gown grid; never says what formal means, nothing on daytime vs evening, length, fabric weight or lining."
+      },
+      {
+        "url": "https://www.adriannapapell.com/collections/wedding-guest-dresses",
+        "format": "retailer collection with SEO copy",
+        "weakness": "Venue table and style tips point only to its own products; dress-code claims have no source, no daytime vs evening formal rule, no listing or fit checks."
+      },
+      {
+        "url": "https://petalandpup.com/collections/wedding-guest-dresses",
+        "format": "retailer product grid",
+        "weakness": "About 100 priced tiles and a closing paragraph ('let the invitation lead'); no definition of formal, no fabric, length or lining guidance. (Rank 3 balticborn.com returned 403, so rank 4 was used.)"
+      }
+    ],
+    "winningFormat": "Shoppable product grid plus a decision guide: time-of-day rule, verdict table, fabric and listing checks.",
+    "infoGain": "Reads 'formal' from Emily Post's own daytime/evening formal-wedding lists, adds counts from 2,151 Formal-flair Reddit posts (cocktail vs floor-length vs midi, underdressed vs overdressed), and gives five listing checks; the top 3 are brand product grids with no rules.",
+    "asset": "Verdict table 'Is this formal enough?' and Reddit bars chart 'What Formal-flair posts mention'.",
+    "verified": "2026-10-22"
+  }
 }

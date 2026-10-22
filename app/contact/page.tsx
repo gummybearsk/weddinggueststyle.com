@@ -72,7 +72,7 @@ export default function ContactPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Social</h2>
           <p>
-            Sukie shares the visual references and outfit decisions behind the site on Instagram:
+            Sukie is on Instagram:
           </p>
           <p>
             <a

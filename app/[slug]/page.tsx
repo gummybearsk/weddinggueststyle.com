@@ -20,6 +20,7 @@ import { getAccessoryLinks } from "@/lib/accessoryLinks";
 import { productCapFor } from "@/lib/productCap";
 import { computeInsights, deriveBestFor, deriveRationale } from "@/lib/priceInsights";
 import VisualBlock from "@/components/visuals/VisualBlock";
+import { getPrimaryHub } from "@/lib/taxonomy";
 import type { PageData } from "@/lib/types";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
@@ -148,14 +149,16 @@ function ItemListSchema({ products, title }: { products: Product[]; title: strin
   );
 }
 
-function BreadcrumbSchema({ title, slug }: { title: string; slug: string }) {
+function BreadcrumbSchema({ title, slug, hub }: { title: string; slug: string; hub?: { label: string; href: string } | null }) {
+  const items = [
+    { name: "Home", item: "https://weddinggueststyle.com" },
+    ...(hub ? [{ name: hub.label, item: `https://weddinggueststyle.com${hub.href}` }] : []),
+    { name: title, item: `https://weddinggueststyle.com/${slug}` },
+  ];
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://weddinggueststyle.com" },
-      { "@type": "ListItem", position: 2, name: title, item: `https://weddinggueststyle.com/${slug}` },
-    ],
+    itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, ...it })),
   };
   return (
     <script
@@ -165,7 +168,7 @@ function BreadcrumbSchema({ title, slug }: { title: string; slug: string }) {
   );
 }
 
-function ArticleSchema({ title, description, slug, intro, publishDate, modifiedDate }: { title: string; description: string; slug: string; intro: string; publishDate?: string; modifiedDate?: string }) {
+function ArticleSchema({ title, description, slug, intro, publishDate, modifiedDate, image }: { title: string; description: string; slug: string; intro: string; publishDate?: string; modifiedDate?: string; image?: string }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -189,6 +192,7 @@ function ArticleSchema({ title, description, slug, intro, publishDate, modifiedD
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": `https://weddinggueststyle.com/${slug}` },
     articleBody: intro,
+    ...(image ? { image: image.startsWith("/") ? `https://weddinggueststyle.com${image}` : image } : {}),
   };
   return (
     <script
@@ -255,7 +259,6 @@ function PullQuote({ children }: { children: React.ReactNode }) {
       <p className="display-serif display-italic italic text-xl sm:text-2xl text-ink-800 leading-snug">
         &ldquo;{children}&rdquo;
       </p>
-      <p className="mt-3 text-[11px] uppercase tracking-[0.18em] text-ink-500">— Sukie Gao, Editor</p>
     </aside>
   );
 }
@@ -394,8 +397,8 @@ function GuidePage({ page, products, asOf }: { page: PageData; products: Product
   return (
     <>
       <FAQSchema faqs={page.faqs} />
-      <BreadcrumbSchema title={page.title} slug={page.slug} />
-      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.answer ? `${page.answer} ${page.intro}` : page.intro} publishDate={page.publishDate} modifiedDate={page.modifiedDate} />
+      <BreadcrumbSchema title={page.title} slug={page.slug} hub={page.hub ?? { label: "Dress Codes", href: "/dress-code" }} />
+      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.answer ? `${page.answer} ${page.intro}` : page.intro} publishDate={page.publishDate} modifiedDate={page.modifiedDate} image={page.heroImage?.url} />
       {shop.length > 0 && <ItemListSchema products={shop} title={`Shop the look: ${page.title}`} />}
 
       <div className="bg-ivory border-b border-ink-200">
@@ -403,12 +406,12 @@ function GuidePage({ page, products, asOf }: { page: PageData; products: Product
           <nav className="text-[11px] uppercase tracking-[0.18em] text-ink-500 mb-8 flex items-center gap-2" aria-label="Breadcrumb">
             <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
             <span className="text-ink-300">/</span>
-            <Link href="/dress-code" className="hover:text-blush-600 transition-colors">Dress codes</Link>
+            <Link href={page.hub?.href ?? "/dress-code"} className="hover:text-blush-600 transition-colors">{page.hub?.label ?? "Dress codes"}</Link>
             <span className="text-ink-300">/</span>
             <span className="text-ink-700">{page.title}</span>
           </nav>
           <p className="eyebrow mb-4">
-            {page.audience === "men" ? "Dress code guide · for men" : page.audience === "women" ? "Dress code guide · for women" : "Dress code guide · for women & men"}
+            {page.hub?.label === "Fit" ? "Fit guide" : page.audience === "men" ? "Dress code guide · for men" : page.audience === "women" ? "Dress code guide · for women" : "Dress code guide · for women & men"}
           </p>
           <h1 className="display-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">{page.h1}</h1>
           <div className="mt-6">
@@ -471,6 +474,7 @@ export default function InnerPage({ params }: PageProps) {
   const asOf = priceAsOfLabel();
   if (page.kind === "guide") return <GuidePage page={page} products={products} asOf={asOf} />;
   const accessoryLinks = getAccessoryLinks();
+  const hub = getPrimaryHub(page.slug);
 
   // Split the catalogue: a small ranked set the reader can actually choose from, and the
   // rest as a browsable grid. A flat wall of 90+ dresses is why these pages don't convert.
@@ -521,8 +525,8 @@ export default function InnerPage({ params }: PageProps) {
   return (
     <>
       <FAQSchema faqs={page.faqs} />
-      <BreadcrumbSchema title={page.title} slug={page.slug} />
-      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} modifiedDate={page.modifiedDate} />
+      <BreadcrumbSchema title={page.title} slug={page.slug} hub={hub} />
+      <ArticleSchema title={page.metaTitle} description={page.metaDescription} slug={page.slug} intro={page.intro} publishDate={page.publishDate} modifiedDate={page.modifiedDate} image={page.heroImage?.url ?? shown[0]?.image} />
       {shown.length > 0 && <ItemListSchema products={shown} title={`Top ${page.title}`} />}
 
       {/* Persistent CTA — pages run 2,000+ words with one product block otherwise. */}
@@ -537,6 +541,12 @@ export default function InnerPage({ params }: PageProps) {
           >
             <Link href="/" className="hover:text-blush-600 transition-colors">Home</Link>
             <span className="text-ink-300">/</span>
+            {hub && (
+              <>
+                <Link href={hub.href} className="hover:text-blush-600 transition-colors">{hub.label}</Link>
+                <span className="text-ink-300">/</span>
+              </>
+            )}
             <span className="text-ink-700">{page.title}</span>
           </nav>
 

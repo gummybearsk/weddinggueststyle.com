@@ -127,6 +127,8 @@ export interface PageData {
   answer?: string;
   /** Who the guide dresses: both is the default for dress-code guides. */
   audience?: "women" | "men" | "both";
+  /** Breadcrumb hub for guide pages; defaults to the dress-code hub. */
+  hub?: { label: string; href: string };
   /** Diagram shown directly under the answer. */
   heroVisual?: Visual;
   brief?: PageBrief;

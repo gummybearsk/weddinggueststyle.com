@@ -1,7 +1,7 @@
 {
   "title": "Spring Wedding Guest Dresses",
   "metaTitle": "Spring Wedding Guest Dresses 2026: Fresh & Stylish",
-  "metaDescription": "Shop the best spring wedding guest dresses for 2026. Florals, pastels, and lightweight styles for garden, outdoor, and formal spring weddings.",
+  "metaDescription": "Spring wedding guest dresses by weather and dress code: NOAA March highs from 47°F to 81°F, fabrics for each, colors that read white, and listing checks.",
   "h1": "Spring Wedding Guest Dresses: Fresh Styles for the New Season",
   "intro": "Spring wedding guest dresses should capture the season with fresh colors, lighter fabrics and soft details, but spring is also the least predictable wedding weather of the year. The same Saturday in March can be a coat day in one city and a sundress day in another, and a single afternoon can swing from sun to wind to a cool evening. The dresses below cover garden florals to polished pastels for formal venues, and the guide explains how to choose fabric for the weather where the wedding actually is.",
   "contentSections": [
@@ -60,23 +60,84 @@
       }
     },
     {
+      "heading": "Spring wedding guest dresses by dress code",
+      "content": "The season changes color and fabric weight; the invitation still sets the formality. The Emily Post Institute's attire guide gives the garment lists, and the site's dress-code guides explain each code in full, so this is only how each one plays out in spring.\n\n• Black tie. Emily Post lists a floor-length evening gown, a dressy cocktail dress or your dressiest little black dress. A formal or black-tie spring wedding still calls for floor-length or a dressy midi in an evening fabric; the season changes the color and weight, not the formality. Silk, satin, heavy chiffon and structured lace in soft jewel tones such as amethyst, rose and peridot feel seasonal while looking more formal than pastels. Add a structured wrap or evening jacket for a cool evening, and choose the fabric for the regional temperature in the chart above.\n• Semi-formal and cocktail. A short afternoon or cocktail dress, a little black dress, a long dressy skirt and top, or dressy separates. In spring that usually means a crepe or lined-chiffon midi, or a structured floral. Emily Post's note to err on the side of formality after 6 p.m. matters more in spring than in summer, because an evening reception is also a cooler one: a satin or lace midi with a jacket covers both.\n• Dressy casual. A dress, a skirt and dressy top, or a dressy pants outfit. A printed wrap dress, a pleated midi or a linen-blend jumpsuit with real shoes sits right here.\n• Casual. A sundress or a long or short skirt; Emily Post adds that shorts depend on the occasion and climate, which in March in the North is a firm no for a wedding. A polished cotton sundress and a cardigan is the spring version.\n\nIf the invitation names no code, the time and venue decide: a late-morning garden ceremony leans dressy casual, a 6 p.m. hotel ballroom leans semi-formal or above. The site's guides to semi-formal attire, dressy casual and casual weddings give the edge cases."
+    },
+    {
       "heading": "Colors: pastels, brights, and the white trap",
       "content": "Pastels are the traditional spring palette: blush, lavender, powder blue, mint, butter yellow and soft peach suit gardens, greenery and daylight. Mid-tones such as coral, periwinkle, sage and dusty rose give more depth and suit semi-formal and formal spring weddings, where very pale pastels can look slight. Bolder brights, such as fuchsia, cobalt and bright green, work well at outdoor venues where the setting is already colorful.\n\nThe trap is paleness. Very light champagne, barely-there blush, pale yellow and cream can read white in photographs, especially in bright sun or under flash. It is the most common worry among guests: of the 10,700 r/Weddingattireapproval posts weddinggueststyle.com analyzed (16 April to 21 October 2026), 944 carried the subreddit's \"Is this too white?\" flair. If you are unsure, choose a deeper version of the shade, or photograph the dress in daylight next to something white.\n\nDark colors are fine, especially for evening and formal spring weddings. Navy is always appropriate, and a dark-ground floral bridges evening formality and the season."
     },
     {
+      "heading": "What spring guests worry about, in numbers",
+      "content": "The questions spring guests post are different from the rest of the year. In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 260 posts use the word spring. Of those, 65 mention white, ivory or cream (25%), against 20% of all posts in the dataset, and 38 mention florals (14.6%), against 5.8% of all posts. Spring guests are choosing lighter, printed dresses, and the pale-color question follows them.\n\nTwenty-four of the 260 spring posts mention a jacket, blazer, cardigan, shawl or wrap, which is the layering question the forecast section answers. The practical reading: in spring, check the color against white before anything else, then plan the layer.",
+      "visual": {
+        "kind": "bars",
+        "title": "Colors and prints mentioned in 260 posts about spring weddings",
+        "unit": " posts",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive). Method: posts matching \\bspring\\b in title or text, after removing \"black tie\"/\"white tie\" (regex black[\\s-]*tie|white[\\s-]*tie); each bar counts spring posts matching \\b(white|ivory|cream)\\b, \\bfloral, \\bblue\\b, \\bblack\\b, \\b(green|sage)\\b, \\b(pink|blush)\\b, \\b(lavender|lilac|purple)\\b, \\byellow\\b. A post can count in several bars.",
+        "data": [
+          {
+            "label": "White, ivory or cream",
+            "value": 65,
+            "highlight": true
+          },
+          {
+            "label": "Floral",
+            "value": 38
+          },
+          {
+            "label": "Blue",
+            "value": 27
+          },
+          {
+            "label": "Black",
+            "value": 26
+          },
+          {
+            "label": "Green or sage",
+            "value": 18
+          },
+          {
+            "label": "Pink or blush",
+            "value": 17
+          },
+          {
+            "label": "Lavender, lilac or purple",
+            "value": 12
+          },
+          {
+            "label": "Yellow",
+            "value": 9
+          }
+        ]
+      }
+    },
+    {
       "heading": "Florals and lace",
-      "content": "Florals are the signature spring print. Painterly, watercolor-style florals and larger-scale prints in muted colors tend to look more grown-up and photograph better than busy, tiny prints. Choose a print with a coordinated palette rather than every color at once, and avoid prints on a white or ivory ground, which read pale overall.\n\nLace suits the season well. It is romantic, and its texture lifts a simple silhouette. Choose lined lace that holds its shape: heavy guipure for formal events, lighter eyelet or crochet lace for gardens and daytime. Avoid unlined lace that needs visible underwear or turns see-through in sun. Keep all-over lace away from white and ivory, which can read bridal even at knee length; navy, blush, sage or burgundy lace all feel celebratory instead."
+      "content": "Florals are the signature spring print. Painterly, watercolor-style florals and larger-scale prints in muted colors tend to look more grown-up and photograph better than busy, tiny prints. Choose a print with a coordinated palette rather than every color at once, and avoid prints on a white or ivory ground, which read pale overall.\n\nLace suits the season well. It is romantic, and its texture lifts a simple silhouette. Choose lined lace that holds its shape: heavy guipure for formal events, lighter eyelet or crochet lace for gardens and daytime. Avoid unlined lace that needs visible underwear or turns see-through in sun. Keep all-over lace away from white and ivory, which can read bridal even at knee length; navy, blush, sage or burgundy lace all feel celebratory instead.\n\nIs lace good for a spring wedding? Yes, more than in summer: a lined lace midi gives a little warmth on a cool afternoon without the weight of a winter fabric, and its texture photographs well in soft spring light. The checks are the lining (full, not a slip that stops at the hip) and the color, since lace is the fabric most likely to look bridal in a pale shade."
     },
     {
       "heading": "Shapes that handle wind, grass and a long afternoon",
-      "content": "Midi dresses are the easiest spring length: dressy enough for most codes, practical outdoors, and easy to layer over. A-line, fit-and-flare and wrap midis are the most versatile shapes; wrap dresses are especially useful because they sit well under a cardigan or jacket.\n\nMany spring weddings are at least partly outdoors, so plan for three things. Ground: soft, possibly damp lawns swallow stilettos, so choose wedges, block heels or dressy flat sandals, and bring a second pair if the reception is on a hard floor. Wind: a light, very full skirt will blow around; a fabric with some weight or a lining behaves better. Sun: wider straps or short sleeves cover the shoulders, and a hat or fascinator suits a garden wedding.\n\nFor sleeves, three-quarter, flutter and puff sleeves give some coverage without heat. A sleeveless dress with a matching jacket gives the most flexibility on a day that starts cool and turns warm."
+      "content": "Midi dresses are the easiest spring length: dressy enough for most codes, practical outdoors, and easy to layer over. A-line, fit-and-flare and wrap midis are the most versatile shapes (an A-line spring wedding guest dress skims over a long day of sitting and handles a breeze better than a bodycon); wrap dresses are especially useful because they sit well under a cardigan or jacket.\n\nMany spring weddings are at least partly outdoors, so plan for three things. Ground: soft, possibly damp lawns swallow stilettos, so choose wedges, block heels or dressy flat sandals, and bring a second pair if the reception is on a hard floor. Wind: a light, very full skirt will blow around; a fabric with some weight or a lining behaves better. Sun: wider straps or short sleeves cover the shoulders, and a hat or fascinator suits a garden wedding.\n\nFor sleeves, three-quarter, flutter and puff sleeves give some coverage without heat. A sleeveless dress with a matching jacket gives the most flexibility on a day that starts cool and turns warm."
     },
     {
-      "heading": "Formal spring weddings",
-      "content": "A formal or black-tie spring wedding still calls for floor-length or a dressy midi in an evening fabric; the season changes the color and weight, not the formality. Silk, satin, heavy chiffon and structured lace in soft jewel tones such as amethyst, rose and peridot feel seasonal while looking more formal than pastels. Add a structured wrap or evening jacket for a cool evening, and choose the fabric for the regional temperature in the chart above."
+      "heading": "March, April and May are three different seasons",
+      "content": "Treat early, mid and late spring as separate problems.\n\nMarch. In the northern cities in the chart, the normal high is under 55°F, and NOAA's normals put March precipitation at 4.29 inches in New York and 4.17 in Seattle. Dress for a cool, possibly wet day: sleeves or a real coat, closed-toe shoes, and a dress that does not mind a damp hem. Jewel tones and darker florals look as seasonal as pastels this early.\n\nApril. The classic spring wedding. Most of the country sits in the middle temperature band from the forecast section, so a midi in crepe or lined chiffon with a layer for the evening is the default. Rain is the main variable, so pick shoes for wet grass and a fabric that does not spot.\n\nMay. Closer to early summer in much of the South and West. Lighter fabrics and sleeveless styles come in, and the evening layer becomes a wrap rather than a coat.\n\nIf the wedding is in the Southern Hemisphere, spring runs from September to November, so a dress bought for an April wedding at home may need the opposite season's fabric abroad."
+    },
+    {
+      "heading": "Check these before you order a spring dress",
+      "content": "Spring dresses are light, pale and printed, which are exactly the qualities a product photo flatters.\n\n• Lining. Light chiffon and pale colors turn see-through in direct sun. A full lining, not a partial one, is the thing to confirm.\n• Ground color of a print. A floral on a white or ivory ground reads pale from across a lawn. Look at how much of the print is background.\n• Fiber. Polyester chiffon is light but does not breathe like cotton or linen blends; on a warm May afternoon, that matters more than the label's style name.\n• Length in inches. \"Midi\" varies by brand. If the listing gives a length from shoulder to hem, compare it with a dress you own, especially if you are petite.\n• Wrinkles. Linen and some cotton blends crease on a long drive. Check whether the description mentions a blend or a crinkle finish that hides it.\n• Returns and timing. The FTC's advice for online shopping is to check whether an item can be returned for a full refund, and how many days you have; order early enough to exchange once."
+    },
+    {
+      "heading": "Layers that look planned, not borrowed",
+      "content": "Almost every spring wedding needs a second layer for the evening. Choose it with the dress, not on the way out the door.\n\nA cropped cardigan or a fitted knit suits dressy casual and daytime. A structured blazer, in a color from the dress's print or a neutral like camel or navy, works from dressy casual to semi-formal. A satin or chiffon wrap is the formal option and folds into a clutch. For a black-tie spring evening, an evening jacket or a structured cape keeps the gown's line. The site's guide to cover-ups and wraps covers fabrics and lengths."
     }
   ],
   "faqs": [
+    {
+      "question": "When do spring wedding guest dresses come out?",
+      "answer": "Retailers do not publish a shared release date, and each labels its new season differently, so there is no single answer to wait for. The useful rule is to order at least six weeks before the wedding: that leaves time for one exchange inside the return window, and the FTC advises checking how many days that window is before you buy."
+    },
     {
       "question": "Can I wear dark colors to a spring wedding?",
       "answer": "Yes, particularly for evening or formal spring weddings. Navy always works, and a dark-ground floral keeps a seasonal feel. At a daytime outdoor spring wedding, an all-dark heavy outfit can look out of place; lighten it with bright accessories."
@@ -84,14 +145,6 @@
     {
       "question": "Should I bring a jacket to a spring wedding?",
       "answer": "Yes, almost always. Temperatures fall quickly after sunset, and an early-spring ceremony in the North can be cold even at midday. A cardigan, a structured blazer or a wrap in a coordinating color is enough for most; plan a coat if the forecast high is in the 40s or low 50s."
-    },
-    {
-      "question": "Are sundresses appropriate for spring weddings?",
-      "answer": "A polished sundress suits a casual spring wedding: choose a good fabric, an interesting neckline or a defined waist, and pair it with real sandals and jewelry. For semi-formal or formal spring weddings, choose a more structured dress."
-    },
-    {
-      "question": "Can I wear pastels to a spring wedding?",
-      "answer": "Yes. Blush, lavender, mint and powder blue are among the most natural spring choices. Avoid shades so pale they read white in photographs, such as very light champagne or barely-there blush."
     }
   ],
   "relatedPages": [
@@ -104,10 +157,6 @@
       "slug": "floral-wedding-guest-dresses"
     },
     {
-      "title": "Pink Wedding Guest Dresses",
-      "slug": "pink-wedding-guest-dresses"
-    },
-    {
       "title": "Garden Party Wedding Guest Dresses",
       "slug": "garden-party-wedding-guest-dresses"
     },
@@ -118,6 +167,14 @@
     {
       "title": "What to Wear to a Wedding as a Guest",
       "slug": "what-to-wear-to-a-wedding-as-a-guest"
+    },
+    {
+      "title": "What Is Semi-Formal Attire?",
+      "slug": "what-is-semi-formal-attire"
+    },
+    {
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
     }
   ],
   "slug": "spring-wedding-guest-dresses",
@@ -205,12 +262,6 @@
       "image": "https://m.media-amazon.com/images/I/71cW17JEHxL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0GDZK2XN9?tag=weddinggueststyle-20",
       "price": "$62.99"
-    },
-    {
-      "title": "Women's Wool Blend Square Neck Tie Waist Pleated Summer Sweater Dress 2026",
-      "image": "https://m.media-amazon.com/images/I/7189V2t051L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G1MKWJ4F?tag=weddinggueststyle-20",
-      "price": "$40.99"
     },
     {
       "title": "Summer Dresses for Women 2026 Spring Floral Spaghetti Strap Smocked Cutout Maxi Dress Resort Beach Vacation Outfit",
@@ -713,8 +764,54 @@
       "title": "U.S. Climate Normals 1991–2020 (monthly)",
       "url": "https://www.ncei.noaa.gov/products/land-based-station/us-climate-normals",
       "readOn": "12 October 2026",
-      "supports": "March normal maximum temperatures for the ten cities in the chart."
+      "supports": "March normal maximum temperatures for the ten cities in the chart, and March precipitation for New York and Seattle."
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Attire Guide: Dress Codes from Casual to White Tie Formal",
+      "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
+      "readOn": "22 October 2026",
+      "supports": "Women's garment lists for black tie, semi-formal, dressy casual and casual, the after-6 p.m. note and the shorts-depend-on-climate note."
+    },
+    {
+      "publisher": "Federal Trade Commission",
+      "title": "Online Shopping",
+      "url": "https://consumer.ftc.gov/articles/online-shopping",
+      "readOn": "12 October 2026",
+      "supports": "Check whether an item can be returned for a full refund and how many days you have."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "spring wedding guest dresses",
+    "keywords": [
+      "spring wedding guest dresses",
+      "spring wedding guest dress",
+      "a line spring wedding guest dress",
+      "when do spring wedding guest dresses come out",
+      "is lace good for wedding guest dress spring wedding",
+      "what to wear to a spring wedding"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://petalandpup.com/collections/wedding-guest-dresses",
+        "format": "retailer collection grid",
+        "weakness": "Generic all-season wedding-guest grid with no spring-specific copy; nothing on weather, layers, pale colors or dress codes."
+      },
+      {
+        "url": "https://www.adriannapapell.com/collections/spring-wedding-guest-dresses",
+        "format": "retailer collection grid + SEO copy",
+        "weakness": "Says March is 'chilly' and April 'in full bloom' without any temperature data or regional difference, never warns about pale shades reading white, and gives no listing checks (lining, sheerness)."
+      },
+      {
+        "url": "https://us.princesspolly.com/collections/wedding-guest-dresses",
+        "format": "retailer collection grid + generic FAQ",
+        "weakness": "FAQ is general wedding-guest advice, not spring; no mention of weather, layering by code or fabric weight. (Rank-3 astrthelabel.com and #4 meshki.us returned 403 to curl with and without proxy; this #6 result replaced them, Pinterest #5 skipped.)"
+      }
+    ],
+    "winningFormat": "Shopping page with a weather-and-dress-code decision guide and a live product grid",
+    "infoGain": "Only page that sets fabric by measured NOAA March highs (47°F Chicago to 80.6°F Miami), maps Emily Post's lists to spring, and shows from 260 Reddit spring posts that white/ivory worries (25%) and florals (14.6%) run above the site-wide rate.",
+    "asset": "NOAA March-high bars chart + Reddit bars chart (colors mentioned in spring posts)",
+    "verified": "2026-10-22"
+  }
 }

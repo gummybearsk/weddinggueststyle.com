@@ -13,11 +13,6 @@ const CANDIDATES: { title: string; slug: string; blurb: string }[] = [
     blurb: "Metal, earring scale, and what to leave off.",
   },
   {
-    title: "Wedding Guest Shoes for Fall",
-    slug: "wedding-guest-shoes-for-fall",
-    blurb: "Grass, gravel, and nine hours standing.",
-  },
-  {
     title: "Cover-Ups and Wraps",
     slug: "wedding-guest-cover-ups-and-wraps",
     blurb: "Sleeves your dress doesn't have.",

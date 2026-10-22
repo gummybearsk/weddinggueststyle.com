@@ -1,7 +1,7 @@
 {
   "title": "Casual Wedding Guest Dresses",
   "metaTitle": "Casual Wedding Guest Dresses 2026: Relaxed-Yet-Polished Picks",
-  "metaDescription": "What to wear to a casual wedding without underdressing. casual wedding guest dresses, casual wedding attire for women, and casual wedding outfits — backyard to beach.",
+  "metaDescription": "Casual wedding guest dresses for backyard, beach, barn and restaurant weddings: sundresses, midis and wraps that look polished, and what to check before buying.",
   "h1": "Casual Wedding Guest Dresses: What to Wear (Without Looking Underdressed)",
   "intro": "Casual wedding guest dresses should feel easy and comfortable while still signaling that you dressed for a celebration. Casual is the most relaxed code on a wedding invitation, and it trips guests up in both directions: a cocktail dress with full styling looks like you misread the card at a backyard wedding, and a beach cover-up looks like you did not try. The dresses below sit in the relaxed-but-polished middle for backyard, barn, beach, park and restaurant weddings, and the guide that follows explains how to pick one for the venue in front of you.",
   "contentSections": [
@@ -52,8 +52,53 @@
       }
     },
     {
+      "heading": "Casual wedding guest dresses: the worries guests actually post",
+      "content": "In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 250 carried the Casual dress-code flair. The most common word in them was not a garment. 76 of the 250 (30%) contain the word \"white\", against 17 that mention jeans or denim, 16 that mention florals, 16 heels and 14 a sundress. Some of those are white shoes or a print on a white ground rather than a white dress, but the pattern is plain: when the code relaxes, guests stop worrying about formality and start worrying that a light, summery dress will read as bridal.\n\nThe second finding is that the worry runs both ways. 14 of the posts asked whether an outfit was overdressed, too formal or too fancy, and 12 whether it was too casual or underdressed. Casual is the code where showing up in too much is as live a concern as showing up in too little.\n\nThree rules follow:\n\n• Put a color on the ground of the dress. A floral on a white or cream ground is the version most at risk of reading white in photographs; the same print on blue, green, coral or black does not carry that risk.\n• If the dress is pale (butter, blush, powder blue, sage), look at it in daylight and in a phone photo before the day. Pale shades drift toward white outdoors and on camera.\n• Match the dressiness to the venue, not to the word \"wedding\". A satin cocktail dress with heels belongs at an evening restaurant celebration; at a backyard ceremony the cotton midi is the correct answer, not the lazy one.",
+      "visual": {
+        "kind": "bars",
+        "title": "What posts under the Casual flair mention",
+        "unit": " posts",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive). 250 posts with the flair \"DC: Casual\"; case-insensitive match on title and text after masking \"black tie\" and \"white tie\". Regexes: \\bwhite\\b; \\bjeans?\\b|\\bdenim\\b; \\bfloral; \\bheels?\\b; \\bsun ?dress; overdress|too formal|too fancy|too dressy; \\bflats?\\b|\\bsandals?\\b; \\btoo casual\\b|underdress.",
+        "data": [
+          {
+            "label": "White",
+            "value": 76,
+            "highlight": true
+          },
+          {
+            "label": "Jeans or denim",
+            "value": 17
+          },
+          {
+            "label": "Floral",
+            "value": 16
+          },
+          {
+            "label": "Heels",
+            "value": 16
+          },
+          {
+            "label": "Sundress",
+            "value": 14
+          },
+          {
+            "label": "Overdressed / too formal",
+            "value": 14
+          },
+          {
+            "label": "Flats or sandals",
+            "value": 13
+          },
+          {
+            "label": "Too casual / underdressed",
+            "value": 12
+          }
+        ]
+      }
+    },
+    {
       "heading": "Pick the dress by venue",
-      "content": "The venue is the strongest clue for a casual wedding.\n\nBackyard and garden: comfortable, easy-moving dresses such as cotton midis, relaxed maxis and printed A-lines. The ground may be uneven or soft, so choose flat sandals, wedges or block heels rather than stilettos.\n\nBrunch and restaurant: a step more polished. A structured sundress, a printed wrap dress or a clean A-line in a cheerful color. Floors are flat and the room is climate-controlled, so any shoe works.\n\nBeach: the most relaxed of all. Flowing maxis in light fabrics, cotton sundresses and breezy wrap styles; flat sandals, and bare feet if the couple suggests it. Choose a fabric with enough weight, or a lining, so it does not turn see-through in bright sun.\n\nBarn, vineyard and park: dress for the weather and the terrain, and expect photographs outdoors. A midi clears grass and gravel better than a maxi, and a light layer helps when an afternoon ceremony turns into a cool evening reception.\n\nA casual vineyard wedding and a casual beach wedding are different events; the dress should show you noticed which one you were invited to."
+      "content": "The venue is the strongest clue for a casual wedding.\n\nBackyard and garden: comfortable, easy-moving dresses such as cotton midis, relaxed maxis and printed A-lines. The ground may be uneven or soft, so choose flat sandals, wedges or block heels rather than stilettos.\n\nBrunch and restaurant: a step more polished. A structured sundress, a printed wrap dress or a clean A-line in a cheerful color. Floors are flat and the room is climate-controlled, so any shoe works.\n\nBeach: the most relaxed of all. Flowing maxis in light fabrics, cotton sundresses and breezy wrap styles; flat sandals, and bare feet if the couple suggests it. Choose a fabric with enough weight, or a lining, so it does not turn see-through in bright sun.\n\nBarn, vineyard and park: dress for the weather and the terrain, and expect photographs outdoors. A midi clears grass and gravel better than a maxi, and a light layer helps when an afternoon ceremony turns into a cool evening reception.\n\nCourthouse or city hall: a short civil ceremony, often followed by lunch. Dress as you would for a good restaurant at midday: a polished midi, a simple sheath or a wrap dress with flats or low heels. Government buildings are air-conditioned and may have security lines, so a light layer and an easy bag help.\n\nA casual vineyard wedding and a casual beach wedding are different events; the dress should show you noticed which one you were invited to."
     },
     {
       "heading": "Casual in fall and cool weather",
@@ -66,6 +111,10 @@
     {
       "heading": "Color and print",
       "content": "Casual weddings give you the most freedom with color. Coral, yellow, turquoise and fuchsia suit the mood; muted gray and beige can look like you were not sure you were going to a party.\n\nFlorals are the classic casual print, and the trick is matching the print to the setting: large tropical florals for beach and destination weddings, garden botanicals for outdoor venues, softer vintage florals for rustic and bohemian celebrations. Gingham and polka dots suit picnic-style and garden weddings. If you prefer solids, choose one with texture, such as eyelet, embroidery or Swiss dot.\n\nThe one color rule that does not relax at a casual wedding is white. Avoid white, ivory, cream, and pale prints on a white ground that read white in photographs."
+    },
+    {
+      "heading": "Read the listing before you order a casual dress",
+      "content": "Casual dresses are where online listings mislead most, because studio light flatters thin fabric and a model's height hides where a hem will really land. Five details on the product page tell you more than the photo.\n\n• Fabric content. Cotton, linen, rayon (viscose) and lyocell breathe at an outdoor summer wedding; a thin, all-polyester knit holds heat. A linen-viscose blend creases less than pure linen.\n• Lining. An unlined cotton or rayon dress in a light color can turn sheer in direct sun. If the listing does not say \"lined\" or \"fully lined\", assume it is not and plan for a slip.\n• Length in inches. A \"midi\" on a tall model can be a maxi on a shorter guest. Compare the stated length with a dress you own, measured from the shoulder seam to the hem.\n• Straps and back. Spaghetti straps and very low backs read as beachwear at some ceremonies. For a church, a conservative family or a cool evening, choose wider straps or bring a layer.\n• Care. A dress that needs ironing before every wear is a problem at a destination or camping-style wedding. Machine-washable fabrics and crinkled or textured weaves hide travel creases.\n\nRead the return window last. Order early enough to try the dress on with the shoes you will wear, in daylight, and still send it back."
     },
     {
       "heading": "How not to look underdressed",
@@ -122,6 +171,10 @@
     {
       "title": "Dressy Casual Wedding Guest Dresses",
       "slug": "dressy-casual-wedding-guest-dresses"
+    },
+    {
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
     }
   ],
   "slug": "casual-wedding-guest-dresses",
@@ -217,12 +270,6 @@
       "price": "$31.99"
     },
     {
-      "title": "Women's Wool Blend Square Neck Tie Waist Pleated Summer Sweater Dress 2026",
-      "image": "https://m.media-amazon.com/images/I/7189V2t051L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G1MXPZGP?tag=weddinggueststyle-20",
-      "price": "$40.99"
-    },
-    {
       "title": "Womens 1950s Cape Collar Vintage Swing Stretchy Dresses",
       "image": "https://m.media-amazon.com/images/I/61VTq6Z+UJL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0C3X99THK?tag=weddinggueststyle-20",
@@ -233,18 +280,6 @@
       "image": "https://m.media-amazon.com/images/I/71icVMHnuqL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0CNTK8MC2?tag=weddinggueststyle-20",
       "price": "$36.99"
-    },
-    {
-      "title": "Women Summer Casual Dress 2026 Sleeveless Midi Tank Sundress with Pockets V Neck Buttons Pleated A Line Tshirt Dress",
-      "image": "https://m.media-amazon.com/images/I/918oPaGDmwL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GFVPNVGS?tag=weddinggueststyle-20",
-      "price": "$26.99"
-    },
-    {
-      "title": "Women's Sexy Crew Neck Lounge Long Dress Elegant Long Sleeve Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/417tKrDGUoL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CBX4G4GB?tag=weddinggueststyle-20",
-      "price": "$44.97"
     },
     {
       "title": "Womens Casual Summer Dresses 2026 V Neck Short Sleeve Empire Waist Flowy A Line Ruffle Tiered Mini Sundress",
@@ -263,12 +298,6 @@
       "image": "https://m.media-amazon.com/images/I/61MnvapCR4L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0D818MJL7?tag=weddinggueststyle-20",
       "price": "$46.99"
-    },
-    {
-      "title": "Womens Basic Sexy Square Neck Long Sleeve Soft Lounge Long Dress Fall Casual Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51zh-RBZtjL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CFXFHGX2?tag=weddinggueststyle-20",
-      "price": "$39.97"
     },
     {
       "title": "Womens Summer Wedding Guest Dress 2026 Spring Mesh Sleeveless Bodycon Ruched Floral Holiday Maxi Long Dresses",
@@ -293,12 +322,6 @@
       "image": "https://m.media-amazon.com/images/I/61lmy4fkirL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0D5B8D9XH?tag=weddinggueststyle-20",
       "price": "$19.99"
-    },
-    {
-      "title": "Womens Basic Sexy Square Neck Long Sleeve Soft Lounge Long Dress Fall Casual Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/515iHlTii4L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CL6PY86B?tag=weddinggueststyle-20",
-      "price": "$36.97"
     },
     {
       "title": "Women's Floral Boho Long Sleeve Maxi Dress V Neck Empire Waist Swing Flowy Wedding Guest Dress",
@@ -475,12 +498,6 @@
       "price": "$45.99"
     },
     {
-      "title": "Women's Button Down V Neck Midi Tshirt Dress Plus Size Boho Summer Short Sleeve Beach Dresses with Pockets 2024",
-      "image": "https://m.media-amazon.com/images/I/61H3jy+LvsL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CV3NC5J1?tag=weddinggueststyle-20",
-      "price": "$27.99"
-    },
-    {
       "title": "Women's 2026 Summer Casual Floral Maxi Dress with Pockets Spaghetti Strap V Neck Empire Waist Beach Long Sundress",
       "image": "https://m.media-amazon.com/images/I/81yagGe-VzL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0F6L95Q6T?tag=weddinggueststyle-20",
@@ -577,12 +594,6 @@
       "price": "$42.99"
     },
     {
-      "title": "Women's Basic Sexy Lounge Slip Long Dress Elegant Sleeveless Backless Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51AklK-i-3L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BSC47LB8?tag=weddinggueststyle-20",
-      "price": "$33.97"
-    },
-    {
       "title": "Women Summer 2025 Floral Dresses Sleeveless Long Mesh Bodycon Maxi Dress Spaghetti Strap Wedding Guest Dress",
       "image": "https://m.media-amazon.com/images/I/61vI8fPAIVL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DZ6HZ471?tag=weddinggueststyle-20",
@@ -599,12 +610,6 @@
       "image": "https://m.media-amazon.com/images/I/71gem062CHL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DP6ZZY1D?tag=weddinggueststyle-20",
       "price": "$47.99"
-    },
-    {
-      "title": "Women's Basic Summer Casual Lounge Long Dress Elegant Short Sleeve Crew Neck Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/41B0UwuZNEL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C46KZ2MN?tag=weddinggueststyle-20",
-      "price": "$38.97"
     },
     {
       "title": "Women's 2026 Spring Floral Spaghetti Strap Maxi Dress Stretch Sexy Bodycon Dress Backless Slip Long Dresses",
@@ -728,5 +733,37 @@
       "supports": "Women's casual list (sundress; long or short skirt; khakis or nice jeans; shorts depending on occasion and climate) and the note to choose nicer casual wear."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "casual wedding guest dresses",
+    "keywords": [
+      "casual wedding guest dresses",
+      "casual wedding guest dress",
+      "casual wedding attire for women",
+      "casual dresses for weddings",
+      "casual fall wedding guest dresses",
+      "what to wear to a casual wedding dress"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://petalandpup.com/collections/wedding-guest-dresses",
+        "format": "retailer collection grid",
+        "weakness": "Generic all-wedding grid, not filtered to casual; the only guidance is two sentences (florals for daytime, darker shades for evening), nothing on venue, fabric, white risk or jeans. (Result #1 lulus.com returned 403 to every fetcher.)"
+      },
+      {
+        "url": "https://www.amazon.com/Casual-Dresses-Weddings/s?k=Casual+Dresses+for+Weddings",
+        "format": "marketplace search results",
+        "weakness": "\"1-48 of over 50,000 results\" led by sponsored listings, with no definition of casual, no venue or fabric advice and no warning about white grounds or unlined fabric. (Result #3 altardstate.com returned 403.)"
+      },
+      {
+        "url": "https://evereve.com/collections/wedding-guest-dresses",
+        "format": "retailer collection with a short intro",
+        "weakness": "One paragraph equates casual with \"flowy sundresses, breezy linen, and pretty poplin\"; no Emily Post list, no jeans/shorts question, no listing checks, no fall or courthouse case. (Results #5 anthropologie.com 403, #6 Pinterest skipped.)"
+      }
+    ],
+    "winningFormat": "Shoppable product grid with a decision guide: verdict table, venue rules and listing checks",
+    "infoGain": "Emily Post's casual list turned into a yes/caution/no verdict table, plus original counts from 250 Casual-flair Reddit posts showing white is the top worry and over- and underdressing fears are nearly equal.",
+    "asset": "Verdict table (Emily Post casual list) and bars chart of words in 250 Casual-flair posts",
+    "verified": "2026-10-22"
+  }
 }

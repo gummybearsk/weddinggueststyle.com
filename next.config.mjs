@@ -114,8 +114,8 @@ const nextConfig = {
       // Dress-code pivot consolidation (2026-10-22): one page per search intent. Each
       // loser 301s to the page that owns its intent; queued pages that never went live
       // redirect too, in case a crawler requested them early.
-      { source: "/black-cocktail-dress-for-wedding", destination: "/black-cocktail-wedding-guest-dresses", permanent: true },
-      { source: "/black-cocktail-dresses-for-weddings", destination: "/black-cocktail-wedding-guest-dresses", permanent: true },
+      { source: "/black-cocktail-dress-for-wedding", destination: "/black-wedding-guest-dresses", permanent: true },
+      { source: "/black-cocktail-dresses-for-weddings", destination: "/black-wedding-guest-dresses", permanent: true },
       { source: "/elegant-black-wedding-guest-dresses-with-sleeves", destination: "/black-wedding-guest-dresses", permanent: true },
       { source: "/wedding-cocktail-dresses-for-guests", destination: "/cocktail-wedding-guest-dresses", permanent: true },
       { source: "/black-tie-optional-dresses-for-women-2026", destination: "/black-tie-optional-wedding-guest-dresses", permanent: true },
@@ -130,8 +130,8 @@ const nextConfig = {
       { source: "/dressy-casual-wedding-attire", destination: "/what-is-dressy-casual-for-a-wedding", permanent: true },
       { source: "/business-casual-wedding-attire-women", destination: "/business-casual-wedding-guest-dresses", permanent: true },
       { source: "/what-does-black-tie-mean", destination: "/black-tie-attire", permanent: true },
-      { source: "/chocolate-brown-wedding-guest-dresses", destination: "/brown-wedding-guest-dresses", permanent: true },
-      { source: "/chocolate-brown-velvet-wedding-guest-dress", destination: "/brown-wedding-guest-dresses", permanent: true },
+      { source: "/chocolate-brown-wedding-guest-dresses", destination: "/shades-of-brown-wedding-guest-dresses", permanent: true },
+      { source: "/chocolate-brown-velvet-wedding-guest-dress", destination: "/shades-of-brown-wedding-guest-dresses", permanent: true },
       { source: "/pink-wedding-guest-dresses-2026", destination: "/pink-wedding-guest-dresses", permanent: true },
       { source: "/soft-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
       { source: "/light-pink-wedding-guest-dresses", destination: "/pink-wedding-guest-dresses", permanent: true },
@@ -192,6 +192,19 @@ const nextConfig = {
       { source: "/satin-wedding-guest-dresses", destination: "/formal-wedding-guest-dresses", permanent: true },
       { source: "/velvet-wedding-guest-dresses", destination: "/winter-wedding-guest-dresses", permanent: true },
       { source: "/wedding-guest-dresses-for-big-tummy", destination: "/plus-size-wedding-guest-dresses", permanent: true },
+      // Third pass (2026-10-22): SEMrush US demand under ~150/mo and no Bing clicks; each
+      // folds into the page that serves the same reader.
+      { source: "/holiday-wedding-guest-dresses", destination: "/winter-wedding-guest-dresses", permanent: true },
+      { source: "/what-to-wear-to-a-christmas-wedding", destination: "/winter-wedding-guest-dresses", permanent: true },
+      { source: "/wedding-guest-dresses-with-pockets", destination: "/best-wedding-guest-dresses", permanent: true },
+      { source: "/silver-wedding-guest-dresses", destination: "/champagne-wedding-guest-dresses", permanent: true },
+      { source: "/gold-wedding-guest-dresses", destination: "/champagne-wedding-guest-dresses", permanent: true },
+      { source: "/nude-wedding-guest-dresses", destination: "/champagne-wedding-guest-dresses", permanent: true },
+      { source: "/mother-of-the-bride-fall-dresses", destination: "/fall-wedding-guest-dresses", permanent: true },
+      { source: "/wedding-guest-shoes-for-fall", destination: "/fall-wedding-guest-dresses", permanent: true },
+      { source: "/brown-wedding-guest-dresses", destination: "/shades-of-brown-wedding-guest-dresses", permanent: true },
+      { source: "/church-wedding-guest-dresses", destination: "/modest-wedding-guest-dresses", permanent: true },
+      { source: "/black-cocktail-wedding-guest-dresses", destination: "/black-wedding-guest-dresses", permanent: true },
     ];
   },
 };

@@ -1,13 +1,13 @@
 {
   "title": "Long Sleeve Wedding Guest Dresses",
   "metaTitle": "Long Sleeve Wedding Guest Dresses 2026: Elegant Coverage Picks",
-  "metaDescription": "The best long sleeve wedding guest dresses for 2026. elegant picks for fall, winter, religious, and formal weddings — chic coverage that flatters.",
+  "metaDescription": "Long sleeve wedding guest dresses by season and dress code: sheer or opaque sleeve fabrics, sleeve shapes, the armhole fit test and what to check in a listing.",
   "h1": "Long Sleeve Wedding Guest Dresses: Elegant Coverage for Fall, Winter & Formal",
   "intro": "Long sleeve wedding guest dresses are the easy answer for fall and winter celebrations, religious ceremonies, and formal evenings where covered arms add polish. They are also the dresses where the sleeve itself decides whether the outfit works: the fabric sets the season, the shape sets the mood, and the fit at the shoulder and wrist decides whether you are comfortable for six hours. The picks below cover sheer, opaque and statement sleeves across dress codes.",
   "contentSections": [
     {
       "heading": "Choose the sleeve fabric for the season",
-      "content": "Sheer and mesh sleeves give coverage without weight. They work in every season, read romantic in warm months, and suit a ceremony that expects covered arms on a hot day. Embroidered, appliquéd or lightly beaded mesh lifts the whole dress.\n\nOpaque sleeves in velvet, crepe or satin are the cold-weather choice. They are warm, they add formality, and they remove the need for a separate wrap at the reception, which keeps the silhouette clean in photographs. They belong roughly from October to March in most of the country.\n\nLace sits between the two: lighter than crepe, more covered than mesh. Lined lace bodices with unlined lace sleeves are one of the most versatile long-sleeve constructions there is.\n\nChiffon sleeves, especially loose bishop or split sleeves, are the summer option: the fabric is barely there and air moves through it.",
+      "content": "Sheer and mesh sleeves give coverage without weight. They work in every season, read romantic in warm months, and suit a ceremony that expects covered arms on a hot day. Embroidered, appliquéd or lightly beaded mesh lifts the whole dress.\n\nOpaque sleeves in velvet, crepe or satin are the cold-weather choice. They are warm, they add formality, and they remove the need for a separate wrap at the reception, which keeps the silhouette clean in photographs. They belong roughly from October to March in most of the country.\n\nLace sits between the two: lighter than crepe, more covered than mesh. Lined lace bodices with unlined lace sleeves are one of the most versatile long-sleeve constructions there is.\n\nChiffon sleeves, especially loose bishop or split sleeves, are the summer option: the fabric is barely there and air moves through it.\n\nVenue changes the calculation as much as the month. A church or hotel ceremony is climate-controlled, so an opaque sleeve is comfortable even in June. A vineyard, barn or tented reception follows the weather, and an autumn evening outdoors can cool quickly after sunset, which is when a crepe or velvet sleeve earns its place. For a destination or beach wedding in warm weather, the sleeve should be the lightest layer in the outfit: unlined chiffon or a loose split sleeve, never a knit.",
       "visual": {
         "kind": "verdict",
         "title": "Long sleeves: will they work here?",
@@ -47,20 +47,57 @@
       }
     },
     {
+      "heading": "Long sleeve wedding guest dresses for each dress code",
+      "content": "A sleeve changes how formal a dress looks, but it does not change the dress code: length and fabric still have to match the invitation. Read the Emily Post Institute's lists for women with a sleeve added.\n\n• Black tie: Emily Post lists a floor-length evening gown, a dressy cocktail dress or your dressiest little black dress; with long sleeves that means a gown, or a sleeved cocktail dress, in satin, velvet, crepe or beaded mesh. A long sleeve is one of the cleanest ways to dress a gown for a winter evening without a stole.\n• Black tie optional and formal: a gown or a dressy cocktail dress; a long-sleeve satin or crepe midi with heels sits comfortably here.\n• Semi-formal and cocktail: a short afternoon or cocktail dress, so a knee or midi length in lace, crepe or chiffon with sheer sleeves. Emily Post advises erring formal after 6 p.m.\n• Dressy casual: a long-sleeve wrap dress, a polished knit midi, or a printed chiffon with bell sleeves.\n• Casual: a cotton or linen shirt dress with the cuffs rolled, or a smocked midi.\n\nSleeves also solve the house-of-worship question. Emily Post's wedding guest attire article suggests asking whether bare shoulders and arms would offend at the ceremony; a long sleeve answers it without a wrap, and a high neckline with a midi hem gives the most covered version.\n\nGuests reach for sleeves at the dressier end. In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 68 posts mentioned long sleeves: 20 carried the Cocktail or No Dress Code flair, 15 Formal and 9 Black/White Tie, against 3 Casual. Two worries recur in those posts. 16 also mention summer, heat, July or August, and 16 mention church, a Catholic or other religious ceremony, modesty, or being covered.",
+      "visual": {
+        "kind": "bars",
+        "title": "Posts that mention long sleeves, by dress-code flair",
+        "unit": " posts",
+        "caption": "Case-insensitive match on title and text after masking \"black tie\" and \"white tie\". Regex long[\\s-]*sleeve; 68 posts in total, top six flairs shown. Within the 68: summer regex \\bsummer\\b|\\bhot\\b|\\bheat\\b|july|august (16); coverage regex church|catholic|temple|mosque|modest|cover (my|the) (arms|shoulders)|covered (16). Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive).",
+        "data": [
+          {
+            "label": "Cocktail or no dress code",
+            "value": 20,
+            "highlight": true
+          },
+          {
+            "label": "Formal",
+            "value": 15
+          },
+          {
+            "label": "Black / white tie",
+            "value": 9
+          },
+          {
+            "label": "Semi-formal / dressy casual",
+            "value": 7
+          },
+          {
+            "label": "Is this too white?",
+            "value": 4
+          },
+          {
+            "label": "Casual",
+            "value": 3
+          }
+        ]
+      }
+    },
+    {
       "heading": "Pick a sleeve shape that matches the wedding",
-      "content": "Straight, fitted sleeves are the classic. They give a clean line and work at every formality level; in stretch fabric they move easily.\n\nBishop sleeves billow from the shoulder and gather into a cuff at the wrist. They read romantic and vintage and are among the most elegant choices for a formal evening.\n\nBell sleeves flare from the elbow or wrist. They add movement and a bohemian feel that suits garden, vineyard and barn weddings.\n\nPuff sleeves gather volume at the shoulder and draw the eye up. They work best with a simple neckline and a fairly plain skirt.\n\nThree-quarter sleeves are the compromise: covered upper arms, a free wrist, and less heat than a full sleeve.\n\nSplit or slit sleeves cover the arm visually while letting air through the opening, which makes them a good summer option for a ceremony that expects covered arms."
+      "content": "Straight, fitted sleeves are the classic. They give a clean line and work at every formality level; in stretch fabric they move easily.\n\nBishop sleeves billow from the shoulder and gather into a cuff at the wrist. They read romantic and vintage and are among the most elegant choices for a formal evening.\n\nBell sleeves flare from the elbow or wrist. They add movement and a bohemian feel that suits garden, vineyard and barn weddings.\n\nPuff sleeves gather volume at the shoulder and draw the eye up. They work best with a simple neckline and a fairly plain skirt.\n\nThree-quarter sleeves are the compromise: covered upper arms, a free wrist, and less heat than a full sleeve.\n\nSplit or slit sleeves cover the arm visually while letting air through the opening, which makes them a good summer option for a ceremony that expects covered arms.\n\nPractical points decide between shapes at a long reception. Wide bell and bishop sleeves trail across plates and candles at a seated dinner and catch on bag straps, so they suit cocktail-style receptions better than long formal dinners. Fitted sleeves are the easiest to wear under a coat, which matters at a winter wedding with an outdoor procession or photos. Puff sleeves crush under a heavy coat; carry the coat, or plan on a wrap instead."
     },
     {
       "heading": "Long sleeves in summer: make the sleeve the design",
-      "content": "Long sleeves can work at a summer wedding when the sleeve is clearly a design choice rather than a compromise. A dress with detailed lace or embroidered mesh sleeves looks intentional; the same silhouette in heavy opaque fabric at a July garden party looks uncomfortable.\n\nLook for ventilation elsewhere: a V-neck, a keyhole or open back, or a split sleeve balances the coverage. Choose the thinnest fabric that still gives the coverage you need.\n\nIf the ceremony requires covered arms but the reception is outdoors in the heat, there is another route: a sleeveless dress for the reception with a lace or mesh bolero or a light shrug for the ceremony. The site's guide to wedding guest cover-ups and wraps covers the options."
+      "content": "Long sleeves can work at a summer wedding when the sleeve is clearly a design choice rather than a compromise. A dress with detailed lace or embroidered mesh sleeves looks intentional; the same silhouette in heavy opaque fabric at a July garden party looks uncomfortable.\n\nLook for ventilation elsewhere: a V-neck, a keyhole or open back, or a split sleeve balances the coverage. Choose the thinnest fabric that still gives the coverage you need.\n\nIf the ceremony requires covered arms but the reception is outdoors in the heat, there is another route: a sleeveless dress for the reception with a lace or mesh bolero or a light shrug for the ceremony. The site's guide to wedding guest cover-ups and wraps covers the options.\n\nColor helps too. A pale or mid-tone sleeve absorbs less sun than black or navy, and a printed chiffon hides the creasing a long sleeve picks up at the elbow. Indoors with air conditioning, an opaque sleeve is rarely a problem; the risk is an outdoor ceremony in full sun followed by photos on a lawn."
     },
     {
       "heading": "Balance the sleeve with the hem",
-      "content": "Midi length is the most balanced partner for long sleeves. The combination works from cocktail to formal dress codes and is particularly strong in fall and winter.\n\nFloor-length with long sleeves is the most formal look and suits black tie. A long-sleeve gown in satin or velvet needs no outer layer once you are inside, so the formal line stays uninterrupted.\n\nKnee-length works for cocktail and semi-formal weddings, and keeps a long sleeve from making the whole outfit feel covered up. It pairs especially well with sheer or lace sleeves."
+      "content": "Midi length is the most balanced partner for long sleeves. The combination works from cocktail to formal dress codes and is particularly strong in fall and winter.\n\nFloor-length with long sleeves is the most formal look and suits black tie. A long-sleeve gown in satin or velvet needs no outer layer once you are inside, so the formal line stays uninterrupted.\n\nKnee-length works for cocktail and semi-formal weddings, and keeps a long sleeve from making the whole outfit feel covered up. It pairs especially well with sheer or lace sleeves.\n\nA mini with long sleeves is the one combination that trades coverage on the arm for the leg. It suits an evening cocktail reception, but at a ceremony in a house of worship the hem becomes the issue the sleeve was meant to solve."
     },
     {
       "heading": "Fit and styling points only sleeves have",
-      "content": "Check the armhole before anything else. A high, close armhole lets you lift your arms to hug and dance without the whole dress riding up; a low, deep one restricts movement. Reviews that mention dancing or \"tight in the arms\" are worth reading.\n\nCheck the sleeve length. A long sleeve should end at the wrist bone. If it covers your hand, a tailor can shorten it, but cuffed and bishop sleeves are harder to alter than plain ones, so factor that in.\n\nLet the sleeve set the accessories. Statement sleeves, such as puffs, bells or heavy embellishment, want simple jewelry, a plain clutch and understated shoes. A fitted, minimal long sleeve leaves room for bolder earrings or a necklace. Bracelets show best with a clean cuff that ends at the wrist; a gathered bishop sleeve will hide them, so move the sparkle to rings or earrings. An updo or pulled-back hair keeps the neckline and sleeve detail visible.\n\nFor necklines: statement sleeves pair well with a simple V, round or square neck; fitted sleeves allow a more dramatic off-shoulder or deep V; and a high neckline with long sleeves gives the most covered look for a religious ceremony."
+      "content": "Check the armhole before anything else. A high, close armhole lets you lift your arms to hug and dance without the whole dress riding up; a low, deep one restricts movement. Reviews that mention dancing or \"tight in the arms\" are worth reading.\n\nCheck the sleeve length. A long sleeve should end at the wrist bone. If it covers your hand, a tailor can shorten it, but cuffed and bishop sleeves are harder to alter than plain ones, so factor that in.\n\nLet the sleeve set the accessories. Statement sleeves, such as puffs, bells or heavy embellishment, want simple jewelry, a plain clutch and understated shoes. A fitted, minimal long sleeve leaves room for bolder earrings or a necklace. Bracelets show best with a clean cuff that ends at the wrist; a gathered bishop sleeve will hide them, so move the sparkle to rings or earrings. An updo or pulled-back hair keeps the neckline and sleeve detail visible.\n\nFor necklines: statement sleeves pair well with a simple V, round or square neck; fitted sleeves allow a more dramatic off-shoulder or deep V; and a high neckline with long sleeves gives the most covered look for a religious ceremony.\n\nBefore ordering, read the listing for four sleeve details. Is a sheer sleeve lined, or bare mesh? Mesh is cooler, but it shows bra straps and tattoos, which matters at a religious ceremony. Does the sleeve fabric stretch? A close-fitting lace or satin sleeve with no stretch restricts movement more than any other part of the dress. Does the size chart give a sleeve length or upper-arm measurement? If not, a model photo with arms at her sides is the best guide to where the cuff ends. And how does the cuff close? Buttons or a zip at the wrist let a fitted sleeve be pushed up at a warm reception; a plain closed cuff does not."
     }
   ],
   "faqs": [
@@ -69,34 +106,38 @@
       "answer": "Generally, yes. The same midi reads more formal with long sleeves than without, which makes a long-sleeve dress a good way to dress up without a floor-length gown. Fabric still decides: a long-sleeve jersey or cotton dress remains casual."
     },
     {
+      "question": "Can you wear a long sleeve dress to a summer wedding?",
+      "answer": "Yes, if the sleeve breathes. Sheer mesh, lace, chiffon and split sleeves cover the arm while letting air through; opaque satin, velvet and knit sleeves trap heat at an outdoor midday wedding. Add ventilation elsewhere with a V-neck or open back, and choose a lighter color. If only the ceremony needs coverage, a sleeveless dress with a lace bolero is the alternative."
+    },
+    {
       "question": "What shoes go with long sleeve wedding guest dresses?",
       "answer": "Pointed-toe pumps and heeled sandals balance the coverage of a long sleeve. In fall and winter, ankle boots or knee-high boots suit a long-sleeve midi. Match the shoe's formality to the dress code rather than to the sleeve."
+    },
+    {
+      "question": "Is an A-line long sleeve dress a good wedding guest choice?",
+      "answer": "It is one of the most versatile. The fitted bodice keeps a long sleeve from looking heavy, and the flared skirt balances the coverage up top. In lace or crepe at midi length it works from semi-formal to formal; in velvet it suits a winter wedding. In jersey or cotton, the same cut stays dressy casual."
     }
   ],
   "relatedPages": [
     {
-      "title": "Best Fall Wedding Guest Dresses 2026 Long Sleeve",
+      "title": "Fall Wedding Guest Dresses",
       "slug": "fall-wedding-guest-dresses"
-    },
-    {
-      "title": "Modest Wedding Guest Dresses With Sleeves 2026",
-      "slug": "modest-wedding-guest-dresses"
-    },
-    {
-      "title": "Beach Wedding Guest Dresses With Sleeves",
-      "slug": "beach-wedding-guest-dresses"
     },
     {
       "title": "Winter Wedding Guest Dresses",
       "slug": "winter-wedding-guest-dresses"
     },
     {
+      "title": "Modest Wedding Guest Dresses",
+      "slug": "modest-wedding-guest-dresses"
+    },
+    {
       "title": "Wedding Guest Cover Ups and Wraps",
       "slug": "wedding-guest-cover-ups-and-wraps"
     },
     {
-      "title": "Church Wedding Guest Dresses",
-      "slug": "church-wedding-guest-dresses"
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
     }
   ],
   "slug": "long-sleeve-wedding-guest-dresses",
@@ -112,12 +153,6 @@
       "image": "https://m.media-amazon.com/images/I/81ATe2DMrRL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FCBRX8V3?tag=weddinggueststyle-20",
       "price": "$18.04"
-    },
-    {
-      "title": "Sparkly Sequins Prom Dresses 2026 Mermaid Bridesmaid Dress with Slit Tube Satin Evening Formal Gown with Train DR0080",
-      "image": "https://m.media-amazon.com/images/I/71MCkU0lteL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FY33RGZ9?tag=weddinggueststyle-20",
-      "price": "$93.99"
     },
     {
       "title": "Womens Floral Long Sleeve Mini Dress Boho Square Neck Smocked A-Line Flowy Short Wedding Guest Dresses",
@@ -144,28 +179,10 @@
       "price": "$19.99"
     },
     {
-      "title": "Women's Sexy Crew Neck Lounge Long Dress Elegant Long Sleeve Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/417tKrDGUoL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CBX4G4GB?tag=weddinggueststyle-20",
-      "price": "$44.97"
-    },
-    {
       "title": "Women's Spring Wedding Guest Dress 2026 Long Sleeve Bodycon Floral Mesh Fall Cocktail Holiday Party Maxi Dresses",
       "image": "https://m.media-amazon.com/images/I/61MnvapCR4L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0D818MJL7?tag=weddinggueststyle-20",
       "price": "$46.99"
-    },
-    {
-      "title": "Womens Basic Sexy Square Neck Long Sleeve Soft Lounge Long Dress Fall Casual Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51zh-RBZtjL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CFXFHGX2?tag=weddinggueststyle-20",
-      "price": "$39.97"
-    },
-    {
-      "title": "Womens Basic Sexy Square Neck Long Sleeve Soft Lounge Long Dress Fall Casual Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/515iHlTii4L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CL6PY86B?tag=weddinggueststyle-20",
-      "price": "$36.97"
     },
     {
       "title": "Women's Floral Boho Long Sleeve Maxi Dress V Neck Empire Waist Swing Flowy Wedding Guest Dress",
@@ -246,28 +263,10 @@
       "price": "$86.99"
     },
     {
-      "title": "Long Black Formal Dresses for Women Gowns Evening Party Cocktail Dress,Split Elegant V Neck Wrap Ruffle Wedding Guest Dr",
-      "image": "https://m.media-amazon.com/images/I/61wbcy3qmkL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C53BB6TH?tag=weddinggueststyle-20",
-      "price": "$32.03"
-    },
-    {
-      "title": "Women's Square Neck Long Sleeve Maxi Dress Ribbed Bodycon Dresses for Women Soft Lounge Dress",
-      "image": "https://m.media-amazon.com/images/I/51iP-VNBqkL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0BJJPRWFW?tag=weddinggueststyle-20",
-      "price": "$32.99"
-    },
-    {
       "title": "Simplee Women’s V Neck Velvet Maxi Dress Short Sleeve Empire Waist Long Formal Dress for Wedding Guest",
       "image": "https://m.media-amazon.com/images/I/614Yd7IDOIL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0C862VDSH?tag=weddinggueststyle-20",
       "price": "$55.99"
-    },
-    {
-      "title": "Womens 2026 Spring Turtleneck Long Sleeve Sweater Dress Tie Waist Casual Loose Ribbed Knit A Line Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61PiBYMUlgL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D9GTG4XP?tag=weddinggueststyle-20",
-      "price": "$53.19"
     },
     {
       "title": "Long Sleeve Fall Dresses for Women Square Neck A Line Flowy Casual Elegant Wedding Guest Party Maxi Dress",
@@ -336,12 +335,6 @@
       "price": "$29.98"
     },
     {
-      "title": "2025 Spring Womens V Neck Long Sleeve Fishtail Sweater Dress Ribbed Knit Slim Fit Bodycon Midi Dress",
-      "image": "https://m.media-amazon.com/images/I/71yBfL7sMsL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D2DF6SYQ?tag=weddinggueststyle-20",
-      "price": "$46.99"
-    },
-    {
       "title": "Women Shoulder Cutout Maxi Dress Mesh Long Sleeve Ruffle Hem Party Formal Wedding Guest Dresses",
       "image": "https://m.media-amazon.com/images/I/419AyOq9xwL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FX2SPY48?tag=weddinggueststyle-20",
@@ -376,12 +369,6 @@
       "image": "https://m.media-amazon.com/images/I/81KPVxYENYL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FBM9NQCP?tag=weddinggueststyle-20",
       "price": "$47.99"
-    },
-    {
-      "title": "Women's Long Sleeve Sweater Dress 2026 Fall V Neck Ribbed Knit Casual Formal Cocktail Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/71Q5ClJS43L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DB4W329G?tag=weddinggueststyle-20",
-      "price": "$29.99"
     },
     {
       "title": "Women’s Plus Size V Neck Velvet Dress Long Sleeve Wrap Empire Waist Midi Dress for Wedding Guest",
@@ -576,12 +563,6 @@
       "price": "$17.99"
     },
     {
-      "title": "Women's Turtleneck Ribbed Elbow Long Sleeve Knit Sweater Dress",
-      "image": "https://m.media-amazon.com/images/I/81k-DoVX0vL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B07MLL5LD6?tag=weddinggueststyle-20",
-      "price": "$35.99"
-    },
-    {
       "title": "Women's Long Sleeve Maxi Dress Built-in Shapewear Bra Square Neck Fall Formal Wedding Guest Cocktail Bodycon Dresses",
       "image": "https://m.media-amazon.com/images/I/61pwI6jGIpL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DFWC863M?tag=weddinggueststyle-20",
@@ -648,18 +629,6 @@
       "price": "$49.99"
     },
     {
-      "title": "2025 Velvet Wedding Guest Dresses for Women, Winter Formal Cocktail Maxi Dress, Cowl Neck Mermaid Evening Gown",
-      "image": "https://m.media-amazon.com/images/I/71HnBxkEb1L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D7HX8NMF?tag=weddinggueststyle-20",
-      "price": "$37.97"
-    },
-    {
-      "title": "Women's 2026 Long Sleeve Fall Winter Sweater Dress Spring Fashion Button Elegant Business Casual Work Mini Dresses",
-      "image": "https://m.media-amazon.com/images/I/611jYb51sHL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D59Z5YZX?tag=weddinggueststyle-20",
-      "price": "$47.49"
-    },
-    {
       "title": "Spring Dresses for Women 2026 Casual Long Sleeve V Neck Elastic Waist Lightweight Maxi Wedding Guest Dress Pockets",
       "image": "https://m.media-amazon.com/images/I/611BppYcapL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0F53YF8VX?tag=weddinggueststyle-20",
@@ -674,8 +643,53 @@
       "title": "Attire Guide: Dress Codes from Casual to White Tie Formal",
       "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
       "readOn": "22 October 2026",
-      "supports": "Floor-length evening gown on the women's black tie list."
+      "supports": "Women's lists for black tie, black tie optional, semi-formal, dressy casual and casual; err formal after 6 p.m."
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Wedding Guest Attire: What to Wear to a Wedding",
+      "url": "https://emilypost.com/advice/wedding-guest-attire",
+      "readOn": "22 October 2026",
+      "supports": "Asking whether bare shoulders and arms would offend at a house of worship."
+    },
+    {
+      "publisher": "weddinggueststyle.com analysis of r/Weddingattireapproval",
+      "title": "10,700 posts, 16 April – 21 October 2026 (aggregate counts only)",
+      "url": "https://www.reddit.com/r/Weddingattireapproval/",
+      "readOn": "22 October 2026",
+      "supports": "68 posts mentioning long sleeves, by flair; summer and coverage sub-counts."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "long sleeve wedding guest dresses",
+    "keywords": [
+      "long sleeve wedding guest dresses",
+      "long sleeve wedding guest dress",
+      "wedding guest dresses with sleeves",
+      "a line long sleeve wedding guest dress",
+      "can you wear a long sleeve dress to a summer wedding"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://www.aol.com/articles/found-17-most-flattering-fall-091529000.html",
+        "format": "affiliate listicle",
+        "weakness": "Not about long sleeves: a fall, over-40 roundup where several picks are sleeveless or tulle maxis ('sleeve' appears 9 times across 17 picks); no fabric, season or dress-code guidance."
+      },
+      {
+        "url": "https://www.nordstrom.com/browse/women/clothing/dresses/wedding-guest?filterByBrand=open-edit",
+        "format": "retailer grid filtered to one house brand",
+        "weakness": "Server HTML carries no readable copy at all (JS-rendered tiles); no sleeve filter, no guidance on season, coverage or fit."
+      },
+      {
+        "url": "https://www.amazon.com/clp/B0CKSGDRGJ",
+        "format": "Amazon single-product landing page",
+        "weakness": "One ribbed bodycon knit maxi, a casual piece most dress codes would read as underdressed; nothing on sleeve fabric, summer heat or armhole fit."
+      }
+    ],
+    "winningFormat": "Shoppable grid of long-sleeve dresses plus a decision guide: fabric by season, verdict table, sleeve shapes, dress-code mapping and listing checks.",
+    "infoGain": "Maps sleeve fabric and shape to each Emily Post dress code and the house-of-worship question, adds counts from 68 Reddit posts on long sleeves (by flair, with summer and coverage sub-counts), and lists four sleeve checks to read in a listing.",
+    "asset": "Verdict table 'Long sleeves: will they work here?' and Reddit bars chart by flair.",
+    "verified": "2026-10-22"
+  }
 }

@@ -1,13 +1,13 @@
 {
   "title": "Midi Wedding Guest Dresses",
   "metaTitle": "Midi Wedding Guest Dresses 2026: Versatile & Elegant",
-  "metaDescription": "Shop the best midi wedding guest dresses for 2026. Mid-calf styles with sleeves, A-line cuts, and elegant options for every dress code.",
+  "metaDescription": "Midi wedding guest dresses by dress code: where the hem should land, what \"midi or longer\" on an invitation means, and the fabric, sleeves and shoes that work.",
   "h1": "Midi Wedding Guest Dresses: The Most Versatile Length for Any Wedding",
   "intro": "Midi wedding guest dresses, with a hem somewhere between just below the knee and just above the ankle, cover a wider spread of dress codes than either a mini or a gown. That range is also the catch: \"midi\" names a band about a foot wide, and where in that band your hem lands decides whether the dress looks elegant or slightly off. This page covers which invitations a midi suits, where the hem should fall, and how fabric, sleeves and shoes change the result.",
   "contentSections": [
     {
-      "heading": "Which dress codes a midi covers",
-      "content": "At casual and garden weddings, a cotton, linen-blend or printed chiffon midi with flat or block-heel sandals is exactly right, and the length keeps even relaxed fabrics from looking too informal.\n\nCocktail and semi-formal are where the midi is most at home. The Emily Post Institute files cocktail dresses under semi-formal, and a crepe, lace or matte satin midi with heeled sandals sits squarely in that code. Wrap, fit-and-flare and sheath midis all work; lace panels, a beaded bodice or a statement sleeve lift a midi from everyday to event.\n\nAt formal and black tie optional weddings, a midi needs an unmistakably special fabric: heavy satin, velvet, beading or brocade, with a longer hem that sits nearer the ankle than the knee. At strict black tie, Emily Post's list for women is a floor-length evening gown, a dressy cocktail dress or your dressiest little black dress, so a very dressy midi is acceptable, but a gown is the choice nobody will question.",
+      "heading": "Midi wedding guest dresses by dress code",
+      "content": "At casual and garden weddings (see What to wear to a casual wedding), a cotton, linen-blend or printed chiffon midi with flat or block-heel sandals is exactly right, and the length keeps even relaxed fabrics from looking too informal.\n\nCocktail and semi-formal are where the midi is most at home (see What is cocktail attire and Semi-formal vs cocktail). The Emily Post Institute files cocktail dresses under semi-formal, and a crepe, lace or matte satin midi with heeled sandals sits squarely in that code. Wrap, fit-and-flare and sheath midis all work; lace panels, a beaded bodice or a statement sleeve lift a midi from everyday to event.\n\nAt formal and black tie optional weddings (see What does black tie optional mean), a midi needs an unmistakably special fabric: heavy satin, velvet, beading or brocade, with a longer hem that sits nearer the ankle than the knee. At strict black tie, Emily Post's list for women is a floor-length evening gown, a dressy cocktail dress or your dressiest little black dress, so a very dressy midi is acceptable, but a gown is the choice nobody will question.\n\nWhite tie is the one code a midi cannot meet. Emily Post's white tie list for women is a floor-length evening gown, with no cocktail-dress alternative, so even a beaded midi falls short (see White tie attire).\n\nTime of day moves a midi up or down the scale. Emily Post advises erring formal for semi-formal events after 6 p.m., and the midi is the length where that advice is easiest to follow: the same crepe midi works at a 2 p.m. garden ceremony with flat sandals and a straw clutch, and at a 7 p.m. semi-formal reception with heeled sandals, a metallic bag and statement earrings. Change the accessories before you change the dress.",
       "visual": {
         "kind": "verdict",
         "title": "Can I wear a midi to…?",
@@ -47,16 +47,62 @@
       }
     },
     {
+      "heading": "What guests and invitations say about midis",
+      "content": "In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 464 posts mentioned a midi, matched with the regex \\bmidis?\\b on post titles and text. Measured as a share of each dress-code flair, the midi peaks in the middle of the formality range: 8.0% of Special Dress Code posts, 6.3% of Semi Formal/Dressy Casual, 5.5% of Cocktail or No Dress Code, 4.9% of Formal and 4.6% of Barn/Beach/Garden Theme, falling to 2.0% of Casual and 1.8% of Black/White Tie.\n\nThe black tie number is the one to notice. In that flair, 162 posts (12.4%) mentioned floor length (regex \\bfloor[- ]length\\b) against 24 for midi. Emily Post allows a dressy cocktail dress at black tie, but guests asking for approval in that flair mostly talk about gowns, which is a fair picture of what the room will be wearing.\n\nA second pattern comes from invitations themselves. 62 posts used a phrase such as \"midi to floor,\" \"midi or maxi\" or \"midi or longer\" (regex \\bmidi(-| )?(to|or|and|-) ?(floor|maxi|longer|ankle|full)), most often under the Formal flair (20 posts) and the Barn/Beach/Garden Theme flair (12). When a couple writes this, read it as a minimum length, not a range to aim for the middle of: anything from just below the knee down to the floor is welcome, and a knee-length or shorter dress is not. A tea length dress counts. A midi that sits right at the knee on you is the risky case, so measure it before the day.",
+      "visual": {
+        "kind": "bars",
+        "title": "Posts that mention a midi, as a share of each dress-code flair",
+        "unit": "%",
+        "caption": "Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive). Regex \\bmidis?\\b on post title and text; 464 posts in total. Each bar is midi posts divided by all posts with that flair (for example 24 of 1,307 Black/White Tie posts).",
+        "data": [
+          {
+            "label": "Special dress code",
+            "value": 8.0
+          },
+          {
+            "label": "Semi-formal / dressy casual",
+            "value": 6.3,
+            "highlight": true
+          },
+          {
+            "label": "Cocktail or no dress code",
+            "value": 5.5,
+            "highlight": true
+          },
+          {
+            "label": "Formal",
+            "value": 4.9
+          },
+          {
+            "label": "Barn / beach / garden",
+            "value": 4.6
+          },
+          {
+            "label": "Casual",
+            "value": 2.0
+          },
+          {
+            "label": "Black / white tie",
+            "value": 1.8
+          }
+        ]
+      }
+    },
+    {
       "heading": "Find the right point on your calf",
-      "content": "The leg narrows twice below the knee: just under the kneecap and again above the ankle. A hem that lands at either narrow point lengthens the leg; a hem that cuts across the widest part of the calf shortens it in every photo, whatever the dress.\n\nA shorter midi, just past the knee, looks lighter and slightly less formal, suits cocktail and daytime weddings, and is usually the easier choice for petite frames, because a mid-calf hem can land at the widest point on a shorter leg. A longer midi near the ankle looks more formal and approaches maxi territory without the hemming and sand problems of a floor-length dress, which is why it works at formal and outdoor weddings. Taller figures can carry either.\n\nTry the dress with the shoes you will wear before deciding. A difference of half an inch can move the hem from flattering to awkward, and a tailor can adjust it quickly with you in the shoes."
+      "content": "The leg narrows twice below the knee: just under the kneecap and again above the ankle. A hem that lands at either narrow point lengthens the leg; a hem that cuts across the widest part of the calf shortens it in every photo, whatever the dress.\n\nA shorter midi, just past the knee, looks lighter and slightly less formal, suits cocktail and daytime weddings, and is usually the easier choice for petite frames, because a mid-calf hem can land at the widest point on a shorter leg. A longer midi near the ankle looks more formal and approaches maxi territory without the hemming and sand problems of a floor-length dress, which is why it works at formal and outdoor weddings. Taller figures can carry either.\n\nTry the dress with the shoes you will wear before deciding. A difference of half an inch can move the hem from flattering to awkward, and a tailor can adjust it quickly with you in the shoes.\n\nListings make this harder, because \"midi\" covers about a foot of hem and product photos are taken on tall models. Before ordering, find three numbers: the garment length (usually measured from the shoulder seam or the waist to the hem), the model's height, and your own measurement from the same starting point to where you want the hem to land. If the listing gives only the model's height and you are shorter, expect the hem to fall lower on you than in the photo, and check the size chart for a garment length. A dress you plan to hem should be ordered long; a dress that arrives short cannot be fixed."
     },
     {
       "heading": "Shape, fabric and sleeves",
-      "content": "An A-line midi, with a fitted bodice, a defined waist and a gently flared skirt, is the easiest midi to wear well. Too much skirt volume at this length looks heavy; too little looks stiff. Wrap midis define the waist on most figures; fitted or ruched midis suit those who like a close silhouette.\n\nMatch the fabric to the code: cotton and linen for casual weddings, crepe and heavy chiffon for cocktail and semi-formal, satin, silk and velvet for formal ones. Structured fabrics hold their shape through hours of sitting and dancing.\n\nSleeves add coverage, warmth and a degree of formality, which makes a sleeved midi a strong choice for fall and winter weddings and for religious ceremonies. Sheer, mesh or lace sleeves give arm coverage without heat in summer; flutter and short puff sleeves are cool options; three-quarter sleeves are the most adaptable. Avoid heavy opaque long sleeves in summer."
+      "content": "An A-line midi, with a fitted bodice, a defined waist and a gently flared skirt, is the easiest midi to wear well. Too much skirt volume at this length looks heavy; too little looks stiff. Wrap midis define the waist on most figures; fitted or ruched midis suit those who like a close silhouette.\n\nMatch the fabric to the code: cotton and linen for casual weddings, crepe and heavy chiffon for cocktail and semi-formal, satin, silk and velvet for formal ones. Structured fabrics hold their shape through hours of sitting and dancing.\n\nSleeves add coverage, warmth and a degree of formality, which makes a sleeved midi a strong choice for fall and winter weddings and for religious ceremonies. Sheer, mesh or lace sleeves give arm coverage without heat in summer; flutter and short puff sleeves are cool options; three-quarter sleeves are the most adaptable. Avoid heavy opaque long sleeves in summer.\n\nDetails do the work that extra length would do in a gown. To dress a midi up, look for one strong element: a sculpted or one-shoulder neckline, a satin or beaded bodice, a high slit, pleating that catches light, or a sleeve with volume. To dress it down for a daytime or casual wedding, choose a matte fabric, a print, a simple strap and a lower heel. A midi that tries to carry every detail at once tends to look busy at this length, because there is more skirt than on a cocktail dress and less than on a gown to spread it across."
     },
     {
       "heading": "Shoes carry more weight at this length",
       "content": "A midi shows the lower leg and the whole shoe, so the shoe is part of the outfit. Pointed pumps give the longest line and suit petite guests especially; nude heels lengthen the leg further. Strappy heeled sandals suit spring and summer; block and kitten heels are practical for outdoor venues and long evenings. Sleek heeled ankle boots work with a midi at fall and winter weddings; chunky or casual boots do not. Flat sandals suit casual and beach midis.\n\nThe most awkward pairing is a completely flat shoe with a hem at mid-calf, which can cut the leg at an unflattering point. Either shorten the hem slightly or add a small heel."
+    },
+    {
+      "heading": "Season and venue decide the fabric",
+      "content": "Emily Post's wedding guest advice names the invitation and the time of the wedding as the best guide to formality, and the season is the best guide to fabric.\n\nSpring and summer: lined chiffon, cotton, linen blends and light crepe, in brighter colors or florals. At an outdoor ceremony in heat, the midi is cooler than a maxi and dressier than a mini, which is why it is the default summer length for so many guests. Choose a lining that breathes; polyester linings under polyester chiffon trap heat.\n\nFall: crepe, satin and heavier lace, in deeper colors, with a sleeve or a wrap for the evening. A midi is the length that works best with sheer tights, which look deliberate with a hem below the knee and odd under a floor-length dress.\n\nWinter: velvet, brocade, heavy satin and long sleeves, with closed shoes or a sleek heeled boot. Bring a proper coat, because a midi leaves the lower leg exposed between the car and the door.\n\nVenue: on a beach, a midi clears the sand where a maxi drags. On a lawn or at a vineyard, it stays out of damp grass. At a church or other house of worship, Emily Post suggests checking whether bare shoulders or open-toed shoes would cause offense; a sleeved midi answers both questions at once. At a ballroom or hotel evening reception, choose the longer end of the midi range and the dressiest fabric you own, or switch to a gown."
     }
   ],
   "faqs": [
@@ -75,16 +121,28 @@
     {
       "question": "Do midi dresses with sleeves work for summer weddings?",
       "answer": "Yes, if the sleeve is light. Sheer mesh, lace, flutter and short puff sleeves give coverage without trapping heat. Avoid heavy opaque long sleeves in hot weather."
+    },
+    {
+      "question": "Is an A-line midi dress a good choice for a wedding guest?",
+      "answer": "It is the easiest midi to get right. The fitted bodice and gently flared skirt work on most figures, let you sit and dance comfortably, and suit casual through black tie optional depending on the fabric: cotton or chiffon for daytime, crepe or lace for cocktail, satin or velvet for formal."
     }
   ],
   "relatedPages": [
     {
-      "title": "Cocktail Wedding Guest Dresses",
-      "slug": "cocktail-wedding-guest-dresses"
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
     },
     {
-      "title": "Semi-Formal Wedding Guest Dresses",
-      "slug": "semi-formal-wedding-guest-dresses"
+      "title": "Tea Length Wedding Guest Dresses",
+      "slug": "tea-length-wedding-guest-dresses"
+    },
+    {
+      "title": "A-Line Wedding Guest Dresses",
+      "slug": "a-line-wedding-guest-dresses"
+    },
+    {
+      "title": "Cocktail Wedding Guest Dresses",
+      "slug": "cocktail-wedding-guest-dresses"
     },
     {
       "title": "Long Sleeve Wedding Guest Dresses",
@@ -134,12 +192,6 @@
       "price": "$45.99"
     },
     {
-      "title": "Sundresses for Women 2025 with Pockets Sleeveless Spaghetti Strap Aline Summer Dresses",
-      "image": "https://m.media-amazon.com/images/I/619OF3Ckp+L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F1K6TCTT?tag=weddinggueststyle-20",
-      "price": "$33.95"
-    },
-    {
       "title": "Floral Dress for Women Spaghetti Strap Midi Sundress 2026 Summer Spring Casual Dresses with Pockets",
       "image": "https://m.media-amazon.com/images/I/71Ex+35SajL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0GCW9TKT6?tag=weddinggueststyle-20",
@@ -152,106 +204,16 @@
       "price": "$19.99"
     },
     {
-      "title": "Women's Summer Short Sleeve Cutout Twist Front Side Slit Ribbed Knit Party Club Bodycon Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51rWSoHmHZL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F6XXYJVP?tag=weddinggueststyle-20",
-      "price": "$32.99"
-    },
-    {
-      "title": "Women's Wool Blend Square Neck Tie Waist Pleated Summer Sweater Dress 2026",
-      "image": "https://m.media-amazon.com/images/I/71HB362HnbL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G1MPHSJQ?tag=weddinggueststyle-20",
-      "price": "$40.99"
-    },
-    {
-      "title": "Women's Elegant 3/4 Sleeve Peplum Bodycon Sheath Office Work Business Pencil Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/41nX2RdKjHL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FFMGR1NS?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens 1950s Cape Collar Vintage Swing Stretchy Dresses",
-      "image": "https://m.media-amazon.com/images/I/61VTq6Z+UJL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C3X99THK?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Women Summer Casual Dress 2026 Sleeveless Midi Tank Sundress with Pockets V Neck Buttons Pleated A Line Tshirt Dress",
-      "image": "https://m.media-amazon.com/images/I/918oPaGDmwL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GFVPNVGS?tag=weddinggueststyle-20",
-      "price": "$26.99"
-    },
-    {
       "title": "Womens 2026 Summer Boho Strapless Midi Dresses Off Shoulder Smocked Eyelet Wedding Guest Beach Long Dress Pockets",
       "image": "https://m.media-amazon.com/images/I/71msFLc+rSL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G4Z6W83N?tag=weddinggueststyle-20",
       "price": "$50.99"
     },
     {
-      "title": "Women's Spring Wedding Guest Dress 2026 Long Sleeve Bodycon Floral Mesh Fall Cocktail Holiday Party Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61MnvapCR4L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D818MJL7?tag=weddinggueststyle-20",
-      "price": "$46.99"
-    },
-    {
-      "title": "Women's Sleeveless Halter Ribbed Knit Bodycon Midi Slimming Side Slit Summer Night Out Vacation Dress",
-      "image": "https://m.media-amazon.com/images/I/51Z4bJrEheL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G5Q5TYZJ?tag=weddinggueststyle-20",
-      "price": "$30.99"
-    },
-    {
-      "title": "Womens Bodycon Midi Sweater Dress Casual Ribbed Knit Bell Long Sleeve Ruffle Crewneck Decor Button Decoration Dresses",
-      "image": "https://m.media-amazon.com/images/I/61l2xLb6ffL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0GCHGR53C?tag=weddinggueststyle-20",
-      "price": "$35.99"
-    },
-    {
-      "title": "Women's 2026 Summer Sleeveless Dress Bodycon Mesh Wedding Guest Formal Cocktail Party Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61wE+v7EzhL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CQF6ZQ34?tag=weddinggueststyle-20",
-      "price": "$19.99"
-    },
-    {
-      "title": "Womens Basic Sexy Square Neck Long Sleeve Soft Lounge Long Dress Fall Casual Ribbed Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/51O+DXOdqjL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CL6NZ91W?tag=weddinggueststyle-20",
-      "price": "$36.97"
-    },
-    {
       "title": "Summer Floral V Neck Puff Cap Sleeve Sundress Cute Milkmaid Midi Dresses with Pockets",
       "image": "https://m.media-amazon.com/images/I/81Qi9SUD95L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FWR928YT?tag=weddinggueststyle-20",
       "price": "$34.99"
-    },
-    {
-      "title": "Womens Spring Wedding Guest Dress 2026 Summer Beach Floral Cocktail Party Formal Ruffle Bodycon Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61W03mAtRuL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX2QXDCT?tag=weddinggueststyle-20",
-      "price": "$59.99"
-    },
-    {
-      "title": "Women's Long Sleeve Midi Sweater Dress 2026 Fall Crewneck Knit A Line Pleated Flowy Long Dresses with Belt",
-      "image": "https://m.media-amazon.com/images/I/71ES22A0NiL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FGXS6YQJ?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
-      "title": "Womens Bodycon Midi Dresses Summer Casual Sleeveless Dress Women Knit Side Slit Striped 2025 Long Tank Dress",
-      "image": "https://m.media-amazon.com/images/I/61aTKgQ2xhL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DL5LNKRT?tag=weddinggueststyle-20",
-      "price": "$12.99"
-    },
-    {
-      "title": "Simplee Women's 2025 Velvet Short Sleeve Cocktail Dress Fall Winter Casual V Neck Empire Waist Mini Dresses with Pockets",
-      "image": "https://m.media-amazon.com/images/I/81p6ZIN0nlL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FR9385H9?tag=weddinggueststyle-20",
-      "price": "$39.99"
-    },
-    {
-      "title": "Womens Summer Midi Bodycon Sweater Dress Sexy V Neck Tie Shoulder Striped Knit Side Slit Sleeveless Tank Dresses",
-      "image": "https://m.media-amazon.com/images/I/61JWiX6kaBL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0CQT7PKCT?tag=weddinggueststyle-20",
-      "price": "$31.98"
     },
     {
       "title": "Women's Summer Boho Floral Midi Dress 2026 Casual Ruffle Cap Sleeve Beach Wedding Guest Flowy Tiered Long Dresses",
@@ -270,18 +232,6 @@
       "image": "https://m.media-amazon.com/images/I/61jhWLF5GGL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G2LKCYY7?tag=weddinggueststyle-20",
       "price": "$35.98"
-    },
-    {
-      "title": "Women Formal Wedding Guest Long Cocktail Party One Shoulder Mesh Ruched Bodycon Maxi Ruffle Slit Dress",
-      "image": "https://m.media-amazon.com/images/I/61JR2C7i4rL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DS252K1M?tag=weddinggueststyle-20",
-      "price": "$36.99"
-    },
-    {
-      "title": "Women's Spring Floral Wedding Guest Bodycon Dresses 2026 Long Sleeve Crewneck Mesh Ruffle Mermaid Party Maxi Dress",
-      "image": "https://m.media-amazon.com/images/I/61Vo6hXYy3L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FG2PS9PM?tag=weddinggueststyle-20",
-      "price": "$29.99"
     },
     {
       "title": "Women Floral Corset Dress Summer Wedding Guest Dresses Flowy A Line Midi Sundress with Pockets",
@@ -344,12 +294,6 @@
       "price": "$37.95"
     },
     {
-      "title": "Women's Sparkly Prom Dresses Formal Off Shoulder Tea Party V-Neck Spaghetti Straps A-line Sequin Cocktail Dress",
-      "image": "https://m.media-amazon.com/images/I/71Yw5o1-CUL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G4BPN3LL?tag=weddinggueststyle-20",
-      "price": "$45.99"
-    },
-    {
       "title": "Women Floral Summer Sun Dress Flutter Sleeve Smocked Chiffon Midi Dress Casual Boho Flowy Dress with Pockets",
       "image": "https://m.media-amazon.com/images/I/71DJYBHkQ-L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G2356ZZK?tag=weddinggueststyle-20",
@@ -360,12 +304,6 @@
       "image": "https://m.media-amazon.com/images/I/91i7CABwCcL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FZRVLRVR?tag=weddinggueststyle-20",
       "price": "$24.99"
-    },
-    {
-      "title": "Satin Ruffle Prom Dresses Long for Women Spaghetti Straps Mermaid Slit Cocktail Dresses Formal Gowns for Teens",
-      "image": "https://m.media-amazon.com/images/I/61cD3S7fVtL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F21C5HSM?tag=weddinggueststyle-20",
-      "price": "$74.99"
     },
     {
       "title": "Floral Corset Midi Summer Wedding Guest Dress Lace Up Spaghetti Strap Flowy Dresses for Women Sundress with Pockets",
@@ -386,12 +324,6 @@
       "price": "$49.99"
     },
     {
-      "title": "Long Black Formal Dresses for Women Gowns Evening Party Cocktail Dress,Split Elegant V Neck Wrap Ruffle Wedding Guest Dr",
-      "image": "https://m.media-amazon.com/images/I/61wbcy3qmkL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0C53FB542?tag=weddinggueststyle-20",
-      "price": "$59.78"
-    },
-    {
       "title": "Vintage Floral Dress for Women 2026 Summer A-line Sleeveless Flowy Midi Elegant Wedding Guest Cocktail Dress",
       "image": "https://m.media-amazon.com/images/I/517+WsK0ubL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DR1NFQ61?tag=weddinggueststyle-20",
@@ -404,12 +336,6 @@
       "price": "$19.99"
     },
     {
-      "title": "Womens 2026 Spring Turtleneck Long Sleeve Sweater Dress Tie Waist Casual Loose Ribbed Knit A Line Midi Dresses",
-      "image": "https://m.media-amazon.com/images/I/61PiBYMUlgL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D9GTC2WX?tag=weddinggueststyle-20",
-      "price": "$53.19"
-    },
-    {
       "title": "Women's Wedding Guest Floral Print Vintage Goth Dress Mesh Spliced Double-Layered Irregular Hemline Midi Dresses",
       "image": "https://m.media-amazon.com/images/I/61gRt0C5p+L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0D9XGJLWB?tag=weddinggueststyle-20",
@@ -420,12 +346,6 @@
       "image": "https://m.media-amazon.com/images/I/81TnbWTwg7L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G25J81TT?tag=weddinggueststyle-20",
       "price": "$34.99"
-    },
-    {
-      "title": "Women's 3/4 Flutter Chiffon Sleeve Cocktail Dress Crew Neck Formal Wedding Guest Dresses",
-      "image": "https://m.media-amazon.com/images/I/61YT0sqeCML._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX9FK1W4?tag=weddinggueststyle-20",
-      "price": "$36.99"
     },
     {
       "title": "Women Summer Elegant Strapless Midi Ruched Bodycon Dress Solid Color Stretch Mesh Slim Party Cocktail Dresses",
@@ -452,18 +372,6 @@
       "price": "$45.99"
     },
     {
-      "title": "Plus Size Dresses for Curvy Women V Neck Short Sleeve Dresses Floral/Striped Summer Boho Dresses with Pocket XL-5XL",
-      "image": "https://m.media-amazon.com/images/I/61SdcjozpBL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F21F65F6?tag=weddinggueststyle-20",
-      "price": "$34.99"
-    },
-    {
-      "title": "Women's Floral Bodycon Maxi Dress 2026 Spring Elegant Mesh Long Sleeve Formal Wedding Guest Cocktail Dresses",
-      "image": "https://m.media-amazon.com/images/I/71ilODr6soL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F7XLF27Z?tag=weddinggueststyle-20",
-      "price": "$46.99"
-    },
-    {
       "title": "Floral Halter Corset Midi Summer Wedding Guest Dress Bow Tie Smocked Slit Flowy Sundress Milkmaid Dresses for Women",
       "image": "https://m.media-amazon.com/images/I/71eACqxwPJL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0GFD3S3FW?tag=weddinggueststyle-20",
@@ -476,28 +384,10 @@
       "price": "$42.99"
     },
     {
-      "title": "Womens Summer Dresses 2026 Ruffle Short Sleeve Shirred High Waist Tiered Smocked A-Line Casual Dress with Pocket",
-      "image": "https://m.media-amazon.com/images/I/61x2IFyEWuL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DLWN4VPY?tag=weddinggueststyle-20",
-      "price": "$34.88"
-    },
-    {
-      "title": "Simplee Womens Summer Floral Summer Maxi Dresses Boho Flowy Flutter Short Sleeve Crew Neck Vacation Smocked Chiffon Dres",
-      "image": "https://m.media-amazon.com/images/I/81jF38i7U5L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G1SQX47G?tag=weddinggueststyle-20",
-      "price": "$48.99"
-    },
-    {
       "title": "Womens Casual Dress for Summer Short Sleeve Loose Flowy Beach Dress with Pockets Hankerchief Flare Midi Sundress 2026",
       "image": "https://m.media-amazon.com/images/I/71YTo3jymSL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FXDSQGPZ?tag=weddinggueststyle-20",
       "price": "$24.99"
-    },
-    {
-      "title": "Floral Dress for Women Summer Puff Sleeve Square Neck A Line Flowy Wedding Guest Tea Party Dresses",
-      "image": "https://m.media-amazon.com/images/I/71LeMixA49L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DSH61VK1?tag=weddinggueststyle-20",
-      "price": "$42.99"
     },
     {
       "title": "Women Summer Midi Dresses Wrap Short Flutter Sleeve V Neck Boho Slit Flowy Ruffle Dress Wedding Guest Dresses",
@@ -530,12 +420,6 @@
       "price": "$39.99"
     },
     {
-      "title": "Women's Summer Sleeveless Floral Bodycon Dress 2026 Spring Mesh Wedding Guest Cocktail Formal Party Maxi Dresses",
-      "image": "https://m.media-amazon.com/images/I/610Cgzma0HL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FZV3PL4J?tag=weddinggueststyle-20",
-      "price": "$42.99"
-    },
-    {
       "title": "Summer Dresses for Women 2026 Button Front Sleeveless Casual Midi Dress Beach Vacation Sundresses with Pockets",
       "image": "https://m.media-amazon.com/images/I/614kVDvngNL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FS67B4QT?tag=weddinggueststyle-20",
@@ -560,12 +444,6 @@
       "price": "$45.99"
     },
     {
-      "title": "Womens Dresses 2026 Maxi Dresses Deep V Neck Elegant Bow Tie Front Cap Sleeve Summer Floral Satin Smocked Dress",
-      "image": "https://m.media-amazon.com/images/I/71omzIQa6kL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D4M5RMBL?tag=weddinggueststyle-20",
-      "price": "$49.99"
-    },
-    {
       "title": "Sundresses for Women Maxi Tied Neck Spaghetti Straps Pleated Ruffles Casual Summer Midi Dress with Pockets",
       "image": "https://m.media-amazon.com/images/I/71QXrF5D99L._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0FY682S7W?tag=weddinggueststyle-20",
@@ -578,22 +456,10 @@
       "price": "$36.95"
     },
     {
-      "title": "Dresses for Women 2026 Casual Summer V Neck Babydoll Dress Short Sleeve Fashion Beach Vacation Clothes",
-      "image": "https://m.media-amazon.com/images/I/71XVd8ryaUL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FX7G3F4Y?tag=weddinggueststyle-20",
-      "price": "$16.99"
-    },
-    {
       "title": "Womens Summer Casual Tulle Midi Dresses Ruffle Sleeve Crew Neck Smocked Mesh 2026 Flowy Tiered Wedding Guest Dress",
       "image": "https://m.media-amazon.com/images/I/71EJD+2kasL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G148STQF?tag=weddinggueststyle-20",
       "price": "$29.99"
-    },
-    {
-      "title": "Women's Fall Dress Sleeveless Ribbed Knit Midi Tank Dress Wedding Guest Dress Sweater Dresses",
-      "image": "https://m.media-amazon.com/images/I/61T3dJJRgzL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0DGGJNQX9?tag=weddinggueststyle-20",
-      "price": "$25.99"
     },
     {
       "title": "Women's Sexy Spaghetti Strap Tie Knot Cut Out Bodycon Sleeveless Ribbed Knit Slit Club Party Midi Dresses",
@@ -606,18 +472,6 @@
       "image": "https://m.media-amazon.com/images/I/71YuYmMTjPL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DP8Q2K42?tag=weddinggueststyle-20",
       "price": "$43.99"
-    },
-    {
-      "title": "Summer Dresses for Women Flowy Aline Casual Midi Tank Dress Beach Boho Vacation Sundresses Shift Dress with Pockets",
-      "image": "https://m.media-amazon.com/images/I/71QPmFrP7-L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0G5ZPGSSG?tag=weddinggueststyle-20",
-      "price": "$19.99"
-    },
-    {
-      "title": "Summer Wedding Guest Dress for Women 2026 Spaghetti Strap Bodycon Maxi Dress Ruffle Formal Cocktail Dresses",
-      "image": "https://m.media-amazon.com/images/I/61eEUvmz5VL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FCM2K8P8?tag=weddinggueststyle-20",
-      "price": "$45.99"
     },
     {
       "title": "Women's Summer Boho Floral Dress V Neck Short Sleeve Midi Dresses with Pockets Beach Vacation Daily Wear",
@@ -644,12 +498,6 @@
       "price": "$35.09"
     },
     {
-      "title": "Womens Summer Sundress Ruffle Short Sleeve Casual Dresses V Neck Floral Wrap A-Line Party Dress with Pockets",
-      "image": "https://m.media-amazon.com/images/I/71gnlEHOy+L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0FZJB78NX?tag=weddinggueststyle-20",
-      "price": "$29.99"
-    },
-    {
       "title": "Womens Tiered Midi Wedding Guest, Mother of The Bride Dress with Bead Embellishment (Petite and Regular Sizes)",
       "image": "https://m.media-amazon.com/images/I/61VS6HMrzML._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0F3MV4PKJ?tag=weddinggueststyle-20",
@@ -666,6 +514,30 @@
       "image": "https://m.media-amazon.com/images/I/71wSGCeUEkL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0G7KXGT59?tag=weddinggueststyle-20",
       "price": "$34.39"
+    },
+    {
+      "title": "EBAKUS Midi A-Line Prom Dress Blue Vintage Square Neck Spaghetti Straps Wedding Guest Dresses Jacquard Floral Satin Tea Length Bridesmaid Dress for Women Size 0",
+      "image": "https://m.media-amazon.com/images/I/411aBZljN-L._AC_UL640_.jpg",
+      "url": "https://www.amazon.com/dp/B0FKMJZ7P6?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
+      "price": "$69.99"
+    },
+    {
+      "title": "Women's Spaghetti Strap Midi Satin Silk Dresses Slip Cowl Neck Party Cocktail Evening Sexy Dress Brown",
+      "image": "https://m.media-amazon.com/images/I/317nPWQv+UL._AC_UL640_.jpg",
+      "url": "https://www.amazon.com/dp/B0CX8S319B?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
+      "price": "$44.99"
+    },
+    {
+      "title": "ANRABESS Women One Shoulder Formal Wedding Guest Dress,Black,L | One Flutter Short Sleeve, Wrap High Slit Midi Dresses, Summer Cocktail Evening Party, Classic Elegant for Fall Events Outfits",
+      "image": "https://m.media-amazon.com/images/I/31WiBA6LirL._AC_UL640_.jpg",
+      "url": "https://www.amazon.com/dp/B0G23D6HJT?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
+      "price": "$66.99"
+    },
+    {
+      "title": "Lazysmile Women's Long Sleeve Fall Elegant Wedding Guest Midi Dresses | Square Neck, A Line Flowy, Fit and Flare, Party Cocktail Modest Long Dress, 2026 Winter Clothes",
+      "image": "https://m.media-amazon.com/images/I/3182bG+4AKL._AC_UL640_.jpg",
+      "url": "https://www.amazon.com/dp/B0FXM9WNW2?tag=weddinggueststyle-20&linkCode=ogi&th=1&psc=1",
+      "price": "$49.99"
     }
   ],
   "publishDate": "2026-03-15",
@@ -677,7 +549,45 @@
       "url": "https://emilypost.com/advice/attire-guide-dress-codes-from-casual-to-white-tie",
       "readOn": "22 October 2026",
       "supports": "Women's lists for semi-formal (cocktail dresses), black tie optional, black tie (floor-length gown, dressy cocktail dress, dressiest little black dress) and white tie (floor-length evening gown)."
+    },
+    {
+      "publisher": "The Emily Post Institute",
+      "title": "Wedding Guest Attire: What to Wear to a Wedding",
+      "url": "https://emilypost.com/advice/wedding-guest-attire",
+      "readOn": "22 October 2026",
+      "supports": "The invitation and time of the wedding as the best guide to formality; checking whether bare shoulders or open-toed shoes are acceptable at a house of worship."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "midi wedding guest dresses",
+    "keywords": [
+      "midi wedding guest dresses",
+      "midi wedding guest dress",
+      "midi dress for wedding guest",
+      "a line midi dress for wedding guest",
+      "a line midi wedding guest dress"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://petalandpup.com/collections/wedding-guest-dresses",
+        "format": "retailer grid",
+        "weakness": "A general guest collection that ranks for midi; its SEO copy lists mini, midi and maxi in one breath and never says which dress codes a midi meets or where the hem should land."
+      },
+      {
+        "url": "https://www.ladyblacktie.com/collections/wedding-guest-midi-dresses",
+        "format": "retailer grid",
+        "weakness": "119-product grid with filters and no editorial text: no definition of midi, no dress-code guidance, no hem placement, fabric-by-season or shoe advice."
+      },
+      {
+        "url": "https://showmeyourmumu.com/collections/midi-wedding-guest-dresses",
+        "format": "retailer grid with short FAQ",
+        "weakness": "Generic FAQ (\"appropriate for most venues and dress codes\"); allows midis at black tie without naming any etiquette source, and says nothing about hem placement, listings or what \"midi or longer\" on an invitation means."
+      }
+    ],
+    "winningFormat": "Shop page with an answer-first guide: products under the answer, dress-code verdicts, original data, hem placement and listing checks, season and venue",
+    "infoGain": "The only result that gives Emily Post verdicts for a midi at every code including white tie, explains how to read \"midi to floor\" invitation wording, and shows original Reddit data on where guests use midis.",
+    "asset": "Verdict table (midi by dress code) plus a bars chart of midi mentions as a share of each dress-code flair in 10,700 r/Weddingattireapproval posts",
+    "verified": "2026-10-22"
+  }
 }

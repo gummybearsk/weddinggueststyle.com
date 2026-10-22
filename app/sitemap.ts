@@ -22,12 +22,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   const pillarPages = [
-    { url: `${baseUrl}/season`, priority: 0.9 },
-    { url: `${baseUrl}/dress-code`, priority: 0.9, lastMod: "2026-10-12" }, // types-of-dress-codes refresh
-    { url: `${baseUrl}/color`, priority: 0.9 },
-    { url: `${baseUrl}/body-type`, priority: 0.9 },
-    { url: `${baseUrl}/style`, priority: 0.9 },
-    { url: `${baseUrl}/venue`, priority: 0.9 },
+    // 2026-10-22: every hub was rewritten for the dress-code pivot.
+    { url: `${baseUrl}/season`, priority: 0.9, lastMod: "2026-10-22" },
+    { url: `${baseUrl}/dress-code`, priority: 0.9, lastMod: "2026-10-22" },
+    { url: `${baseUrl}/color`, priority: 0.9, lastMod: "2026-10-22" },
+    { url: `${baseUrl}/body-type`, priority: 0.9, lastMod: "2026-10-22" },
+    { url: `${baseUrl}/style`, priority: 0.9, lastMod: "2026-10-22" },
+    { url: `${baseUrl}/venue`, priority: 0.9, lastMod: "2026-10-22" },
   ].map((p: { url: string; priority: number; lastMod?: string }) => ({
     url: p.url,
     lastModified: new Date(p.lastMod ?? "2026-05-25"),
@@ -40,8 +41,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/about`,             priority: 0.5, lastMod: "2026-05-25" }, // edited today (author swap, AI disclosure)
     { url: `${baseUrl}/editorial`,         priority: 0.5, lastMod: "2026-04-15" },
     { url: `${baseUrl}/privacy`,           priority: 0.3, lastMod: "2026-04-15" },
-    { url: `${baseUrl}/terms`,             priority: 0.3, lastMod: "2026-04-15" },
-    { url: `${baseUrl}/contact`,           priority: 0.4, lastMod: "2026-05-25" }, // new page
+    { url: `${baseUrl}/terms`,             priority: 0.3, lastMod: "2026-10-22" }, // false claims removed
+    { url: `${baseUrl}/contact`,           priority: 0.4, lastMod: "2026-10-22" },
     { url: `${baseUrl}/author/sukie-gao`,  priority: 0.5, lastMod: "2026-05-25" }, // new page
   ].map((p) => ({
     url: p.url,
@@ -54,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: baseUrl,
       // Homepage was last edited today (hero refactor, pillar links). Never use `new Date()` here — wastes Google's crawl budget per Rule 17.
-      lastModified: new Date("2026-05-25"),
+      lastModified: new Date("2026-10-22"), // dress-code pivot rebuild
       changeFrequency: "daily" as const,
       priority: 1,
     },

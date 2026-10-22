@@ -20,5 +20,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Notify IndexNow (Bing + Yandex)
-        run: node scripts/notify-indexnow.js
+      # Announce only pages published or revised in the last 2 days (Rule 45: a 2-day window
+      # so one missed run never skips a page). Re-pinging all ~77 URLs daily told Bing that
+      # unchanged pages had changed.
+      - name: Notify IndexNow (Bing + Yandex) — changed pages only
+        run: |
+          SLUGS=$(node -e "const fs=require('fs');const t=new Date().toISOString().slice(0,10);const f=new Date(Date.now()-2*864e5).toISOString().slice(0,10);for(const n of fs.readdirSync('content/pages')){const p=JSON.parse(fs.readFileSync('content/pages/'+n,'utf8'));const d=p.modifiedDate&&p.modifiedDate<=t?p.modifiedDate:p.publishDate||'';if(d>=f&&d<=t)console.log(p.slug)}")
+          if [ -n "$SLUGS" ]; then node scripts/notify-indexnow.js $SLUGS; else echo "No pages published or revised in the last 2 days."; fi

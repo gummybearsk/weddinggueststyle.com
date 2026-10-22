@@ -70,8 +70,8 @@ export const FEATURED_NICHES: FeaturedNiche[] = [
     blurb: "Between the knee and the ankle, where most dress codes are happiest.",
   },
   {
-    slug: "black-cocktail-wedding-guest-dresses",
-    label: "Black Cocktail",
+    slug: "black-wedding-guest-dresses",
+    label: "Black",
     blurb: "Black is fine at a wedding. The cut is what decides it.",
   },
 ];
@@ -113,14 +113,13 @@ export function picksForPillar(slugs: string[], count = 12): Product[] {
 const SEASON_EDIT: Record<string, { slug: string; label: string; blurb: string }[]> = {
   fall: [
     { slug: "fall-wedding-guest-dresses", label: "Fall", blurb: "Sleeves, heavier fabrics, hems that survive a damp lawn." },
-    { slug: "wedding-guest-shoes-for-fall", label: "Fall Shoes", blurb: "Grass, gravel and a long day on your feet." },
-    { slug: "shades-of-brown-wedding-guest-dresses", label: "Chocolate & Cognac", blurb: "The palette that took over autumn." },
+    { slug: "wedding-guest-cover-ups-and-wraps", label: "Layers", blurb: "Wraps and jackets for cool evenings." },
+    { slug: "shades-of-brown-wedding-guest-dresses", label: "Shades of Brown", blurb: "Chocolate, rust, taupe and camel, by dress code." },
   ],
   winter: [
     { slug: "winter-wedding-guest-dresses", label: "Winter", blurb: "Velvet, long sleeves, and something you can actually wear a coat over." },
-    { slug: "holiday-wedding-guest-dresses", label: "Holiday", blurb: "Dark by four o'clock — dress for evening whatever the invitation says." },
-    { slug: "what-to-wear-to-a-christmas-wedding", label: "Christmas", blurb: "Festive without dressing as the decorations." },
     { slug: "wedding-guest-cover-ups-and-wraps", label: "Cover-ups", blurb: "Sleeves your dress doesn't have." },
+    { slug: "long-sleeve-wedding-guest-dresses", label: "Long Sleeve", blurb: "Coverage that still reads as evening." },
   ],
   spring: [
     { slug: "spring-wedding-guest-dresses", label: "Spring", blurb: "Pastels, florals, and a layer for the evening." },

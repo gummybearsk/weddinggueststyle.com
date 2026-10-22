@@ -32,10 +32,10 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">2. Description of Service</h2>
           <p>
-            Wedding Guest Style is a content-and-affiliate website that curates and reviews wedding guest dresses
-            available for purchase through Amazon and other retailers. We provide style guides, dress code
-            explanations, and product recommendations to help readers find appropriate attire for weddings they
-            attend as guests.
+            Wedding Guest Style is a content-and-affiliate website that explains wedding dress codes for women and
+            men and links to wedding guest outfits available through Amazon. We provide dress-code guides, original
+            data analysis and product links to help readers find appropriate attire for weddings they attend as
+            guests.
           </p>
         </section>
 
@@ -53,27 +53,26 @@ export default function TermsPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">4. Affiliate Relationships</h2>
           <p>
             We participate in affiliate programs including Amazon Associates. When you click an affiliate link and
-            make a purchase, we may earn a commission at no additional cost to you. Our affiliate relationships
-            do not influence our recommendations — we only recommend dresses we genuinely believe would benefit
-            our readers based on real reviews, ratings, and product specifications.
+            make a purchase, we may earn a commission at no additional cost to you. Commission rates play no part in
+            which products appear on a page.
           </p>
           <p>
             See our <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>
-            for our full review and recommendation process.
+            for how pages are researched and how products are selected.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">5. Intellectual Property</h2>
           <p>
-            All original content on this site (text, page structure, curation, original photography) is owned by
+            All original content on this site (text, diagrams, data analysis and page structure) is owned by
             Wedding Guest Style and protected by copyright. You may share excerpts with attribution and a link
             back to the source page. You may not republish, redistribute, or commercially reuse our content
             without written permission.
           </p>
           <p>
-            Product images and brand names are the property of their respective owners and are used under fair
-            use for editorial and review purposes.
+            Product images and brand names are the property of their respective owners. Photographs credited to
+            other photographers are used under the licence named in each credit.
           </p>
         </section>
 
@@ -90,7 +89,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">7. Third-Party Links</h2>
           <p>
-            Our site contains links to third-party websites including Amazon, Nordstrom, and other retailers. We
+            Our site contains links to third-party websites including Amazon and the sources we cite. We
             are not responsible for the content, privacy practices, or terms of those sites. Use them at your
             own discretion.
           </p>

@@ -26,7 +26,7 @@ export default function HeroPicks({
         Our picks for {category.toLowerCase()}
       </h2>
       <p className="text-sm text-ink-600 font-light mb-8 max-w-2xl leading-relaxed">
-        Our favourites right now, in order.
+        In stock now, at today&rsquo;s price.
       </p>
 
       <ol className="space-y-6">

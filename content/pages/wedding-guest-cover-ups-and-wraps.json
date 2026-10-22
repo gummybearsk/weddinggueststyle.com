@@ -1,13 +1,62 @@
 {
   "title": "Wedding Guest Cover Ups and Wraps",
   "metaTitle": "Wedding Guest Cover Ups and Wraps: Pashmina vs Bolero vs Blazer",
-  "metaDescription": "Wedding guest cover ups and wraps compared — pashmina, bolero, blazer, faux fur and tailored coat. What stays on the shoulders and what you'll end up carrying.",
-  "h1": "Wedding Guest Cover Ups and Wraps for Cold Ceremonies",
-  "intro": "Wedding guest cover ups and wraps exist to solve one problem: a sleeveless dress that is right for the wedding and wrong for the temperature, or for a ceremony where shoulders should be covered. The layer often appears in more photos than the dress, because it is on during the ceremony, the drinks and the group shots outside. A dress that is comfortable indoors at 70°F is not enough standing still outdoors at 50°F, and whatever you add has to come off for dinner and go somewhere. Each option below trades warmth against how easily it stays on and how easily it is carried.",
+  "metaDescription": "Wedding guest cover ups and wraps compared: pashmina, bolero, blazer, faux fur and coat, which stays on, where it goes at dinner, and what suits each month.",
+  "h1": "Wedding Guest Cover Ups and Wraps for Cold or Covered-Shoulder Ceremonies",
+  "intro": "Wedding guest cover ups and wraps exist to solve one problem: a sleeveless dress that is right for the wedding and wrong for the temperature, or for a ceremony where shoulders should be covered. The layer can appear in as many photos as the dress, because it is on during the ceremony, the drinks and the group shots outside. A dress that is comfortable indoors at 70°F is not enough standing still outdoors at 50°F, and whatever you add has to come off for dinner and go somewhere. Each option below trades warmth against how easily it stays on and how easily it is carried.",
   "contentSections": [
     {
+      "heading": "What 544 guests asking for help reached for",
+      "content": "In our analysis of 10,700 posts on r/Weddingattireapproval (16 April – 21 October 2026), 544 posts mention a shawl, pashmina, bolero, shrug, cover-up, wrap (not counting wrap dresses), stole, capelet or cardigan. The shawl dominates: 303 of those posts name one, far ahead of a wrap (95), a cardigan (70) or a generic cover-up (69). Pashminas (36), boleros (34) and shrugs (28) follow, with stoles (12) and capelets (8) rare.\n\nWhy people add the layer is just as clear. 106 of the 544 posts mention a church, cathedral, temple, mosque, synagogue or a religious or Catholic ceremony, 91 mention cold, cool, chilly or freezing, and 58 mention shoulders. Coverage and temperature are the two jobs, in roughly equal measure, which is why the options on this page are judged on both.\n\nThe layer is not only a casual-wedding question. The largest groups were filed under cocktail or no dress code (129) and formal (119), followed by black or white tie (72) and semi-formal or dressy casual (71). Another 37 sat under \"Is this too white?\", usually because the poster wanted to know whether a pale shawl or shrug tipped the outfit toward bridal. If yours is white, ivory or cream, the color rule applies to it exactly as it does to the dress.",
+      "visual": {
+        "kind": "bars",
+        "title": "Which cover-up 544 posts named",
+        "unit": "posts",
+        "data": [
+          {
+            "label": "Shawl",
+            "value": 303,
+            "highlight": true
+          },
+          {
+            "label": "Wrap (not wrap dress)",
+            "value": 95
+          },
+          {
+            "label": "Cardigan",
+            "value": 70
+          },
+          {
+            "label": "Cover-up",
+            "value": 69
+          },
+          {
+            "label": "Pashmina",
+            "value": 36
+          },
+          {
+            "label": "Bolero",
+            "value": 34
+          },
+          {
+            "label": "Shrug",
+            "value": 28
+          },
+          {
+            "label": "Stole",
+            "value": 12
+          },
+          {
+            "label": "Capelet",
+            "value": 8
+          }
+        ],
+        "caption": "Posts whose title or text matches (?i)\\b(shawl|pashmina|bolero|shrug|cover[\\s-]?ups?|wraps?\\b(?![\\s-]*dress)|stole|capelet|cardigan)\\b, then counted per item with its own singular/plural regex; a post can name more than one. \"Black tie\" and \"white tie\" were masked first. Source: weddinggueststyle.com analysis of 10,700 r/Weddingattireapproval posts, 16 April – 21 October 2026 (Arctic Shift archive). Read 22 October 2026."
+      }
+    },
+    {
       "heading": "Pashmina and oversized wraps",
-      "content": "The default, and for good reason. A large rectangular wrap — cashmere, wool blend, or a viscose imitation — is warm across the shoulders and upper arms, packs down into almost nothing, and comes in every color, which makes it the easiest thing to match to a dress.\n\nSize is what separates a good wrap from a useless one. Around 28 by 78 inches is the useful minimum; the small 20-inch-wide scarves marketed as wraps don't cover anything once your arms move. A generous wrap can be worn as a shoulder drape, folded lengthways as a stole, wound loosely as a shawl, or pinned.\n\nWhat it does badly is stay put, which the section on staying power below deals with.\n\nFabric matters for warmth in a way the price tag doesn't always reflect. Real cashmere and merino are genuinely warm and light. Viscose and polyester wraps look identical in photographs and provide much less insulation — fine for a cool room, not for standing outdoors in November."
+      "content": "The default, and for good reason. A large rectangular wrap — cashmere, wool blend, or a viscose imitation — is warm across the shoulders and upper arms, packs down into almost nothing, and comes in every color, which makes it the easiest thing to match to a dress.\n\nSize is what separates a good wrap from a useless one. Check the dimensions in the listing against your own arms: a useful wrap reaches from wrist to wrist with your arms held out and is deep enough to cover your shoulder blades. Narrow scarves sold as wraps don't cover anything once your arms move. A generous wrap can be worn as a shoulder drape, folded lengthways as a stole, wound loosely as a shawl, or pinned.\n\nWhat it does badly is stay put, which the section on staying power below deals with.\n\nFabric matters for warmth in a way the price tag doesn't always reflect. Real cashmere and merino are genuinely warm and light. Viscose and polyester wraps look identical in photographs and provide much less insulation — fine for a cool room, not for standing outdoors in November."
     },
     {
       "heading": "Boleros and shrugs",
@@ -111,11 +160,11 @@
     },
     {
       "heading": "Match exactly, go neutral, or contrast on purpose",
-      "content": "Three approaches work and one does not.\n\nMatching exactly — the same fabric or a very close color — makes the layer disappear and keeps the dress the focus. This is the right call when the dress is the interesting part: a beaded gown, a strong print, an unusual silhouette.\n\nNeutral — black, camel, charcoal, ivory-adjacent creams if the wedding permits, or gray — is the safe and versatile option, and it's what to choose if you want to wear the wrap again. Camel over almost any autumn color is excellent. Black over a jewel tone is classic.\n\nDeliberate contrast is the most stylish and the most work. It needs to be a real contrast: burgundy over sage, camel over emerald, dusty blue over chocolate brown, black over fuchsia. Classic pairings like chocolate brown with blue accessories, or olive green with warm neutrals, are contrast pairings, and they work because there's no ambiguity about the choice.\n\nWhat doesn't work is the near miss: a wrap that is almost the dress color but half a shade off. It reads as an accident every time, and it looks worse in photographs than it does in a mirror. If you can't match exactly, contrast instead."
+      "content": "Three approaches work and one does not.\n\nMatching exactly — the same fabric or a very close color — makes the layer disappear and keeps the dress the focus. This is the right call when the dress is the interesting part: a beaded gown, a strong print, an unusual silhouette.\n\nNeutral — black, camel, charcoal or gray — is the safe and versatile option, and it's what to choose if you want to wear the wrap again. Camel over almost any autumn color is excellent. Black over a jewel tone is classic.\n\nDeliberate contrast is the most stylish and the most work. It needs to be a real contrast: burgundy over sage, camel over emerald, dusty blue over chocolate brown, black over fuchsia. Classic pairings like chocolate brown with blue accessories, or olive green with warm neutrals, are contrast pairings, and they work because there's no ambiguity about the choice.\n\nWhat doesn't work is the near miss: a wrap that is almost the dress color but half a shade off. It reads as an accident every time, and it looks worse in photographs than it does in a mirror. If you can't match exactly, contrast instead."
     },
     {
-      "heading": "Fabric weight by month and venue",
-      "content": "September: chiffon kimonos, fine knit shrugs, lightweight lace boleros. You need coverage more than insulation, and anything heavy will be carried by 7pm.\n\nEarly October: a mid-weight pashmina, a lined blazer, a fine merino wrap. This is the sweet spot for a wool-blend wrap.\n\nLate October and November: heavy pashmina, velvet blazer, faux fur stole, wool cape. Add a proper coat for arrival.\n\nDecember through February: faux fur, velvet, wool, and layering — a stole for the room plus a full coat for outside. Indoor winter venues are often overheated, so the layer needs to be genuinely removable.\n\nVenue adjusts all of this. A stone church or a barn is cold all year and often colder than outside. A tent with patio heaters is warm at the center and cold at the edges. A hotel ballroom is warm throughout, and there your cover-up is a style choice rather than a necessity — which is precisely when a blazer or a lace bolero earns its place."
+      "heading": "Wedding guest cover ups and wraps by month and venue",
+      "content": "September: chiffon kimonos, fine knit shrugs, lightweight lace boleros. You need coverage more than insulation, and anything heavy will be carried by 7pm.\n\nEarly October: a mid-weight pashmina, a lined blazer, a fine merino wrap. This is the sweet spot for a wool-blend wrap.\n\nLate October and November: heavy pashmina, velvet blazer, faux fur stole, wool cape. Add a proper coat for arrival.\n\nDecember through February: faux fur, velvet, wool, and layering — a stole for the room plus a full coat for outside. Indoor winter venues are often overheated, so the layer needs to be genuinely removable.\n\nMarch to May: the autumn list in reverse. A mid-weight pashmina or lined blazer for March, a fine knit shrug or lace bolero by May.\n\nJune to August: coverage rather than warmth. A chiffon kimono or lace bolero covers shoulders for a church ceremony; add warmth only for an air-conditioned reception.\n\nVenue adjusts all of this. A stone church or a barn is cold all year and often colder than outside. A tent with patio heaters is warm at the center and cold at the edges. A hotel ballroom is warm throughout, and there your cover-up is a style choice rather than a necessity — which is precisely when a blazer or a lace bolero earns its place."
     }
   ],
   "faqs": [
@@ -134,10 +183,6 @@
     {
       "question": "What do I wear over a sleeveless dress to a church wedding?",
       "answer": "A lace or chiffon bolero, a fine knit shrug, or a wrap worn over both shoulders and pinned. If the requirement is modesty rather than warmth, a chiffon kimono or lace bolero covers the shoulders and upper arms without adding heat. Stone churches are also genuinely cold year-round, so err warmer than the outdoor temperature suggests."
-    },
-    {
-      "question": "Do I need a coat as well as a cover up?",
-      "answer": "From November onward, yes. A pashmina is not enough for a parking lot in December. Choose a coat clearly longer or clearly shorter than the dress hem rather than nearly the same length, and check whether it will fit over the dress sleeves — a fitted set-in sleeve won't go over a puff or bishop sleeve without crushing it."
     }
   ],
   "relatedPages": [
@@ -158,8 +203,12 @@
       "slug": "how-to-accessorize-a-wedding-guest-dress"
     },
     {
-      "title": "Wedding Guest Shoes for Fall",
-      "slug": "wedding-guest-shoes-for-fall"
+      "title": "Fall Wedding Guest Dresses",
+      "slug": "fall-wedding-guest-dresses"
+    },
+    {
+      "title": "Wedding dress codes explained",
+      "slug": "dress-code"
     }
   ],
   "slug": "wedding-guest-cover-ups-and-wraps",
@@ -273,28 +322,10 @@
       "price": "$42.88"
     },
     {
-      "title": "Ahlaray Casual Black Blazer Jacket for Women Open Front Long Sleeve Work Office, Large",
-      "image": "https://m.media-amazon.com/images/I/41iuPMGniRL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F32R7PR3?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$22.79"
-    },
-    {
       "title": "ELLEVEN Womens Blazer Business Casual Suit Jacket Tweed Blazers for Women Slim Fit Fitted Long Sleeve Stand Collar Blazer Dressy Full Lining Coat Cardigan with Padded Shoulder White Medium",
       "image": "https://m.media-amazon.com/images/I/513QsDtymuL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B0DBZCY1W2?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
       "price": "$39.88"
-    },
-    {
-      "title": "Cicy Bell Womens Casual Blazers Open Front Long Sleeve Work Office Suit Jackets Blazer Black",
-      "image": "https://m.media-amazon.com/images/I/41+JNW8eTyL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B07WD8YZ2Q?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$43.30"
-    },
-    {
-      "title": "Ahlaray White Jackets for Women Dressy Open Front Long Sleeve Jacket Work Office Blazer, Small",
-      "image": "https://m.media-amazon.com/images/I/41dnkp0Or1L._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F32T1531?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$28.49"
     },
     {
       "title": "Traleubie Womens Cropped Blazers for Work Casual 3/4 Sleeve Lapel Collar Suit Jacket Business Outfit Pink S",
@@ -303,34 +334,10 @@
       "price": "$30.07"
     },
     {
-      "title": "ELLEVEN Blazers for Women Business Casual Work Office Long Sleeve Lightweight Button Pockets Notched Lapel Collar Slim Fit Professional Suit Jacket Coat Outfits Padded Shoulder Black Large",
-      "image": "https://m.media-amazon.com/images/I/413QSs3OkJL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0D86LG5NJ?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$42.61"
-    },
-    {
-      "title": "womens blazers dressy casual, Khaki Blazers for Women Business Casual Oversized Dressy Work Office Cute Trendy Long Cropped Blazer Lightweight Suit Jackets Fall Outfits 2026 M",
-      "image": "https://m.media-amazon.com/images/I/418lTzo8LrL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0H7X5MLN8?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$5.99"
-    },
-    {
-      "title": "Blazers for Women Business Casual Plus Size Lightweight Open Front Long Sleeve Jackets Dressy Work Office Suit Ladies Summer 2026 Professional Teacher Classy Outfits Capsule Wardrobe Curvy Black XL",
-      "image": "https://m.media-amazon.com/images/I/51CH9YbbiLL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0H2HW5B3Q?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$7.97"
-    },
-    {
       "title": "luvamia Women's Notched Lapel Neck Long Sleeves One Button Pocket Blazer Jacket Wear to Work Suit Women's Tuxedos Ladies Blazers Slim Blazer Jackets for Women New Black Size L",
       "image": "https://m.media-amazon.com/images/I/31S3ClVnMoL._AC_UL500_.jpg",
       "url": "https://www.amazon.com/dp/B07V5SCGYY?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
       "price": "$44.99"
-    },
-    {
-      "title": "ELLEVEN Womens Business Casual Blazers Suit Jacket Slim Fit Ruched 3/4 Sleeve Outfits for Women Crop Stretchy Knit Work Office Petite Blazer with Pockets Lightweight Dressy Summer Light Pink Small",
-      "image": "https://m.media-amazon.com/images/I/41W4y8E1SUL._AC_UL500_.jpg",
-      "url": "https://www.amazon.com/dp/B0F5W7HR42?tag=weddinggueststyle-20&linkCode=osi&th=1&psc=1",
-      "price": "$42.99"
     },
     {
       "title": "Shawl Wraps Women Pashmina Cardigan Triangle Cape Knit Shoulder Top Sweater Scarf for Fall Winter,01 Khaki",
@@ -354,7 +361,46 @@
       "url": "https://emilypost.com/advice/wedding-guest-attire",
       "readOn": "22 October 2026",
       "supports": "For religious ceremonies: check whether head coverings are expected and whether bare shoulders or arms or open-toed shoes would offend."
+    },
+    {
+      "publisher": "Reddit, r/Weddingattireapproval (weddinggueststyle.com analysis)",
+      "title": "10,700 posts, 16 April – 21 October 2026, aggregate keyword counts",
+      "url": "https://www.reddit.com/r/Weddingattireapproval/",
+      "readOn": "22 October 2026",
+      "supports": "544 posts naming a cover-up; per-item counts (shawl 303, wrap 95, cardigan 70, cover-up 69, pashmina 36, bolero 34, shrug 28, stole 12, capelet 8); reasons (religious venue 106, cold 91, shoulders 58); flair split."
     }
   ],
-  "modifiedDate": "2026-10-22"
+  "modifiedDate": "2026-10-22",
+  "brief": {
+    "intentGroup": "wedding guest cover ups and wraps",
+    "keywords": [
+      "wedding guest cover ups and wraps",
+      "what to wear over a dress to a wedding",
+      "shawl for wedding guest",
+      "wedding guest wrap",
+      "what to wear over a sleeveless dress to a wedding",
+      "bolero for wedding guest"
+    ],
+    "serpTop3": [
+      {
+        "url": "https://www.adriannapapell.com/blogs/style-guide/what-to-wear-over-a-dress-to-a-wedding",
+        "format": "brand blog listicle (shawl, jacket, blazer, cardigan, shrug) with FAQ",
+        "weakness": "One paragraph per item promoting its own range; nothing on keeping a wrap on, slippery dress fabrics, where the layer goes at dinner, or the coat you arrive in."
+      },
+      {
+        "url": "https://www.black.co.uk/blogs/black-in-style/wedding-wraps",
+        "format": "brand product edit",
+        "weakness": "Product picks from one cashmere brand; no wrap sizes, no dress-code guidance, no coats, no advice on keeping it on, and modesty mentioned only as a product blurb."
+      },
+      {
+        "url": "https://www.monsoonlondon.com/row/scrapbook/post/what-to-wear-over-a-sleeveless-dress-to-a-wedding/?pid=9448",
+        "format": "brand style post",
+        "weakness": "Cardigan, scarf, jacket and blazer ideas only; no religious-venue coverage, no coats despite a cold-weather angle, no warmth comparison and no dress-code breakdown."
+      }
+    ],
+    "winningFormat": "Comparison guide that shops: answer first, a cover-up comparison table (warmth, stays on, once it comes off, suits), month-by-month fabric weights and original Reddit data",
+    "infoGain": "The only result that compares every cover-up on warmth, staying power and where it goes at dinner, deals with slippery dress fabrics and coat length, and shows from 544 Reddit posts that guests add the layer for religious coverage as often as for cold.",
+    "asset": "Cover-up comparison table plus a bars chart of which cover-up 544 r/Weddingattireapproval posts named",
+    "verified": "2026-10-22"
+  }
 }

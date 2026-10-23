@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { DressCodeRung } from "@/lib/dressCodes";
+import ShareButtons from "./ShareButtons";
 
 /**
  * "What does my invitation mean?" — pick the code printed on the invitation and see what
@@ -13,11 +14,25 @@ import type { DressCodeRung } from "@/lib/dressCodes";
 export default function DressCodeDecoder({
   rungs,
   sourceLabel,
+  basePath = "/",
 }: {
   rungs: (DressCodeRung & { links: { slug: string; label: string }[] })[];
   sourceLabel: string;
+  /** Page the decoder sits on; shared links point to `${basePath}#code-<key>`. */
+  basePath?: string;
 }) {
   const [active, setActive] = useState(rungs[3]?.key ?? rungs[0].key);
+
+  // A shared link (#code-black-tie) opens the decoder on that code.
+  useEffect(() => {
+    const key = window.location.hash.replace(/^#code-/, "");
+    if (key && rungs.some((r) => r.key === key)) setActive(key);
+  }, [rungs]);
+
+  function pick(key: string) {
+    setActive(key);
+    history.replaceState(null, "", `#code-${key}`);
+  }
   return (
     <div className="border border-ink-200 bg-white">
       <div className="p-5 sm:p-7 border-b border-ink-200">
@@ -31,7 +46,7 @@ export default function DressCodeDecoder({
               role="tab"
               aria-selected={active === r.key}
               aria-controls={`code-${r.key}`}
-              onClick={() => setActive(r.key)}
+              onClick={() => pick(r.key)}
               className={`px-3 py-1.5 text-sm border transition-colors ${
                 active === r.key
                   ? "bg-ink-900 text-ivory border-ink-900"
@@ -76,6 +91,14 @@ export default function DressCodeDecoder({
               ))}
             </p>
           )}
+          <div className="mt-6 pt-5 border-t border-ink-100">
+            <ShareButtons
+              path={`${basePath}#code-${r.key}`}
+              title={`What to wear to a ${r.label.toLowerCase()} wedding, for women and men`}
+              label={`Share ${r.label}`}
+              compact
+            />
+          </div>
         </div>
       ))}
       <p className="px-5 pb-5 sm:px-7 text-xs text-ink-500 font-light">{sourceLabel}</p>

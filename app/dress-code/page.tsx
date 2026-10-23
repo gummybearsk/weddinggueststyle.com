@@ -40,7 +40,7 @@ export default function DressCodePillarPage() {
       intro="Wedding dress codes tell guests how formal to be, and each phrase on an invitation maps to specific clothes for women and for men. Pick the code from your invitation in the decoder below to see both lists, use the ladder to see where it sits, and open the full guide for the edge cases: time of day, venue, season, colour and what to do when the invitation says nothing at all."
       lead={
         <div className="grid gap-8 lg:grid-cols-2 items-start">
-          <DressCodeDecoderSection />
+          <DressCodeDecoderSection basePath="/dress-code" />
           <DressCodeLadder caption={LADDER_CAPTION} />
         </div>
       }

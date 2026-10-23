@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProductGrid from "@/components/ProductGrid";
 import FAQ from "@/components/FAQ";
 import AuthorByline from "@/components/AuthorByline";
+import ShareButtons from "@/components/ShareButtons";
 import { getAllSlugsIncludingScheduled, getPublishedPageData, isLinkableSlug } from "@/lib/getPages";
 import { getLayoutPlan, headingClass, eyebrowText } from "@/lib/layoutVariant";
 import { getFurtherReading } from "@/lib/furtherReading";
@@ -417,6 +418,9 @@ function GuidePage({ page, products, asOf }: { page: PageData; products: Product
           <div className="mt-6">
             <AuthorByline publishDate={page.modifiedDate || page.publishDate} />
           </div>
+          <div className="mt-4">
+            <ShareButtons path={`/${page.slug}`} title={page.h1} image={page.heroImage?.url} compact collapsed />
+          </div>
           {page.answer && (
             <div className="mt-8 border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
               <p className="text-[11px] uppercase tracking-[0.18em] text-blush-700 mb-2">The short answer</p>
@@ -452,6 +456,9 @@ function GuidePage({ page, products, asOf }: { page: PageData; products: Product
         <div className="max-w-3xl">
           {page.faqs.length > 0 && <FAQ faqs={page.faqs} />}
           <SourcesList sources={page.sources} />
+          <div className="mt-10 pt-6 border-t border-ink-200">
+            <ShareButtons path={`/${page.slug}`} title={page.h1} image={page.heroImage?.url} label="Share this guide" />
+          </div>
         </div>
         <RelatedPages relatedPages={page.relatedPages} />
       </div>
@@ -557,6 +564,9 @@ export default function InnerPage({ params }: PageProps) {
           <div className="mt-6">
             <AuthorByline publishDate={page.modifiedDate || page.publishDate} />
           </div>
+          <div className="mt-4">
+            <ShareButtons path={`/${page.slug}`} title={page.h1} image={page.heroImage?.url} compact collapsed />
+          </div>
 
           {page.answer && (
             <div className="mt-8 border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
@@ -651,6 +661,9 @@ export default function InnerPage({ params }: PageProps) {
 
         {/* Outbound authority citations (Rule 29). Renders nothing when a page has none. */}
         <SourcesList sources={page.sources} />
+        <div className="mt-10 pt-6 border-t border-ink-200">
+          <ShareButtons path={`/${page.slug}`} title={page.h1} image={page.heroImage?.url ?? shown[0]?.image} label="Share this page" />
+        </div>
       </div>
     </>
   );

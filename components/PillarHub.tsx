@@ -5,6 +5,7 @@ import StickyEditorPick from "./StickyEditorPick";
 import type { SubGroup } from "@/lib/taxonomy";
 
 import SourcesList from "@/components/SourcesList";
+import ShareButtons from "@/components/ShareButtons";
 import type { PageSource } from "@/lib/types";
 
 interface PillarHubProps {
@@ -86,6 +87,9 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
 
           <p className="eyebrow mb-4">Pillar Guide · {pillarLabel}</p>
           <h1 className="display-serif text-3xl sm:text-4xl lg:text-5xl text-ink-900">{h1}</h1>
+          <div className="mt-5">
+            <ShareButtons path={`/${pillarSlug}`} title={h1} compact collapsed />
+          </div>
           {answer && (
             <div className="mt-8 max-w-3xl border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
               <p className="text-[11px] uppercase tracking-[0.18em] text-blush-700 mb-2">The short answer</p>
@@ -179,6 +183,10 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
 
         {/* Outbound authority citations (Rule 29). Renders nothing when absent. */}
         <SourcesList sources={sources} />
+
+        <div className="mt-10 pt-6 border-t border-ink-200">
+          <ShareButtons path={`/${pillarSlug}`} title={h1} label="Share this guide" />
+        </div>
 
         {/* Back to home */}
         <div className="mt-16 pt-8 border-t border-ink-200">

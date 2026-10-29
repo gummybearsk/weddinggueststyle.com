@@ -97,6 +97,8 @@ const PILLARS: Pillar[] = [
       { label: "Garden & outdoor", match: /garden/ },
       { label: "Church & traditional", match: /church/ },
       { label: "Indian weddings", match: /indian/ },
+      { label: "Western & ranch", match: /western|ranch|barn/ },
+      { label: "Courthouse & city hall", match: /courthouse|city-hall/ },
     ],
   },
 ];

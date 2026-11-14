@@ -572,6 +572,13 @@ export default function InnerPage({ params }: PageProps) {
             <div className="mt-8 border-l-4 border-blush-500 bg-white px-5 py-4 sm:px-6 sm:py-5">
               <p className="text-[11px] uppercase tracking-[0.18em] text-blush-700 mb-2">The short answer</p>
               <p className="text-lg text-ink-900 leading-relaxed">{page.answer}</p>
+              {page.answerLink && isLinkableSlug(page.answerLink.href.replace(/^\//, "")) && (
+                <p className="mt-3 text-base">
+                  <Link href={page.answerLink.href} className="font-medium text-blush-700 underline underline-offset-4 hover:text-blush-900">
+                    {page.answerLink.label} &rarr;
+                  </Link>
+                </p>
+              )}
             </div>
           )}
 

@@ -12,9 +12,9 @@ import { DRESS_CODE_SOURCE } from "@/lib/dressCodes";
 export const revalidate = 43200;
 
 export const metadata: Metadata = {
-  title: { absolute: "Wedding Dress Codes Explained: Black Tie to Casual (2026)" },
+  title: { absolute: "Wedding Dress Codes Explained: 7 Types & What Guests Wear" },
   description:
-    "Wedding dress codes explained for women and men: the types of wedding dress codes in order, most formal first — white tie, black tie, black tie optional, cocktail, semi-formal, dressy casual and casual — and what each one means for guests.",
+    "Wedding dress codes from white tie to casual: all 7 types in order, with what women and men wear for each, plus what to wear when the invitation names none.",
   alternates: { canonical: "https://weddinggueststyle.com/dress-code" },
 };
 

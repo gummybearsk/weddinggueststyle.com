@@ -24,7 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pillarPages = [
     // 2026-10-22: every hub was rewritten for the dress-code pivot.
     { url: `${baseUrl}/season`, priority: 0.9, lastMod: "2026-10-22" },
-    { url: `${baseUrl}/dress-code`, priority: 0.9, lastMod: "2026-10-22" },
+    { url: `${baseUrl}/dress-code`, priority: 0.9, lastMod: "2026-11-14" }, // 2026-11-14: title/meta rewrite for Bing CTR
     { url: `${baseUrl}/color`, priority: 0.9, lastMod: "2026-10-22" },
     { url: `${baseUrl}/body-type`, priority: 0.9, lastMod: "2026-10-22" },
     { url: `${baseUrl}/style`, priority: 0.9, lastMod: "2026-10-22" },

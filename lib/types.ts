@@ -125,6 +125,8 @@ export interface PageData {
   kind?: "guide";
   /** 15–90 word direct answer rendered above the fold (Rule 54c). */
   answer?: string;
+  /** Link shown inside the answer box, up to the definition guide (shopping pages). */
+  answerLink?: { href: string; label: string };
   /** Who the guide dresses: both is the default for dress-code guides. */
   audience?: "women" | "men" | "both";
   /** Breadcrumb hub for guide pages; defaults to the dress-code hub. */

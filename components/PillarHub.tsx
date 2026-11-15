@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { HomepageSection, Product } from "@/lib/types";
 import ProductCarousel from "./ProductCarousel";
+import { priceAsOfLabel } from "@/lib/amazonData";
 import StickyEditorPick from "./StickyEditorPick";
 import type { SubGroup } from "@/lib/taxonomy";
 
@@ -115,6 +116,8 @@ export default function PillarHub({ pillarSlug, pillarLabel, h1, intro, sections
             </h2>
             <p className="text-sm text-ink-600 font-light mb-8 max-w-2xl leading-relaxed">
               A quick look at what we&rsquo;re recommending across {pillarLabel.toLowerCase()}.
+              {/* Amazon requires an "as of" date beside displayed prices. */}
+              {priceAsOfLabel() ? <> {priceAsOfLabel()}</> : null}
             </p>
             <ProductCarousel products={products} />
             <div className="mt-8">

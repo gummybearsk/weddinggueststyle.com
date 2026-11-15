@@ -1,5 +1,6 @@
 // Revalidate every 12 hours so scheduled pages appear in nav/sitemap
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -12,7 +13,7 @@ import StickyEditorPick from "@/components/StickyEditorPick";
 import { getFeatured, getSeasonalEdit, getDeals } from "@/lib/featured";
 import { seasonForMonth } from "@/lib/seasonOrder";
 import DealsRow from "@/components/DealsRow";
-import { priceAsOfLabel } from "@/lib/amazonData";
+import { priceAsOfLabel, primeAmazonData } from "@/lib/amazonData";
 import {
   seasonSections,
   dressCodeSections,
@@ -142,7 +143,8 @@ function CategoryGroup({
   );
 }
 
-export default function HomePage() {
+export default async function HomePage() {
+  await primeAmazonData();
   const featured = getFeatured(6);
   const season = seasonForMonth(new Date().getMonth());
   const seasonalEdit = getSeasonalEdit(season, 4);

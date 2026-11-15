@@ -3,12 +3,14 @@ import PillarHub from "@/components/PillarHub";
 import BarChart from "@/components/visuals/BarChart";
 import CompareTable from "@/components/visuals/CompareTable";
 import { picksForPillar } from "@/lib/featured";
+import { primeAmazonData } from "@/lib/amazonData";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { seasonSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Season — Summer, Fall, Winter, Spring (2026)",
@@ -63,7 +65,8 @@ const longForm = [
   "How to use the guides listed above: find your season's group, open the guide, and read it alongside the dress-code guide for your invitation. The summer, fall, winter and spring guides each match fabric and color to the code; the winter guide also covers festive and holiday attire, and the fall guide covers shoes for grass and gravel and what the mothers of the couple wear once the weather turns. If the wedding falls between seasons, read both guides and dress for the colder one, since a layer is easy to take off and impossible to conjure.",
 ];
 
-export default function SeasonPillarPage() {
+export default async function SeasonPillarPage() {
+  await primeAmazonData();
   return (
     <PillarHub
       pillarSlug="season"

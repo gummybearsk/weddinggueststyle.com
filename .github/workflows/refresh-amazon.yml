@@ -1,19 +1,30 @@
-name: Refresh Amazon Prices (Daily)
+name: Refresh Amazon Prices (twice daily, no deploy)
 
 # The Associates Operating Agreement requires displayed prices to come from the API and be
-# refreshed at least every 24h with a visible "as of" timestamp. This regenerates
-# content/amazon-data.json, commits it, and lets the push trigger a Vercel deploy.
+# refreshed at least every 24h with a visible "as of" timestamp.
+#
+# Since 2026-11-15 this no longer commits to main (which redeployed the whole site every day
+# and broke pages Google had fetched but not yet rendered). Instead it:
+#   1. fetches prices (scripts/refresh-amazon.js),
+#   2. refuses to publish a run that lost more than 20% of in-stock items (partial API failure),
+#   3. force-pushes amazon-data.json as a single commit to the `amazon-data` branch
+#      (vercel.json: that branch never deploys),
+#   4. waits until raw.githubusercontent.com serves the new file,
+#   5. calls /api/revalidate-prices so pages regenerate with the new prices,
+#   6. checks every sitemap page shows today's price date (scripts/check-live-pages.mjs).
+# lib/amazonData.ts reads the branch file; content/amazon-data.json on main is only a fallback.
 #
 # A full run is ~3,000 ASINs / ~310 API calls at ~1.2s throttle ≈ 7 minutes.
 
 on:
   schedule:
-    # 05:00 UTC — an hour before the daily-rebuild job, so fresh prices are in place
-    # before scheduled pages publish.
+    # Twice a day, so a single failed run never leaves prices older than 24 h
+    # (pages hide prices from data older than 23 h).
     - cron: "0 5 * * *"
+    - cron: "0 17 * * *"
   workflow_dispatch:
 
-# Prevent two refreshes racing on the same file.
+# Prevent two refreshes racing.
 concurrency:
   group: refresh-amazon
   cancel-in-progress: false
@@ -21,10 +32,8 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
-    # GITHUB_TOKEN defaults to read-only on this repo, so the push at the end of this job
-    # 403s without this. The refresh itself succeeds either way, which makes the failure
-    # easy to misread as an API problem.
+    timeout-minutes: 40
+    # Needed to push the amazon-data branch.
     permissions:
       contents: write
     steps:
@@ -49,15 +58,50 @@ jobs:
         if: always()
         run: rm -f .env.local
 
-      - name: Commit if changed
+      - name: Refuse a run that lost in-stock items
         run: |
+          node -e '
+            const fs=require("fs");
+            const now=JSON.parse(fs.readFileSync("content/amazon-data.json","utf8"));
+            const inStock=d=>Object.values(d.items||{}).filter(i=>i.inStock).length;
+            fetch("https://raw.githubusercontent.com/${{ github.repository }}/amazon-data/amazon-data.json",{cache:"no-store"})
+              .then(r=>r.ok?r.json():null).catch(()=>null).then(prev=>{
+                const a=inStock(now), b=prev?inStock(prev):0;
+                console.log(`in stock: new ${a}, published ${b}`);
+                if(a===0||(b>0&&a<0.8*b)){console.error("Refusing to publish: lost >20% of in-stock items");process.exit(1);}
+              });'
+
+      - name: Publish to the amazon-data branch
+        run: |
+          mkdir -p /tmp/pub && cp content/amazon-data.json /tmp/pub/
+          # Vercel reads vercel.json from the pushed commit: this keeps the branch from deploying.
+          printf '{\n  "git": { "deploymentEnabled": false }\n}\n' > /tmp/pub/vercel.json
+          cd /tmp/pub
+          git init -q -b amazon-data
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- content/amazon-data.json; then
-            echo "No price changes today."
-            exit 0
-          fi
-          COUNT=$(node -e "const d=require('./content/amazon-data.json');console.log(Object.values(d.items).filter(i=>i.inStock).length)")
-          git add content/amazon-data.json
-          git commit -m "Amazon: daily price refresh (${COUNT} in stock)"
-          git push
+          git add amazon-data.json vercel.json
+          COUNT=$(node -e "const d=require('./amazon-data.json');console.log(Object.values(d.items).filter(i=>i.inStock).length)")
+          git commit -qm "Amazon prices (${COUNT} in stock)"
+          git push -qf "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" amazon-data
+
+      - name: Wait for the new file on raw.githubusercontent.com
+        run: |
+          WANT=$(node -p "require('./content/amazon-data.json').fetchedAt")
+          for i in $(seq 1 40); do
+            CDN=$(curl -s "https://raw.githubusercontent.com/${{ github.repository }}/amazon-data/amazon-data.json" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>{try{console.log(JSON.parse(s).fetchedAt)}catch{console.log("")}})')
+            echo "want $WANT, cdn $CDN"
+            [ "$CDN" = "$WANT" ] && exit 0
+            sleep 15
+          done
+          echo "raw CDN still serving the old file after 10 min"; exit 1
+
+      - name: Regenerate pages with the new prices
+        run: |
+          curl -sf -X POST https://weddinggueststyle.com/api/revalidate-prices \
+            -H "Authorization: Bearer ${{ secrets.PRICE_REVALIDATE_SECRET }}"
+
+      - name: Check every page shows the new price date
+        run: |
+          sleep 20
+          node scripts/check-live-pages.mjs --all --asof=$(node -p "require('./content/amazon-data.json').fetchedAt")

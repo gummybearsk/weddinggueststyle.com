@@ -3,12 +3,14 @@ import PillarHub from "@/components/PillarHub";
 import BarChart from "@/components/visuals/BarChart";
 import CompareTable from "@/components/visuals/CompareTable";
 import { picksForPillar } from "@/lib/featured";
+import { primeAmazonData } from "@/lib/amazonData";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { styleSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Style — Maxi, Midi, Floral, Modest, Long Sleeve",
@@ -57,7 +59,8 @@ const longForm = [
   "The mistakes worth avoiding come down to treating style as a substitute for formality. A beautiful midi in cotton is still a casual dress at a black tie wedding. A floor-length dress in jersey reads relaxed, not formal, because the fabric has the last word. A floral print on a white base runs into the white rule regardless of silhouette, so check the color hub first. And one bold detail looks deliberate where three look like a different event. Choose the length from your code's row in the table, choose a fabric that matches the code, then let the silhouette and detail be yours.",
 ];
 
-export default function StylePillarPage() {
+export default async function StylePillarPage() {
+  await primeAmazonData();
   return (
     <PillarHub
       pillarSlug="style"

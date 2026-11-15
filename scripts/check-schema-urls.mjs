@@ -159,7 +159,8 @@ else for (const h of insecure.slice(0, 6)) add('FAIL', 'SD-3', `http:// URL must
 // carrying canonical → homepage. Rule: no canonical in the root layout; every page.tsx
 // under app/ declares its own.
 {
-  const appDir = path.join(ROOT, 'app');
+  // App Router lives in app/ or src/app/ — checking only app/ scanned 0 routes on src/app sites (energypips.com, 2026-11-08).
+  const appDir = [path.join(ROOT, 'app'), path.join(ROOT, 'src', 'app')].find((d) => fs.existsSync(d)) ?? path.join(ROOT, 'app');
   const rootLayout = ['layout.tsx', 'layout.jsx', 'layout.ts', 'layout.js'].map((n) => path.join(appDir, n)).find((p) => fs.existsSync(p));
   const layoutSrc = rootLayout ? fs.readFileSync(rootLayout, 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/[^\n]*/g, '') : '';
   const layoutHasCanonical = /alternates\s*:\s*\{[^}]*canonical/.test(layoutSrc);
@@ -168,20 +169,34 @@ else for (const h of insecure.slice(0, 6)) add('FAIL', 'SD-3', `http:// URL must
     const src = fs.readFileSync(p, 'utf8');
     // a page owns its canonical if it sets alternates.canonical in metadata/generateMetadata
     if (/canonical/.test(src)) return false;
+    // A client page ("use client") cannot export metadata, so its canonical lives in the route
+    // segment's own layout.tsx next to it (designhenna.com /checkout, 2026-11-13).
+    const segLayout = ['layout.tsx', 'layout.jsx', 'layout.ts', 'layout.js'].map((n) => path.join(path.dirname(p), n)).find((f) => fs.existsSync(f));
+    if (segLayout && segLayout !== rootLayout && /alternates\s*:\s*\{[^}]*canonical/.test(fs.readFileSync(segLayout, 'utf8'))) return false;
+    // A route that only redirects renders no HTML, so it has nothing to canonicalise
+    // (energypips.com /play → today's board, 2026-11-08).
+    const body = src.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/[^\n]*/g, '');
+    if (/export default (async )?function\s*\w*\([^)]*\)\s*\{\s*(return\s+)?(permanentRedirect|redirect)\(/.test(body)) return false;
     // ...or if its metadata export delegates to an imported helper whose module sets one
     // (e.g. `export const generateMetadata = () => pillarMetadata("x")`). Without this the gate
     // false-fails shared-helper sites (hintsheet.com, 2026-10-11) — and a gate that cries wolf
     // gets bypassed (Rule 45).
-    const metaCall = src.match(/export\s+(?:const|async\s+function|function)\s+(?:generateMetadata|metadata)\b[\s\S]{0,200}?\b([A-Za-z_$][\w$]*)\s*\(/);
-    if (!metaCall) return true;
-    const helper = metaCall[1];
-    for (const m of src.matchAll(/import\s+([^;]+?)\s+from\s+["']([^"']+)["']/g)) {
-      if (!new RegExp(`\\b${helper}\\b`).test(m[1])) continue;
-      const spec = m[2];
-      const base = spec.startsWith('@/') ? path.join(ROOT, spec.slice(2)) : spec.startsWith('.') ? path.resolve(path.dirname(p), spec) : null;
-      if (!base) continue;
-      const file = ['', '.tsx', '.ts', '.jsx', '.js', '/index.tsx', '/index.ts'].map((x) => base + x).find((f) => fs.existsSync(f) && fs.statSync(f).isFile());
-      if (file && /canonical/.test(fs.readFileSync(file, 'utf8'))) return false;
+    // Check EVERY function called in the first ~800 chars of the metadata export, not just the
+    // first: `generateMetadata() { const home = getHome(); return buildMetadata({...}) }` calls
+    // a data loader before the canonical-setting helper (bestpillowforsidesleepershub.com, 2026-11-01).
+    const metaStart = src.search(/export\s+(?:const|async\s+function|function)\s+(?:generateMetadata|metadata)\b/);
+    if (metaStart < 0) return true;
+    const metaBody = src.slice(metaStart, metaStart + 800);
+    const helpers = new Set([...metaBody.matchAll(/\b([A-Za-z_$][\w$]*)\s*\(/g)].map((m) => m[1]).filter((h) => !/^(generateMetadata|metadata|function|return|if|Promise)$/.test(h)));
+    for (const helper of helpers) {
+      for (const m of src.matchAll(/import\s+([^;]+?)\s+from\s+["']([^"']+)["']/g)) {
+        if (!new RegExp(`\\b${helper.replace(/\$/g, '\\$')}\\b`).test(m[1])) continue;
+        const spec = m[2];
+        const base = spec.startsWith('@/') ? path.join(ROOT, spec.slice(2)) : spec.startsWith('.') ? path.resolve(path.dirname(p), spec) : null;
+        if (!base) continue;
+        const file = ['', '.tsx', '.ts', '.jsx', '.js', '/index.tsx', '/index.ts'].map((x) => base + x).find((f) => fs.existsSync(f) && fs.statSync(f).isFile());
+        if (file && /canonical/.test(fs.readFileSync(file, 'utf8'))) return false;
+      }
     }
     return true;
   });

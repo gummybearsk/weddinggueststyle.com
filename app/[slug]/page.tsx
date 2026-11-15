@@ -9,7 +9,7 @@ import { getAllSlugsIncludingScheduled, getPublishedPageData, isLinkableSlug } f
 import { getLayoutPlan, headingClass, eyebrowText } from "@/lib/layoutVariant";
 import { getFurtherReading } from "@/lib/furtherReading";
 import type { ContentSection, Product } from "@/lib/types";
-import { withLiveData, priceAsOfLabel } from "@/lib/amazonData";
+import { withLiveData, priceAsOfLabel, primeAmazonData } from "@/lib/amazonData";
 import StickyEditorPick from "@/components/StickyEditorPick";
 import ProductCarousel from "@/components/ProductCarousel";
 import SourcesList from "@/components/SourcesList";
@@ -25,7 +25,8 @@ import { getPrimaryHub } from "@/lib/taxonomy";
 import type { PageData } from "@/lib/types";
 
 // Revalidate every 12 hours so scheduled pages auto-publish on their date
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 interface PageProps {
   params: { slug: string };
@@ -113,7 +114,8 @@ function ItemListSchema({ products, title }: { products: Product[]; title: strin
         image: product.image,
         url: product.url,
         ...(product.seller ? { brand: { "@type": "Brand", name: product.seller } } : {}),
-        offers: {
+        // No offer when the price is hidden (data older than 24 h): never assert a stale price.
+        ...(product.price ? { offers: {
           "@type": "Offer",
           price: product.price.replace(/[^0-9.]/g, ""),
           priceCurrency: "USD",
@@ -138,7 +140,7 @@ function ItemListSchema({ products, title }: { products: Product[]; title: strin
           ...(product.priceValidFrom
             ? { validFrom: product.priceValidFrom.slice(0, 10) }
             : {}),
-        },
+        } } : {}),
       },
     })),
   };
@@ -468,9 +470,10 @@ function GuidePage({ page, products, asOf }: { page: PageData; products: Product
 
 // ─── Main page ──────────────────────────────────────────────────────────────
 
-export default function InnerPage({ params }: PageProps) {
+export default async function InnerPage({ params }: PageProps) {
   const page = getPublishedPageData(params.slug);
   if (!page) notFound();
+  await primeAmazonData();
 
   // Overlay live Amazon price/image/availability. Out-of-stock and delisted ASINs are
   // dropped here, so `products` below is always buyable — never the raw content JSON.

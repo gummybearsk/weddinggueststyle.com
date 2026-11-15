@@ -3,12 +3,14 @@ import PillarHub from "@/components/PillarHub";
 import VerdictTable from "@/components/visuals/VerdictTable";
 import BarChart from "@/components/visuals/BarChart";
 import { picksForPillar } from "@/lib/featured";
+import { primeAmazonData } from "@/lib/amazonData";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { venueSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Venue — Beach, Garden, Vineyard, Ballroom",
@@ -106,7 +108,8 @@ const longForm = [
   "How to use the guides listed above: start with the dress code on your invitation, then open the venue guide that matches the place, and check the table at the top of this page for the specific item you are unsure about. If your venue is not listed, pick the guide with the same ground (sand, grass, gravel or indoor floors) and the same kind of ceremony (secular or religious); between them, those two choices answer most venue questions.",
 ];
 
-export default function VenuePillarPage() {
+export default async function VenuePillarPage() {
+  await primeAmazonData();
   return (
     <PillarHub
       pillarSlug="venue"

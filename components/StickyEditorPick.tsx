@@ -72,7 +72,7 @@ export default function StickyEditorPick({ product }: { product: Product | null 
           <p className="text-[12px] text-ink-800 line-clamp-2 leading-snug font-light group-hover:text-blush-600 transition-colors">
             {product.title}
           </p>
-          <p className="display-serif text-lg text-ink-900 mt-auto pt-1">{product.price}</p>
+          <p className="display-serif text-lg text-ink-900 mt-auto pt-1">{product.price || <span className="text-sm">See price on Amazon</span>}</p>
           <span className="text-[10px] tracking-[0.16em] uppercase text-blush-600 mt-1">
             View →
           </span>

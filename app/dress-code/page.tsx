@@ -3,13 +3,15 @@ import PillarHub from "@/components/PillarHub";
 import DressCodeDecoderSection from "@/components/DressCodeDecoderSection";
 import DressCodeLadder from "@/components/visuals/DressCodeLadder";
 import { picksForPillar } from "@/lib/featured";
+import { primeAmazonData } from "@/lib/amazonData";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { dressCodeSections } from "@/lib/homepageData";
 import { DRESS_CODE_SOURCE } from "@/lib/dressCodes";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: { absolute: "Wedding Dress Codes Explained: 7 Types & What Guests Wear" },
@@ -30,7 +32,8 @@ const longForm = [
   "Men get one guide per code alongside women on every page here, plus dedicated men's guides where the questions are different enough to need one: cocktail attire for men, semi-formal attire for men, beach wedding attire for men and a full wedding dress code for men walk-through. If you are dressing a couple, the decoder above shows both lists side by side for every code.",
 ];
 
-export default function DressCodePillarPage() {
+export default async function DressCodePillarPage() {
+  await primeAmazonData();
   return (
     <PillarHub
       pillarSlug="dress-code"

@@ -1,0 +1,75 @@
+name: Deploy check (old scripts still load + pages render)
+
+# Runs on every push to main, i.e. every code deploy (prices no longer deploy).
+# 1. Before the new deploy is live, records the script files the live pages use.
+# 2. Waits until /api/version reports this commit.
+# 3. Checks those old script files still load (Vercel Skew Protection). A page Google
+#    fetched before the deploy and renders later needs them; when they 404 the page shows
+#    the error screen to Google (cause of the 2026-11-12 de-indexing).
+# 4. Opens the key pages in headless Chromium and fails on an error screen or script error.
+# 5. One hour later, checks the old script files again.
+# A failure fails the workflow, and GitHub emails the repo owner.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-check
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Record the script files the live pages use now
+        run: |
+          BEFORE=$(curl -s https://weddinggueststyle.com/api/version | node -p 'JSON.parse(require("fs").readFileSync(0,"utf8")).sha')
+          echo "live before: $BEFORE, this push: $GITHUB_SHA"
+          if [ "$BEFORE" = "$GITHUB_SHA" ]; then echo "already live, no old scripts to test"; touch /tmp/old-js.txt; exit 0; fi
+          for p in / /formal-wedding-guest-dresses /casual-wedding-guest-dresses /summer-wedding-guest-dresses; do
+            curl -s "https://weddinggueststyle.com$p" | grep -oE '/_next/static/[^"]+\.(js|css)[^"]*' ; done | sort -u > /tmp/old-js.txt
+          wc -l /tmp/old-js.txt
+
+      - name: Wait for this commit to go live
+        run: |
+          for i in $(seq 1 60); do
+            SHA=$(curl -s "https://weddinggueststyle.com/api/version?t=$i" | node -p 'try{JSON.parse(require("fs").readFileSync(0,"utf8")).sha}catch{""}')
+            [ "$SHA" = "$GITHUB_SHA" ] && echo "live: $SHA" && exit 0
+            sleep 20
+          done
+          echo "commit not live after 20 min"; exit 1
+
+      - name: Old script files still load
+        run: |
+          FAIL=0
+          while read -r u; do
+            [ -z "$u" ] && continue
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' "https://weddinggueststyle.com$u")
+            [ "$CODE" = "200" ] || { echo "HTTP $CODE $u"; FAIL=1; }
+          done < /tmp/old-js.txt
+          echo "checked $(grep -c . /tmp/old-js.txt || true) old files"; exit $FAIL
+
+      - name: Pages render in a browser
+        run: |
+          npm i --no-save playwright@1.48.2 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          node scripts/check-live-pages.mjs --browser
+
+      - name: Old script files still load one hour later
+        run: |
+          sleep 3600
+          FAIL=0
+          while read -r u; do
+            [ -z "$u" ] && continue
+            CODE=$(curl -s -o /dev/null -w '%{http_code}' "https://weddinggueststyle.com$u")
+            [ "$CODE" = "200" ] || { echo "HTTP $CODE $u"; FAIL=1; }
+          done < /tmp/old-js.txt
+          echo "checked $(grep -c . /tmp/old-js.txt || true) old files after 1 h"; exit $FAIL

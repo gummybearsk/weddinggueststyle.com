@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/check-sitemap-pairing.mjs && node scripts/check-sitemap-freshness.mjs . && node scripts/check-schema-urls.mjs . && node scripts/check-page-value.mjs . && node scripts/check-analytics-ids.mjs .",
+    "prebuild": "node scripts/check-sitemap-pairing.mjs && node scripts/check-sitemap-freshness.mjs . && node scripts/check-schema-urls.mjs . && node scripts/check-error-boundary.mjs . && node scripts/check-head-markup.mjs . && node scripts/check-page-value.mjs . && node scripts/check-analytics-ids.mjs .",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "node scripts/check-templating.mjs ."
   },
   "dependencies": {
     "next": "^14.2.35",
@@ -26,6 +27,7 @@
   },
   "seoGates": {
     "siteKind": "content",
-    "value": "enforce"
+    "value": "enforce",
+    "templating": "warn"
   }
 }

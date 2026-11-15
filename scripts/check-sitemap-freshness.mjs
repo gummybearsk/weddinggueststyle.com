@@ -58,6 +58,22 @@ if (!smSrc) {
   } else {
     add('PASS', 'SM-3', 'sitemap uses real dates, not new Date().');
   }
+
+  // SM-8: lastmod must move when a page is EDITED, not only when it is published.
+  // chinesegendercalendar.org (2026-10-30): every guide's lastmod was its publishDate, so
+  // 13 pages edited Oct 15-26 still told Google "April/May" — edits were invisible to the
+  // one signal Google uses to pick pages to recrawl. A sitemap that reads publish dates
+  // and never a modified date has this bug by construction.
+  const readsPublish = /lastModified\s*:[^\n,]*\b(publish(ed)?(Date|At|_at|_date)?|date)\b/i.test(smCode);
+  const readsModified = /\b(dateModified|modified(Date|At)?|updated(Date|At)?|lastmod|last_?modified)\b/i.test(
+    smCode.replace(/lastModified\s*:/g, ''),
+  );
+  if (readsPublish && !readsModified) {
+    add('FAIL', 'SM-8', 'sitemap lastmod comes from publish dates only — when a page is edited, the sitemap never changes, so Google is not told to recrawl it.',
+      "Store a dateModified per page (registry/front-matter), use max(publishDate, dateModified) as lastmod, and keep it equal to the page's schema dateModified (see chinesegendercalendar.org scripts/check-modified-dates.mjs).");
+  } else if (readsModified) {
+    add('PASS', 'SM-8', 'sitemap lastmod reads a modified date, so edits reach Google.');
+  }
 }
 
 // --- 2. SOMETHING must request it. this is the one everyone misses --------

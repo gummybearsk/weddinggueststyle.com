@@ -70,6 +70,37 @@ async function assertSitemap(newlyLive: string[]) {
   return { urlCount, missing };
 }
 
+/**
+ * Load each newly-live page and check it really rendered, before telling anyone about it.
+ * A 200 alone proves nothing: the site's error screen also returns 200. So the check is the
+ * page's own <h1>, no error-screen text, and product links when the page has products.
+ * The first request after revalidatePath() regenerates the page, so it is retried.
+ * Browser-level rendering is checked separately by .github/workflows/deploy-check.yml.
+ */
+async function warmAndCheck(slugs: string[]) {
+  const failed: { slug: string; reason: string }[] = [];
+  for (const slug of slugs) {
+    const expectProducts = (getPageData(slug)?.products?.length ?? 0) >= 5;
+    let reason = "not checked";
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try {
+        const res = await fetch(`${BASE_URL}/${slug}`, { cache: "no-store" });
+        const html = await res.text();
+        if (res.status !== 200) reason = `HTTP ${res.status}`;
+        else if (!/<h1[\s>]/.test(html)) reason = "no <h1>";
+        else if (/page did not load/i.test(html)) reason = "error screen";
+        else if (expectProducts && !/href="https:\/\/www\.amazon\.com\/dp\//.test(html)) reason = "no product links";
+        else { reason = ""; break; }
+      } catch (e) {
+        reason = (e as Error).message;
+      }
+      await new Promise((r) => setTimeout(r, 3000));
+    }
+    if (reason) failed.push({ slug, reason });
+  }
+  return failed;
+}
+
 async function notifyIndexNow(slugs: string[]) {
   if (slugs.length === 0) return { submitted: 0 };
   const key = "1d74c00d810c48213dc0f8a78746e41a";
@@ -90,11 +121,13 @@ export async function GET() {
   const { today, revalidated, newlyLive } = await sweep();
   const sitemap = await assertSitemap(newlyLive);
 
-  // Only announce once the sitemap actually shows the page.
-  const safeToAnnounce = newlyLive.filter((s) => !sitemap.missing.includes(s));
+  // Only announce once the sitemap shows the page AND the page itself rendered properly.
+  const inSitemap = newlyLive.filter((s) => !sitemap.missing.includes(s));
+  const renderFailed = await warmAndCheck(inSitemap);
+  const safeToAnnounce = inSitemap.filter((s) => !renderFailed.some((f) => f.slug === s));
   const indexnow = await notifyIndexNow(safeToAnnounce);
 
-  const ok = sitemap.missing.length === 0;
+  const ok = sitemap.missing.length === 0 && renderFailed.length === 0;
 
   return NextResponse.json(
     {
@@ -104,6 +137,7 @@ export async function GET() {
       newlyLive,
       sitemapUrlCount: sitemap.urlCount,
       missingFromSitemap: sitemap.missing,
+      renderFailed,
       indexnow,
     },
     { status: ok ? 200 : 500 }

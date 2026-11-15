@@ -11,7 +11,7 @@ import { Product } from "@/lib/types";
  *  - Star ratings are deliberately absent. Amazon's Creators API does not serve
  *    customerReviews, so any rating on screen would be scraped. We differentiate with
  *    editorial `bestFor` badges instead — which is what actually drives the click.
- *  - Price always renders: live API price, never a stale baked-in string.
+ *  - Price renders only from live API data under 24 h old; otherwise "See price on Amazon".
  */
 
 function Badge({
@@ -83,7 +83,7 @@ export default function ProductCard({
         </p>
 
         <div className="mt-auto space-y-3">
-          <p className="display-serif text-2xl text-ink-900">{product.price}</p>
+          <p className="display-serif text-2xl text-ink-900">{product.price || <span className="text-base">See price on Amazon</span>}</p>
 
           {product.sizingNote && (
             <p className="text-xs text-champagne-600 italic">{product.sizingNote}</p>

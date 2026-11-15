@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import PillarHub from "@/components/PillarHub";
 import BarChart from "@/components/visuals/BarChart";
 import { picksForPillar } from "@/lib/featured";
+import { primeAmazonData } from "@/lib/amazonData";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { colorSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Color — 2026 Palette Guide",
@@ -59,7 +61,8 @@ const longForm = [
   "The mistakes that come up again and again are few. Guests check a dress against pure white and forget cream, ivory, beige and white-ground prints. They apply an American rule, such as the red myth, at a wedding where a different tradition governs, or apply another tradition's rule at an American wedding. They match the bridesmaids by accident. And they choose a color before checking the dress code, then find the shade is right and the fabric is wrong. Read the color guide that matches your dress, then read the dress-code guide on your invitation; the combination of the two is the answer.",
 ];
 
-export default function ColorPillarPage() {
+export default async function ColorPillarPage() {
+  await primeAmazonData();
   return (
     <PillarHub
       pillarSlug="color"

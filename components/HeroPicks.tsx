@@ -71,7 +71,7 @@ export default function HeroPicks({
                 )}
 
                 <div className="mt-auto pt-4 flex items-center gap-4">
-                  <span className="display-serif text-2xl text-ink-900">{p.price}</span>
+                  <span className="display-serif text-2xl text-ink-900">{p.price || <span className="text-base">See price on Amazon</span>}</span>
                   {p.savingsPercent && p.savingsPercent >= 5 ? (
                     <span className="text-[10px] tracking-[0.12em] uppercase bg-blush-600 text-ivory px-2 py-1">
                       {p.savingsPercent}% off

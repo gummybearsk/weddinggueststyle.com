@@ -3,12 +3,14 @@ import PillarHub from "@/components/PillarHub";
 import BarChart from "@/components/visuals/BarChart";
 import CompareTable from "@/components/visuals/CompareTable";
 import { picksForPillar } from "@/lib/featured";
+import { primeAmazonData } from "@/lib/amazonData";
 import { getPillarGroups, getPillarSlugs } from "@/lib/taxonomy";
 import { bodyTypeSections } from "@/lib/homepageData";
 
 // Renders live Amazon prices — must revalidate, and therefore MUST be listed in
 // next.config.mjs outputFileTracingIncludes (enforced by scripts/check-sitemap-pairing.mjs).
-export const revalidate = 43200;
+// Hourly: product prices must never be shown more than 24 h after Amazon returned them (lib/amazonData.ts).
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: "Wedding Guest Dresses by Body Type — Plus, Petite, Maternity, Over 50",
@@ -82,7 +84,8 @@ const longForm = [
   "How to use this hub: find your group in the list above and read that guide first for sizing and cut, then read the dress-code guide on your invitation for what to wear. The sizing table at the top of the page shows the size range and definition behind each category, so you can tell at a glance whether a listing's sizes were drafted for your figure type or simply relabeled. Men's fit is not covered here; the wedding dress code for men guide sets out the men's list for every code.",
 ];
 
-export default function BodyTypePillarPage() {
+export default async function BodyTypePillarPage() {
+  await primeAmazonData();
   return (
     <PillarHub
       pillarSlug="body-type"

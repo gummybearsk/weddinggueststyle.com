@@ -21,6 +21,7 @@ import { getAccessoryLinks } from "@/lib/accessoryLinks";
 import { productCapFor } from "@/lib/productCap";
 import { computeInsights, deriveBestFor, deriveRationale } from "@/lib/priceInsights";
 import VisualBlock from "@/components/visuals/VisualBlock";
+import InlineLinks from "@/components/InlineLinks";
 import { getPrimaryHub } from "@/lib/taxonomy";
 import type { PageData } from "@/lib/types";
 
@@ -224,7 +225,7 @@ function ContentSections({
         <section key={i} className="mb-10">
           <h2 className={`${hClass} mb-4`}>{section.heading}</h2>
           <div className="text-base text-ink-700 leading-[1.8] whitespace-pre-line font-light">
-            {section.content}
+            <InlineLinks text={section.content} />
           </div>
           <VisualBlock visual={section.visual} />
         </section>
@@ -387,7 +388,7 @@ function GuideSections({ sections }: { sections: ContentSection[] }) {
       {sections.map((section, i) => (
         <section key={i} className="mb-12">
           <h2 className="display-serif text-2xl sm:text-3xl text-ink-900 mb-4">{section.heading}</h2>
-          <div className="text-base text-ink-700 leading-[1.8] whitespace-pre-line font-light">{section.content}</div>
+          <div className="text-base text-ink-700 leading-[1.8] whitespace-pre-line font-light"><InlineLinks text={section.content} /></div>
           <VisualBlock visual={section.visual} />
         </section>
       ))}

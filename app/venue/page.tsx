@@ -13,9 +13,9 @@ import { venueSections } from "@/lib/homepageData";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Wedding Guest Dresses by Venue — Beach, Garden, Vineyard, Ballroom",
+  title: { absolute: "Wedding Guest Dresses by Venue: Beach, Garden, Ballroom" },
   description:
-    "Wedding guest dresses for every venue: beach, garden, vineyard, Indian wedding, formal ballroom, and more. Picks that match the location and its hidden expectations.",
+    "Wedding guest dresses for every venue: beach, garden, vineyard, Indian wedding and formal ballroom, with picks that match the location and its unwritten rules.",
   alternates: { canonical: "https://weddinggueststyle.com/venue" },
 };
 

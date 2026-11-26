@@ -84,7 +84,7 @@ export default function DressCodeDecoder({
               {r.links.map((l, i) => (
                 <span key={l.slug}>
                   {i > 0 && " · "}
-                  <Link href={`/${l.slug}`} className="text-blush-600 hover:underline">
+                  <Link href={`/${l.slug}`} className="text-blush-600 underline underline-offset-2">
                     Full {l.label.toLowerCase()} guide →
                   </Link>
                 </span>

@@ -192,9 +192,11 @@ else for (const h of insecure.slice(0, 6)) add('FAIL', 'SD-3', `http:// URL must
       for (const m of src.matchAll(/import\s+([^;]+?)\s+from\s+["']([^"']+)["']/g)) {
         if (!new RegExp(`\\b${helper.replace(/\$/g, '\\$')}\\b`).test(m[1])) continue;
         const spec = m[2];
-        const base = spec.startsWith('@/') ? path.join(ROOT, spec.slice(2)) : spec.startsWith('.') ? path.resolve(path.dirname(p), spec) : null;
-        if (!base) continue;
-        const file = ['', '.tsx', '.ts', '.jsx', '.js', '/index.tsx', '/index.ts'].map((x) => base + x).find((f) => fs.existsSync(f) && fs.statSync(f).isFile());
+        // `@/` maps to the project root on app/ sites and to src/ on src/app sites
+        // (tsconfig "@/*": ["./src/*"]); try both (mortgageamortizationcalc.com, 2026-11-19).
+        const bases = spec.startsWith('@/') ? [path.join(ROOT, 'src', spec.slice(2)), path.join(ROOT, spec.slice(2))] : spec.startsWith('.') ? [path.resolve(path.dirname(p), spec)] : [];
+        if (!bases.length) continue;
+        const file = bases.flatMap((base) => ['', '.tsx', '.ts', '.jsx', '.js', '/index.tsx', '/index.ts'].map((x) => base + x)).find((f) => fs.existsSync(f) && fs.statSync(f).isFile());
         if (file && /canonical/.test(fs.readFileSync(file, 'utf8'))) return false;
       }
     }

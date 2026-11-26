@@ -38,7 +38,7 @@ export default function Footer() {
             </p>
             <p className="text-sm text-ink-600 italic font-light">
               Edited by{" "}
-              <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">
+              <Link href="/author/sukie-gao" className="text-blush-600 underline underline-offset-2">
                 Sukie Gao
               </Link>
               {" "}(
@@ -54,7 +54,7 @@ export default function Footer() {
               Wedding Guest Style is a participant in the Amazon Services LLC
               Associates Program. When you click an affiliate link and make a
               purchase, we may earn a commission at no cost to you. See our{" "}
-              <Link href="/editorial" className="text-blush-600 hover:underline">
+              <Link href="/editorial" className="text-blush-600 underline underline-offset-2">
                 Editorial Guidelines
               </Link>
               {" "}for how pages are made. Prices and availability shown are accurate as

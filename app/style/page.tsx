@@ -13,7 +13,7 @@ import { styleSections } from "@/lib/homepageData";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Wedding Guest Dresses by Style — Maxi, Midi, Floral, Modest, Long Sleeve",
+  title: { absolute: "Wedding Guest Dresses by Style: Maxi, Midi, Floral & Modest" },
   description:
     "Wedding guest dresses organized by silhouette and style: maxi, midi, knee-length, A-line, floral, modest, long-sleeve, and more. Picks for every preference.",
   alternates: { canonical: "https://weddinggueststyle.com/style" },

@@ -13,7 +13,7 @@ import { seasonSections } from "@/lib/homepageData";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Wedding Guest Dresses by Season — Summer, Fall, Winter, Spring (2026)",
+  title: { absolute: "Wedding Guest Dresses by Season: Spring to Winter" },
   description:
     "Wedding guest dresses for every season. Summer cottons, fall long-sleeves, winter velvets, and spring florals — organized by what works when. 2026 edit.",
   alternates: { canonical: "https://weddinggueststyle.com/season" },

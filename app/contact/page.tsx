@@ -59,7 +59,7 @@ export default function ContactPage() {
             <li>
               <strong>Partnership and editorial inquiries</strong> from brands and PR teams. Note: we do not
               accept paid placements, sponsored reviews, or pay-to-feature deals (
-              <Link href="/editorial" className="text-blush-600 hover:underline">see Editorial Guidelines</Link>
+              <Link href="/editorial" className="text-blush-600 underline underline-offset-2">see Editorial Guidelines</Link>
               ).
             </li>
             <li>
@@ -93,15 +93,15 @@ export default function ContactPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">About the editor</h2>
           <p>
             Wedding Guest Style is edited by{" "}
-            <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">
+            <Link href="/author/sukie-gao" className="text-blush-600 underline underline-offset-2">
               Sukie Gao
             </Link>
             . Read more about our editorial process in our{" "}
-            <Link href="/editorial" className="text-blush-600 hover:underline">
+            <Link href="/editorial" className="text-blush-600 underline underline-offset-2">
               Editorial Guidelines
             </Link>
             {" "}or how the site makes money on the{" "}
-            <Link href="/about" className="text-blush-600 hover:underline">
+            <Link href="/about" className="text-blush-600 underline underline-offset-2">
               About
             </Link>
             {" "}page.

@@ -1,3 +1,4 @@
+import { fitTitle } from "@/lib/seoTitle";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const page = getPublishedPageData(params.slug);
   if (!page) return {};
   return {
-    title: page.metaTitle,
+    title: fitTitle(page.metaTitle),
     description: page.metaDescription,
     openGraph: {
       title: page.metaTitle,
@@ -328,7 +329,7 @@ function FurtherReading({ slug }: { slug: string }) {
               href={l.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blush-600 hover:underline"
+              className="text-blush-600 underline underline-offset-2"
             >
               {l.label}
             </a>

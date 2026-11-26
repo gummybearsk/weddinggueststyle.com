@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Editorial Guidelines & Affiliate Disclosure",
+  title: { absolute: "Editorial Guidelines & Affiliate Disclosure" },
   description: "How Wedding Guest Style researches, writes, and selects wedding guest dresses — plus our affiliate disclosure and AI use policy.",
   alternates: { canonical: "https://weddinggueststyle.com/editorial" },
 };
@@ -110,7 +110,7 @@ export default function EditorialPage() {
           <p>
             The &ldquo;Last updated&rdquo; date on each page reflects the most recent substantive review,
             not auto-generated build dates. If you spot an outdated link, broken product, or factual error,
-            email <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>
+            email <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>
             and we&apos;ll fix it within a week.
           </p>
         </section>
@@ -130,7 +130,7 @@ export default function EditorialPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Contact</h2>
           <p>
             For editorial feedback, content corrections, or partnership inquiries, email{" "}
-            <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
+            <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>.
           </p>
         </section>
       </div>

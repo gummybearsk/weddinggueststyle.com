@@ -1,0 +1,211 @@
+{
+ "domain": "weddinggueststyle.com",
+ "date": "2026-11-26",
+ "runner": "codex-cli (ChatGPT account, live web search)",
+ "probeReadable": false,
+ "access": {
+  "robots": {
+   "OAI-SearchBot": "ok",
+   "ChatGPT-User": "ok",
+   "GPTBot": "ok",
+   "PerplexityBot": "ok",
+   "ClaudeBot": "ok",
+   "bingbot": "ok",
+   "*": "ok"
+  },
+  "fetch": {
+   "OAI-SearchBot": {
+    "status": 200,
+    "size": 425234,
+    "challenge": false,
+    "cloudflare": false
+   },
+   "ChatGPT-User": {
+    "status": 200,
+    "size": 425234,
+    "challenge": false,
+    "cloudflare": false
+   },
+   "GPTBot": {
+    "status": 200,
+    "size": 425234,
+    "challenge": false,
+    "cloudflare": false
+   },
+   "PerplexityBot": {
+    "status": 200,
+    "size": 425234,
+    "challenge": false,
+    "cloudflare": false
+   },
+   "ClaudeBot": {
+    "status": 200,
+    "size": 425234,
+    "challenge": false,
+    "cloudflare": false
+   },
+   "bingbot": {
+    "status": 200,
+    "size": 425234,
+    "challenge": false,
+    "cloudflare": false
+   }
+  },
+  "problems": [],
+  "verdict": "PASS"
+ },
+ "citedIn": 0,
+ "questions": 14,
+ "competitors": [],
+ "results": [
+  {
+   "kind": "probe",
+   "question": "What is weddinggueststyle.com for?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "readable": false
+  },
+  {
+   "kind": "question",
+   "question": "What are the wedding dress codes in order from most to least formal?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What should I wear to a casual wedding as a guest?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What does dressy casual mean for a wedding?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What is cocktail attire for a wedding, for women and men?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What's the difference between semi formal and cocktail attire?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What does black tie optional mean for a wedding guest?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "Can you wear red to a wedding?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "Can you wear black to a wedding as a guest?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What colors should a wedding guest avoid wearing?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What should a man wear to a casual wedding?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What is beach formal wedding attire?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "Best summer wedding guest dresses that stay cool",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What should a woman over 50 wear to a wedding as a guest?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  },
+  {
+   "kind": "question",
+   "question": "What do you wear to an Indian wedding as a non-Indian guest?",
+   "answer": "",
+   "sources": [],
+   "searches": [],
+   "cited": false,
+   "position": null,
+   "mentioned": false
+  }
+ ],
+ "invalid": "codex 429 Too Many Requests on every call"
+}

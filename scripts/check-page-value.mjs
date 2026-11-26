@@ -53,6 +53,17 @@
  *     project is new: value-plan.json "created" (else "researched") is on/after 2026-10-28
  *     (COMPETITOR_RULE_DATE); older or undated projects WARN until retrofitted. New projects
  *     should set seoGates.competitor = "enforce" explicitly.
+ *
+ * Positioning level (PV-18, owner 2026-11-21, from a GeFeiSites buyer whose first homepage came out
+ * as a several-thousand-word article): before any content is written, value-plan.json carries
+ * "positioning" — a one-sentence statement (for <who> who want <job>, <site> is the <kind> that
+ * <benefit>, unlike <competitor>, which <gap>), a first-screen plan for desktop and mobile (each
+ * element with its reason), and the player-services decision. The owner decides the statement and
+ * player services ONCE, at evaluation (research/evaluation-decision.json, project-evaluation Step 4b);
+ * the build copies them unchanged (approved.source names that file) and writes the first screen itself.
+ * Severity: FAIL when seoGates.positioning === "enforce", or when seoGates.value === "enforce" and
+ * the plan's "created" is on/after 2026-11-21 (POSITIONING_RULE_DATE); WARN otherwise, so
+ * re-installing on older projects never breaks their builds. "warn" forces WARN.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -163,7 +174,7 @@ const KIND = pkg.seoGates?.siteKind;
 try { if (JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'home.json'), 'utf8')).tool != null) toolPages.unshift('home'); } catch {}
 if (['game', 'tool', 'app'].includes(KIND)) {
   if (!toolPages.length) fails.push(`PV-8 siteKind "${KIND}": no page ships a "tool" — every game/tool project needs at least one interactive tool (randomizer, calculator, solver, tracker, playable widget)`);
-  else if (!toolPages.some((id) => ['', '/', 'home', 'index', '__', 'homepage'].includes(String(id)))) warns.push(`PV-8 siteKind "${KIND}": tools on ${toolPages.slice(0, 3).join(', ')} but none on the homepage — put the main tool above the fold on /`);
+  else if (!toolPages.some((id) => ['', '/', 'home', 'index', '__', 'homepage'].includes(String(id)))) warns.push(`PV-8 siteKind "${KIND}": tools on ${toolPages.slice(0, 3).join(', ')} but none on the homepage — put the main tool on / (in its own section below the content-dense first screen, Rule 56)`);
 } else if (KIND == null) warns.push('PV-8 set package.json seoGates.siteKind ("game" | "tool" | "app" | "content") — game/tool/app sites must ship an interactive tool');
 
 // ---- Site level: value-plan.json (Rule 54h–i) ----------------------------------------------
@@ -308,16 +319,61 @@ for (let i = 0; i < dates.length; i++) {
   if (n > MAX_NEW_PER_WEEK) { warns.push(`PV-7 ${n} pages publish in the 7 days from ${dates[i]} (guide after launch: ≤${MAX_NEW_PER_WEEK}) — justify in HANDOVER.md or spread them`); break; }
 }
 
+// ---- Positioning level: PV-18 (owner, 2026-11-21) ---------------------------------------------
+const POSITIONING_RULE_DATE = '2026-11-21';
+const pfails = [];
+const POS_MODE = (() => {
+  const c = pkg.seoGates?.positioning;
+  if (c === 'enforce') return 'enforce';
+  if (c === 'warn') return 'warn';
+  const born = String(vplan?.created ?? vplan?.researched ?? '').slice(0, 10);
+  return ENFORCE && /^\d{4}-\d{2}-\d{2}$/.test(born) && born >= POSITIONING_RULE_DATE ? 'enforce' : 'warn';
+})();
+const POS_ENFORCE = POS_MODE === 'enforce';
+if (vplan) {
+  const pos = vplan.positioning;
+  if (!pos || typeof pos !== 'object') {
+    pfails.push('PV-18 value-plan.json has no "positioning" — copy the positioning and player-services decision approved at evaluation (research/evaluation-decision.json) and write the first-screen plan BEFORE writing content (VALUE-PLAN.md step 4b)');
+  } else {
+    const st = String(pos.statement ?? '').trim();
+    if (st.length < 80 || !/\bunlike\b/i.test(st)) pfails.push('PV-18 positioning.statement must be ≥80 chars in the form "For <who> who want <job>, <site> is the <kind> that <benefit>, unlike <competitor>, which <gap>"');
+    for (const dev of ['desktop', 'mobile']) {
+      const items = Array.isArray(pos.firstScreen?.[dev]) ? pos.firstScreen[dev] : [];
+      const ok = items.filter((x) => String(x?.element ?? '').trim() && String(x?.why ?? '').trim().length >= 15);
+      if (ok.length < 3) pfails.push(`PV-18 positioning.firstScreen.${dev} lists ${ok.length} element(s) with a reason (≥15 chars) — need ≥3: what a visitor sees before scrolling and why, from the SERP top 3`);
+    }
+    const ps = pos.playerServices;
+    if (!ps || !['yes', 'no', 'pending'].includes(ps.decision) || String(ps.why ?? '').trim().length < 20) pfails.push('PV-18 positioning.playerServices needs { recommended, why (≥20 chars), decision: "yes" | "no" | "pending" } — decided per site at evaluation, never added by default');
+    else if (ps.decision === 'pending') warns.push('PV-18 positioning.playerServices.decision is still "pending" — ask the owner before building any comments/likes/leaderboard features (decided at evaluation as "later")');
+    const ap = pos.approved;
+    if (!ap || !/^\d{4}-\d{2}-\d{2}/.test(String(ap.date ?? '')) || !String(ap.by ?? '').trim() || !String(ap.source ?? '').trim()) {
+      pfails.push('PV-18 positioning.approved { by, date, source } missing — copy the decision the owner approved at evaluation (research/evaluation-decision.json, project-evaluation Step 4b); never invent an approval');
+    } else {
+      const dec = readJson(path.join(ROOT, ap.source));
+      if (!dec) pfails.push(`PV-18 positioning.approved.source ${ap.source} is missing or not valid JSON — the approved evaluation decision must be in the project`);
+      else {
+        const norm = (x) => String(x ?? '').replace(/\s+/g, ' ').trim();
+        if (norm(dec.positioning?.statement) !== norm(st)) pfails.push(`PV-18 positioning.statement differs from the approved one in ${ap.source} — use it unchanged, or ask the owner to re-approve`);
+        if (dec.playerServices?.decision !== ps?.decision) pfails.push(`PV-18 playerServices.decision "${ps?.decision}" differs from the approved "${dec.playerServices?.decision}" in ${ap.source}`);
+      }
+    }
+    if (pos.firstScreen?.wireframe && !fs.existsSync(path.join(ROOT, pos.firstScreen.wireframe))) warns.push(`PV-18 positioning.firstScreen.wireframe points to ${pos.firstScreen.wireframe}, which does not exist`);
+  }
+}
+
 console.log(`\nPage-value gate (Rule 54) — ${ROOT}  [${ENFORCE ? 'ENFORCE' : 'WARN-ONLY: set package.json seoGates.value = "enforce"'}]`);
 console.log('-'.repeat(64));
 for (const w of warns) console.log(`WARN  ${w}`);
 for (const f of fails) console.log(`${ENFORCE ? 'FAIL' : 'WARN'}  ${f}`);
 for (const f of cfails) console.log(`${COMP_ENFORCE ? 'FAIL' : 'WARN'}  ${f}`);
+for (const f of pfails) console.log(`${POS_ENFORCE ? 'FAIL' : 'WARN'}  ${f}`);
 if (!fails.length) console.log('PASS  every page answers an evidenced user job, beats its SERP brief (independently reviewed), ships an asset, holds one intent and has fresh facts.');
 if (!cfails.length) console.log('PASS  competitor analysis present and cited; homepage carries its SERP brief.');
 else if (!COMP_ENFORCE) console.log(`      PV-16/17 warn-only here (competitor gate: ${COMP_MODE}) — set seoGates.competitor = "enforce" once retrofitted`);
+if (vplan && !pfails.length) console.log('PASS  approved positioning and player-services decision used unchanged; first-screen plan present.');
+else if (pfails.length && !POS_ENFORCE) console.log(`      PV-18 warn-only here (positioning gate: ${POS_MODE}) — set seoGates.positioning = "enforce" on new projects`);
 console.log('-'.repeat(64));
-const nFail = (ENFORCE ? fails.length : 0) + (COMP_ENFORCE ? cfails.length : 0);
+const nFail = (ENFORCE ? fails.length : 0) + (COMP_ENFORCE ? cfails.length : 0) + (POS_ENFORCE ? pfails.length : 0);
 if (nFail) { console.log(`${nFail} failure(s). fix: see Rule 54 in ~/.claude/CLAUDE.md and value-gates/COMPETITOR-ANALYSIS.md`); process.exit(1); }
-const nWarn = (ENFORCE ? 0 : fails.length) + (COMP_ENFORCE ? 0 : cfails.length);
+const nWarn = (ENFORCE ? 0 : fails.length) + (COMP_ENFORCE ? 0 : cfails.length) + (POS_ENFORCE ? 0 : pfails.length);
 if (nWarn) console.log(`${nWarn} finding(s) not enforced on this project.`);

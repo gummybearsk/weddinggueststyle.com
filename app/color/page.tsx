@@ -12,11 +12,11 @@ import { colorSections } from "@/lib/homepageData";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Wedding Guest Dresses by Color — 2026 Palette Guide",
+  title: { absolute: "Wedding Guest Dresses by Color: Shades for Every Dress Code" },
   // The previous description promised "the 2026 wedding guest color palette", an invented
   // trend claim (SOURCES.md does-not-exist list). Rewritten to what the page actually covers.
   description:
-    "Wedding guest dresses by color: black, brown, pink, blue, green, red, yellow and metallics, which shades suit each dress code and season, and the colors that need care, starting with anything that reads as white.",
+    "Wedding guest dresses by color: black, brown, pink, blue, green, red and metallics, the shades that suit each dress code, and the colors that need care.",
   alternates: { canonical: "https://weddinggueststyle.com/color" },
 };
 

@@ -1,6 +1,6 @@
+import { Analytics } from "@/components/Analytics";
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Cormorant_Garamond } from "next/font/google";
-import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getNavGroups } from "@/lib/taxonomy";
@@ -29,11 +29,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "Wedding Guest Attire for Women & Men: Every Dress Code Decoded",
+    default: "Wedding Guest Attire for Women & Men: All 7 Dress Codes",
     template: "%s | Wedding Guest Style",
   },
   description:
-    "Wedding guest attire for women and men, decoded for every dress code from white tie to casual. Dress-code guides cited to Emily Post, original data from 10,700 guest questions, and in-stock picks checked daily.",
+    "Wedding guest attire for women and men, decoded for every dress code from white tie to casual, with Emily Post–cited guides and in-stock picks checked daily.",
   metadataBase: new URL("https://weddinggueststyle.com"),
   openGraph: {
     type: "website",
@@ -63,33 +63,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-9NBJF1PB8E"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-9NBJF1PB8E');
-          `}
-        </Script>
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "w0rf19q2vc");
-          `}
-        </Script>
-      </head>
       <body className={`${inter.variable} ${playfair.variable} ${cormorant.variable} font-sans antialiased`}>
         <Header navGroups={getNavGroups()} />
         <main>{children}</main>
         <Footer />
+        {/* Analytics + EEA/UK/CH consent gate: must stay in <body> (Rule 64). */}
+        <Analytics />
       </body>
     </html>
   );

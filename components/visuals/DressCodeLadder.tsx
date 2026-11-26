@@ -42,7 +42,7 @@ export default function DressCodeLadder({
                       {links.map((l, i) => (
                         <span key={l.slug}>
                           {i > 0 && " · "}
-                          <Link href={`/${l.slug}`} className="text-blush-600 hover:underline">
+                          <Link href={`/${l.slug}`} className="text-blush-600 underline underline-offset-2">
                             {l.label} guide
                           </Link>
                         </span>

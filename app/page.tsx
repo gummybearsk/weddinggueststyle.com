@@ -26,9 +26,9 @@ import {
 import { orderSeasonSections } from "@/lib/seasonOrder";
 
 export const metadata: Metadata = {
-  title: { absolute: "Wedding Guest Attire for Women & Men: Every Dress Code Decoded" },
+  title: { absolute: "Wedding Guest Attire for Women & Men: All 7 Dress Codes" },
   description:
-    "Wedding guest attire for women and men, decoded for every dress code: white tie, black tie, black tie optional, cocktail, semi-formal, dressy casual and casual. What to wear, what to avoid, with in-stock picks.",
+    "Wedding guest attire for women and men, decoded for all 7 dress codes from white tie to casual: what to wear, what to avoid, and in-stock picks for each.",
   alternates: {
     canonical: "https://weddinggueststyle.com",
     languages: {
@@ -249,11 +249,11 @@ export default async function HomePage() {
               then open its guide: every guide covers what women wear and what men wear, because couples are
               dressing for the same invitation. Where men&rsquo;s questions differ enough to need their own
               page, there is one, starting with the{" "}
-              <Link href="/wedding-dress-code-for-men" className="text-blush-600 hover:underline">wedding dress code for men</Link>.
+              <Link href="/wedding-dress-code-for-men" className="text-blush-600 underline underline-offset-2">wedding dress code for men</Link>.
             </p>
             <p>
               Few guests ask what a dress code means. In our{" "}
-              <Link href="/wedding-dress-code-study" className="text-blush-600 hover:underline">study of 10,700 posts</Link>{" "}
+              <Link href="/wedding-dress-code-study" className="text-blush-600 underline underline-offset-2">study of 10,700 posts</Link>{" "}
               from guests asking strangers whether an outfit works, only 25 asked that in so many words. What
               they ask, over and over, is whether one dress or suit fits the code at one venue and one time of day, and
               the guides are built around exactly those tie-breakers.
@@ -274,7 +274,7 @@ export default async function HomePage() {
               {colorsGuideLive && (
                 <>
                   {" "}The{" "}
-                  <Link href="/wedding-guest-dress-colors-to-avoid" className="text-blush-600 hover:underline">colors to avoid</Link>{" "}
+                  <Link href="/wedding-guest-dress-colors-to-avoid" className="text-blush-600 underline underline-offset-2">colors to avoid</Link>{" "}
                   guide goes through each one.
                 </>
               )}
@@ -286,9 +286,9 @@ export default async function HomePage() {
               prices and stock are re-checked against Amazon&apos;s API every day. When you click an Amazon affiliate
               link and complete a purchase, we earn a small commission at no cost to you. Commission rates play no part
               in which products appear. The full process is on the{" "}
-              <Link href="/editorial" className="text-blush-600 hover:underline">editorial guidelines</Link> page; our
-              editor is <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>{" "}
-              (<a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>).
+              <Link href="/editorial" className="text-blush-600 underline underline-offset-2">editorial guidelines</Link> page; our
+              editor is <Link href="/author/sukie-gao" className="text-blush-600 underline underline-offset-2">Sukie Gao</Link>{" "}
+              (<a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 underline underline-offset-2">@sukiegao</a>).
             </p>
           </div>
         </div>

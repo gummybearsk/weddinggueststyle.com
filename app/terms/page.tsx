@@ -23,7 +23,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">1. Acceptance of Terms</h2>
           <p>
-            By accessing or using <Link href="/" className="text-blush-600 hover:underline">https://weddinggueststyle.com</Link>
+            By accessing or using <Link href="/" className="text-blush-600 underline underline-offset-2">https://weddinggueststyle.com</Link>
             (&ldquo;the site,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;), you agree to be bound by these Terms of
             Service. If you do not agree to these terms, please do not use the site.
           </p>
@@ -57,7 +57,7 @@ export default function TermsPage() {
             which products appear on a page.
           </p>
           <p>
-            See our <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link>
+            See our <Link href="/editorial" className="text-blush-600 underline underline-offset-2">Editorial Guidelines</Link>
             for how pages are researched and how products are selected.
           </p>
         </section>
@@ -124,7 +124,7 @@ export default function TermsPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">11. Contact</h2>
           <p>
-            For questions about these Terms of Service, email <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
+            For questions about these Terms of Service, email <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>.
           </p>
         </section>
       </div>

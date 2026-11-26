@@ -17,14 +17,14 @@ export default function PrivacyPage() {
       </nav>
 
       <h1 className="text-4xl font-bold text-gray-900 mb-3">Privacy Policy</h1>
-      <p className="text-sm text-gray-500 mb-8">Last updated: April 15, 2026</p>
+      <p className="text-sm text-gray-500 mb-8">Last updated: November 26, 2026</p>
 
       <div className="prose prose-gray max-w-none space-y-6 text-gray-700 leading-relaxed">
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">1. Introduction</h2>
           <p>
             Wedding Guest Style (&ldquo;we,&rdquo; &ldquo;us,&rdquo; &ldquo;our&rdquo;) operates the website
-            <Link href="/" className="text-blush-600 hover:underline"> https://weddinggueststyle.com</Link>.
+            <Link href="/" className="text-blush-600 underline underline-offset-2"> https://weddinggueststyle.com</Link>.
             This Privacy Policy explains what information we collect, how we use it, and the choices you have. By using
             our site, you agree to the practices described here.
           </p>
@@ -50,17 +50,18 @@ export default function PrivacyPage() {
           <ul className="list-disc pl-6 space-y-2">
             <li>
               <strong>Google Analytics</strong> — to understand how visitors use our site and improve content.
-              Google&apos;s privacy policy: <a href="https://policies.google.com/privacy" className="text-blush-600 hover:underline" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
+              Google&apos;s privacy policy: <a href="https://policies.google.com/privacy" className="text-blush-600 underline underline-offset-2" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a>
             </li>
             <li>
               <strong>Microsoft Clarity</strong> — for session recordings and heatmaps to improve site usability.
-              Clarity&apos;s privacy policy: <a href="https://privacy.microsoft.com/en-us/privacystatement" className="text-blush-600 hover:underline" target="_blank" rel="noopener noreferrer">privacy.microsoft.com</a>
+              Clarity&apos;s privacy policy: <a href="https://privacy.microsoft.com/en-us/privacystatement" className="text-blush-600 underline underline-offset-2" target="_blank" rel="noopener noreferrer">privacy.microsoft.com</a>
             </li>
             <li>
               <strong>Amazon Associates</strong> — when you click an Amazon affiliate link, Amazon may set tracking
-              cookies. See <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ" className="text-blush-600 hover:underline" target="_blank" rel="noopener noreferrer">Amazon&apos;s privacy notice</a>.
+              cookies. See <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ" className="text-blush-600 underline underline-offset-2" target="_blank" rel="noopener noreferrer">Amazon&apos;s privacy notice</a>.
             </li>
           </ul>
+          <p>Visitors in the European Economic Area, the United Kingdom and Switzerland are asked first: Google Analytics and Microsoft Clarity load only after you choose Accept, and if you choose Decline they do not load at all. Your choice is kept in your browser&apos;s local storage, not in a cookie. Visitors elsewhere, including the United States, are not shown a banner and analytics loads normally.</p>
           <p>You can disable cookies in your browser settings; the site will still function, but some features may not work as expected.</p>
         </section>
 
@@ -86,7 +87,7 @@ export default function PrivacyPage() {
             for readers. Affiliate relationships do not influence our recommendations.
           </p>
           <p>
-            See our <Link href="/editorial" className="text-blush-600 hover:underline">Editorial Guidelines</Link> for
+            See our <Link href="/editorial" className="text-blush-600 underline underline-offset-2">Editorial Guidelines</Link> for
             more on how we choose products.
           </p>
         </section>
@@ -99,7 +100,7 @@ export default function PrivacyPage() {
             information, and to opt out of certain data processing.
           </p>
           <p>
-            To exercise any of these rights, email us at <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
+            To exercise any of these rights, email us at <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>.
           </p>
         </section>
 
@@ -123,7 +124,7 @@ export default function PrivacyPage() {
         <section>
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">9. Contact</h2>
           <p>
-            For questions about this Privacy Policy, email us at <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
+            For questions about this Privacy Policy, email us at <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>.
           </p>
         </section>
       </div>

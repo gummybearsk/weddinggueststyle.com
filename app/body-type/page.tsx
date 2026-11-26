@@ -13,7 +13,7 @@ import { bodyTypeSections } from "@/lib/homepageData";
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Wedding Guest Dresses by Body Type — Plus, Petite, Maternity, Over 50",
+  title: { absolute: "Wedding Guest Dresses by Body Type: Plus, Petite, Over 50" },
   description:
     "Wedding guest dresses cut for every figure. Plus size, petite, maternity, over-50, and silhouettes built to flatter — not hide.",
   alternates: { canonical: "https://weddinggueststyle.com/body-type" },

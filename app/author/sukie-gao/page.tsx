@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getAllSlugs, getPageData } from "@/lib/getPages";
 
 export const metadata: Metadata = {
-  title: "Sukie Gao — Editor, Wedding Guest Style",
+  title: { absolute: "Sukie Gao — Editor, Wedding Guest Style" },
   description:
     "Sukie Gao is the editor of Wedding Guest Style, the wedding guest dress guide organised by dress code, colour, season, body type and venue.",
   alternates: { canonical: "https://weddinggueststyle.com/author/sukie-gao" },
@@ -74,7 +74,7 @@ export default function SukieGaoPage() {
                 href="https://www.instagram.com/sukiegao/"
                 target="_blank"
                 rel="noopener noreferrer me"
-                className="text-blush-600 hover:underline"
+                className="text-blush-600 underline underline-offset-2"
               >
                 @sukiegao on Instagram
               </a>
@@ -87,7 +87,7 @@ export default function SukieGaoPage() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-2 mb-3">About Sukie</h2>
             <p>
               Sukie Gao is the editor of Wedding Guest Style. She is on{" "}
-              <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">Instagram</a>{" "}
+              <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 underline underline-offset-2">Instagram</a>{" "}
               as @sukiegao.
             </p>
           </section>
@@ -100,7 +100,7 @@ export default function SukieGaoPage() {
               are cited on the page. Products are matched to each page by searching Amazon for its topic, and their
               prices and stock are re-checked against Amazon&apos;s API every day. No paid placements, no sponsored reviews, no pay-to-feature deals. The full
               process is on the{" "}
-              <Link href="/editorial" className="text-blush-600 hover:underline">editorial guidelines</Link> page.
+              <Link href="/editorial" className="text-blush-600 underline underline-offset-2">editorial guidelines</Link> page.
             </p>
           </section>
 
@@ -108,11 +108,11 @@ export default function SukieGaoPage() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Contact</h2>
             <p>
               For editorial feedback, corrections, or partnership inquiries, reach Sukie via{" "}
-              <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">
+              <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 underline underline-offset-2">
                 Instagram DM
               </a>
               {" "}or email{" "}
-              <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
+              <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>.
             </p>
           </section>
         </div>

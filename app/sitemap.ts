@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const trustPages = [
     { url: `${baseUrl}/about`,             priority: 0.5, lastMod: "2026-05-25" }, // edited today (author swap, AI disclosure)
     { url: `${baseUrl}/editorial`,         priority: 0.5, lastMod: "2026-04-15" },
-    { url: `${baseUrl}/privacy`,           priority: 0.3, lastMod: "2026-04-15" },
+    { url: `${baseUrl}/privacy`,           priority: 0.3, lastMod: "2026-11-26" },
     { url: `${baseUrl}/terms`,             priority: 0.3, lastMod: "2026-10-22" }, // false claims removed
     { url: `${baseUrl}/contact`,           priority: 0.4, lastMod: "2026-10-22" },
     { url: `${baseUrl}/author/sukie-gao`,  priority: 0.5, lastMod: "2026-05-25" }, // new page

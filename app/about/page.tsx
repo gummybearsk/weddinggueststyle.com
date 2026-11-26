@@ -70,7 +70,7 @@ export default function AboutPage() {
           </ul>
           <p>
             For more detail on how we research and write content, see our
-            <Link href="/editorial" className="text-blush-600 hover:underline"> Editorial Guidelines</Link>.
+            <Link href="/editorial" className="text-blush-600 underline underline-offset-2"> Editorial Guidelines</Link>.
           </p>
         </section>
 
@@ -78,9 +78,9 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Who&apos;s Behind This Site</h2>
           <p>
             Wedding Guest Style is edited by{" "}
-            <Link href="/author/sukie-gao" className="text-blush-600 hover:underline">Sukie Gao</Link>
+            <Link href="/author/sukie-gao" className="text-blush-600 underline underline-offset-2">Sukie Gao</Link>
             {" "}(
-            <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 hover:underline">@sukiegao</a>
+            <a href="https://www.instagram.com/sukiegao/" target="_blank" rel="noopener noreferrer me" className="text-blush-600 underline underline-offset-2">@sukiegao</a>
             ).
           </p>
           <p className="text-sm text-gray-500 italic">
@@ -105,7 +105,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-3">Get in Touch</h2>
           <p>
             For questions, feedback, content corrections, or partnership inquiries, email{" "}
-            <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 hover:underline">sukielovesupport@gmail.com</a>.
+            <a href="mailto:sukielovesupport@gmail.com" className="text-blush-600 underline underline-offset-2">sukielovesupport@gmail.com</a>.
           </p>
           <p>
             Wedding Guest Style is based in the United States. All dress code conventions, sizing, retailer

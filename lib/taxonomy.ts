@@ -49,6 +49,7 @@ const PILLARS: Pillar[] = [
       { label: "For men", match: /-for-men$|-for-men-|^mens-/ },
       { label: "Etiquette: can I wear…?", match: /^can-you-wear|colors-to-avoid|as-a-guest|what-wedding-guests-ask/ },
       { label: "Research", match: /-study$/ },
+      { label: "Showers, rehearsals & engagement parties", match: /bridal-shower|rehearsal-dinner|engagement-party/ },
       { label: "Dress code guides", match: /-attire$|^what-is-|^what-does-|-vs-|^what-to-wear-to-a-casual/ },
       { label: "Black tie & formal", match: /black-tie|formal(?!.*semi)|designer/ },
       { label: "Cocktail & semi-formal", match: /cocktail|semi-formal/ },
@@ -83,7 +84,8 @@ const PILLARS: Pillar[] = [
     label: "Style",
     groups: [
       { label: "Length", match: /midi|maxi|tea-length|knee-length|long-wedding|short-/ },
-      { label: "Silhouette", match: /a-line|mermaid|floral|elegant|designer/ },
+      { label: "Silhouette", match: /a-line|mermaid|floral|elegant|designer|boho/ },
+      { label: "Jumpsuits & pant suits", match: /jumpsuit|pant-suit/ },
       { label: "Fabric", match: /velvet|satin|chiffon|lace/ },
       { label: "Details", match: /pockets|with-sleeves|long-sleeve|sexy/ },
       { label: "Accessories", match: /accessor|shoes|clutch|cover-ups|bags|wraps/ },

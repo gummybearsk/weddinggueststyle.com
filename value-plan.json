@@ -1100,6 +1100,105 @@
       },
       "answer": "page",
       "page": "western-wedding-guest-attire"
+    },
+    {
+      "id": "boho wedding guest dresses",
+      "question": "When is a boho dress right for a wedding guest, and when is it too casual, for example at a formal or fall wedding?",
+      "evidence": [
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1w23syj/",
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1vj9osj/",
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1ti1tgi/",
+        "https://www.weddingwire.com/wedding-forums/dress-code/84f53fd1df7ce957.html"
+      ],
+      "demand": {
+        "keyword": "boho wedding guest dress",
+        "volume": 1600,
+        "source": "SEMrush US 2026-10-21/22 (3ue.co), KD 21"
+      },
+      "answer": "page",
+      "page": "boho-wedding-guest-dresses"
+    },
+    {
+      "id": "bridal shower dress",
+      "question": "What should the bride and her guests wear to a bridal shower, and can guests wear white?",
+      "evidence": [
+        "https://www.weddingwire.com/wedding-forums/wearing-white-to-someone-elses-bridal-shower/861c3332594058ef.html",
+        "https://www.weddingwire.com/wedding-forums/bridal-shower-dress-code/447b3a4fc1c59d9d.html",
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1stlmzo/",
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1szj52n/"
+      ],
+      "demand": {
+        "keyword": "bridal shower dress",
+        "volume": 22200,
+        "source": "SEMrush US 2026-10-21/22 (3ue.co), KD 15"
+      },
+      "answer": "page",
+      "page": "bridal-shower-dress"
+    },
+    {
+      "id": "dressy pant suits for a wedding",
+      "question": "Can a woman guest wear a dressy pant suit to a wedding, and at which dress codes (casual, cocktail, black tie)?",
+      "evidence": [
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1ttfnoa/how_do_we_feel_about_dress_pants_for_semi_formal/",
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1unjcoz/pants_for_cocktail_attire/",
+        "https://www.mumsnet.com/talk/style_and_beauty/5388996-would-you-wear-trousers-to-a-wedding"
+      ],
+      "demand": {
+        "keyword": "dressy pant suits for a wedding",
+        "volume": 1300,
+        "source": "SEMrush US 2026-11-26 (3ue.co), KD 22"
+      },
+      "answer": "page",
+      "page": "dressy-pant-suits-for-a-wedding"
+    },
+    {
+      "id": "engagement party dresses",
+      "question": "What should I wear to an engagement party, as a guest or as the newly engaged woman, and can anyone wear white?",
+      "evidence": [
+        "https://www.reddit.com/r/weddingplanning/comments/1l81l4s/what_to_wear_to_an_engagement_party/",
+        "https://www.reddit.com/r/weddingplanning/comments/1lgcsoe/what_to_wear_engagement_party/",
+        "https://www.mumsnet.com/talk/style_and_beauty/5415187-engagement-party-lunch-what-to-wear",
+        "https://www.weddingwire.com/wedding-forums/what-to-wear-for-my-engagement-party/9efb799522d3fca0.html"
+      ],
+      "demand": {
+        "keyword": "engagement party dresses",
+        "volume": 6600,
+        "source": "SEMrush US 2026-11-26 (3ue.co), KD 18"
+      },
+      "answer": "page",
+      "page": "engagement-party-dresses"
+    },
+    {
+      "id": "rehearsal dinner dress",
+      "question": "What should I wear to a rehearsal dinner, as a guest or as the bride: how formal, can I wear white, and what do men wear?",
+      "evidence": [
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1ufasro/urgent_too_white_for_a_rehearsal_dinner/",
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1tvecin/as_the_bride_should_i_wear_this_to_my_rehearsal/",
+        "https://www.weddingwire.com/wedding-forums/does-the-no-white-rule-apply-to-rehearsal-dinners/6f6913f3e24f26b2.html",
+        "https://www.weddingwire.com/wedding-forums/rehearsal-dinner-dress-code/3916e6a58920328f.html"
+      ],
+      "demand": {
+        "keyword": "rehearsal dinner dress",
+        "volume": 18100,
+        "source": "SEMrush US 2026-10-21/22 (3ue.co), KD 15"
+      },
+      "answer": "page",
+      "page": "rehearsal-dinner-dress"
+    },
+    {
+      "id": "wedding guest jumpsuit",
+      "question": "Can I wear a jumpsuit as a wedding guest, and which kind works for this dress code (casual through black tie)?",
+      "evidence": [
+        "https://www.reddit.com/r/Weddingattireapproval/comments/1vd5er5/",
+        "https://www.myneworleans.com/wediquette-wednesday-can-i-wear-a-black-jumpsuit-to-a-night-wedding/"
+      ],
+      "demand": {
+        "keyword": "wedding guest jumpsuit",
+        "volume": 2400,
+        "source": "SEMrush US 2026-11-26 (3ue.co), KD 19"
+      },
+      "answer": "page",
+      "page": "wedding-guest-jumpsuit"
     }
   ],
   "review": {
@@ -1170,7 +1269,13 @@
       "garden-party-attire-for-men",
       "beach-formal-wedding-attire",
       "western-wedding-guest-attire",
-      "courthouse-wedding-attire"
+      "courthouse-wedding-attire",
+      "bridal-shower-dress",
+      "rehearsal-dinner-dress",
+      "engagement-party-dresses",
+      "wedding-guest-jumpsuit",
+      "dressy-pant-suits-for-a-wedding",
+      "boho-wedding-guest-dresses"
     ],
     "cut": [
       {
@@ -1500,6 +1605,23 @@
         ],
         "cut": [],
         "note": "Each page compared with the live top 3 for its keyword; 1 fix (garden-party answer wording vs Lieutenancy dress code)."
+      }
+    ],
+    "batches": [
+      {
+        "date": "2026-11-26",
+        "reviewer": "independent value-review agent (not the author)",
+        "passed": [
+          "bridal-shower-dress",
+          "rehearsal-dinner-dress",
+          "engagement-party-dresses",
+          "wedding-guest-jumpsuit",
+          "dressy-pant-suits-for-a-wedding",
+          "boho-wedding-guest-dresses"
+        ],
+        "cut": [],
+        "fixesApplied": 15,
+        "note": "Top 3 for every keyword are product grids/roundups; ours answer which outfit fits which dress code, who may wear white, men, with Emily Post lists and an original Reddit count. 15 fixes (2 unsupported claims, 1 citation-needed quote removed, 1 count corrected 9→7, attributions, 3 product rails) applied before scheduling."
       }
     ]
   }
